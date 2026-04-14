@@ -236,7 +236,7 @@ Scan performed: regex search across all source files (`.html`, `.js`, `.css`, `.
 - AWS access keys (`AKIA...`)
 - OpenAI/Stripe keys (`sk-...`)  
 - GitHub tokens (`ghp_`, `gho_`)
-- Private keys (`-----BEGIN ... PRIVATE KEY-----`)
+- Private key PEM headers
 - Hardcoded password/secret assignments
 
 **Result: zero matches.** No API keys, tokens, passwords, or credentials anywhere in the codebase.
