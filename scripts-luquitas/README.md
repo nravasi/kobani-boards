@@ -13,6 +13,7 @@ scripts-luquitas/
 ├── python/              # Python scripts (.py)
 ├── ruby/                # Ruby scripts (.rb)
 ├── bash/                # Bash scripts (.sh)
+│   └── hello_world.sh   # Hello World in Bash (language folder)
 ├── hello.py             # Hello World in Python
 ├── hello.rb             # Hello World in Ruby
 ├── hello.sh             # Hello World in Bash
@@ -66,6 +67,18 @@ Hello, World!
 
 ```bash
 bash hello.sh
+```
+
+Expected output:
+
+```
+Hello, World!
+```
+
+There is also a Bash script inside the `bash/` language folder:
+
+```bash
+bash bash/hello_world.sh
 ```
 
 Expected output:
