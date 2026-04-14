@@ -1,0 +1,351 @@
+{
+  "base_url": "https://clubbanconacion.org.ar",
+  "site_title": "CABNA - Club Atlético Banco de la Nación Argentina",
+  "site_description": "Sitio Web Oficial del Club Atlético Banco de la Nación Argentina (C.A.B.N.A.)",
+  "language": "es",
+  "navigation": [
+    {
+      "label": "INICIO",
+      "url": "https://clubbanconacion.org.ar"
+    },
+    {
+      "label": "EL CLUB",
+      "url": "https://clubbanconacion.org.ar/el-club"
+    },
+    {
+      "label": "DEPORTES",
+      "url": "https://clubbanconacion.org.ar/",
+      "children": [
+        {
+          "label": "TODOS",
+          "url": "https://clubbanconacion.org.ar/deportes"
+        },
+        {
+          "label": "AIKIDO",
+          "url": "https://clubbanconacion.org.ar/deportes/1/aikido"
+        },
+        {
+          "label": "AQUAGYM",
+          "url": "https://clubbanconacion.org.ar/deportes/17/aquagym"
+        },
+        {
+          "label": "BASQUET",
+          "url": "https://clubbanconacion.org.ar/deportes/2/basquet"
+        },
+        {
+          "label": "CLASES DE NATACIÓN",
+          "url": "https://clubbanconacion.org.ar/deportes/8/clases-de-natacion"
+        },
+        {
+          "label": "ESCUELA DE FÚTBOL",
+          "url": "https://clubbanconacion.org.ar/deportes/14/escuela-de-futbol"
+        },
+        {
+          "label": "ESCUELA DE TENIS",
+          "url": "https://clubbanconacion.org.ar/deportes/12/escuela-de-tenis"
+        },
+        {
+          "label": "FÚTBOL 11",
+          "url": "https://clubbanconacion.org.ar/deportes/3/futbol-11"
+        },
+        {
+          "label": "FUTSAL",
+          "url": "https://clubbanconacion.org.ar/deportes/20/futsal"
+        },
+        {
+          "label": "GIMNASIA ARTÍSTICA",
+          "url": "https://clubbanconacion.org.ar/deportes/5/gimnasia-artistica"
+        },
+        {
+          "label": "INICIACIÓN DEPORTIVA",
+          "url": "https://clubbanconacion.org.ar/deportes/4/iniciacion-deportiva"
+        },
+        {
+          "label": "JUDO",
+          "url": "https://clubbanconacion.org.ar/deportes/6/judo"
+        },
+        {
+          "label": "MASTER HOCKEY",
+          "url": "https://clubbanconacion.org.ar/deportes/7/master-hockey"
+        },
+        {
+          "label": "PATÍN ARTÍSTICO",
+          "url": "https://clubbanconacion.org.ar/deportes/9/patin-artistico"
+        },
+        {
+          "label": "PILATES MAT",
+          "url": "https://clubbanconacion.org.ar/deportes/22/pilates-mat"
+        },
+        {
+          "label": "SPORTCLUB",
+          "url": "https://clubbanconacion.org.ar/deportes/16/sportclub"
+        },
+        {
+          "label": "TAEKWONDO",
+          "url": "https://clubbanconacion.org.ar/deportes/11/taekwondo"
+        },
+        {
+          "label": "TENIS DE MESA",
+          "url": "https://clubbanconacion.org.ar/deportes/13/tenis-de-mesa"
+        },
+        {
+          "label": "VOLEY FEMENINO",
+          "url": "https://clubbanconacion.org.ar/deportes/10/voley-femenino"
+        },
+        {
+          "label": "YOGA",
+          "url": "https://clubbanconacion.org.ar/deportes/21/yoga"
+        }
+      ]
+    },
+    {
+      "label": "ACTIVIDADES",
+      "url": "https://clubbanconacion.org.ar/",
+      "children": [
+        {
+          "label": "FAMILIARES",
+          "url": "https://clubbanconacion.org.ar/actividades/2/familiares"
+        },
+        {
+          "label": "SALUD Y BIENESTAR",
+          "url": "https://clubbanconacion.org.ar/actividades/3/salud-y-bienestar"
+        },
+        {
+          "label": "TALLERES",
+          "url": "https://clubbanconacion.org.ar/actividades/1/talleres"
+        }
+      ]
+    },
+    {
+      "label": "NOVEDADES",
+      "url": "https://clubbanconacion.org.ar/novedades"
+    },
+    {
+      "label": "CONTACTO",
+      "url": "https://clubbanconacion.org.ar/contacto"
+    }
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "label": "home",
+      "full_url": "https://clubbanconacion.org.ar",
+      "scraped": true,
+      "sections": [
+        "section",
+        "title",
+        "meta",
+        "hero",
+        "stats",
+        "about",
+        "benefits",
+        "testimonials",
+        "newsletter",
+        "instagram_section",
+        "social_links",
+        "footer"
+      ]
+    },
+    {
+      "path": "/el-club",
+      "label": "el-club",
+      "full_url": "https://clubbanconacion.org.ar/el-club",
+      "scraped": true,
+      "sections": [
+        "section",
+        "history",
+        "facilities",
+        "institution",
+        "gallery",
+        "board_of_directors",
+        "supervisory_committee",
+        "coaching_staff",
+        "about"
+      ]
+    },
+    {
+      "path": "/deportes",
+      "label": "deportes",
+      "full_url": "https://clubbanconacion.org.ar/deportes",
+      "scraped": true,
+      "sections": [
+        "section",
+        "sports"
+      ]
+    },
+    {
+      "path": "/actividades",
+      "label": "actividades",
+      "full_url": "https://clubbanconacion.org.ar/actividades",
+      "scraped": true,
+      "sections": [
+        "section",
+        "categories",
+        "activities"
+      ]
+    },
+    {
+      "path": "/novedades",
+      "label": "novedades",
+      "full_url": "https://clubbanconacion.org.ar/novedades",
+      "scraped": true,
+      "sections": [
+        "section",
+        "articles"
+      ]
+    },
+    {
+      "path": "/contacto",
+      "label": "contacto",
+      "full_url": "https://clubbanconacion.org.ar/contacto",
+      "scraped": true,
+      "sections": [
+        "section",
+        "contact_info",
+        "form_fields",
+        "quincho_rental",
+        "job_application"
+      ]
+    },
+    {
+      "path": "/hacete-socio",
+      "label": "hacete-socio",
+      "full_url": "https://clubbanconacion.org.ar/hacete-socio",
+      "scraped": true,
+      "sections": [
+        "section",
+        "plans",
+        "benefits_extra",
+        "payment_methods",
+        "requirements",
+        "steps"
+      ]
+    }
+  ],
+  "external_links": {
+    "facebook": "https://www.facebook.com/clubbanconacionoficial",
+    "instagram": "https://www.instagram.com/cabnaoficial",
+    "whatsapp": "https://wa.me/+5491127851234",
+    "google_maps": "https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7"
+  },
+  "technology_stack": {
+    "framework": "Laravel (Livewire components detected)",
+    "css": "Bootstrap 5",
+    "carousel": "Swiper.js",
+    "database": "MySQL (inferred from Livewire data)"
+  },
+  "sports_pages": [
+    {
+      "id": "1",
+      "name": "Aikido",
+      "url": "https://clubbanconacion.org.ar/deportes/1/aikido"
+    },
+    {
+      "id": "17",
+      "name": "Aquagym",
+      "url": "https://clubbanconacion.org.ar/deportes/17/aquagym"
+    },
+    {
+      "id": "2",
+      "name": "Basquet",
+      "url": "https://clubbanconacion.org.ar/deportes/2/basquet"
+    },
+    {
+      "id": "8",
+      "name": "Clases de Natación",
+      "url": "https://clubbanconacion.org.ar/deportes/8/clases-de-natacion"
+    },
+    {
+      "id": "14",
+      "name": "Escuela de Fútbol",
+      "url": "https://clubbanconacion.org.ar/deportes/14/escuela-de-futbol"
+    },
+    {
+      "id": "12",
+      "name": "Escuela de Tenis",
+      "url": "https://clubbanconacion.org.ar/deportes/12/escuela-de-tenis"
+    },
+    {
+      "id": "3",
+      "name": "Fútbol 11",
+      "url": "https://clubbanconacion.org.ar/deportes/3/futbol-11"
+    },
+    {
+      "id": "20",
+      "name": "Futsal",
+      "url": "https://clubbanconacion.org.ar/deportes/20/futsal"
+    },
+    {
+      "id": "5",
+      "name": "Gimnasia Artística",
+      "url": "https://clubbanconacion.org.ar/deportes/5/gimnasia-artistica"
+    },
+    {
+      "id": "4",
+      "name": "Iniciación Deportiva",
+      "url": "https://clubbanconacion.org.ar/deportes/4/iniciacion-deportiva"
+    },
+    {
+      "id": "6",
+      "name": "Judo",
+      "url": "https://clubbanconacion.org.ar/deportes/6/judo"
+    },
+    {
+      "id": "7",
+      "name": "Master Hockey",
+      "url": "https://clubbanconacion.org.ar/deportes/7/master-hockey"
+    },
+    {
+      "id": "9",
+      "name": "Patín Artístico",
+      "url": "https://clubbanconacion.org.ar/deportes/9/patin-artistico"
+    },
+    {
+      "id": "22",
+      "name": "Pilates MAT",
+      "url": "https://clubbanconacion.org.ar/deportes/22/pilates-mat"
+    },
+    {
+      "id": "16",
+      "name": "Sportclub",
+      "url": "https://clubbanconacion.org.ar/deportes/16/sportclub"
+    },
+    {
+      "id": "11",
+      "name": "Taekwondo",
+      "url": "https://clubbanconacion.org.ar/deportes/11/taekwondo"
+    },
+    {
+      "id": "13",
+      "name": "Tenis de Mesa",
+      "url": "https://clubbanconacion.org.ar/deportes/13/tenis-de-mesa"
+    },
+    {
+      "id": "10",
+      "name": "Voley Femenino",
+      "url": "https://clubbanconacion.org.ar/deportes/10/voley-femenino"
+    },
+    {
+      "id": "21",
+      "name": "Yoga",
+      "url": "https://clubbanconacion.org.ar/deportes/21/yoga"
+    }
+  ],
+  "activity_pages": [
+    {
+      "id": "2",
+      "name": "Familiares",
+      "url": "https://clubbanconacion.org.ar/actividades/2/familiares"
+    },
+    {
+      "id": "3",
+      "name": "Salud y Bienestar",
+      "url": "https://clubbanconacion.org.ar/actividades/3/salud-y-bienestar"
+    },
+    {
+      "id": "1",
+      "name": "Talleres",
+      "url": "https://clubbanconacion.org.ar/actividades/1/talleres"
+    }
+  ]
+}

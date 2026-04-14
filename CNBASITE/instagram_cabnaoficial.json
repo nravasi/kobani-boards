@@ -1,0 +1,56 @@
+{
+  "profile": {
+    "username": "cabnaoficial",
+    "full_name": "Club Banco Nación Oficial",
+    "bio": "#yotebanconacion Club Deportivo Pdte. Adrian Rodrigo Graña",
+    "profile_url": "https://www.instagram.com/cabnaoficial/",
+    "followers": 8898,
+    "following": 1593,
+    "posts_count": 748,
+    "location": "Vicente López",
+    "is_verified": false,
+    "external_url": "https://clubbanconacion.org.ar",
+    "profile_picture_url": "https://www.instagram.com/cabnaoficial/"
+  },
+  "related_accounts": [
+    {
+      "username": "bnafutbol",
+      "full_name": "Club Atlético Banco Nacion",
+      "bio": "🔵 Plantel oficial Primera | ⚪️ Plantel oficial Reserva | 🏟️ Zufriategui 1251, Vicente López 🏆 Torneo ABAD",
+      "followers": 864,
+      "following": 216,
+      "posts_count": 149,
+      "profile_url": "https://www.instagram.com/bnafutbol/"
+    }
+  ],
+  "facebook_page": {
+    "name": "Club Banco Nación Oficial",
+    "url": "https://www.facebook.com/clubbanconacionoficial",
+    "likes": 2597,
+    "checkins": 2999,
+    "description": "Los invitamos a nuestra nueva Fan Page. Aquí podrán ver fotos de las disciplinas que se realizan en el club."
+  },
+  "known_reels": [
+    {
+      "url": "https://www.instagram.com/cabnaoficial/reel/Cly3yWVDMOe/",
+      "caption_preview": "(reel)"
+    },
+    {
+      "url": "https://www.instagram.com/cabnaoficial/reel/Crg44A9pSgM/",
+      "caption_preview": "¡ACTIVIDADES CABNA! Te ..."
+    },
+    {
+      "url": "https://www.instagram.com/cabnaoficial/reel/C5b4uKUv31q/",
+      "caption_preview": "¡Estamos listos para disfrutar de ..."
+    },
+    {
+      "url": "https://www.instagram.com/cabnaoficial/reel/CurtXVyO6Dp/",
+      "caption_preview": "En #CABNA, cada mes ..."
+    }
+  ],
+  "hashtags": [
+    "#yotebanconacion",
+    "#CABNA"
+  ],
+  "scrape_note": "Instagram blocks automated scraping. Profile metadata was obtained from public search index results. Individual post captions and image URLs require authenticated API access or manual collection."
+}
