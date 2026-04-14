@@ -1,0 +1,12 @@
+{
+  "name": "better-promiedos",
+  "version": "1.0.0",
+  "description": "Workspace for board: Better Promiedos",
+  "main": "js/team-icons.js",
+  "scripts": {
+    "test": "node test/team-icons.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
