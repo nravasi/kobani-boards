@@ -40,10 +40,14 @@ var EXPECTED_IMAGES = [
   'images/riquelme_5.jpg',
   'images/riquelme_6.jpg',
   'images/riquelme_7.jpg',
-  'images/riquelme_8.jpg'
+  'images/riquelme_8.jpg',
+  'images/riquelme_9.jpg',
+  'images/riquelme_10.jpg',
+  'images/riquelme_11.jpg',
+  'images/riquelme_12.jpg'
 ];
 
-// Gallery expected data: 8 gallery images with captions
+// Gallery expected data: 12 gallery images with captions
 var GALLERY_IMAGES = [
   { file: 'images/riquelme_1.jpg', captionContains: 'Debut en Boca Juniors' },
   { file: 'images/riquelme_2.jpg', captionContains: 'Gol vs River Plate' },
@@ -52,7 +56,11 @@ var GALLERY_IMAGES = [
   { file: 'images/riquelme_5.jpg', captionContains: 'Seleccion Argentina' },
   { file: 'images/riquelme_6.jpg', captionContains: 'Ultimo Tango' },
   { file: 'images/riquelme_7.jpg', captionContains: 'Tiro Libre Magistral' },
-  { file: 'images/riquelme_8.jpg', captionContains: 'Despedida' }
+  { file: 'images/riquelme_8.jpg', captionContains: 'Despedida' },
+  { file: 'images/riquelme_9.jpg', captionContains: 'Villarreal' },
+  { file: 'images/riquelme_10.jpg', captionContains: 'Champions League' },
+  { file: 'images/riquelme_11.jpg', captionContains: 'Copa Libertadores 2007' },
+  { file: 'images/riquelme_12.jpg', captionContains: 'Beijing 2008' }
 ];
 
 // Seeded message board posts (from messageboard.js SEED_POSTS)
@@ -710,10 +718,10 @@ test('counter has visual styling (counter-box class)', function () {
 
 section('Criterion 4: Photo gallery images and captions');
 
-test('gallery has 8 gallery images', function () {
+test('gallery has 12 gallery images', function () {
   var dom = new JSDOM(galleryHtml);
   var galleryImgs = dom.window.document.querySelectorAll('.gallery-table img');
-  assert.strictEqual(galleryImgs.length, 8, 'gallery has 8 images');
+  assert.strictEqual(galleryImgs.length, 12, 'gallery has 12 images');
 });
 
 GALLERY_IMAGES.forEach(function (gi) {
@@ -733,18 +741,19 @@ GALLERY_IMAGES.forEach(function (gi) {
   });
 });
 
-test('gallery has two section headers', function () {
+test('gallery has three section headers', function () {
   var dom = new JSDOM(galleryHtml);
   var h2s = dom.window.document.querySelectorAll('.page-wrapper h2');
   var headerTexts = Array.from(h2s).map(function (h) { return h.textContent; });
   assert.ok(headerTexts.some(function (t) { return t.includes('Boca Juniors'); }), 'has Boca section');
   assert.ok(headerTexts.some(function (t) { return t.includes('Gloria'); }), 'has Gloria section');
+  assert.ok(headerTexts.some(function (t) { return t.includes('Europa'); }), 'has Europa section');
 });
 
-test('gallery has two gallery tables (rows of 4)', function () {
+test('gallery has three gallery tables (rows of 4)', function () {
   var dom = new JSDOM(galleryHtml);
   var tables = dom.window.document.querySelectorAll('.gallery-table');
-  assert.strictEqual(tables.length, 2, 'has 2 gallery tables');
+  assert.strictEqual(tables.length, 3, 'has 3 gallery tables');
 
   // Each table should have 4 cells (one row of 4)
   tables.forEach(function (table, i) {
@@ -755,7 +764,8 @@ test('gallery has two gallery tables (rows of 4)', function () {
 
 test('gallery image files on disk match gallery references', function () {
   var galleryImageFiles = ['riquelme_1.jpg', 'riquelme_2.jpg', 'riquelme_3.jpg', 'riquelme_4.jpg',
-    'riquelme_5.jpg', 'riquelme_6.jpg', 'riquelme_7.jpg', 'riquelme_8.jpg'];
+    'riquelme_5.jpg', 'riquelme_6.jpg', 'riquelme_7.jpg', 'riquelme_8.jpg',
+    'riquelme_9.jpg', 'riquelme_10.jpg', 'riquelme_11.jpg', 'riquelme_12.jpg'];
   galleryImageFiles.forEach(function (f) {
     var fullPath = path.join(ROOT, 'images', f);
     assert.ok(fs.existsSync(fullPath), 'gallery image on disk: ' + f);
