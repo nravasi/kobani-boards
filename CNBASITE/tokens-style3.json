@@ -1,0 +1,154 @@
+{
+  "name": "Classic Prestigious",
+  "slug": "classic-prestigious",
+  "colors": {
+    "primary": "#1B3A4B",
+    "primaryLight": "#264D63",
+    "secondary": "#8B6F47",
+    "secondaryLight": "#A68B5B",
+    "accent": "#C9A84C",
+    "accentLight": "#D4B86A",
+    "background": "#FAF8F5",
+    "backgroundAlt": "#F0ECE5",
+    "surface": "#FFFFFF",
+    "surfaceBorder": "#DDD7CC",
+    "text": "#2C2C2C",
+    "textSecondary": "#5A5A5A",
+    "textInverse": "#FAF8F5",
+    "textMuted": "#8A8A8A",
+    "success": "#3D8B5E",
+    "warning": "#C9A84C",
+    "error": "#A63D3D",
+    "navBackground": "#1B3A4B",
+    "navText": "#F0ECE5",
+    "navAccent": "#C9A84C",
+    "footerBackground": "#1B3A4B",
+    "footerText": "#A0B5C0"
+  },
+  "typography": {
+    "headingFamily": "'Playfair Display', 'Georgia', 'Times New Roman', serif",
+    "bodyFamily": "'Lora', 'Cambria', 'Georgia', serif",
+    "monoFamily": "'Courier Prime', 'Courier New', monospace",
+    "scale": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1.0625rem",
+      "lg": "1.1875rem",
+      "xl": "1.3125rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.375rem",
+      "5xl": "3rem",
+      "6xl": "3.75rem"
+    },
+    "lineHeight": {
+      "tight": "1.25",
+      "normal": "1.6",
+      "relaxed": "1.8"
+    },
+    "weight": {
+      "regular": "400",
+      "medium": "500",
+      "semibold": "600",
+      "bold": "700"
+    },
+    "headingWeight": "700",
+    "bodyWeight": "400",
+    "letterSpacing": {
+      "tight": "-0.015em",
+      "normal": "0.01em",
+      "wide": "0.06em",
+      "wider": "0.12em"
+    }
+  },
+  "spacing": {
+    "unit": "0.25rem",
+    "xs": "0.25rem",
+    "sm": "0.5rem",
+    "md": "1rem",
+    "lg": "1.5rem",
+    "xl": "2rem",
+    "2xl": "3rem",
+    "3xl": "4rem",
+    "4xl": "6rem",
+    "sectionPadding": "5rem",
+    "containerMax": "68rem"
+  },
+  "borders": {
+    "radius": {
+      "none": "0",
+      "sm": "0.1875rem",
+      "md": "0.375rem",
+      "lg": "0.5rem",
+      "xl": "0.75rem",
+      "full": "9999px"
+    },
+    "width": {
+      "thin": "1px",
+      "medium": "2px",
+      "decorative": "3px"
+    }
+  },
+  "shadows": {
+    "sm": "0 1px 4px rgba(44, 44, 44, 0.06)",
+    "md": "0 4px 12px rgba(44, 44, 44, 0.08)",
+    "lg": "0 6px 20px rgba(44, 44, 44, 0.1)",
+    "xl": "0 12px 40px rgba(44, 44, 44, 0.12)"
+  },
+  "transitions": {
+    "fast": "200ms ease-in-out",
+    "normal": "300ms ease-in-out",
+    "slow": "500ms ease-in-out"
+  },
+  "components": {
+    "button": {
+      "primaryBg": "#1B3A4B",
+      "primaryText": "#FAF8F5",
+      "primaryHoverBg": "#264D63",
+      "secondaryBg": "transparent",
+      "secondaryText": "#1B3A4B",
+      "secondaryBorder": "#1B3A4B",
+      "secondaryHoverBg": "#1B3A4B",
+      "secondaryHoverText": "#FAF8F5",
+      "borderRadius": "0.375rem",
+      "paddingX": "1.75rem",
+      "paddingY": "0.8125rem",
+      "fontSize": "0.9375rem",
+      "fontWeight": "600",
+      "letterSpacing": "0.04em",
+      "textTransform": "none"
+    },
+    "card": {
+      "background": "#FFFFFF",
+      "border": "1px solid #DDD7CC",
+      "borderRadius": "0.5rem",
+      "shadow": "0 1px 4px rgba(44, 44, 44, 0.06)",
+      "hoverShadow": "0 6px 20px rgba(44, 44, 44, 0.1)",
+      "padding": "2rem",
+      "imageRadius": "0.375rem",
+      "headerBorder": "2px solid #C9A84C"
+    },
+    "nav": {
+      "height": "4.5rem",
+      "background": "#1B3A4B",
+      "borderBottom": "3px solid #C9A84C",
+      "linkColor": "#A0B5C0",
+      "linkHoverColor": "#FAF8F5",
+      "linkActiveColor": "#C9A84C",
+      "logoSize": "2.25rem",
+      "fontSize": "0.9375rem",
+      "fontWeight": "500",
+      "letterSpacing": "0.06em"
+    },
+    "hero": {
+      "minHeight": "75vh",
+      "background": "#1B3A4B",
+      "textColor": "#FAF8F5",
+      "headingSize": "3.75rem",
+      "subheadingSize": "1.3125rem",
+      "overlay": "linear-gradient(180deg, rgba(27, 58, 75, 0.85) 0%, rgba(27, 58, 75, 0.95) 100%)",
+      "accentColor": "#C9A84C",
+      "ctaStyle": "outlined-elegant"
+    }
+  }
+}

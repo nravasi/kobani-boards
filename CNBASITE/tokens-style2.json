@@ -1,0 +1,159 @@
+{
+  "name": "Bold Athletic",
+  "slug": "bold-athletic",
+  "colors": {
+    "primary": "#FFD700",
+    "primaryLight": "#FFE44D",
+    "secondary": "#002B5C",
+    "secondaryLight": "#003D82",
+    "accent": "#FF4500",
+    "accentLight": "#FF6B33",
+    "background": "#0A0A0F",
+    "backgroundAlt": "#121218",
+    "surface": "#1A1A24",
+    "surfaceBorder": "#2A2A38",
+    "text": "#FFFFFF",
+    "textSecondary": "#B0B0C0",
+    "textInverse": "#0A0A0F",
+    "textMuted": "#707080",
+    "success": "#00E676",
+    "warning": "#FFD700",
+    "error": "#FF1744",
+    "navBackground": "#0A0A0F",
+    "navText": "#FFFFFF",
+    "navAccent": "#FFD700",
+    "footerBackground": "#050508",
+    "footerText": "#707080"
+  },
+  "typography": {
+    "headingFamily": "'Oswald', 'Anton', 'Impact', sans-serif",
+    "bodyFamily": "'Source Sans 3', 'Roboto', Arial, sans-serif",
+    "monoFamily": "'Roboto Mono', 'Courier New', monospace",
+    "scale": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "2rem",
+      "4xl": "2.5rem",
+      "5xl": "3.5rem",
+      "6xl": "4.5rem"
+    },
+    "lineHeight": {
+      "tight": "1.1",
+      "normal": "1.5",
+      "relaxed": "1.7"
+    },
+    "weight": {
+      "regular": "400",
+      "medium": "500",
+      "semibold": "600",
+      "bold": "700",
+      "extrabold": "800"
+    },
+    "headingWeight": "700",
+    "bodyWeight": "400",
+    "letterSpacing": {
+      "tight": "-0.01em",
+      "normal": "0",
+      "wide": "0.08em",
+      "wider": "0.15em"
+    }
+  },
+  "spacing": {
+    "unit": "0.25rem",
+    "xs": "0.25rem",
+    "sm": "0.5rem",
+    "md": "1rem",
+    "lg": "1.5rem",
+    "xl": "2rem",
+    "2xl": "3rem",
+    "3xl": "4rem",
+    "4xl": "6rem",
+    "sectionPadding": "4rem",
+    "containerMax": "80rem"
+  },
+  "borders": {
+    "radius": {
+      "none": "0",
+      "sm": "0.125rem",
+      "md": "0.25rem",
+      "lg": "0.375rem",
+      "xl": "0.5rem",
+      "full": "9999px"
+    },
+    "width": {
+      "thin": "1px",
+      "medium": "2px",
+      "thick": "3px",
+      "heavy": "4px"
+    }
+  },
+  "shadows": {
+    "sm": "0 2px 4px rgba(0, 0, 0, 0.3)",
+    "md": "0 4px 12px rgba(0, 0, 0, 0.4)",
+    "lg": "0 8px 24px rgba(0, 0, 0, 0.5)",
+    "xl": "0 16px 48px rgba(0, 0, 0, 0.6)",
+    "glow": "0 0 20px rgba(255, 215, 0, 0.25)"
+  },
+  "transitions": {
+    "fast": "100ms ease-out",
+    "normal": "200ms ease-out",
+    "slow": "350ms ease-out"
+  },
+  "components": {
+    "button": {
+      "primaryBg": "#FFD700",
+      "primaryText": "#0A0A0F",
+      "primaryHoverBg": "#FFE44D",
+      "secondaryBg": "transparent",
+      "secondaryText": "#FFD700",
+      "secondaryBorder": "#FFD700",
+      "secondaryHoverBg": "#FFD700",
+      "secondaryHoverText": "#0A0A0F",
+      "borderRadius": "0.25rem",
+      "paddingX": "2rem",
+      "paddingY": "0.875rem",
+      "fontSize": "0.875rem",
+      "fontWeight": "700",
+      "letterSpacing": "0.15em",
+      "textTransform": "uppercase"
+    },
+    "card": {
+      "background": "#1A1A24",
+      "border": "1px solid #2A2A38",
+      "borderRadius": "0.25rem",
+      "shadow": "0 2px 4px rgba(0, 0, 0, 0.3)",
+      "hoverShadow": "0 8px 24px rgba(0, 0, 0, 0.5)",
+      "hoverBorderColor": "#FFD700",
+      "padding": "1.25rem",
+      "imageRadius": "0.125rem",
+      "accentBar": "3px solid #FFD700"
+    },
+    "nav": {
+      "height": "4.5rem",
+      "background": "#0A0A0F",
+      "borderBottom": "2px solid #FFD700",
+      "linkColor": "#B0B0C0",
+      "linkHoverColor": "#FFD700",
+      "linkActiveColor": "#FFD700",
+      "logoSize": "2.5rem",
+      "fontSize": "0.8125rem",
+      "fontWeight": "700",
+      "textTransform": "uppercase",
+      "letterSpacing": "0.15em"
+    },
+    "hero": {
+      "minHeight": "90vh",
+      "background": "#0A0A0F",
+      "textColor": "#FFFFFF",
+      "headingSize": "4.5rem",
+      "subheadingSize": "1.25rem",
+      "overlay": "linear-gradient(180deg, rgba(10, 10, 15, 0.6) 0%, #0A0A0F 100%)",
+      "accentColor": "#FFD700",
+      "ctaStyle": "filled-bold"
+    }
+  }
+}
