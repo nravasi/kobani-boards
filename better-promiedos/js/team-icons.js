@@ -100,4 +100,15 @@ if (typeof module !== 'undefined' && module.exports) {
     FALLBACK_ICON: FALLBACK_ICON,
     TEAM_ICON_BASE_URL: TEAM_ICON_BASE_URL
   };
+} else if (typeof window !== 'undefined') {
+  window.TeamIcons = {
+    getTeamIcon: getTeamIcon,
+    getTeamName: getTeamName,
+    getAllTeams: getAllTeams,
+    clearCache: clearCache,
+    getCacheSize: getCacheSize,
+    PRIMERA_DIVISION_TEAMS: PRIMERA_DIVISION_TEAMS,
+    FALLBACK_ICON: FALLBACK_ICON,
+    TEAM_ICON_BASE_URL: TEAM_ICON_BASE_URL
+  };
 }
