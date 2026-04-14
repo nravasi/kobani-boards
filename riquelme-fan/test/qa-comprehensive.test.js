@@ -64,8 +64,14 @@ var SEED_USERNAMES = [
   'CamisetaAzulYOro',
   'Pipe_Boca_Jr',
   'MitadMasUno',
-  'LaBomboneraPalpita'
+  'LaBomboneraPalpita',
+  'RomanFan_NYC',
+  'La_Pausa_10',
+  'BocaFan_London',
+  'GolazoDeRoman',
+  'soccer_king_2003'
 ];
+var SEED_POST_COUNT = 13;
 
 var passed = 0;
 var failed = 0;
@@ -459,7 +465,7 @@ test('renderPosts displays all posts with correct structure', function () {
   localStorage.clear();
   var container = { innerHTML: '' };
   var count = MessageBoard.renderPosts(container);
-  assert.strictEqual(count, 8, 'renders 8 seed posts');
+  assert.strictEqual(count, SEED_POST_COUNT, 'renders ' + SEED_POST_COUNT + ' seed posts');
   assert.ok(container.innerHTML.includes('message-entry'), 'has message-entry class');
   assert.ok(container.innerHTML.includes('msg-author'), 'has msg-author class');
   assert.ok(container.innerHTML.includes('msg-date'), 'has msg-date class');
@@ -504,7 +510,8 @@ test('form submission works end-to-end in DOM', async function () {
 
   // Check stats updated
   var statsCount = doc.getElementById('stats-count');
-  assert.strictEqual(statsCount.textContent, '9', 'stats count is 9 (8 seed + 1 new)');
+  var expectedCount = String(SEED_POST_COUNT + 1);
+  assert.strictEqual(statsCount.textContent, expectedCount, 'stats count is ' + expectedCount + ' (' + SEED_POST_COUNT + ' seed + 1 new)');
 
   dom.window.close();
 });
@@ -549,7 +556,7 @@ test('stats section shows message count and last message date', async function (
 
   var statsCount = doc.getElementById('stats-count');
   assert.ok(statsCount, 'stats-count element exists');
-  assert.strictEqual(statsCount.textContent, '8', 'stats shows 8 seed posts');
+  assert.strictEqual(statsCount.textContent, String(SEED_POST_COUNT), 'stats shows ' + SEED_POST_COUNT + ' seed posts');
 
   var statsDate = doc.getElementById('stats-date');
   assert.ok(statsDate, 'stats-date element exists');
@@ -780,10 +787,10 @@ test('gallery has "Sobre la Galeria" info box', function () {
 
 section('Criterion 5: Seeded messages visible and correctly formatted');
 
-test('there are exactly 8 seed posts defined', function () {
+test('there are exactly ' + SEED_POST_COUNT + ' seed posts defined', function () {
   localStorage.clear();
   eval(messageboardSrc);
-  assert.strictEqual(MessageBoard.SEED_POSTS.length, 8, 'SEED_POSTS has 8 entries');
+  assert.strictEqual(MessageBoard.SEED_POSTS.length, SEED_POST_COUNT, 'SEED_POSTS has ' + SEED_POST_COUNT + ' entries');
 });
 
 test('all seed posts have required fields', function () {
@@ -796,7 +803,7 @@ test('all seed posts have required fields', function () {
   });
 });
 
-test('all 8 seed usernames are rendered in message board', function () {
+test('all ' + SEED_POST_COUNT + ' seed usernames are rendered in message board', function () {
   localStorage.clear();
   var container = { innerHTML: '' };
   MessageBoard.renderPosts(container);
@@ -806,7 +813,7 @@ test('all 8 seed usernames are rendered in message board', function () {
   });
 });
 
-test('all 8 seed messages are rendered in message board', function () {
+test('all ' + SEED_POST_COUNT + ' seed messages are rendered in message board', function () {
   localStorage.clear();
   var container = { innerHTML: '' };
   MessageBoard.renderPosts(container);
@@ -856,7 +863,7 @@ test('seed posts load from localStorage on fresh page load', async function () {
 
   // Check message-entry structure
   var entries = container.querySelectorAll('.message-entry');
-  assert.strictEqual(entries.length, 8, 'exactly 8 message entries rendered');
+  assert.strictEqual(entries.length, SEED_POST_COUNT, 'exactly ' + SEED_POST_COUNT + ' message entries rendered');
 
   dom.window.close();
 });
