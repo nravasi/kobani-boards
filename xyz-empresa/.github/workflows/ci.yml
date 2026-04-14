@@ -1,0 +1,52 @@
+name: XYZ Empresa CI
+
+on:
+  push:
+    paths:
+      - 'xyz-empresa/**'
+  pull_request:
+    paths:
+      - 'xyz-empresa/**'
+
+defaults:
+  run:
+    working-directory: xyz-empresa
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18, 20, 22]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      - name: Run all tests (unit, integration, E2E)
+        run: npm test
+
+      - name: Run coverage report
+        run: npm run test:coverage
+
+      - name: Check coverage threshold (75%)
+        run: |
+          COVERAGE=$(npx c8 --include='backend/**' --include='js/**' --reporter=text-summary npm test 2>&1 | grep 'Lines' | awk '{print $3}' | tr -d '%')
+          echo "Line coverage: ${COVERAGE}%"
+          if [ "$(echo "$COVERAGE < 75" | bc -l)" -eq 1 ]; then
+            echo "::error::Coverage ${COVERAGE}% is below 75% threshold"
+            exit 1
+          fi
+
+      - name: Upload coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report-node${{ matrix.node-version }}
+          path: xyz-empresa/coverage/
