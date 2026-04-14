@@ -327,12 +327,19 @@ Each tie shows two legs with teams stacked vertically. Aggregate scores may appe
 - `Dif` — Diferencia de gol (goal difference)
 - `Pts` — Puntos (points)
 
-**For the Historical Table** (`/tablahistorica`), additional columns appear:
-- `PtsHis` — Historical points applying points-per-victory according to each era's rules (3 points from 1995/96 onwards, 2 points for prior tournaments, with the 1988/89 exception: 3 for regulation win, 2 for penalty win)
-- `Ptsx3V` — Points recalculated applying the modern rule (3 per win) to all eras
-- `PGT` — Total wins across all eras
-- `PG2` / `PG3` — Wins in the 2-point era / 3-point era
-- `%PG` / `%PE` / `%PP` — Win/draw/loss percentages
+**For the Historical Table** (`/tablahistorica`), the standard league columns (`PJ`–`Pts`) are replaced by a different set. The page shows an "Actualizado: DD-MM-YYYY" timestamp indicating the last data refresh. Columns:
+
+- `PtsHis` — Historical points using period-correct rules: 3 points per win from the 1995/96 season onward, 2 points per win for all earlier seasons, except the 1988/89 championship which awarded 3 points for a regulation-time win and 2 points for a win decided by penalties.
+- `Ptsx3V` — Points recalculated applying the modern rule (3 points per win) uniformly to all eras.
+- `PJ` — Partidos Jugados (total matches played, all-time)
+- `PGT` — Victorias totales (total wins = PG2 + PG3)
+- `PG2` — Wins earned during the 2-point era
+- `PG3` — Wins earned during the 3-point era
+- `PE` — Partidos Empatados (draws)
+- `PP` — Partidos Perdidos (losses)
+- `%PG` / `%PE` / `%PP` — Win / draw / loss percentages
+
+The table does **not** include goals-for, goals-against, or goal-difference columns. A footer note reads: "Tabla de puntos histórica de Primera Division (no incluye Copas Nacionales)."
 
 The historical table excludes Copas Nacionales and updates after each completed match. Column headers are clickable for client-side sorting ("Pulsar item de la parte superior para ordenar según ese criterio"). The table header shows the update date (e.g., "Actualizado: 06-04-2026").
 
@@ -415,20 +422,27 @@ Each card shows:
 │  └──────────────────────────────────────────────────┘    │
 │                                                          │
 │  ┌─ PLANTEL ────────────────────────────────────────┐    │
-│  │ Jugadores                       │EDAD│Nac.│Alt. │    │
-│  │ ── Dir ──────────────────────── │    │    │     │    │
-│  │ DT [🇦🇷] Coudet  Entrenador     │ 51 │12/09│1.78│    │
-│  │ ── Arq ──────────────────────── │    │    │     │    │
-│  │  1 [🇦🇷] Armani  Arquero        │ 39 │16/10│1.89│    │
-│  │ ── Def ──────────────────────── │    │    │     │    │
-│  │  5 [🇦🇷] Portillo Def. Central  │ 25 │18/05│1.66│    │
-│  │ ── Med ──────────────────────── │    │    │     │    │
-│  │ ── Del ──────────────────────── │    │    │     │    │
-│  │ ...                              │    │    │     │    │
+│  │         Jugadores        │ EDAD │ Nacim. │ Alt.  │    │
+│  │ ── Dir ──────────────────────────────────────── │    │
+│  │ DT │ [🇦🇷] Coudet  Entren. │ 51   │ 12/09  │ 1.78 │    │
+│  │ ── Arq ──────────────────────────────────────── │    │
+│  │  1 │ [🇦🇷] Armani  Arquero │ 39   │ 16/10  │ 1.89 │    │
+│  │ 33 │ [🇦🇷] Centurión Arq. │ 28   │ 20/05  │ 1.83 │    │
+│  │ ── Def ──────────────────────────────────────── │    │
+│  │  5 │ [🇦🇷] Portillo D.Cen.│ 25   │ 18/05  │ 1.66 │    │
+│  │ ── Med ──────────────────────────────────────── │    │
+│  │  6 │ [🇦🇷] Moreno  C.Def. │ 26   │ 13/05  │ 1.77 │    │
+│  │ ── Del ──────────────────────────────────────── │    │
+│  │  9 │ [🇦🇷] Driussi S.Del. │ 30   │ 09/02  │ 1.79 │    │
+│  │ ...│                      │      │        │      │    │
 │  └──────────────────────────────────────────────────┘    │
 │                                                          │
+│  The roster is grouped by position sections with headers │
+│  "Dir" (coach), "Arq" (GK), "Def", "Med", "Del".       │
+│  Column headers: Jugadores, EDAD, Nacimiento, Altura.   │
+│                                                          │
 │  ── ESTADÍSTICAS PERSONALES ──                           │
-│  ── "Liga Profesional Argentina - Apertura" ──           │
+│  "Liga Profesional Argentina - Apertura" (subtitle)      │
 │  [Goles] [Asistencias] [Barridas] [Rojas] [Amarillas]   │
 │                                                          │
 │  ┌─ Team Info ──────────────────────────────────────┐    │
@@ -924,3 +938,22 @@ For implementation reference, here are the observed team IDs and their asset URL
 | Aldosivi | `hccd` | `https://api.promiedos.com.ar/images/team/hccd/1` |
 | Estudiantes RC | `bheaf` | `https://api.promiedos.com.ar/images/team/bheaf/1` |
 | Gimnasia de Mendoza | `bbjbf` | `https://api.promiedos.com.ar/images/team/bbjbf/1` |
+
+All 31 team IDs above were verified against the live `/league/liga-profesional/hc/equipos` page on 2026-04-14. Each crest URL follows the pattern `https://api.promiedos.com.ar/images/team/{id}/1`.
+
+---
+
+## Appendix B: Verification Log
+
+This spec was verified against the live promiedos.com.ar site on 2026-04-14 by fetching the following pages:
+
+| Page | URL | Key observations confirmed |
+|---|---|---|
+| Homepage | `/` | Calendar widget, TODOS/VIVO filter tabs, league-grouped match rows, betting CTA, gambling disclaimer, adsage pixel |
+| Liga Profesional | `/league/liga-profesional/hc` | Three tabs (FIXTURE Y TABLAS, EQUIPOS Y ESTADISTICAS, CAMPEONES), SPA shell with dynamic content loading |
+| Copa de la Liga | `/league/copa-de-la-liga-profesional/hcbe` | CUADRO bracket layout with Cuartos/Semifinales/Final, cup.svg icon next to "FINAL" label, team scores in bracket ties |
+| Teams Grid | `/league/liga-profesional/hc/equipos` | 31 team cards with crest + short name + trophy count, "Pulsar en el equipo…" instruction, cup.svg icon with title count |
+| Champions History | `/league/liga-profesional/hc/historial` | "Historial" table (Torneo/Historia/Ficha columns), "Tabla >" links on recent entries only, "Ranking Ligas" titles table |
+| Team Detail (River) | `/team/river-plate/igi` | Breadcrumb, PRINCIPAL/ESTADIO tabs, PRÓXIMOS PARTIDOS + Resultados tables, PLANTEL grouped by Dir/Arq/Def/Med/Del, ESTADÍSTICAS PERSONALES with 5 stat categories, team info panel |
+| Calendar | `/calendario` | ATRÁS/SIGUIENTE week nav, day headers, Cumpleaños (birthdays), Aniversario (anniversaries with size-4 crest), matches grouped by league with TV network logos |
+| Historical Table | `/tablahistorica` | "Actualizado" timestamp, 13-column table (#/Equipo/PtsHis/Ptsx3V/PJ/PGT/PG2/PG3/PE/PP/%PG/%PE/%PP), footnotes explaining scoring rules, sortable column headers |
