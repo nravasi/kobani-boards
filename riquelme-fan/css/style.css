@@ -291,6 +291,16 @@ body.msgboard-page {
   margin: 10px 0;
 }
 
+.msg-errors {
+  background: #660000;
+  border: 2px solid #FF0000;
+  color: #FF6666;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .msgboard-form label {
   display: block;
   color: #FFD700;
