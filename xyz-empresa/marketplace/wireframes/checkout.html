@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — Aviation Marketplace</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../css/marketplace.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">✈ XYZ Aviation Marketplace</div>
+    <ul class="nav-links">
+      <li><a href="product-listing.html">Browse Parts</a></li>
+      <li><a href="seller-dashboard.html">Seller Dashboard</a></li>
+      <li><a href="checkout.html" class="active">Cart (3)</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+  </nav>
+
+  <main class="container" style="max-width:1280px;">
+    <header class="page-header">
+      <h1>Checkout</h1>
+      <p>Complete your order for certified aviation parts</p>
+    </header>
+
+    <!-- Step Indicator -->
+    <div class="step-indicator" role="navigation" aria-label="Checkout progress">
+      <div class="step completed">
+        <span class="step-number">✓</span>
+        <span class="step-label">Cart Review</span>
+      </div>
+      <div class="step-connector done"></div>
+      <div class="step completed">
+        <span class="step-number">✓</span>
+        <span class="step-label">Shipping</span>
+      </div>
+      <div class="step-connector done"></div>
+      <div class="step active">
+        <span class="step-number">3</span>
+        <span class="step-label">Compliance</span>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step">
+        <span class="step-number">4</span>
+        <span class="step-label">Payment</span>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step">
+        <span class="step-number">5</span>
+        <span class="step-label">Confirm</span>
+      </div>
+    </div>
+
+    <div class="checkout-layout">
+      <!-- Main Checkout Content -->
+      <div class="checkout-main">
+
+        <!-- Step 1: Cart Review (Completed — shown as summary) -->
+        <section class="panel">
+          <h2>Cart Items (3)</h2>
+
+          <!-- Cart Item 1 -->
+          <div class="cart-item">
+            <div class="cart-item-image" aria-label="CFM56-7B Engine">✈</div>
+            <div class="cart-item-details">
+              <div class="cart-item-title">CFM56-7B26 Turbofan Engine</div>
+              <div class="cart-item-pn">P/N: CFM56-7B26 &middot; S/N: 895742 &middot;
+                <span class="condition-badge condition-badge--oh">OH</span>
+              </div>
+              <div class="cart-item-price">$2,450,000.00</div>
+            </div>
+            <div class="cart-item-actions">
+              <div class="qty-control">
+                <button type="button" aria-label="Decrease">&minus;</button>
+                <input type="number" value="1" min="1" aria-label="Quantity">
+                <button type="button" aria-label="Increase">&plus;</button>
+              </div>
+              <button class="cart-remove-btn" type="button" aria-label="Remove item">Remove</button>
+            </div>
+          </div>
+
+          <!-- Cart Item 2 -->
+          <div class="cart-item">
+            <div class="cart-item-image" aria-label="Fuel Control Unit">⚙</div>
+            <div class="cart-item-details">
+              <div class="cart-item-title">Hamilton Sundstrand Fuel Control Unit</div>
+              <div class="cart-item-pn">P/N: 756324-5 &middot; S/N: FCA-0291 &middot;
+                <span class="condition-badge condition-badge--oh">OH</span>
+              </div>
+              <div class="cart-item-price">$42,500.00</div>
+            </div>
+            <div class="cart-item-actions">
+              <div class="qty-control">
+                <button type="button" aria-label="Decrease">&minus;</button>
+                <input type="number" value="1" min="1" aria-label="Quantity">
+                <button type="button" aria-label="Increase">&plus;</button>
+              </div>
+              <button class="cart-remove-btn" type="button" aria-label="Remove item">Remove</button>
+            </div>
+          </div>
+
+          <!-- Cart Item 3 -->
+          <div class="cart-item">
+            <div class="cart-item-image" aria-label="Engine Starter">⚙</div>
+            <div class="cart-item-details">
+              <div class="cart-item-title">GE CF6-80C2 Starter Assembly</div>
+              <div class="cart-item-pn">P/N: 1538M74P05 &middot; S/N: ST-7823 &middot;
+                <span class="condition-badge condition-badge--ne">NE</span>
+              </div>
+              <div class="cart-item-price">$28,750.00</div>
+            </div>
+            <div class="cart-item-actions">
+              <div class="qty-control">
+                <button type="button" aria-label="Decrease">&minus;</button>
+                <input type="number" value="2" min="1" aria-label="Quantity">
+                <button type="button" aria-label="Increase">&plus;</button>
+              </div>
+              <button class="cart-remove-btn" type="button" aria-label="Remove item">Remove</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 2: Shipping (Completed — shown as summary) -->
+        <section class="panel">
+          <h2>Shipping Details</h2>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="ship-company">Company Name <span class="required">*</span></label>
+              <input type="text" id="ship-company" value="Azul Brazilian Airlines" readonly style="background:#f8f9fa;">
+            </div>
+            <div class="form-group">
+              <label for="ship-contact">Contact Person <span class="required">*</span></label>
+              <input type="text" id="ship-contact" value="Carlos Silva" readonly style="background:#f8f9fa;">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="ship-address">Shipping Address <span class="required">*</span></label>
+            <input type="text" id="ship-address" value="Aeroporto de Viracopos, Campinas, SP 13054-230, Brazil" readonly style="background:#f8f9fa;">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="ship-phone">Phone <span class="required">*</span></label>
+              <input type="tel" id="ship-phone" value="+55 19 3725-5000" readonly style="background:#f8f9fa;">
+            </div>
+            <div class="form-group">
+              <label for="ship-email">Email <span class="required">*</span></label>
+              <input type="email" id="ship-email" value="procurement@azul.com.br" readonly style="background:#f8f9fa;">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="ship-method">Shipping Method</label>
+              <input type="text" id="ship-method" value="AOG Priority Air Freight" readonly style="background:#f8f9fa;">
+            </div>
+            <div class="form-group">
+              <label for="ship-account">Freight Account #</label>
+              <input type="text" id="ship-account" value="DHL-AZU-99847" readonly style="background:#f8f9fa;">
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 3: Compliance Review (Active) -->
+        <section class="panel" style="border: 2px solid #0f3460;">
+          <h2 style="color:#0f3460;">Step 3: Compliance Review</h2>
+          <p style="color:#555;font-size:0.9rem;margin-bottom:1rem;">
+            Aviation parts are regulated items. Please review and acknowledge the following compliance requirements before proceeding to payment.
+          </p>
+
+          <div class="compliance-check">
+            <label>
+              <input type="checkbox">
+              <span>
+                <strong>Documentation Verification:</strong> I confirm that I will verify all release documentation
+                (FAA 8130-3 / EASA Form 1) upon receipt of parts and prior to installation on any aircraft.
+              </span>
+            </label>
+          </div>
+
+          <div class="compliance-check">
+            <label>
+              <input type="checkbox">
+              <span>
+                <strong>Export/Import Compliance:</strong> I acknowledge that certain aviation components may be subject
+                to export control regulations (EAR/ITAR). I confirm that the end-use and end-user comply with all applicable
+                export control laws.
+              </span>
+            </label>
+          </div>
+
+          <div class="compliance-check">
+            <label>
+              <input type="checkbox">
+              <span>
+                <strong>Airworthiness Responsibility:</strong> I understand that the buyer/installer is responsible for
+                final airworthiness determination and that parts must be inspected per applicable maintenance program
+                requirements before installation.
+              </span>
+            </label>
+          </div>
+
+          <div class="compliance-check">
+            <label>
+              <input type="checkbox">
+              <span>
+                <strong>Condition Acknowledgment:</strong> I acknowledge the listed condition of each part (New, Overhauled,
+                Serviceable, As-Removed) and accept the terms associated with each condition classification.
+              </span>
+            </label>
+          </div>
+
+          <div class="form-actions" style="margin-top:1.5rem;">
+            <button class="btn btn-secondary" type="button">&larr; Back to Shipping</button>
+            <button class="btn btn-primary" type="button">Continue to Payment &rarr;</button>
+          </div>
+        </section>
+
+        <!-- Step 4: Payment (Inactive — preview) -->
+        <section class="panel" style="opacity:0.5;">
+          <h2>Step 4: Payment</h2>
+          <p style="color:#888;font-size:0.9rem;">Complete compliance review to proceed to payment.</p>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Payment Method</label>
+              <select disabled>
+                <option>Wire Transfer (ACH/SWIFT)</option>
+                <option>Letter of Credit</option>
+                <option>Net 30 Terms</option>
+                <option>Credit Card</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Purchase Order #</label>
+              <input type="text" placeholder="PO-2025-XXXX" disabled>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 5: Confirmation (Inactive — preview) -->
+        <section class="panel" style="opacity:0.5;">
+          <h2>Step 5: Order Confirmation</h2>
+          <div class="confirmation-icon">✓</div>
+          <div class="confirmation-text">
+            <h2 style="color:#888;">Order Placed Successfully</h2>
+            <p>Order confirmation and documentation will appear here after payment.</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Order Summary Sidebar -->
+      <aside class="checkout-sidebar">
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+
+          <div style="margin-bottom:1rem;">
+            <div style="font-size:0.85rem;padding:0.4rem 0;border-bottom:1px solid #f0f0f0;">
+              <div style="font-weight:600;">CFM56-7B26 Turbofan Engine</div>
+              <div style="display:flex;justify-content:space-between;color:#666;">
+                <span>1 &times; $2,450,000.00</span>
+                <span>$2,450,000.00</span>
+              </div>
+            </div>
+            <div style="font-size:0.85rem;padding:0.4rem 0;border-bottom:1px solid #f0f0f0;">
+              <div style="font-weight:600;">HS Fuel Control Unit</div>
+              <div style="display:flex;justify-content:space-between;color:#666;">
+                <span>1 &times; $42,500.00</span>
+                <span>$42,500.00</span>
+              </div>
+            </div>
+            <div style="font-size:0.85rem;padding:0.4rem 0;border-bottom:1px solid #f0f0f0;">
+              <div style="font-weight:600;">GE CF6-80C2 Starter</div>
+              <div style="display:flex;justify-content:space-between;color:#666;">
+                <span>2 &times; $28,750.00</span>
+                <span>$57,500.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-line">
+            <span>Subtotal</span>
+            <span>$2,550,000.00</span>
+          </div>
+          <div class="order-line">
+            <span>Shipping (AOG Priority)</span>
+            <span>$12,500.00</span>
+          </div>
+          <div class="order-line">
+            <span>Insurance</span>
+            <span>$8,250.00</span>
+          </div>
+          <div class="order-line">
+            <span>Documentation Fee</span>
+            <span>$750.00</span>
+          </div>
+          <div class="order-line order-line--total">
+            <span>Total</span>
+            <span style="color:#0f3460;">$2,571,500.00</span>
+          </div>
+
+          <div style="margin-top:1rem;padding-top:0.75rem;border-top:1px solid #e0e0e0;">
+            <p style="font-size:0.8rem;color:#888;">
+              All prices in USD. Final amounts subject to applicable taxes and duties based on destination country.
+            </p>
+          </div>
+        </div>
+
+        <!-- Compliance Status Summary -->
+        <div class="panel" style="margin-top:1rem;">
+          <h2 style="font-size:1rem;">Compliance Status</h2>
+          <div style="font-size:0.85rem;">
+            <div style="display:flex;align-items:center;gap:0.5rem;padding:0.35rem 0;">
+              <span style="color:#27ae60;font-size:1.1rem;">✓</span>
+              <span>CFM56-7B26 — FAA 8130-3 on file</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:0.5rem;padding:0.35rem 0;">
+              <span style="color:#27ae60;font-size:1.1rem;">✓</span>
+              <span>HS-756324-5 — CoC available</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:0.5rem;padding:0.35rem 0;">
+              <span style="color:#27ae60;font-size:1.1rem;">✓</span>
+              <span>GE-1538M74P05 — FAA 8130-3 on file</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seller Info -->
+        <div class="panel" style="margin-top:1rem;">
+          <h2 style="font-size:1rem;">Sellers</h2>
+          <div style="font-size:0.85rem;">
+            <div style="display:flex;align-items:center;gap:0.5rem;padding:0.35rem 0;">
+              <div class="seller-avatar" style="width:28px;height:28px;font-size:0.7rem;">GA</div>
+              <span>Global Aero Parts Inc.</span>
+              <span class="rating-stars" style="font-size:0.7rem;">★★★★★</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 XYZ Empresa — Aviation Parts Marketplace</p>
+  </footer>
+
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', function () {
+      document.querySelector('.nav-links').classList.toggle('nav-open');
+    });
+  </script>
+</body>
+</html>

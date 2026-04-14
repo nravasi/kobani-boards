@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aviation Parts Marketplace — Product Listing</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../css/marketplace.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">✈ XYZ Aviation Marketplace</div>
+    <ul class="nav-links">
+      <li><a href="product-listing.html" class="active">Browse Parts</a></li>
+      <li><a href="seller-dashboard.html">Seller Dashboard</a></li>
+      <li><a href="checkout.html">Cart (3)</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+  </nav>
+
+  <main class="container" style="max-width:1280px;">
+    <header class="page-header">
+      <h1>Aviation Parts &amp; Equipment</h1>
+      <p>Browse certified aircraft components from verified sellers worldwide</p>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="search" placeholder="Search by part number, description, or NSN..." aria-label="Search parts">
+      <button class="btn btn-primary" type="button">Search</button>
+    </div>
+
+    <!-- Active Filters Bar -->
+    <div class="active-filters" role="region" aria-label="Active filters" aria-live="polite">
+      <span class="active-filters-label">Active Filters:</span>
+      <span class="filter-chip">Engines &amp; Propulsion <button aria-label="Remove Engines filter" type="button">&times;</button></span>
+      <span class="filter-chip">FAA Approved <button aria-label="Remove FAA filter" type="button">&times;</button></span>
+      <span class="filter-chip">Condition: New <button aria-label="Remove condition filter" type="button">&times;</button></span>
+      <button class="clear-all-btn" type="button">Clear all</button>
+    </div>
+
+    <!-- Mobile Filter Button -->
+    <button class="btn btn-secondary mobile-filter-btn" id="mobile-filter-toggle" type="button">
+      ☰ Filters &amp; Categories
+    </button>
+
+    <div class="marketplace-layout">
+      <!-- Sidebar Filters -->
+      <aside class="sidebar-filters" id="sidebar-filters" role="complementary" aria-label="Product filters">
+        <h3>Filters</h3>
+
+        <!-- Category Filter -->
+        <div class="filter-section">
+          <div class="filter-section-title">Category</div>
+          <label class="filter-option">
+            <input type="checkbox" checked> Engines &amp; Propulsion <span class="count">142</span>
+          </label>
+          <div class="sub-options">
+            <label class="filter-option">
+              <input type="checkbox"> Turbofan <span class="count">48</span>
+            </label>
+            <label class="filter-option">
+              <input type="checkbox"> Turboprop <span class="count">35</span>
+            </label>
+            <label class="filter-option">
+              <input type="checkbox"> Piston <span class="count">31</span>
+            </label>
+            <label class="filter-option">
+              <input type="checkbox"> APU <span class="count">28</span>
+            </label>
+          </div>
+          <label class="filter-option">
+            <input type="checkbox"> Avionics &amp; Electronics <span class="count">218</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Airframe &amp; Structure <span class="count">96</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Landing Gear <span class="count">74</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Hydraulics &amp; Pneumatics <span class="count">53</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Interior &amp; Cabin <span class="count">61</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Safety &amp; Emergency <span class="count">39</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Tools &amp; GSE <span class="count">87</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Consumables <span class="count">155</span>
+          </label>
+        </div>
+
+        <!-- Condition Filter -->
+        <div class="filter-section">
+          <div class="filter-section-title">Part Condition</div>
+          <label class="filter-option">
+            <input type="checkbox" checked> New (NE) <span class="count">312</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Factory New (FN) <span class="count">89</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Overhauled (OH) <span class="count">156</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Serviceable (SV) <span class="count">203</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> As-Removed (AR) <span class="count">124</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Inspected (IN) <span class="count">67</span>
+          </label>
+        </div>
+
+        <!-- Certification Filter -->
+        <div class="filter-section">
+          <div class="filter-section-title">Certification</div>
+          <label class="filter-option">
+            <input type="checkbox" checked> FAA Approved <span class="count">487</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> EASA Certified <span class="count">312</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> 8130-3 Tagged <span class="count">256</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> ANAC Approved <span class="count">89</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> CoC Available <span class="count">198</span>
+          </label>
+        </div>
+
+        <!-- Trace Status Filter -->
+        <div class="filter-section">
+          <div class="filter-section-title">Trace Status</div>
+          <label class="filter-option">
+            <input type="checkbox"> Back-to-Birth <span class="count">178</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Partial Trace <span class="count">245</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> No Trace <span class="count">89</span>
+          </label>
+        </div>
+
+        <!-- Price Range -->
+        <div class="filter-section">
+          <div class="filter-section-title">Price Range (USD)</div>
+          <div class="price-range">
+            <input type="number" placeholder="Min" aria-label="Minimum price">
+            <span>—</span>
+            <input type="number" placeholder="Max" aria-label="Maximum price">
+          </div>
+        </div>
+
+        <!-- Aircraft Compatibility -->
+        <div class="filter-section">
+          <div class="filter-section-title">Aircraft Compatibility</div>
+          <label class="filter-option">
+            <input type="checkbox"> Boeing 737 <span class="count">156</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Airbus A320 <span class="count">142</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Cessna 172 <span class="count">98</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Embraer E-Jets <span class="count">67</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Bombardier CRJ <span class="count">54</span>
+          </label>
+        </div>
+
+        <div class="form-actions" style="margin-top:1rem;">
+          <button class="btn btn-primary btn-sm" type="button">Apply Filters</button>
+          <button class="btn btn-secondary btn-sm" type="button">Reset</button>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="marketplace-main">
+        <!-- Toolbar -->
+        <div class="toolbar">
+          <span class="toolbar-info">Showing <strong>1–12</strong> of <strong>142</strong> results for Engines &amp; Propulsion</span>
+          <div class="toolbar-actions">
+            <label for="sort-select" class="sr-only">Sort by</label>
+            <select id="sort-select">
+              <option>Sort: Relevance</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Recently Added</option>
+              <option>Seller Rating</option>
+            </select>
+            <div class="view-toggle" role="group" aria-label="View mode">
+              <button class="active" aria-label="Grid view" title="Grid view">▦</button>
+              <button aria-label="List view" title="List view">☰</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+          <!-- Product Card 1 -->
+          <article class="product-card">
+            <div class="product-card-image" aria-label="CFM56-7B Engine image">
+              ✈
+              <span class="condition-badge condition-badge--oh">OH</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-card-category">Engines &amp; Propulsion &gt; Turbofan</span>
+              <h3 class="product-card-title"><a href="product-detail.html">CFM56-7B Turbofan Engine</a></h3>
+              <p class="product-card-pn">P/N: CFM56-7B26 &nbsp;|&nbsp; S/N: 895742</p>
+              <div class="product-card-tags">
+                <span class="compliance-tag compliance-tag--faa">FAA</span>
+                <span class="compliance-tag compliance-tag--easa">EASA</span>
+                <span class="compliance-tag compliance-tag--8130">8130-3</span>
+              </div>
+              <div class="product-card-footer">
+                <span class="price-display price-display--small">$2,450,000</span>
+                <span class="stock-badge stock-badge--in-stock">In Stock</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 2 -->
+          <article class="product-card">
+            <div class="product-card-image" aria-label="PT6A Engine image">
+              ✈
+              <span class="condition-badge condition-badge--ne">NE</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-card-category">Engines &amp; Propulsion &gt; Turboprop</span>
+              <h3 class="product-card-title"><a href="product-detail.html">PT6A-67D Turboprop Engine</a></h3>
+              <p class="product-card-pn">P/N: PT6A-67D &nbsp;|&nbsp; S/N: PCE-RR0482</p>
+              <div class="product-card-tags">
+                <span class="compliance-tag compliance-tag--faa">FAA</span>
+                <span class="compliance-tag compliance-tag--8130">8130-3</span>
+              </div>
+              <div class="product-card-footer">
+                <span class="price-display price-display--small">$1,850,000</span>
+                <span class="stock-badge stock-badge--in-stock">In Stock</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 3 -->
+          <article class="product-card">
+            <div class="product-card-image" aria-label="APU image">
+              ⚙
+              <span class="condition-badge condition-badge--sv">SV</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-card-category">Engines &amp; Propulsion &gt; APU</span>
+              <h3 class="product-card-title"><a href="product-detail.html">Honeywell GTCP131-9B APU</a></h3>
+              <p class="product-card-pn">P/N: 3800454-4 &nbsp;|&nbsp; S/N: P-438</p>
+              <div class="product-card-tags">
+                <span class="compliance-tag compliance-tag--faa">FAA</span>
+                <span class="compliance-tag compliance-tag--easa">EASA</span>
+              </div>
+              <div class="product-card-footer">
+                <span class="price-display price-display--small">$385,000</span>
+                <span class="stock-badge stock-badge--limited">2 Left</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 4 -->
+          <article class="product-card">
+            <div class="product-card-image" aria-label="Fuel Control Unit image">
+              ⚙
+              <span class="condition-badge condition-badge--oh">OH</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-card-category">Engines &amp; Propulsion &gt; Turbofan</span>
+              <h3 class="product-card-title"><a href="product-detail.html">Hamilton Sundstrand Fuel Control Unit</a></h3>
+              <p class="product-card-pn">P/N: 756324-5 &nbsp;|&nbsp; S/N: FCA-0291</p>
+              <div class="product-card-tags">
+                <span class="compliance-tag compliance-tag--faa">FAA</span>
+                <span class="compliance-tag compliance-tag--coc">CoC</span>
+              </div>
+              <div class="product-card-footer">
+                <span class="price-display price-display--small">$42,500</span>
+                <span class="stock-badge stock-badge--in-stock">In Stock</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 5 -->
+          <article class="product-card">
+            <div class="product-card-image" aria-label="Engine Starter image">
+              ⚙
+              <span class="condition-badge condition-badge--ne">NE</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-card-category">Engines &amp; Propulsion &gt; Turbofan</span>
+              <h3 class="product-card-title"><a href="product-detail.html">GE CF6-80C2 Starter Assembly</a></h3>
+              <p class="product-card-pn">P/N: 1538M74P05 &nbsp;|&nbsp; S/N: ST-7823</p>
+              <div class="product-card-tags">
+                <span class="compliance-tag compliance-tag--faa">FAA</span>
+                <span class="compliance-tag compliance-tag--easa">EASA</span>
+                <span class="compliance-tag compliance-tag--8130">8130-3</span>
+              </div>
+              <div class="product-card-footer">
+                <span class="price-display price-display--small">$28,750</span>
+                <span class="stock-badge stock-badge--in-stock">In Stock</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 6 -->
+          <article class="product-card">
+            <div class="product-card-image" aria-label="EGT Probe image">
+              📊
+              <span class="condition-badge condition-badge--ar">AR</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-card-category">Engines &amp; Propulsion &gt; Turboprop</span>
+              <h3 class="product-card-title"><a href="product-detail.html">EGT Thermocouple Probe Assembly</a></h3>
+              <p class="product-card-pn">P/N: 62024-000 &nbsp;|&nbsp; S/N: TCP-1147</p>
+              <div class="product-card-tags">
+                <span class="compliance-tag compliance-tag--faa">FAA</span>
+              </div>
+              <div class="product-card-footer">
+                <span class="price-rq">Request Quote</span>
+                <span class="stock-badge stock-badge--out-of-stock">Out of Stock</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Pagination -->
+        <nav class="pagination" aria-label="Product listing pages">
+          <button disabled aria-label="Previous page">&laquo;</button>
+          <button class="active" aria-current="page">1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>...</button>
+          <button>12</button>
+          <button aria-label="Next page">&raquo;</button>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 XYZ Empresa — Aviation Parts Marketplace</p>
+  </footer>
+
+  <script>
+    // Mobile navigation toggle
+    document.getElementById('nav-toggle').addEventListener('click', function () {
+      document.querySelector('.nav-links').classList.toggle('nav-open');
+    });
+
+    // Mobile filter drawer toggle
+    document.getElementById('mobile-filter-toggle').addEventListener('click', function () {
+      document.getElementById('sidebar-filters').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
