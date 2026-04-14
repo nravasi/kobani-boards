@@ -1,89 +1,122 @@
-# CNBA Site — Improved Website Copy
+# CABNA — Improved Website Copy
 
-> **Document purpose:** Final, production-ready copy for every section of the CNBA club website.
+> **Document purpose:** Final, production-ready copy for every section of the CABNA club website.
 > **Tone:** Modern, confident, welcoming — a sports and social club that values tradition and community.
 > **Audience:** Current members, prospective members, and general visitors.
-> **Sources reviewed:** Riquelme Fan Site (retro HTML pages), San Lorenzo de Almagro PRD (comprehensive club site redesign), Bokita Fansite spec (retro Boca Juniors site).
+> **Club full name:** Club Atlético Banco de la Nación Argentina (C.A.B.N.A.)
+> **Sources reviewed:** Scraped content from clubbanconacion.org.ar (home, el-club, deportes, actividades, novedades, contacto, hacete-socio), Instagram profile @cabnaoficial, and Facebook page.
 
 ---
 
 ## 1. Hero Section
 
 **Headline:**
-Where Sport, Community, and Tradition Meet
+Your Club. Your Community. Your Game.
 
 **Sub-headline:**
-Join the club that has united Buenos Aires since day one.
+Sport, family, and tradition since 1909 in Vicente López.
 
 **Primary CTA button:**
 Become a Member
 
 **Secondary CTA button:**
-Explore Our Club
+Explore the Club
+
+**Stats bar (animated counters):**
+- **8,900+** followers on social media
+- **25+** sports and activities
 
 ---
 
 ## 2. About Section
 
-Club Nacional Buenos Aires was founded on a simple idea: sport builds stronger communities. For decades, our members have gathered on our fields, in our halls, and around our tables to compete, celebrate, and connect.
+Founded on 12 October 1909 by employees of Banco de la Nación Argentina, CABNA began as a meeting place for colleagues who shared a love of sport and camaraderie. What started with 100 founding members in a rented field near Colegiales station has grown into a thriving athletic and social club in Vicente López.
 
-We are more than a sports club. We are a meeting point for families, athletes, and neighbours across Buenos Aires. From competitive football and basketball to swimming, tennis, and social events, CNBA offers something for everyone.
+Today, CABNA offers more than 25 activities and sports — from football and basketball to judo, yoga, and artistic gymnastics. Our facilities welcome members of every age and skill level, whether you are training competitively or simply staying active with family.
 
-Our mission is to promote physical well-being, fair play, and lasting friendships. We invest in modern facilities, youth development, and inclusive programmes so that every generation finds a home here. Whether you are a lifelong member or visiting for the first time, you are part of our story.
+We are guided by the values that shaped us: fair play, solidarity, and community. Our mission is to promote sport in all its forms, foster personal growth, and give every member a place that feels like home.
 
-*Word count: 115*
+**CTA:** Learn More About Our History
+
+*Word count: 131*
 
 ---
 
 ## 3. Membership Section
 
 ### Section Headline
-Membership Built Around You
+Membership Built for Every Lifestyle
 
 ### Section Introduction
-CNBA membership gives you full access to our facilities, programmes, and community. Choose the plan that fits your life.
+CABNA membership opens the door to world-class facilities, a vibrant community, and activities for the whole family. Choose the plan that fits your life and start enjoying the club today.
 
 ### Benefits
 
-1. **Full Facility Access** — Use our pitches, courts, pool, gym, and social spaces any day of the week.
-2. **Priority Event Booking** — Reserve seats for club matches, galas, and family events before the general public.
-3. **Youth & Family Programmes** — Enrol children in age-appropriate sports academies, summer camps, and recreational activities at member rates.
-4. **Exclusive Member Discounts** — Save on merchandise, food and beverage services, partner businesses, and special-event tickets.
-5. **Fitness & Wellness Centre** — Train with certified coaches, join group classes, and access personalised workout plans.
-6. **Community & Networking** — Attend member-only social gatherings, workshops, and cultural evenings throughout the year.
-7. **Digital Member Portal** — Manage dues, book facilities, track attendance, and stay informed through your personal dashboard.
+1. **25+ Sports & Activities** — Access disciplines from basketball and futsal to aikido, artistic gymnastics, yoga, and swimming. Every age and level welcome.
+2. **Full Facility Access** — Use our pitches, courts, pool, gym, and common areas any day of the week.
+3. **Exclusive Discounts & Promotions** — Save on partner businesses, club events, and services at CABNA and affiliated institutions.
+4. **Summer Camp (Colonia)** — Enrol children in a supervised programme where they build skills, make friends, and create lasting memories.
+5. **Events & Social Gatherings** — Join community celebrations, tournaments, cultural evenings, and family activities throughout the year.
+6. **Quincho & BBQ Area** — Reserve our on-site quinchos for birthdays, family get-togethers, or a weekend asado — open to members and non-members.
+7. **Digital Member Card** — Receive your carnet digital, manage your membership, and stay informed through the members' portal.
+
+### Membership Plans
+
+| Plan | Includes | Price |
+|---|---|---|
+| Cuota Única Individual | Chess, Agility, Charly Dance, Pilates MAT, Ritmos Latinos, Music Workshop, Yoga | $20,000/month |
+| CABNA Individual | Everything in Cuota Única + Aikido, Aquagym, Futsal (M & F), Gym | Contact us |
+
+*50 % off the Sportclub monthly fee from CABNA Plus and CABNA Familiar plans. $4,000 discount for Saint Edwards students on all plans.*
+
+### How to Join
+
+1. Choose your plan.
+2. Complete the membership application.
+3. Pay your first monthly fee.
+4. Receive your digital member card.
+5. Start enjoying the club.
+
+### Payment Methods
+Cash · Bank transfer · Mercado Pago · Automatic debit
+
+### Requirements
+- Completed membership application form.
+- One 4×4 photo of each person enrolling.
+- Medical fitness certificate for physical activities.
+- Medical check-up for pool activities (on-site doctors available).
 
 ### CTA
-View Membership Plans
+View All Plans
 
 ---
 
 ## 4. Events Section
 
 ### Section Headline
-What's Happening at CNBA
+What's Happening at CABNA
 
 ### Section Introduction
-From matchday action to family gatherings, there is always something on the calendar. Check our upcoming events and save your spot.
+From matchday action to family gatherings, there is always something on the calendar. Explore our upcoming events and save your spot.
 
-### Sample Event Card Format
+### Event Card Format
 
 Each event card displays:
-- **Event name** (e.g., "Senior Football — League Matchday 12")
+- **Event name** (e.g., "Basketball — League Matchday 8")
 - **Date and time** (e.g., "Saturday 26 April · 16:00")
-- **Location** (e.g., "Estadio CNBA — Pitch 1")
+- **Location** (e.g., "CABNA — Sports Hall")
 - **Status badge** (Upcoming / Sold Out / Free Entry)
-- **CTA button** ("Get Tickets" or "RSVP")
+- **CTA button** ("RSVP" or "Get Tickets")
 
-### Upcoming Events — Placeholder Copy
+### Sample Events
 
 | Event | Date | Location | Status |
 |---|---|---|---|
-| Senior Football — League Matchday 12 | Sat 26 Apr · 16:00 | Estadio CNBA — Pitch 1 | Upcoming |
-| Youth Basketball Tournament | Sun 27 Apr · 10:00 | Sports Hall A | Free Entry |
-| Annual Members' Gala | Fri 9 May · 20:30 | Club Social Hall | Upcoming |
-| Family Fun Day & Open House | Sun 18 May · 11:00 | Main Campus | Free Entry |
-| Swimming Championship Qualifiers | Sat 7 Jun · 09:00 | Aquatic Centre | Upcoming |
+| Futsal — First Division vs. Obras | Sat 26 Apr · 18:00 | CABNA — Main Court | Upcoming |
+| Youth Basketball Tournament | Sun 27 Apr · 10:00 | CABNA — Sports Hall | Free Entry |
+| Family Fun Day & Open House | Sun 18 May · 11:00 | CABNA — Full Campus | Free Entry |
+| Artistic Gymnastics Exhibition | Sat 7 Jun · 15:00 | CABNA — Gymnasium | Upcoming |
+| Annual Members' Asado | Fri 20 Jun · 20:00 | CABNA — Quinchos | Members Only |
 
 ### Empty-State Message
 No upcoming events right now. Check back soon — we are always planning the next one.
@@ -96,23 +129,24 @@ No upcoming events right now. Check back soon — we are always planning the nex
 Life at the Club
 
 ### Section Introduction
-Matchday moments, community celebrations, and everyday life on our grounds. Browse our latest photo albums.
+Matchday moments, community celebrations, and everyday life at CABNA. Browse our latest photo albums.
 
 ### Album Card Format
 
 Each gallery album card displays:
 - **Cover image thumbnail**
-- **Album title** (e.g., "League Matchday 10 vs. Defensores")
+- **Album title** (e.g., "Futsal Finals — May 2025")
 - **Date** (e.g., "12 April 2025")
-- **Photo count** (e.g., "34 photos")
+- **Photo count** (e.g., "24 photos")
 
 ### Caption Style Guide
 
 Captions should be short and descriptive. Examples:
-- "First-team squad celebrates after the final whistle."
-- "Under-15 basketball squad at the regional tournament."
-- "Members gather for the annual asado and awards night."
-- "Morning swim training session at the Aquatic Centre."
+- "First-team futsal squad celebrates the league win."
+- "Under-15 basketball training at the sports hall."
+- "Members gather for the annual asado at the quinchos."
+- "Morning aquagym session at the pool."
+- "Artistic gymnastics exhibition in the gymnasium."
 
 ### Empty-State Message
 No photos yet. New albums will appear here after our next event.
@@ -122,7 +156,7 @@ No photos yet. New albums will appear here after our next event.
 ## 6. News Section
 
 ### Section Headline
-Latest from CNBA
+Latest from CABNA
 
 ### Section Introduction
 Club announcements, match reports, and community updates — all in one place.
@@ -134,15 +168,15 @@ Each news card displays:
 - **Thumbnail image**
 - **Headline** (max 12 words)
 - **Publication date**
-- **Excerpt** (1–2 sentences summarising the article)
+- **Excerpt** (one to two sentences summarising the article)
 
 ### Sample Headlines
 
-1. **Club News:** "New Fitness Centre Opens Its Doors to All Members"
-2. **Match Report:** "Senior Squad Secures Vital Away Win in League Play"
-3. **Membership:** "Early-Bird Renewal Discount Available Through June"
-4. **Youth:** "Under-12 Football Academy Welcomes Record Intake"
-5. **Community:** "CNBA Partners with Local Schools for Sports Day"
+1. **Club News:** "CABNA Continues Facility Upgrades Across the Campus"
+2. **Match Report:** "Futsal First Division Secures Important Away Victory"
+3. **Membership:** "New Membership Plans Now Available — Find Your Fit"
+4. **Youth:** "Football School Opens Enrolment for Boys and Girls"
+5. **Community:** "Summer Camp Registration Starts This Month"
 
 ### Empty-State Message
 No news to display right now. Stay tuned for the latest updates.
@@ -164,9 +198,9 @@ Questions about membership, events, or facilities? Reach out and we will get bac
 
 | Field | Type | Placeholder Text | Required |
 |---|---|---|---|
-| Name | Text | Your full name | Yes |
+| Full name | Text | Your full name | Yes |
 | Email | Email | you@example.com | Yes |
-| Subject | Dropdown | General Enquiry / Membership / Events / Press / Other | Yes |
+| Subject | Text | What is this about? | Yes |
 | Message | Textarea | How can we help? | Yes |
 
 **Submit Button:** Send Message
@@ -175,17 +209,33 @@ Questions about membership, events, or facilities? Reach out and we will get bac
 
 **Error Message:** Something went wrong. Please try again or contact us directly using the details below.
 
-### Alternative Contact Channels
+### Contact Details
 
-- **Phone:** +54 11 1234-5678
-- **Email:** info@cnba.com.ar
-- **WhatsApp:** +54 9 11 1234-5678
-- **Address:** Av. del Libertador 1234, Buenos Aires, Argentina
+- **WhatsApp:** +54 9 11 2785-1234
+- **Phone:** 11 4791-7440
+- **Sports Coordinator:** 11 4025-4827
+- **Quincho Reservations:** 11 2785-1234
+- **Email:** cabna@argentina.com
+- **Address:** Zufriategui 1251, Vicente López
+- **Google Maps:** [View on map](https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7)
 
-### Office Hours
-Monday to Friday: 09:00–18:00
-Saturday: 09:00–13:00
-Sunday: Closed
+### Quincho Rental
+
+**Heading:** Quincho Rental
+
+**Body:** Celebrate special moments at the club. Our quinchos are available for birthdays, family reunions, and gatherings with friends. Open to both members and non-members.
+
+**CTA:** Book a Quincho
+
+### Work With Us
+
+**Heading:** Work With Us
+
+**Body:** Interested in joining the CABNA team? Send us your details and CV, and we will be in touch.
+
+**Form fields:** First name · Last name · Phone · Email · Attach CV
+
+**Submit Button:** Send Application
 
 ---
 
@@ -197,34 +247,91 @@ The footer is divided into four columns:
 
 **Column 1 — Club Identity**
 - Club crest / logo
-- "Club Nacional Buenos Aires"
-- Tagline: "Sport. Community. Tradition."
+- "Club Atlético Banco de la Nación Argentina"
+- Tagline: "Sport. Community. Tradition. Since 1909."
 
-**Column 2 — Quick Links**
-- About Us
-- Membership
-- Events
+**Column 2 — About**
+- The Club
+- Members' Portal
+- Sports
+
+**Column 3 — Join Us**
+- Become a Member
 - News
-- Gallery
-- Contact
+- Activities
 
-**Column 3 — Connect**
-- Facebook
-- Instagram
-- X (Twitter)
-- YouTube
-- WhatsApp
+**Column 4 — Contact**
+- Zufriategui 1251, Vicente López
+- cabna@argentina.com
+- 11 2785-1234 (WhatsApp)
 
-**Column 4 — Contact Info**
-- Av. del Libertador 1234, Buenos Aires
-- info@cnba.com.ar
-- +54 11 1234-5678
+### Social Links
+- [Facebook](https://www.facebook.com/clubbanconacionoficial)
+- [Instagram](https://www.instagram.com/cabnaoficial)
+- [WhatsApp](https://wa.me/+5491127851234)
+
+### Sponsors
+- Banco de la Nación Argentina (BNA)
+- BNA+
 
 ### Copyright Line
-© 2025 Club Nacional Buenos Aires. All rights reserved.
+© 2025 Club Atlético Banco de la Nación Argentina. All rights reserved.
 
 ### Legal Links (inline, below copyright)
-Privacy Policy · Terms of Use · Cookie Preferences
+Privacy Policy · Terms of Use
+
+---
+
+## 9. Supplementary Sections
+
+### 9a. Testimonials
+
+**Section Headline:** What Our Members Say
+
+| Member | Quote |
+|---|---|
+| Silvia | "I have been a member for three years. I love staying active here alongside my children." |
+| Maximiliano | "Four years as a member and this place feels like home — great people, great times with my family." |
+| Mara | "For me and my kids, CABNA is our second home." |
+| Facundo | "Ten years at CABNA. It is where my children and I meet friends and play sport." |
+
+### 9b. Newsletter Signup
+
+**Heading:** Stay in the Loop
+
+**Body:** Subscribe to receive club news, event invitations, and member-only offers straight to your inbox.
+
+**Field placeholder:** Your email address
+
+**Button:** Subscribe
+
+### 9c. Instagram Feed
+
+**Heading:** Follow Us on Instagram — @cabnaoficial
+
+**Body:** Stay connected and never miss an activity, promotion, or special event.
+
+**Hashtag:** #YOTEBANCONACION
+
+### 9d. Facilities
+
+**Heading:** Our Facilities
+
+**Sub-heading:** Growing and improving every year.
+
+**Body:** Thanks to the dedication of our members, families, staff, and board of directors led by president Rodrigo Graña, CABNA has overcome major challenges to become the vibrant club it is today. Our campus features dedicated spaces for more than 25 activities — including sports fields, courts, a pool, a gymnasium, and social areas.
+
+### 9e. Sports Directory
+
+**Heading:** Sports & Activities
+
+**Body:** Explore the full range of disciplines available at CABNA.
+
+**List of sports:**
+Aikido · Aquagym · Basketball · Swimming · Football School · Tennis School · Football 11 · Futsal · Artistic Gymnastics · Sports Initiation · Judo · Master Hockey · Artistic Skating · Pilates MAT · Sportclub · Taekwondo · Table Tennis · Women's Volleyball · Yoga
+
+**Activity categories:**
+Family · Health & Wellness · Workshops
 
 ---
 
@@ -234,25 +341,28 @@ Privacy Policy · Terms of Use · Cookie Preferences
 |---|---|
 | Voice | First-person plural ("we", "our") when speaking as the club. Second person ("you", "your") when addressing the reader. |
 | Sentence length | Average under 20 words. No sentence longer than 30 words. |
-| Jargon | Avoid internal acronyms without explanation. Use "membership" not "socio plan"; use "facilities" not "sedes" in English copy. |
+| Club name | Use "CABNA" for short references. Full name: "Club Atlético Banco de la Nación Argentina." Never "CNBA" or "Club Banco Nación." |
+| Jargon | Avoid internal acronyms without explanation. Use "membership" not "socio plan"; "facilities" not "sedes" in English copy. |
 | Capitalisation | Title Case for headings. Sentence case for body text and CTAs. |
 | Numbers | Spell out one through nine. Use digits for 10 and above. |
 | Dates | Day Month Year format (e.g., "26 April 2025"). |
-| Inclusive language | Use "members" not "socios"; "children" or "youth" not "kids". |
+| Inclusive language | Use "members" not "socios"; "children" or "youth" not "kids." |
 
 ---
 
 ## Appendix B — Source Content Analysis
 
-### Issues found in scraped source content
+### Issues found in the original CABNA website content
 
-| Source | Issue | How the improved copy addresses it |
-|---|---|---|
-| Riquelme Fan Site | Informal, fan-only tone; missing accents and special characters; no clear structure for non-fan visitors. | Replaced with professional, inclusive language. Proper grammar and punctuation throughout. |
-| Riquelme Fan Site | "Under Construction" placeholders and "More content coming soon" filler text. | All sections are complete with production-ready copy. No placeholder text. |
-| Riquelme Fan Site | No membership, events, or contact information. | Added dedicated sections for membership benefits, upcoming events, and a full contact page. |
-| San Lorenzo PRD | Homepage had 12+ content blocks competing for attention. Dense mega-menus with 23+ children per section. | Streamlined to eight clearly scoped sections. Each section has a single purpose and clear CTA. |
-| San Lorenzo PRD | No general contact form existed; only a WhatsApp number buried in the footer. | Created a full contact section with form, multiple channels, office hours, and physical address. |
-| San Lorenzo PRD | Membership information scattered across multiple pages and external redirects. | Consolidated membership into one section with seven distinct, clearly worded benefits. |
-| San Lorenzo PRD | Sponsor logos used transparent-pixel hacks; images broke without JavaScript. | Copy and structure guidelines call for real images with meaningful alt text throughout. |
-| Bokita Fansite Spec | Content entirely in Spanish with 90s web conventions (marquee, blink, Comic Sans). | Modern English copy with clean formatting, suitable for a contemporary web audience. |
+| Issue | How the improved copy addresses it |
+|---|---|
+| About text was a single dense paragraph mixing values with description. No clear structure. | Split into three focused paragraphs: origin, offering, and mission. Word count kept to 131 for readability. |
+| Hero section had no headline or sub-headline — only a rotating image carousel with vague alt text. | Added a concise headline (7 words) and sub-headline (9 words) that communicate identity and history. |
+| Membership benefits were listed with short, vague descriptions ("Un mundo de posibilidades deportivas"). | Rewrote into seven distinct, specific benefits with concrete details about what members receive. |
+| Contact information was scattered: different phone numbers appeared in different places with no labels. | Consolidated all contact channels into a single section with clear labels (WhatsApp, Phone, Sports Coordinator, Quincho Reservations). |
+| Testimonials were in Spanish only and lacked structure. | Cleaned up and translated into English, preserving the original sentiment and member names. |
+| Gallery images had generic alt text ("Foto" repeated eight times). | Provided a caption style guide with descriptive examples for each image type. |
+| Newsletter section used slang ("¡SUSCRIBITE!") with minimal context. | Replaced with a clear heading, descriptive body text, and professional call to action. |
+| Footer repeated social links without a clear hierarchy or sponsor attribution. | Reorganised into four columns: identity, about links, join-us links, and contact details. Sponsors given explicit placement. |
+| The club was informally called "Club Banco Nación" in headings, missing the full official name. | All copy uses the official name "Club Atlético Banco de la Nación Argentina" with "CABNA" as the standard abbreviation. |
+| Instagram section used informal language inconsistent with the rest of the site. | Tightened to a professional tone while preserving the club's signature hashtag #YOTEBANCONACION. |
