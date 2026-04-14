@@ -541,6 +541,47 @@ def build_instagram_data():
             "external_url": "https://clubbanconacion.org.ar",
             "profile_picture_url": "https://www.instagram.com/cabnaoficial/",
         },
+        "known_posts": [
+            {
+                "url": "https://www.instagram.com/cabnaoficial/p/CzmXhk8PkLl/",
+                "type": "post",
+                "caption_preview": "¡Unite a la colonia de vacaciones ...",
+            },
+            {
+                "url": "https://www.instagram.com/cabnaoficial/p/DCUKvhqys-_/",
+                "type": "post",
+                "caption_preview": "🌞 ¡Colonia de Vacaciones Verano 2024/2025! 🌞 ...",
+            },
+        ],
+        "known_reels": [
+            {
+                "url": "https://www.instagram.com/cabnaoficial/reel/Cly3yWVDMOe/",
+                "caption_preview": "(reel)",
+            },
+            {
+                "url": "https://www.instagram.com/cabnaoficial/reel/Crg44A9pSgM/",
+                "caption_preview": "¡ACTIVIDADES CABNA! Te ...",
+            },
+            {
+                "url": "https://www.instagram.com/cabnaoficial/reel/C5b4uKUv31q/",
+                "caption_preview": "¡Estamos listos para disfrutar de ...",
+            },
+            {
+                "url": "https://www.instagram.com/cabnaoficial/reel/CurtXVyO6Dp/",
+                "caption_preview": "En #CABNA, cada mes ...",
+            },
+            {
+                "url": "https://www.instagram.com/cabnaoficial/reel/Cu10OY8OjhJ/",
+                "caption_preview": "¿Estás buscando un lugar para practicar natación? ¡Entonces ...",
+            },
+        ],
+        "collaborations": [
+            {
+                "url": "https://www.instagram.com/p/DULn3C0kTCZ/",
+                "caption_preview": "Seguí a @cabnaoficial y @kiricocho ✔️ Dale like ✔️ ...",
+                "type": "collaboration/sorteo",
+            },
+        ],
         "related_accounts": [
             {
                 "username": "bnafutbol",
@@ -559,25 +600,19 @@ def build_instagram_data():
             "checkins": 2999,
             "description": "Los invitamos a nuestra nueva Fan Page. Aquí podrán ver fotos de las disciplinas que se realizan en el club.",
         },
-        "known_reels": [
-            {
-                "url": "https://www.instagram.com/cabnaoficial/reel/Cly3yWVDMOe/",
-                "caption_preview": "(reel)",
-            },
-            {
-                "url": "https://www.instagram.com/cabnaoficial/reel/Crg44A9pSgM/",
-                "caption_preview": "¡ACTIVIDADES CABNA! Te ...",
-            },
-            {
-                "url": "https://www.instagram.com/cabnaoficial/reel/C5b4uKUv31q/",
-                "caption_preview": "¡Estamos listos para disfrutar de ...",
-            },
-            {
-                "url": "https://www.instagram.com/cabnaoficial/reel/CurtXVyO6Dp/",
-                "caption_preview": "En #CABNA, cada mes ...",
-            },
-        ],
+        "twitter_handle": {
+            "username": "CABNAOficial",
+            "url": "https://twitter.com/cabnaoficial",
+            "display_name": "Club Banco Nacion",
+        },
         "hashtags": ["#yotebanconacion", "#CABNA"],
+        "content_themes": [
+            "Colonia de vacaciones",
+            "Actividades deportivas",
+            "Natación",
+            "Eventos del club",
+            "Sorteos y colaboraciones",
+        ],
         "scrape_note": "Instagram blocks automated scraping. Profile metadata was obtained from public search index results. Individual post captions and image URLs require authenticated API access or manual collection.",
     }
 
