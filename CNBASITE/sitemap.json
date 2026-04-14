@@ -1,8 +1,8 @@
 {
-  "base_url": "https://clubbanconacion.org.ar",
   "site_title": "CABNA - Club Atlético Banco de la Nación Argentina",
-  "site_description": "Sitio Web Oficial del Club Atlético Banco de la Nación Argentina (C.A.B.N.A.)",
+  "description": "Sitio Web Oficial del Club Atlético Banco de la Nación Argentina (C.A.B.N.A.)",
   "language": "es",
+  "base_url": "https://clubbanconacion.org.ar",
   "navigation": [
     {
       "label": "INICIO",
@@ -14,7 +14,7 @@
     },
     {
       "label": "DEPORTES",
-      "url": "https://clubbanconacion.org.ar/",
+      "url": "#",
       "children": [
         {
           "label": "TODOS",
@@ -100,7 +100,7 @@
     },
     {
       "label": "ACTIVIDADES",
-      "url": "https://clubbanconacion.org.ar/",
+      "url": "#",
       "children": [
         {
           "label": "FAMILIARES",
@@ -127,225 +127,144 @@
   ],
   "pages": [
     {
-      "path": "/",
-      "label": "home",
-      "full_url": "https://clubbanconacion.org.ar",
-      "scraped": true,
-      "sections": [
-        "section",
-        "title",
-        "meta",
-        "hero",
-        "stats",
-        "about",
-        "benefits",
-        "testimonials",
-        "newsletter",
-        "instagram_section",
-        "social_links",
-        "footer"
-      ]
+      "label": "INICIO",
+      "url": "https://clubbanconacion.org.ar/",
+      "slug": "home"
     },
     {
-      "path": "/el-club",
-      "label": "el-club",
-      "full_url": "https://clubbanconacion.org.ar/el-club",
-      "scraped": true,
-      "sections": [
-        "section",
-        "history",
-        "facilities",
-        "institution",
-        "gallery",
-        "board_of_directors",
-        "supervisory_committee",
-        "coaching_staff",
-        "about"
-      ]
+      "label": "EL CLUB",
+      "url": "https://clubbanconacion.org.ar/el-club",
+      "slug": "el-club"
     },
     {
-      "path": "/deportes",
-      "label": "deportes",
-      "full_url": "https://clubbanconacion.org.ar/deportes",
-      "scraped": true,
-      "sections": [
-        "section",
-        "sports"
-      ]
+      "label": "DEPORTES",
+      "url": "https://clubbanconacion.org.ar/deportes",
+      "slug": "deportes"
     },
     {
-      "path": "/actividades",
-      "label": "actividades",
-      "full_url": "https://clubbanconacion.org.ar/actividades",
-      "scraped": true,
-      "sections": [
-        "section",
-        "categories",
-        "activities"
-      ]
+      "label": "ACTIVIDADES",
+      "url": "https://clubbanconacion.org.ar/actividades",
+      "slug": "actividades"
     },
     {
-      "path": "/novedades",
-      "label": "novedades",
-      "full_url": "https://clubbanconacion.org.ar/novedades",
-      "scraped": true,
-      "sections": [
-        "section",
-        "articles"
-      ]
+      "label": "NOVEDADES",
+      "url": "https://clubbanconacion.org.ar/novedades",
+      "slug": "novedades"
     },
     {
-      "path": "/contacto",
-      "label": "contacto",
-      "full_url": "https://clubbanconacion.org.ar/contacto",
-      "scraped": true,
-      "sections": [
-        "section",
-        "contact_info",
-        "form_fields",
-        "quincho_rental",
-        "job_application"
-      ]
+      "label": "CONTACTO",
+      "url": "https://clubbanconacion.org.ar/contacto",
+      "slug": "contacto"
     },
     {
-      "path": "/hacete-socio",
-      "label": "hacete-socio",
-      "full_url": "https://clubbanconacion.org.ar/hacete-socio",
-      "scraped": true,
-      "sections": [
-        "section",
-        "plans",
-        "benefits_extra",
-        "payment_methods",
-        "requirements",
-        "steps"
-      ]
+      "label": "HACETE SOCIO",
+      "url": "https://clubbanconacion.org.ar/hacete-socio",
+      "slug": "hacete-socio"
     }
   ],
-  "external_links": {
-    "facebook": "https://www.facebook.com/clubbanconacionoficial",
-    "instagram": "https://www.instagram.com/cabnaoficial",
-    "whatsapp": "https://wa.me/+5491127851234",
-    "google_maps": "https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7"
-  },
-  "technology_stack": {
-    "framework": "Laravel (Livewire components detected)",
-    "css": "Bootstrap 5",
-    "carousel": "Swiper.js",
-    "database": "MySQL (inferred from Livewire data)"
-  },
   "sports_pages": [
     {
-      "id": "1",
-      "name": "Aikido",
+      "label": "AIKIDO",
       "url": "https://clubbanconacion.org.ar/deportes/1/aikido"
     },
     {
-      "id": "17",
-      "name": "Aquagym",
+      "label": "AQUAGYM",
       "url": "https://clubbanconacion.org.ar/deportes/17/aquagym"
     },
     {
-      "id": "2",
-      "name": "Basquet",
+      "label": "BASQUET",
       "url": "https://clubbanconacion.org.ar/deportes/2/basquet"
     },
     {
-      "id": "8",
-      "name": "Clases de Natación",
+      "label": "CLASES DE NATACIÓN",
       "url": "https://clubbanconacion.org.ar/deportes/8/clases-de-natacion"
     },
     {
-      "id": "14",
-      "name": "Escuela de Fútbol",
+      "label": "ESCUELA DE FÚTBOL",
       "url": "https://clubbanconacion.org.ar/deportes/14/escuela-de-futbol"
     },
     {
-      "id": "12",
-      "name": "Escuela de Tenis",
+      "label": "ESCUELA DE TENIS",
       "url": "https://clubbanconacion.org.ar/deportes/12/escuela-de-tenis"
     },
     {
-      "id": "3",
-      "name": "Fútbol 11",
+      "label": "FÚTBOL 11",
       "url": "https://clubbanconacion.org.ar/deportes/3/futbol-11"
     },
     {
-      "id": "20",
-      "name": "Futsal",
+      "label": "FUTSAL",
       "url": "https://clubbanconacion.org.ar/deportes/20/futsal"
     },
     {
-      "id": "5",
-      "name": "Gimnasia Artística",
+      "label": "GIMNASIA ARTÍSTICA",
       "url": "https://clubbanconacion.org.ar/deportes/5/gimnasia-artistica"
     },
     {
-      "id": "4",
-      "name": "Iniciación Deportiva",
+      "label": "INICIACIÓN DEPORTIVA",
       "url": "https://clubbanconacion.org.ar/deportes/4/iniciacion-deportiva"
     },
     {
-      "id": "6",
-      "name": "Judo",
+      "label": "JUDO",
       "url": "https://clubbanconacion.org.ar/deportes/6/judo"
     },
     {
-      "id": "7",
-      "name": "Master Hockey",
+      "label": "MASTER HOCKEY",
       "url": "https://clubbanconacion.org.ar/deportes/7/master-hockey"
     },
     {
-      "id": "9",
-      "name": "Patín Artístico",
+      "label": "PATÍN ARTÍSTICO",
       "url": "https://clubbanconacion.org.ar/deportes/9/patin-artistico"
     },
     {
-      "id": "22",
-      "name": "Pilates MAT",
+      "label": "PILATES MAT",
       "url": "https://clubbanconacion.org.ar/deportes/22/pilates-mat"
     },
     {
-      "id": "16",
-      "name": "Sportclub",
+      "label": "SPORTCLUB",
       "url": "https://clubbanconacion.org.ar/deportes/16/sportclub"
     },
     {
-      "id": "11",
-      "name": "Taekwondo",
+      "label": "TAEKWONDO",
       "url": "https://clubbanconacion.org.ar/deportes/11/taekwondo"
     },
     {
-      "id": "13",
-      "name": "Tenis de Mesa",
+      "label": "TENIS DE MESA",
       "url": "https://clubbanconacion.org.ar/deportes/13/tenis-de-mesa"
     },
     {
-      "id": "10",
-      "name": "Voley Femenino",
+      "label": "VOLEY FEMENINO",
       "url": "https://clubbanconacion.org.ar/deportes/10/voley-femenino"
     },
     {
-      "id": "21",
-      "name": "Yoga",
+      "label": "YOGA",
       "url": "https://clubbanconacion.org.ar/deportes/21/yoga"
     }
   ],
   "activity_pages": [
     {
-      "id": "2",
-      "name": "Familiares",
+      "label": "FAMILIARES",
       "url": "https://clubbanconacion.org.ar/actividades/2/familiares"
     },
     {
-      "id": "3",
-      "name": "Salud y Bienestar",
+      "label": "SALUD Y BIENESTAR",
       "url": "https://clubbanconacion.org.ar/actividades/3/salud-y-bienestar"
     },
     {
-      "id": "1",
-      "name": "Talleres",
+      "label": "TALLERES",
       "url": "https://clubbanconacion.org.ar/actividades/1/talleres"
     }
-  ]
+  ],
+  "additional_pages": [
+    {
+      "label": "PORTAL SOCIOS",
+      "url": "https://clubbanconacion.org.ar/portal-socio"
+    }
+  ],
+  "external_links": {
+    "instagram": "https://www.instagram.com/cabnaoficial",
+    "facebook": "https://www.facebook.com/clubbanconacionoficial/",
+    "whatsapp": "https://wa.me/+5491127851234",
+    "twitter": "https://twitter.com/cabnaoficial",
+    "google_maps": "https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7"
+  }
 }

@@ -1,0 +1,255 @@
+{
+  "total_unique_images": 50,
+  "images": [
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/logo-movil.svg",
+      "alt": "Logo CABNA",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/logo.svg",
+      "alt": "Logo CABNA",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/storage/banners/o57DsBjcuttzgg7490OG0vrVYXaMDFAQHAp04DYa.jpg",
+      "alt": "voley pelota en mano",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/storage/banners/J5iEbYaxqa3YHHTeZUw1qzRSH07z8kLe81DxItpb.jpg",
+      "alt": "voley pelota en mano",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/storage/banners/qPWqGjvvpszaapDlVD7d7zncwCoU0zqVCUgRXqNr.jpg",
+      "alt": "sportclub",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/storage/banners/OhQmF3Vc1q1ymT2H8zz1Eqvco0RTPsMX25VkTYc5.jpg",
+      "alt": "sportclub",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/storage/banners/cWhJZ6Z9lyhQzSFgdms4oPlZ6pLwv9NGvfH68mSW.jpg",
+      "alt": "voley pelota aire",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/storage/banners/xh6Ku0SQpDJJQQTBxKv3Ltjev3zt0Cos9zcryGRN.jpg",
+      "alt": "voley pelota aire",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/home/deportes.jpg",
+      "alt": "Deportes CABNA",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/home/actividades.jpg",
+      "alt": "Actividades CABNA",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/home/video.jpg",
+      "alt": "CABNA",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/home/ico-descuentos.svg",
+      "alt": "Descuentos",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/home/ico-eventos.svg",
+      "alt": "Eventos",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/home/ico-disciplinas.svg",
+      "alt": "Disciplinas",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/home/ico-cultura.svg",
+      "alt": "Cultura",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/home/ico-colonia.svg",
+      "alt": "Colonia",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/home/socios/silvia.jpg",
+      "alt": "Socio",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/home/socios/maximiliano.jpg",
+      "alt": "Socio",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/home/socios/mara.jpg",
+      "alt": "Socio",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/home/socios/facundo.jpg",
+      "alt": "Socio",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/footer/sponsors/bna.png",
+      "alt": "BNA",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/footer/sponsors/bna-plus.png",
+      "alt": "BNA+",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/logo-cabna.svg",
+      "alt": "Logo CABNA",
+      "found_on_page": "home"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/club/portada.jpg",
+      "alt": "Fachada CABNA",
+      "found_on_page": "el-club"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/club/portada-mob.jpg",
+      "alt": "Fachada CABNA",
+      "found_on_page": "el-club"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/club/galeria/1.jpg",
+      "alt": "Foto",
+      "found_on_page": "el-club"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/club/galeria/2.jpg",
+      "alt": "Foto",
+      "found_on_page": "el-club"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/club/galeria/3.jpg",
+      "alt": "Foto",
+      "found_on_page": "el-club"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/club/galeria/4.jpg",
+      "alt": "Foto",
+      "found_on_page": "el-club"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/club/galeria/5.jpg",
+      "alt": "Foto",
+      "found_on_page": "el-club"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/club/galeria/6.jpg",
+      "alt": "Foto",
+      "found_on_page": "el-club"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/club/galeria/7.jpg",
+      "alt": "Foto",
+      "found_on_page": "el-club"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/club/galeria/8.jpg",
+      "alt": "Foto",
+      "found_on_page": "el-club"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/club/ico-carta.svg",
+      "alt": "Carta",
+      "found_on_page": "el-club"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/club/ico-comision-directiva.svg",
+      "alt": "Comisión",
+      "found_on_page": "el-club"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/club/ico-comision-fiscalizadora.svg",
+      "alt": "Comisión",
+      "found_on_page": "el-club"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/deportes/portada.jpg",
+      "alt": "Fachada CABNA",
+      "found_on_page": "deportes"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/deportes/portada-mob.jpg",
+      "alt": "Fachada CABNA",
+      "found_on_page": "deportes"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/partials/hacete-socio.jpg",
+      "alt": "CABNA",
+      "found_on_page": "deportes"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/actividades/portada.jpg",
+      "alt": "Fachada CABNA",
+      "found_on_page": "actividades"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/actividades/portada-mob.jpg",
+      "alt": "Fachada CABNA",
+      "found_on_page": "actividades"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/club/quinchos.jpg",
+      "alt": "CABNA",
+      "found_on_page": "actividades"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/contacto/mapa.jpg",
+      "alt": "Mapa",
+      "found_on_page": "contacto"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/socios/portada-hacete-socio.jpg",
+      "alt": "CABNA",
+      "found_on_page": "hacete-socio"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/socios/portada-hacete-socio-mob.jpg",
+      "alt": "CABNA",
+      "found_on_page": "hacete-socio"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/socios/ico-hs-1.svg",
+      "alt": "Icono",
+      "found_on_page": "hacete-socio"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/socios/ico-hs-2.svg",
+      "alt": "Icono",
+      "found_on_page": "hacete-socio"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/socios/ico-hs-3.svg",
+      "alt": "Icono",
+      "found_on_page": "hacete-socio"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/socios/ico-hs-4.svg",
+      "alt": "Icono",
+      "found_on_page": "hacete-socio"
+    },
+    {
+      "url": "https://clubbanconacion.org.ar/assets/img/socios/apto-fisico.jpg",
+      "alt": "CABNA",
+      "found_on_page": "hacete-socio"
+    }
+  ]
+}

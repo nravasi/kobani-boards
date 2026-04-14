@@ -13,60 +13,6 @@
     "is_verified": false,
     "category": "Club Deportivo"
   },
-  "known_reels": [
-    {
-      "type": "reel",
-      "url": "https://www.instagram.com/cabnaoficial/reel/Cly3yWVDMOe/",
-      "caption_preview": "(Club content reel)"
-    },
-    {
-      "type": "reel",
-      "url": "https://www.instagram.com/cabnaoficial/reel/Crg44A9pSgM/",
-      "caption_preview": "¡ACTIVIDADES CABNA! Te ..."
-    },
-    {
-      "type": "reel",
-      "url": "https://www.instagram.com/cabnaoficial/reel/CurtXVyO6Dp/",
-      "caption_preview": "En #CABNA, cada mes ..."
-    },
-    {
-      "type": "reel",
-      "url": "https://www.instagram.com/cabnaoficial/reel/C5b4uKUv31q/",
-      "caption_preview": "¡Estamos listos para disfrutar de ..."
-    }
-  ],
-  "known_posts": [
-    {
-      "type": "reel",
-      "url": "https://www.instagram.com/cabnaoficial/reel/Cly3yWVDMOe/",
-      "caption_preview": "(Club content reel)"
-    },
-    {
-      "type": "reel",
-      "url": "https://www.instagram.com/cabnaoficial/reel/Crg44A9pSgM/",
-      "caption_preview": "¡ACTIVIDADES CABNA! Te ..."
-    },
-    {
-      "type": "reel",
-      "url": "https://www.instagram.com/cabnaoficial/reel/CurtXVyO6Dp/",
-      "caption_preview": "En #CABNA, cada mes ..."
-    },
-    {
-      "type": "reel",
-      "url": "https://www.instagram.com/cabnaoficial/reel/C5b4uKUv31q/",
-      "caption_preview": "¡Estamos listos para disfrutar de ..."
-    },
-    {
-      "type": "post",
-      "url": "https://www.instagram.com/cabnaoficial/p/CzmXhk8PkLl/",
-      "caption_preview": "(Photo post)"
-    }
-  ],
-  "hashtags": [
-    "#yotebanconacion",
-    "#CABNA",
-    "#ClubBancoNacion"
-  ],
   "related_accounts": [
     {
       "username": "bnafutbol",
@@ -105,6 +51,11 @@
       "profile_url": "https://www.instagram.com/cabnafsmza/"
     }
   ],
+  "hashtags": [
+    "#yotebanconacion",
+    "#CABNA",
+    "#ClubBancoNacion"
+  ],
   "content_themes": [
     "Actividades deportivas y recreativas",
     "Eventos del club y sorteos",
@@ -113,6 +64,33 @@
     "Deportes: fútbol, natación, básquet, voley, tenis, judo, taekwondo, etc.",
     "Colonia de vacaciones",
     "Instalaciones del club"
+  ],
+  "known_posts": [
+    {
+      "type": "reel",
+      "url": "https://www.instagram.com/cabnaoficial/reel/Cly3yWVDMOe/",
+      "caption_preview": "(Club content reel)"
+    },
+    {
+      "type": "reel",
+      "url": "https://www.instagram.com/cabnaoficial/reel/Crg44A9pSgM/",
+      "caption_preview": "¡ACTIVIDADES CABNA! Te ..."
+    },
+    {
+      "type": "reel",
+      "url": "https://www.instagram.com/cabnaoficial/reel/CurtXVyO6Dp/",
+      "caption_preview": "En #CABNA, cada mes ..."
+    },
+    {
+      "type": "reel",
+      "url": "https://www.instagram.com/cabnaoficial/reel/C5b4uKUv31q/",
+      "caption_preview": "¡Estamos listos para disfrutar de ..."
+    },
+    {
+      "type": "post",
+      "url": "https://www.instagram.com/cabnaoficial/p/CzmXhk8PkLl/",
+      "caption_preview": "(Photo post)"
+    }
   ],
   "facebook_page": {
     "url": "https://www.facebook.com/clubbanconacionoficial/",

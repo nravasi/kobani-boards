@@ -1,0 +1,1402 @@
+{
+  "metadata": {
+    "site_name": "CABNA - Club Atlético Banco de la Nación Argentina",
+    "base_url": "https://clubbanconacion.org.ar",
+    "description": "Sitio Web Oficial del Club Atlético Banco de la Nación Argentina (C.A.B.N.A.)",
+    "og_title": "CABNA - Club Atlético Banco de la Nación Argentina",
+    "og_description": "Página oficial del Club Atlético Banco de la Nación Argentina",
+    "og_image": "https://clubbanconacion.org.ar/assets/img/cabna.jpg"
+  },
+  "pages": {
+    "home": {
+      "url": "https://clubbanconacion.org.ar/",
+      "sections": [
+        {
+          "heading": "",
+          "paragraphs": [
+            "Seguidoresen redes sociales",
+            "Actividades y deportes"
+          ],
+          "links": [],
+          "full_text": "+Seguidoresen redes socialesActividades y deportes"
+        },
+        {
+          "heading": "DEPORTES",
+          "paragraphs": [],
+          "links": [
+            {
+              "label": "DEPORTES",
+              "url": "https://clubbanconacion.org.ar/deportes"
+            },
+            {
+              "label": "ACTIVIDADES",
+              "url": "https://clubbanconacion.org.ar/actividades"
+            }
+          ],
+          "full_text": "DEPORTESACTIVIDADES"
+        },
+        {
+          "heading": "CLUB BANCO NACIÓN",
+          "paragraphs": [
+            "El Club Atlético Banco de La Nación Argentina es un espacio de esparcimiento, integración, formación y sobre todas las cosas, un lugar para sentirse parte de una gran familia. En el Club nos proponemos a promover los valores de la práctica del deporte en todas sus manifestaciones nobles y útiles, además de fomentar el cumplimiento de los deberes y la solidaridad."
+          ],
+          "links": [
+            {
+              "label": "SABER MÁS",
+              "url": "https://clubbanconacion.org.ar/el-club"
+            }
+          ],
+          "full_text": "CLUB BANCO NACIÓNEl Club Atlético Banco de La Nación Argentina es un espacio de esparcimiento, integración, formación y sobre todas las cosas, un lugar para sentirse parte de una gran familia. En el Club nos proponemos a promover los valores de la práctica del deporte en todas sus manifestaciones nobles y útiles, además de fomentar el cumplimiento de los deberes y la solidaridad.SABER MÁS"
+        },
+        {
+          "heading": "NOVEDADES",
+          "paragraphs": [],
+          "links": [
+            {
+              "label": "VER TODAS",
+              "url": "https://clubbanconacion.org.ar/novedades"
+            }
+          ],
+          "full_text": "NOVEDADESVER TODAS"
+        },
+        {
+          "heading": "¡SUSCRIBITE!",
+          "paragraphs": [
+            "Enterate de todas nuestras comunicaciones."
+          ],
+          "links": [],
+          "full_text": "¡SUSCRIBITE!Enterate de todas nuestras comunicaciones.Loading..."
+        },
+        {
+          "heading": "BENEFICIOS",
+          "paragraphs": [
+            "¡Descubrí la emoción de ser parte del Club Banco Nación y disfrutá de beneficios para toda la familia!",
+            "Hacete socio y disfrutá grandes promociones y beneficios en nuestra y otras instituciones.",
+            "Disfrutá de actividades en un lugar donde la comunidad deportiva se reúne para celebrar.",
+            "Un mundo de posibilidades deportivas y actividades para todas las edades y niveles.",
+            "Te proponemos un estilo de vida, estamos comprometidos con el crecimiento integral.",
+            "Donde los más pequeños desarrollan habilidades, hacen amigos y crean recuerdos inolvidables."
+          ],
+          "links": [],
+          "full_text": "BENEFICIOS¡Descubrí la emoción de ser parte del Club Banco Nación y disfrutá de beneficios para toda la familia!DescuentosHacete socio y disfrutá grandes promociones y beneficios en nuestra y otras instituciones.EventosDisfrutá de actividades en un lugar donde la comunidad deportiva se reúne para celebrar.DisciplinasUn mundo de posibilidades deportivas y actividades para todas las edades y niveles.CulturaTe proponemos un estilo de vida, estamos comprometidos con el crecimiento integral.ColoniaDonde los más pequeños desarrollan habilidades, hacen amigos y crean recuerdos inolvidables."
+        },
+        {
+          "heading": "¡HACETE SOCIO!",
+          "paragraphs": [
+            "Soy socia hace 3 años y disfruto de hacer vida sana en estas instalaciones cerca de nuestros hijos.",
+            "Soy socio hace 4 años y acá me siento en casa, rodeados de gente hermosa, junto con mi familia todos la pasamos muy bien.",
+            "Soy socia hace 3 años, y para mí y mis hijos, CABNA es mi segunda casa.",
+            "Soy socio hace 10 años y CABNA es para mí y mis hijos el lugar de encuentro con amigos y hacer deportes.",
+            "Unite a Club Banco Nación y disfrutá de muchos beneficios, actividades y deportes excepcionales para toda la familia."
+          ],
+          "links": [
+            {
+              "label": "HACETE SOCIO",
+              "url": "https://clubbanconacion.org.ar/hacete-socio"
+            }
+          ],
+          "full_text": "Soy socia hace 3 años y disfruto de hacer vida sana en estas instalaciones cerca de nuestros hijos.Soy socio hace 4 años y acá me siento en casa, rodeados de gente hermosa, junto con mi familia todos la pasamos muy bien.Soy socia hace 3 años, y para mí y mis hijos, CABNA es mi segunda casa.Soy socio hace 10 años y CABNA es para mí y mis hijos el lugar de encuentro con amigos y hacer deportes.¡HACETE SOCIO!Unite a Club Banco Nación y disfrutá de muchos beneficios, actividades y deportes excepcionales para toda la familia.HACETE SOCIO"
+        },
+        {
+          "heading": "SEGUINOS EN INSTAGRAM@CABNAOFICIAL",
+          "paragraphs": [
+            "¡Mantente conectado y no te pierdas ninguna de todas nuestras actividades, promociones y eventos especiales!",
+            "#YOTEBANCONACION"
+          ],
+          "links": [
+            {
+              "label": "@CABNAOFICIAL",
+              "url": "https://www.instagram.com/cabnaoficial"
+            }
+          ],
+          "full_text": "SEGUINOS EN INSTAGRAM@CABNAOFICIAL¡Mantente conectado y no te pierdas ninguna de todas nuestras actividades, promociones y eventos especiales!#YOTEBANCONACION"
+        },
+        {
+          "heading": "SOBRE NOSOTROS",
+          "paragraphs": [
+            "Conocé más sobre el club",
+            "Se parte de este gran equipo"
+          ],
+          "links": [
+            {
+              "label": "11 2785 1234",
+              "url": "https://wa.me/+5491127851234"
+            },
+            {
+              "label": "cabna@argentina.com",
+              "url": "mailto:cabna@argentina.com"
+            },
+            {
+              "label": "Zufriategui 1251, Vicente López",
+              "url": "https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7"
+            },
+            {
+              "label": "EL CLUB",
+              "url": "https://clubbanconacion.org.ar/el-club"
+            },
+            {
+              "label": "DEPORTES",
+              "url": "https://clubbanconacion.org.ar/deportes"
+            },
+            {
+              "label": "HACETE SOCIO",
+              "url": "https://clubbanconacion.org.ar/hacete-socio"
+            },
+            {
+              "label": "NOVEDADES",
+              "url": "https://clubbanconacion.org.ar/novedades"
+            },
+            {
+              "label": "ACTIVIDADES",
+              "url": "https://clubbanconacion.org.ar/actividades"
+            }
+          ],
+          "full_text": "11 2785 1234cabna@argentina.comZufriategui 1251, Vicente LópezSOBRE NOSOTROSConocé más sobre el clubEL CLUBPORTAL DE SOCIOSDEPORTES¡SUMATE AL CLUB!Se parte de este gran equipoHACETE SOCIONOVEDADESACTIVIDADES"
+        }
+      ],
+      "home_content": {
+        "hero_banners": [
+          {
+            "url": "https://clubbanconacion.org.ar/storage/banners/o57DsBjcuttzgg7490OG0vrVYXaMDFAQHAp04DYa.jpg",
+            "alt": "voley pelota en mano"
+          },
+          {
+            "url": "https://clubbanconacion.org.ar/storage/banners/J5iEbYaxqa3YHHTeZUw1qzRSH07z8kLe81DxItpb.jpg",
+            "alt": "voley pelota en mano"
+          },
+          {
+            "url": "https://clubbanconacion.org.ar/storage/banners/qPWqGjvvpszaapDlVD7d7zncwCoU0zqVCUgRXqNr.jpg",
+            "alt": "sportclub"
+          },
+          {
+            "url": "https://clubbanconacion.org.ar/storage/banners/OhQmF3Vc1q1ymT2H8zz1Eqvco0RTPsMX25VkTYc5.jpg",
+            "alt": "sportclub"
+          },
+          {
+            "url": "https://clubbanconacion.org.ar/storage/banners/cWhJZ6Z9lyhQzSFgdms4oPlZ6pLwv9NGvfH68mSW.jpg",
+            "alt": "voley pelota aire"
+          },
+          {
+            "url": "https://clubbanconacion.org.ar/storage/banners/xh6Ku0SQpDJJQQTBxKv3Ltjev3zt0Cos9zcryGRN.jpg",
+            "alt": "voley pelota aire"
+          }
+        ],
+        "stats": {
+          "social_followers": "+ Seguidores en redes sociales",
+          "activities_sports": "Actividades y deportes"
+        },
+        "about": {
+          "heading": "CLUB BANCO NACIÓN",
+          "text": "El Club Atlético Banco de La Nación Argentina es un espacio de esparcimiento, integración, formación y sobre todas las cosas, un lugar para sentirse parte de una gran familia. En el Club nos proponemos a promover los valores de la práctica del deporte en todas sus manifestaciones nobles y útiles, además de fomentar el cumplimiento de los deberes y la solidaridad."
+        },
+        "benefits": [
+          {
+            "name": "Descuentos",
+            "description": "Hacete socio y disfrutá grandes promociones y beneficios en nuestra y otras instituciones."
+          },
+          {
+            "name": "Eventos",
+            "description": "Disfrutá de actividades en un lugar donde la comunidad deportiva se reúne para celebrar."
+          },
+          {
+            "name": "Disciplinas",
+            "description": "Un mundo de posibilidades deportivas y actividades para todas las edades y niveles."
+          },
+          {
+            "name": "Cultura",
+            "description": "Te proponemos un estilo de vida, estamos comprometidos con el crecimiento integral."
+          },
+          {
+            "name": "Colonia",
+            "description": "Donde los más pequeños desarrollan habilidades, hacen amigos y crean recuerdos inolvidables."
+          }
+        ],
+        "testimonials": [
+          "Soy socia hace 3 años y disfruto de hacer vida sana en estas instalaciones cerca de nuestros hijos.",
+          "Soy socio hace 4 años y acá me siento en casa, rodeados de gente hermosa, junto con mi familia todos la pasamos muy bien.",
+          "Soy socia hace 3 años, y para mí y mis hijos, CABNA es mi segunda casa.",
+          "Soy socio hace 10 años y CABNA es para mí y mis hijos el lugar de encuentro con amigos y hacer deportes."
+        ],
+        "instagram_section": {
+          "heading": "SEGUINOS EN INSTAGRAM",
+          "handle": "@CABNAOFICIAL",
+          "text": "¡Mantente conectado y no te pierdas ninguna de todas nuestras actividades, promociones y eventos especiales!",
+          "hashtag": "#YOTEBANCONACION"
+        },
+        "newsletter": {
+          "heading": "¡SUSCRIBITE!",
+          "text": "Enterate de todas nuestras comunicaciones."
+        }
+      }
+    },
+    "el-club": {
+      "url": "https://clubbanconacion.org.ar/el-club",
+      "sections": [
+        {
+          "heading": "EL CLUB",
+          "paragraphs": [],
+          "links": [],
+          "full_text": "EL CLUB"
+        },
+        {
+          "heading": "",
+          "paragraphs": [],
+          "links": [],
+          "full_text": "HISTORIAINSTALACIONESINSTITUCIONALGALERÍARESERVA DE QUINCHOTRABAJÁ CON NOSOTROSMENÚHISTORIAINSTALACIONESINSTITUCIONALGALERÍARESERVA DE QUINCHOTRABAJO"
+        },
+        {
+          "heading": "CLUB BANCO NACIÓN",
+          "paragraphs": [
+            "El Club Atlético Banco de La Nación Argentina es un espacio de esparcimiento, integración, formación y sobre todas las cosas, un lugar para sentirse parte de una gran familia. En el Club nos proponemos a fomentar y promover los valores de la práctica del deporte en todas sus manifestaciones nobles y útiles, además de fomentar el cumplimiento de los deberes y la solidaridad."
+          ],
+          "links": [],
+          "full_text": "CLUB BANCO NACIÓNEl Club Atlético Banco de La Nación Argentina es un espacio de esparcimiento, integración, formación y sobre todas las cosas, un lugar para sentirse parte de una gran familia. En el Club nos proponemos a fomentar y promover los valores de la práctica del deporte en todas sus manifestaciones nobles y útiles, además de fomentar el cumplimiento de los deberes y la solidaridad."
+        },
+        {
+          "heading": "INSTALACIONES",
+          "paragraphs": [
+            "Luego de grandes desafíos institucionales, el actual presidente Rodrigro Graña y su comisión, sumado al esfuerzo en conjunto de socios, familias, empleados, dirigentes del club y representantes de otras instituciones, generamos el impulso necesario para que Club Atlético Banco Nación saliera adelante. Hoy podemos disfrutar de cada actividad y espacio gracias a esta hermosa comunidad y su apoyo.",
+            "Actualmente el club cuenta con distintas instalaciones y espacios para el desarrollo de más de 25 actividades entre ellas deportivas, físicas y recreativas.",
+            "Tras dos años de pandemia el club sigue con la propuesta de cubrir las necesidades en las actividades que se realizan y tratamos de asegurar de esta manera un servicio más completo y adecuado."
+          ],
+          "links": [],
+          "full_text": "INSTALACIONESEl Club sigue creciendo y mejorando sus instalaciones.Luego de grandes desafíos institucionales, el actual presidente Rodrigro Graña y su comisión, sumado al esfuerzo en conjunto de socios, familias, empleados, dirigentes del club y representantes de otras instituciones, generamos el impulso necesario para que Club Atlético Banco Nación saliera adelante. Hoy podemos disfrutar de cada actividad y espacio gracias a esta hermosa comunidad y su apoyo.Actualmente el club cuenta con distintas instalaciones y espacios para el desarrollo de más de 25 actividades entre ellas deportivas, físicas y recreativas.Tras dos años de pandemia el club sigue con la propuesta de cubrir las necesidades en las actividades que se realizan y tratamos de asegurar de esta manera un servicio más completo y adecuado."
+        },
+        {
+          "heading": "INSTITUCIÓN",
+          "paragraphs": [],
+          "links": [],
+          "full_text": "INSTITUCIÓNCarta de valoresComisión directivaComisión fizcalizadora"
+        },
+        {
+          "heading": "GALERÍA",
+          "paragraphs": [],
+          "links": [],
+          "full_text": "GALERÍA"
+        },
+        {
+          "heading": "SOBRE NOSOTROS",
+          "paragraphs": [
+            "Conocé más sobre el club",
+            "Se parte de este gran equipo"
+          ],
+          "links": [
+            {
+              "label": "11 2785 1234",
+              "url": "https://wa.me/+5491127851234"
+            },
+            {
+              "label": "cabna@argentina.com",
+              "url": "mailto:cabna@argentina.com"
+            },
+            {
+              "label": "Zufriategui 1251, Vicente López",
+              "url": "https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7"
+            },
+            {
+              "label": "EL CLUB",
+              "url": "https://clubbanconacion.org.ar/el-club"
+            },
+            {
+              "label": "DEPORTES",
+              "url": "https://clubbanconacion.org.ar/deportes"
+            },
+            {
+              "label": "HACETE SOCIO",
+              "url": "https://clubbanconacion.org.ar/hacete-socio"
+            },
+            {
+              "label": "NOVEDADES",
+              "url": "https://clubbanconacion.org.ar/novedades"
+            },
+            {
+              "label": "ACTIVIDADES",
+              "url": "https://clubbanconacion.org.ar/actividades"
+            }
+          ],
+          "full_text": "11 2785 1234cabna@argentina.comZufriategui 1251, Vicente LópezSOBRE NOSOTROSConocé más sobre el clubEL CLUBPORTAL DE SOCIOSDEPORTES¡SUMATE AL CLUB!Se parte de este gran equipoHACETE SOCIONOVEDADESACTIVIDADES"
+        }
+      ],
+      "club_content": {
+        "sub_nav": [
+          "HISTORIA",
+          "INSTALACIONES",
+          "INSTITUCIONAL",
+          "GALERÍA",
+          "RESERVA DE QUINCHO",
+          "TRABAJÁ CON NOSOTROS"
+        ],
+        "history": {
+          "heading": "CLUB BANCO NACIÓN",
+          "text": "El Club Atlético Banco de La Nación Argentina es un espacio de esparcimiento, integración, formación y sobre todas las cosas, un lugar para sentirse parte de una gran familia. En el Club nos proponemos a fomentar y promover los valores de la práctica del deporte en todas sus manifestaciones nobles y útiles, además de fomentar el cumplimiento de los deberes y la solidaridad."
+        },
+        "installations": {
+          "heading": "INSTALACIONES",
+          "text": "Luego de grandes desafíos institucionales, el actual presidente Rodrigro Graña y su comisión, sumado al esfuerzo en conjunto de socios, familias, empleados, dirigentes del club y representantes de otras instituciones, generamos el impulso necesario para que Club Atlético Banco Nación saliera adelante. Hoy podemos disfrutar de cada actividad y espacio gracias a esta hermosa comunidad y su apoyo. Actualmente el club cuenta con distintas instalaciones y espacios para el desarrollo de más de 25 actividades entre ellas deportivas, físicas y recreativas. Tras dos años de pandemia el club sigue con la propuesta de cubrir las necesidades en las actividades que se realizan y tratamos de asegurar de esta manera un servicio más completo y adecuado."
+        },
+        "institution": {
+          "heading": "INSTITUCIÓN",
+          "items": [
+            "Carta de valores",
+            "Comisión directiva",
+            "Comisión fiscalizadora"
+          ]
+        },
+        "gallery": [
+          {
+            "url": "https://clubbanconacion.org.ar/assets/img/club/galeria/1.jpg",
+            "alt": "Foto"
+          },
+          {
+            "url": "https://clubbanconacion.org.ar/assets/img/club/galeria/2.jpg",
+            "alt": "Foto"
+          },
+          {
+            "url": "https://clubbanconacion.org.ar/assets/img/club/galeria/3.jpg",
+            "alt": "Foto"
+          },
+          {
+            "url": "https://clubbanconacion.org.ar/assets/img/club/galeria/4.jpg",
+            "alt": "Foto"
+          },
+          {
+            "url": "https://clubbanconacion.org.ar/assets/img/club/galeria/5.jpg",
+            "alt": "Foto"
+          },
+          {
+            "url": "https://clubbanconacion.org.ar/assets/img/club/galeria/6.jpg",
+            "alt": "Foto"
+          },
+          {
+            "url": "https://clubbanconacion.org.ar/assets/img/club/galeria/7.jpg",
+            "alt": "Foto"
+          },
+          {
+            "url": "https://clubbanconacion.org.ar/assets/img/club/galeria/8.jpg",
+            "alt": "Foto"
+          }
+        ]
+      }
+    },
+    "deportes": {
+      "url": "https://clubbanconacion.org.ar/deportes",
+      "sections": [
+        {
+          "heading": "NUESTROS DEPORTES",
+          "paragraphs": [],
+          "links": [],
+          "full_text": "NUESTROS DEPORTES"
+        },
+        {
+          "heading": "",
+          "paragraphs": [],
+          "links": [
+            {
+              "label": "AIKIDOAIKIDO",
+              "url": "https://clubbanconacion.org.ar/deportes/1/aikido"
+            },
+            {
+              "label": "AQUAGYMAQUAGYM",
+              "url": "https://clubbanconacion.org.ar/deportes/17/aquagym"
+            },
+            {
+              "label": "BASQUETBASQUET",
+              "url": "https://clubbanconacion.org.ar/deportes/2/basquet"
+            },
+            {
+              "label": "CLASES DE NATACIÓNCLASES DE NATACIÓN",
+              "url": "https://clubbanconacion.org.ar/deportes/8/clases-de-natacion"
+            },
+            {
+              "label": "ESCUELA DE FÚTBOLESCUELA DE FÚTBOL",
+              "url": "https://clubbanconacion.org.ar/deportes/14/escuela-de-futbol"
+            },
+            {
+              "label": "ESCUELA DE TENISESCUELA DE TENIS",
+              "url": "https://clubbanconacion.org.ar/deportes/12/escuela-de-tenis"
+            },
+            {
+              "label": "FÚTBOL 11FÚTBOL 11",
+              "url": "https://clubbanconacion.org.ar/deportes/3/futbol-11"
+            },
+            {
+              "label": "FUTSALFUTSAL",
+              "url": "https://clubbanconacion.org.ar/deportes/20/futsal"
+            },
+            {
+              "label": "GIMNASIA ARTÍSTICAGIMNASIA ARTÍSTICA",
+              "url": "https://clubbanconacion.org.ar/deportes/5/gimnasia-artistica"
+            },
+            {
+              "label": "INICIACIÓN DEPORTIVAINICIACIÓN DEPORTIVA",
+              "url": "https://clubbanconacion.org.ar/deportes/4/iniciacion-deportiva"
+            },
+            {
+              "label": "JUDOJUDO",
+              "url": "https://clubbanconacion.org.ar/deportes/6/judo"
+            },
+            {
+              "label": "MASTER HOCKEYMASTER HOCKEY",
+              "url": "https://clubbanconacion.org.ar/deportes/7/master-hockey"
+            },
+            {
+              "label": "PATÍN ARTÍSTICOPATÍN ARTÍSTICO",
+              "url": "https://clubbanconacion.org.ar/deportes/9/patin-artistico"
+            },
+            {
+              "label": "PILATES MATPILATES MAT",
+              "url": "https://clubbanconacion.org.ar/deportes/22/pilates-mat"
+            },
+            {
+              "label": "SPORTCLUBSPORTCLUB",
+              "url": "https://clubbanconacion.org.ar/deportes/16/sportclub"
+            },
+            {
+              "label": "TAEKWONDOTAEKWONDO",
+              "url": "https://clubbanconacion.org.ar/deportes/11/taekwondo"
+            },
+            {
+              "label": "TENIS DE MESATENIS DE MESA",
+              "url": "https://clubbanconacion.org.ar/deportes/13/tenis-de-mesa"
+            },
+            {
+              "label": "VOLEY FEMENINOVOLEY FEMENINO",
+              "url": "https://clubbanconacion.org.ar/deportes/10/voley-femenino"
+            },
+            {
+              "label": "YOGAYOGA",
+              "url": "https://clubbanconacion.org.ar/deportes/21/yoga"
+            }
+          ],
+          "full_text": "AIKIDOAIKIDOAQUAGYMAQUAGYMBASQUETBASQUETCLASES DE NATACIÓNCLASES DE NATACIÓNESCUELA DE FÚTBOLESCUELA DE FÚTBOLESCUELA DE TENISESCUELA DE TENISFÚTBOL 11FÚTBOL 11FUTSALFUTSALGIMNASIA ARTÍSTICAGIMNASIA ARTÍSTICAINICIACIÓN DEPORTIVAINICIACIÓN DEPORTIVAJUDOJUDOMASTER HOCKEYMASTER HOCKEYPATÍN ARTÍSTICOPATÍN ARTÍSTICOPILATES MATPILATES MATSPORTCLUBSPORTCLUBTAEKWONDOTAEKWONDOTENIS DE MESATENIS DE MESAVOLEY FEMENINOVOLEY FEMENINOYOGAYOGA"
+        },
+        {
+          "heading": "¡HACETE SOCIO!",
+          "paragraphs": [
+            "Disfrutá de muchos beneficios, actividades y deportes excepcionales para toda la familia."
+          ],
+          "links": [
+            {
+              "label": "HACETE SOCIO",
+              "url": "https://clubbanconacion.org.ar/hacete-socio"
+            }
+          ],
+          "full_text": "¡HACETE SOCIO!Disfrutá de muchos beneficios, actividades y deportes excepcionales para toda la familia.HACETE SOCIO"
+        },
+        {
+          "heading": "SOBRE NOSOTROS",
+          "paragraphs": [
+            "Conocé más sobre el club",
+            "Se parte de este gran equipo"
+          ],
+          "links": [
+            {
+              "label": "11 2785 1234",
+              "url": "https://wa.me/+5491127851234"
+            },
+            {
+              "label": "cabna@argentina.com",
+              "url": "mailto:cabna@argentina.com"
+            },
+            {
+              "label": "Zufriategui 1251, Vicente López",
+              "url": "https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7"
+            },
+            {
+              "label": "EL CLUB",
+              "url": "https://clubbanconacion.org.ar/el-club"
+            },
+            {
+              "label": "DEPORTES",
+              "url": "https://clubbanconacion.org.ar/deportes"
+            },
+            {
+              "label": "HACETE SOCIO",
+              "url": "https://clubbanconacion.org.ar/hacete-socio"
+            },
+            {
+              "label": "NOVEDADES",
+              "url": "https://clubbanconacion.org.ar/novedades"
+            },
+            {
+              "label": "ACTIVIDADES",
+              "url": "https://clubbanconacion.org.ar/actividades"
+            }
+          ],
+          "full_text": "11 2785 1234cabna@argentina.comZufriategui 1251, Vicente LópezSOBRE NOSOTROSConocé más sobre el clubEL CLUBPORTAL DE SOCIOSDEPORTES¡SUMATE AL CLUB!Se parte de este gran equipoHACETE SOCIONOVEDADESACTIVIDADES"
+        }
+      ],
+      "deportes_content": {
+        "heading": "NUESTROS DEPORTES",
+        "sports": [
+          {
+            "name": "AIKIDO",
+            "url": "https://clubbanconacion.org.ar/deportes/1/aikido"
+          },
+          {
+            "name": "AQUAGYM",
+            "url": "https://clubbanconacion.org.ar/deportes/17/aquagym"
+          },
+          {
+            "name": "BASQUET",
+            "url": "https://clubbanconacion.org.ar/deportes/2/basquet"
+          },
+          {
+            "name": "CLASES DE NATACIÓN",
+            "url": "https://clubbanconacion.org.ar/deportes/8/clases-de-natacion"
+          },
+          {
+            "name": "ESCUELA DE FÚTBOL",
+            "url": "https://clubbanconacion.org.ar/deportes/14/escuela-de-futbol"
+          },
+          {
+            "name": "ESCUELA DE TENIS",
+            "url": "https://clubbanconacion.org.ar/deportes/12/escuela-de-tenis"
+          },
+          {
+            "name": "FÚTBOL 11",
+            "url": "https://clubbanconacion.org.ar/deportes/3/futbol-11"
+          },
+          {
+            "name": "FUTSAL",
+            "url": "https://clubbanconacion.org.ar/deportes/20/futsal"
+          },
+          {
+            "name": "GIMNASIA ARTÍSTICA",
+            "url": "https://clubbanconacion.org.ar/deportes/5/gimnasia-artistica"
+          },
+          {
+            "name": "INICIACIÓN DEPORTIVA",
+            "url": "https://clubbanconacion.org.ar/deportes/4/iniciacion-deportiva"
+          },
+          {
+            "name": "JUDO",
+            "url": "https://clubbanconacion.org.ar/deportes/6/judo"
+          },
+          {
+            "name": "MASTER HOCKEY",
+            "url": "https://clubbanconacion.org.ar/deportes/7/master-hockey"
+          },
+          {
+            "name": "PATÍN ARTÍSTICO",
+            "url": "https://clubbanconacion.org.ar/deportes/9/patin-artistico"
+          },
+          {
+            "name": "PILATES MAT",
+            "url": "https://clubbanconacion.org.ar/deportes/22/pilates-mat"
+          },
+          {
+            "name": "SPORTCLUB",
+            "url": "https://clubbanconacion.org.ar/deportes/16/sportclub"
+          },
+          {
+            "name": "TAEKWONDO",
+            "url": "https://clubbanconacion.org.ar/deportes/11/taekwondo"
+          },
+          {
+            "name": "TENIS DE MESA",
+            "url": "https://clubbanconacion.org.ar/deportes/13/tenis-de-mesa"
+          },
+          {
+            "name": "VOLEY FEMENINO",
+            "url": "https://clubbanconacion.org.ar/deportes/10/voley-femenino"
+          },
+          {
+            "name": "YOGA",
+            "url": "https://clubbanconacion.org.ar/deportes/21/yoga"
+          },
+          {
+            "name": "AIKIDOAIKIDO",
+            "url": "https://clubbanconacion.org.ar/deportes/1/aikido"
+          },
+          {
+            "name": "AQUAGYMAQUAGYM",
+            "url": "https://clubbanconacion.org.ar/deportes/17/aquagym"
+          },
+          {
+            "name": "BASQUETBASQUET",
+            "url": "https://clubbanconacion.org.ar/deportes/2/basquet"
+          },
+          {
+            "name": "CLASES DE NATACIÓNCLASES DE NATACIÓN",
+            "url": "https://clubbanconacion.org.ar/deportes/8/clases-de-natacion"
+          },
+          {
+            "name": "ESCUELA DE FÚTBOLESCUELA DE FÚTBOL",
+            "url": "https://clubbanconacion.org.ar/deportes/14/escuela-de-futbol"
+          },
+          {
+            "name": "ESCUELA DE TENISESCUELA DE TENIS",
+            "url": "https://clubbanconacion.org.ar/deportes/12/escuela-de-tenis"
+          },
+          {
+            "name": "FÚTBOL 11FÚTBOL 11",
+            "url": "https://clubbanconacion.org.ar/deportes/3/futbol-11"
+          },
+          {
+            "name": "FUTSALFUTSAL",
+            "url": "https://clubbanconacion.org.ar/deportes/20/futsal"
+          },
+          {
+            "name": "GIMNASIA ARTÍSTICAGIMNASIA ARTÍSTICA",
+            "url": "https://clubbanconacion.org.ar/deportes/5/gimnasia-artistica"
+          },
+          {
+            "name": "INICIACIÓN DEPORTIVAINICIACIÓN DEPORTIVA",
+            "url": "https://clubbanconacion.org.ar/deportes/4/iniciacion-deportiva"
+          },
+          {
+            "name": "JUDOJUDO",
+            "url": "https://clubbanconacion.org.ar/deportes/6/judo"
+          },
+          {
+            "name": "MASTER HOCKEYMASTER HOCKEY",
+            "url": "https://clubbanconacion.org.ar/deportes/7/master-hockey"
+          },
+          {
+            "name": "PATÍN ARTÍSTICOPATÍN ARTÍSTICO",
+            "url": "https://clubbanconacion.org.ar/deportes/9/patin-artistico"
+          },
+          {
+            "name": "PILATES MATPILATES MAT",
+            "url": "https://clubbanconacion.org.ar/deportes/22/pilates-mat"
+          },
+          {
+            "name": "SPORTCLUBSPORTCLUB",
+            "url": "https://clubbanconacion.org.ar/deportes/16/sportclub"
+          },
+          {
+            "name": "TAEKWONDOTAEKWONDO",
+            "url": "https://clubbanconacion.org.ar/deportes/11/taekwondo"
+          },
+          {
+            "name": "TENIS DE MESATENIS DE MESA",
+            "url": "https://clubbanconacion.org.ar/deportes/13/tenis-de-mesa"
+          },
+          {
+            "name": "VOLEY FEMENINOVOLEY FEMENINO",
+            "url": "https://clubbanconacion.org.ar/deportes/10/voley-femenino"
+          },
+          {
+            "name": "YOGAYOGA",
+            "url": "https://clubbanconacion.org.ar/deportes/21/yoga"
+          }
+        ]
+      }
+    },
+    "actividades": {
+      "url": "https://clubbanconacion.org.ar/actividades",
+      "sections": [
+        {
+          "heading": "NUESTRAS ACTIVIDADES",
+          "paragraphs": [],
+          "links": [],
+          "full_text": "NUESTRAS ACTIVIDADES"
+        },
+        {
+          "heading": "",
+          "paragraphs": [],
+          "links": [
+            {
+              "label": "AGILITYAGILITY",
+              "url": "https://clubbanconacion.org.ar/actividades/2/familiares/19/agility"
+            }
+          ],
+          "full_text": "FAMILIARESSALUD Y BIENESTARTALLERESAGILITYAGILITYLoading..."
+        },
+        {
+          "heading": "¡HACETE SOCIO!",
+          "paragraphs": [
+            "Disfrutá de muchos beneficios, actividades y deportes excepcionales para toda la familia."
+          ],
+          "links": [
+            {
+              "label": "HACETE SOCIO",
+              "url": "https://clubbanconacion.org.ar/hacete-socio"
+            }
+          ],
+          "full_text": "¡HACETE SOCIO!Disfrutá de muchos beneficios, actividades y deportes excepcionales para toda la familia.HACETE SOCIO"
+        },
+        {
+          "heading": "ALQUILER DE QUINCHOS",
+          "paragraphs": [
+            "Celebrá momentos inolvidables, contamos con quinchos en nuestras instalaciones. Un espacio para que tanto los socios como no socios del club celebren su cumpleaños o disfruten de reuniones con amigos y familia."
+          ],
+          "links": [
+            {
+              "label": "RESERVÁ YÁ",
+              "url": "https://wa.me/+5491127851234"
+            }
+          ],
+          "full_text": "ALQUILER DE QUINCHOSCelebrá momentos inolvidables, contamos con quinchos en nuestras instalaciones. Un espacio para que tanto los socios como no socios del club celebren su cumpleaños o disfruten de reuniones con amigos y familia.RESERVÁ YÁ"
+        },
+        {
+          "heading": "SOBRE NOSOTROS",
+          "paragraphs": [
+            "Conocé más sobre el club",
+            "Se parte de este gran equipo"
+          ],
+          "links": [
+            {
+              "label": "11 2785 1234",
+              "url": "https://wa.me/+5491127851234"
+            },
+            {
+              "label": "cabna@argentina.com",
+              "url": "mailto:cabna@argentina.com"
+            },
+            {
+              "label": "Zufriategui 1251, Vicente López",
+              "url": "https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7"
+            },
+            {
+              "label": "EL CLUB",
+              "url": "https://clubbanconacion.org.ar/el-club"
+            },
+            {
+              "label": "DEPORTES",
+              "url": "https://clubbanconacion.org.ar/deportes"
+            },
+            {
+              "label": "HACETE SOCIO",
+              "url": "https://clubbanconacion.org.ar/hacete-socio"
+            },
+            {
+              "label": "NOVEDADES",
+              "url": "https://clubbanconacion.org.ar/novedades"
+            },
+            {
+              "label": "ACTIVIDADES",
+              "url": "https://clubbanconacion.org.ar/actividades"
+            }
+          ],
+          "full_text": "11 2785 1234cabna@argentina.comZufriategui 1251, Vicente LópezSOBRE NOSOTROSConocé más sobre el clubEL CLUBPORTAL DE SOCIOSDEPORTES¡SUMATE AL CLUB!Se parte de este gran equipoHACETE SOCIONOVEDADESACTIVIDADES"
+        }
+      ],
+      "actividades_content": {
+        "heading": "NUESTRAS ACTIVIDADES",
+        "categories": [
+          "FAMILIARES",
+          "SALUD Y BIENESTAR",
+          "TALLERES"
+        ]
+      }
+    },
+    "novedades": {
+      "url": "https://clubbanconacion.org.ar/novedades",
+      "sections": [
+        {
+          "heading": "NOVEDADES",
+          "paragraphs": [],
+          "links": [],
+          "full_text": "NOVEDADES"
+        },
+        {
+          "heading": "",
+          "paragraphs": [],
+          "links": [],
+          "full_text": "MOSTRAR MÁSLoading..."
+        },
+        {
+          "heading": "¡SUSCRIBITE!",
+          "paragraphs": [
+            "Enterate de todas nuestras comunicaciones."
+          ],
+          "links": [],
+          "full_text": "¡SUSCRIBITE!Enterate de todas nuestras comunicaciones.Loading..."
+        },
+        {
+          "heading": "SOBRE NOSOTROS",
+          "paragraphs": [
+            "Conocé más sobre el club",
+            "Se parte de este gran equipo"
+          ],
+          "links": [
+            {
+              "label": "11 2785 1234",
+              "url": "https://wa.me/+5491127851234"
+            },
+            {
+              "label": "cabna@argentina.com",
+              "url": "mailto:cabna@argentina.com"
+            },
+            {
+              "label": "Zufriategui 1251, Vicente López",
+              "url": "https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7"
+            },
+            {
+              "label": "EL CLUB",
+              "url": "https://clubbanconacion.org.ar/el-club"
+            },
+            {
+              "label": "DEPORTES",
+              "url": "https://clubbanconacion.org.ar/deportes"
+            },
+            {
+              "label": "HACETE SOCIO",
+              "url": "https://clubbanconacion.org.ar/hacete-socio"
+            },
+            {
+              "label": "NOVEDADES",
+              "url": "https://clubbanconacion.org.ar/novedades"
+            },
+            {
+              "label": "ACTIVIDADES",
+              "url": "https://clubbanconacion.org.ar/actividades"
+            }
+          ],
+          "full_text": "11 2785 1234cabna@argentina.comZufriategui 1251, Vicente LópezSOBRE NOSOTROSConocé más sobre el clubEL CLUBPORTAL DE SOCIOSDEPORTES¡SUMATE AL CLUB!Se parte de este gran equipoHACETE SOCIONOVEDADESACTIVIDADES"
+        }
+      ]
+    },
+    "contacto": {
+      "url": "https://clubbanconacion.org.ar/contacto",
+      "sections": [
+        {
+          "heading": "CONTACTO",
+          "paragraphs": [],
+          "links": [],
+          "full_text": "CONTACTO"
+        },
+        {
+          "heading": "",
+          "paragraphs": [],
+          "links": [
+            {
+              "label": "AMPLIAR MAPA",
+              "url": "https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7"
+            },
+            {
+              "label": "Zufriategui 1251, Vicente López",
+              "url": "https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7"
+            },
+            {
+              "label": "+54 9 11 2785 1234",
+              "url": "https://wa.me/+5491127851234"
+            },
+            {
+              "label": "11 4791 7440",
+              "url": "tel:+5491147917440"
+            },
+            {
+              "label": "cabna@argentina.com",
+              "url": "mailto:cabna@argentina.com"
+            }
+          ],
+          "full_text": "Nombre y apellidoCorreo electrónicoAsuntoMensajeENVIAR MENSAJELoading...AMPLIAR MAPAZufriategui 1251, Vicente López+54 9 11 2785 123411 4791 7440cabna@argentina.com"
+        },
+        {
+          "heading": "",
+          "paragraphs": [],
+          "links": [],
+          "full_text": "WHATSAPP CABNA11 2785 1234TELÉFONO CABNA11 4791 7440COORDINADOR DE DEPORTES11 4025 4827RESERVA DE QUINCHOS11 2785 1234"
+        },
+        {
+          "heading": "¡HACETE SOCIO!",
+          "paragraphs": [
+            "Disfrutá de muchos beneficios, actividades y deportes excepcionales para toda la familia."
+          ],
+          "links": [
+            {
+              "label": "HACETE SOCIO",
+              "url": "https://clubbanconacion.org.ar/hacete-socio"
+            }
+          ],
+          "full_text": "¡HACETE SOCIO!Disfrutá de muchos beneficios, actividades y deportes excepcionales para toda la familia.HACETE SOCIO"
+        },
+        {
+          "heading": "ALQUILER DE QUINCHOS",
+          "paragraphs": [
+            "Celebrá momentos inolvidables, contamos con quinchos en nuestras instalaciones. Un espacio para que tanto los socios como no socios del club celebren su cumpleaños o disfruten de reuniones con amigos y familia."
+          ],
+          "links": [
+            {
+              "label": "RESERVÁ YÁ",
+              "url": "https://wa.me/+5491127851234"
+            }
+          ],
+          "full_text": "ALQUILER DE QUINCHOSCelebrá momentos inolvidables, contamos con quinchos en nuestras instalaciones. Un espacio para que tanto los socios como no socios del club celebren su cumpleaños o disfruten de reuniones con amigos y familia.RESERVÁ YÁ"
+        },
+        {
+          "heading": "¡SUSCRIBITE!",
+          "paragraphs": [
+            "Enterate de todas nuestras comunicaciones."
+          ],
+          "links": [],
+          "full_text": "¡SUSCRIBITE!Enterate de todas nuestras comunicaciones.Loading..."
+        },
+        {
+          "heading": "TRABAJÁ CON NOSOTROS",
+          "paragraphs": [],
+          "links": [],
+          "full_text": "TRABAJÁ CON NOSOTROSNombreApellidoTeléfonoCorreo electrónicoAdjuntar CVENVIAR CVLoading..."
+        },
+        {
+          "heading": "SOBRE NOSOTROS",
+          "paragraphs": [
+            "Conocé más sobre el club",
+            "Se parte de este gran equipo"
+          ],
+          "links": [
+            {
+              "label": "11 2785 1234",
+              "url": "https://wa.me/+5491127851234"
+            },
+            {
+              "label": "cabna@argentina.com",
+              "url": "mailto:cabna@argentina.com"
+            },
+            {
+              "label": "Zufriategui 1251, Vicente López",
+              "url": "https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7"
+            },
+            {
+              "label": "EL CLUB",
+              "url": "https://clubbanconacion.org.ar/el-club"
+            },
+            {
+              "label": "DEPORTES",
+              "url": "https://clubbanconacion.org.ar/deportes"
+            },
+            {
+              "label": "HACETE SOCIO",
+              "url": "https://clubbanconacion.org.ar/hacete-socio"
+            },
+            {
+              "label": "NOVEDADES",
+              "url": "https://clubbanconacion.org.ar/novedades"
+            },
+            {
+              "label": "ACTIVIDADES",
+              "url": "https://clubbanconacion.org.ar/actividades"
+            }
+          ],
+          "full_text": "11 2785 1234cabna@argentina.comZufriategui 1251, Vicente LópezSOBRE NOSOTROSConocé más sobre el clubEL CLUBPORTAL DE SOCIOSDEPORTES¡SUMATE AL CLUB!Se parte de este gran equipoHACETE SOCIONOVEDADESACTIVIDADES"
+        }
+      ],
+      "contacto_content": {
+        "heading": "CONTACTO",
+        "address": "Zufriategui 1251, Vicente López",
+        "phones": {
+          "whatsapp": "11 2785 1234",
+          "telefono": "11 4791 7440",
+          "coordinador_deportes": "11 4025 4827",
+          "reserva_quinchos": "11 2785 1234"
+        },
+        "email": "cabna@argentina.com",
+        "form_fields": [
+          "Nombre y apellido",
+          "Correo electrónico",
+          "Asunto",
+          "Mensaje"
+        ],
+        "quincho_rental": {
+          "heading": "ALQUILER DE QUINCHOS",
+          "text": "Celebrá momentos inolvidables, contamos con quinchos en nuestras instalaciones. Un espacio para que tanto los socios como no socios del club celebren su cumpleaños o disfruten de reuniones con amigos y familia."
+        },
+        "work_with_us": {
+          "heading": "TRABAJÁ CON NOSOTROS",
+          "form_fields": [
+            "Nombre",
+            "Apellido",
+            "Teléfono",
+            "Correo electrónico",
+            "Adjuntar CV"
+          ]
+        }
+      }
+    },
+    "hacete-socio": {
+      "url": "https://clubbanconacion.org.ar/hacete-socio",
+      "sections": [
+        {
+          "heading": "HACETE SOCIO",
+          "paragraphs": [],
+          "links": [],
+          "full_text": "HACETE SOCIO"
+        },
+        {
+          "heading": "",
+          "paragraphs": [],
+          "links": [],
+          "full_text": "PLANESBENEFICIOS EXTRA SOCIOSFORMAS DE PAGOQUIERO ASOCIARME¿QUÉ NECESITO?CONTACTOMENÚPLANESBENEFICIOS EXTRA SOCIOSFORMAS DE PAGOQUIERO ASOCIARME¿QUÉ NECESITO?CONTACTO"
+        },
+        {
+          "heading": "PLANES",
+          "paragraphs": [
+            "CUOTA SOCIAL CABNA"
+          ],
+          "links": [],
+          "full_text": "PLANESCUOTA SOCIAL CABNA"
+        },
+        {
+          "heading": "",
+          "paragraphs": [
+            "Ajedrez; *Agility; Charly Dance; Pilates MAT; Ritmos Latinos (Adultos); Taller musical; Yoga.**Aquagym adicional $12.000*Actividad con costo adicional",
+            "INCLUYEActividades de la CUOTA ÚNICA;Aikido, Aquagym, Futsal Fem y Masc, Gym. Artística*, Iniciación Deportiva, Judo, Mami Futbol, Patín Artístico, Tenis de Mesa, Esc. de Fútbol, Esc. de Hockey Fem, Master Hockey, Pileta Entrenamiento, Futbol 11, Act. Outdoor SportClub y Taekwondo.**Natación (Clases): $12.000*Actividad con costo adicional50% OFF en SportClub",
+            "INCLUYEActividades de la CUOTA ÚNICA Y CABNABásquet o Vóley+Natación (Clases)**.50% OFF en SportClub",
+            "Incluye actividades de la CUOTA ÚNICA y CABNA para toda la familia.-Abonando vóley o básquet incluye natación (clases)-Básquet, Natación (clases) o Vóley: $12.000 por persona del grupo50% OFF en SportClub"
+          ],
+          "links": [
+            {
+              "label": "HACETE SOCIO",
+              "url": "https://clubbanconacion.org.ar/inscripcion"
+            },
+            {
+              "label": "HACETE SOCIO",
+              "url": "https://clubbanconacion.org.ar/inscripcion"
+            },
+            {
+              "label": "HACETE SOCIO",
+              "url": "https://clubbanconacion.org.ar/inscripcion"
+            },
+            {
+              "label": "HACETE SOCIO",
+              "url": "https://clubbanconacion.org.ar/inscripcion"
+            }
+          ],
+          "full_text": "CUOTA ÚNICAINDIVIDUALAjedrez; *Agility; Charly Dance; Pilates MAT; Ritmos Latinos (Adultos); Taller musical; Yoga.**Aquagym adicional $12.000*Actividad con costo adicional$20.000x MESHACETE SOCIOCABNAINDIVIDUALINCLUYEActividades de la CUOTA ÚNICA;Aikido, Aquagym, Futsal Fem y Masc, Gym. Artística*, Iniciación Deportiva, Judo, Mami Futbol, Patín Artístico, Tenis de Mesa, Esc. de Fútbol, Esc. de Hockey Fem, Master Hockey, Pileta Entrenamiento, Futbol 11, Act. Outdoor SportClub y Taekwondo.**Natación (Clases): $12.000*Actividad con costo adicional50% OFF en SportClub$52.000x MESHACETE SOCIOCABNA PLUSINDIVIDUALINCLUYEActividades de la CUOTA ÚNICA Y CABNABásquet o Vóley+Natación (Clases)**.50% OFF en SportClub$70.000x MESHACETE SOCIOCABNA FAMILIARMATRIMONIO Y HASTA 3 HIJOS MENORES DE 18 AÑOSIncluye actividades de la CUOTA ÚNICA y CABNA para toda la familia.-Abonando vóley o básquet incluye natación (clases)-Básquet, Natación (clases) o Vóley: $12.000 por persona del grupo50% OFF en SportClub$91.000x MESHACETE SOCIO"
+        },
+        {
+          "heading": "Beneficios extra socios",
+          "paragraphs": [],
+          "links": [],
+          "full_text": "Beneficios extra socios50% de descuento en la mensualidad (EXCLUSIVO PLAN TOTAL) de Sportclub a partir de los planes CABNA PLUS Y CABNA FAMILIAR.Uso de parrillas y espacios comunes desde la CUOTA ÚNICA.$4.000 de descuento en todos los planes para alumnos del Saint Edwards (incluido CABNA FAMILIAR Y CUOTA ÚNICA).Valores especiales para empleados bancarios BNA.Recreación y actividades los fines de semana sin costo adicional.Otra informaciónEntrada al club NO SOCIOS de lunes a viernes con costo (consultar por whatsapp). Fines de semana entrada sin cargo, se abonan solamente el uso de parrillas.Al registrarte como socio se necesita de un carnet físico. Este tiene costo (consultar por whatsapp). Para la confección del carnet se necesita una foto 4x4 (carnet).Los beneficios serán efectivos solo para los socios que tengan la cuota al día.Descuentos50% de descuento en la mensualidad (EXCLUSIVO PLAN TOTAL) de Sportclub a partir de los planes CABNA PLUS Y CABNA FAMILIAR.TARJETA 365 (adhiriéndose a Sportclub).Descuentos en turismo empresa \"Noche y día\"."
+        },
+        {
+          "heading": "MEDIOS DE PAGO",
+          "paragraphs": [],
+          "links": [],
+          "full_text": "MEDIOS DE PAGOEFECTIVOTRANSFERENCIA BANCARIAMERCADO PAGODÉBITO AUTOMÁTICO"
+        },
+        {
+          "heading": "¡HACETE SOCIO!",
+          "paragraphs": [],
+          "links": [
+            {
+              "label": "¡HACETE SOCIO!ELEGÍ TU PLANCOMPLETÁ LA INSCRIPCIÓNABONÁ LA PRIMERA CUOTAOBTENÉ TU CARNET DIGITAL¡Empezá a disfrutar!",
+              "url": "https://clubbanconacion.org.ar/inscripcion"
+            }
+          ],
+          "full_text": "¡HACETE SOCIO!ELEGÍ TU PLANCOMPLETÁ LA INSCRIPCIÓNABONÁ LA PRIMERA CUOTAOBTENÉ TU CARNET DIGITAL¡Empezá a disfrutar!"
+        },
+        {
+          "heading": "¿QUÉ NECESITO PARA ASOCIARME?",
+          "paragraphs": [],
+          "links": [],
+          "full_text": "¿QUÉ NECESITO PARA ASOCIARME?Llenar la/s solicitud/es de socio correspondiente.Una foto 4x4 de la/s persona/s inscripta/s.Para realizar actividad física solicitamos un apto médico.Si realizas actividades en pileta, debés realizar una revisación médica (hay médicos en el club con días y horarios específicos para ofrecer esta atención)."
+        },
+        {
+          "heading": "HACÉ TU CONSULTA",
+          "paragraphs": [],
+          "links": [
+            {
+              "label": "AMPLIAR MAPA",
+              "url": "https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7"
+            },
+            {
+              "label": "Zufriategui 1251, Vicente López",
+              "url": "https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7"
+            },
+            {
+              "label": "+54 9 11 2785 1234",
+              "url": "https://wa.me/+5491127851234"
+            },
+            {
+              "label": "11 4791 7440",
+              "url": "tel:+5491147917440"
+            },
+            {
+              "label": "cabna@argentina.com",
+              "url": "mailto:cabna@argentina.com"
+            }
+          ],
+          "full_text": "HACÉ TU CONSULTANombre y apellidoCorreo electrónicoAsuntoMensajeENVIAR MENSAJELoading...¡VENÍ A CONOCER EL CLUB!AMPLIAR MAPAZufriategui 1251, Vicente López+54 9 11 2785 123411 4791 7440cabna@argentina.com"
+        },
+        {
+          "heading": "SOBRE NOSOTROS",
+          "paragraphs": [
+            "Conocé más sobre el club",
+            "Se parte de este gran equipo"
+          ],
+          "links": [
+            {
+              "label": "11 2785 1234",
+              "url": "https://wa.me/+5491127851234"
+            },
+            {
+              "label": "cabna@argentina.com",
+              "url": "mailto:cabna@argentina.com"
+            },
+            {
+              "label": "Zufriategui 1251, Vicente López",
+              "url": "https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7"
+            },
+            {
+              "label": "EL CLUB",
+              "url": "https://clubbanconacion.org.ar/el-club"
+            },
+            {
+              "label": "DEPORTES",
+              "url": "https://clubbanconacion.org.ar/deportes"
+            },
+            {
+              "label": "HACETE SOCIO",
+              "url": "https://clubbanconacion.org.ar/hacete-socio"
+            },
+            {
+              "label": "NOVEDADES",
+              "url": "https://clubbanconacion.org.ar/novedades"
+            },
+            {
+              "label": "ACTIVIDADES",
+              "url": "https://clubbanconacion.org.ar/actividades"
+            }
+          ],
+          "full_text": "11 2785 1234cabna@argentina.comZufriategui 1251, Vicente LópezSOBRE NOSOTROSConocé más sobre el clubEL CLUBPORTAL DE SOCIOSDEPORTES¡SUMATE AL CLUB!Se parte de este gran equipoHACETE SOCIONOVEDADESACTIVIDADES"
+        }
+      ],
+      "membership_content": {
+        "heading": "HACETE SOCIO",
+        "sub_nav": [
+          "PLANES",
+          "BENEFICIOS EXTRA SOCIOS",
+          "FORMAS DE PAGO",
+          "QUIERO ASOCIARME",
+          "¿QUÉ NECESITO?",
+          "CONTACTO"
+        ],
+        "plans": [
+          {
+            "name": "CUOTA ÚNICA INDIVIDUAL",
+            "price": "$20.000 x MES",
+            "includes": "Ajedrez; Agility; Charly Dance; Pilates MAT; Ritmos Latinos (Adultos); Taller musical; Yoga. Aquagym adicional $12.000."
+          },
+          {
+            "name": "CABNA INDIVIDUAL",
+            "price": "$52.000 x MES",
+            "includes": "Actividades de la CUOTA ÚNICA; Aikido, Aquagym, Futsal Fem y Masc, Gym. Artística, Iniciación Deportiva, Judo, Mami Futbol, Patín Artístico, Tenis de Mesa, Esc. de Fútbol, Esc. de Hockey Fem, Master Hockey, Pileta Entrenamiento, Futbol 11, Act. Outdoor SportClub y Taekwondo. Natación (Clases): $12.000. 50% OFF en SportClub."
+          },
+          {
+            "name": "CABNA PLUS INDIVIDUAL",
+            "price": "$70.000 x MES",
+            "includes": "Actividades de la CUOTA ÚNICA Y CABNA; Básquet o Vóley + Natación (Clases). 50% OFF en SportClub."
+          },
+          {
+            "name": "CABNA FAMILIAR",
+            "price": "$91.000 x MES",
+            "includes": "MATRIMONIO Y HASTA 3 HIJOS MENORES DE 18 AÑOS. Incluye actividades de la CUOTA ÚNICA y CABNA para toda la familia. Abonando vóley o básquet incluye natación (clases). Básquet, Natación (clases) o Vóley: $12.000 por persona del grupo. 50% OFF en SportClub."
+          }
+        ],
+        "extra_benefits": [
+          "50% de descuento en la mensualidad (EXCLUSIVO PLAN TOTAL) de Sportclub a partir de los planes CABNA PLUS Y CABNA FAMILIAR.",
+          "Uso de parrillas y espacios comunes desde la CUOTA ÚNICA.",
+          "$4.000 de descuento en todos los planes para alumnos del Saint Edwards (incluido CABNA FAMILIAR Y CUOTA ÚNICA).",
+          "Valores especiales para empleados bancarios BNA.",
+          "Recreación y actividades los fines de semana sin costo adicional."
+        ],
+        "payment_methods": [
+          "EFECTIVO",
+          "TRANSFERENCIA BANCARIA",
+          "MERCADO PAGO",
+          "DÉBITO AUTOMÁTICO"
+        ],
+        "steps": [
+          "ELEGÍ TU PLAN",
+          "COMPLETÁ LA INSCRIPCIÓN",
+          "ABONÁ LA PRIMERA CUOTA",
+          "OBTENÉ TU CARNET DIGITAL",
+          "¡Empezá a disfrutar!"
+        ],
+        "requirements": [
+          "Llenar la/s solicitud/es de socio correspondiente.",
+          "Una foto 4x4 de la/s persona/s inscripta/s.",
+          "Para realizar actividad física solicitamos un apto médico.",
+          "Si realizas actividades en pileta, debés realizar una revisación médica (hay médicos en el club con días y horarios específicos para ofrecer esta atención)."
+        ],
+        "other_info": [
+          "Entrada al club NO SOCIOS de lunes a viernes con costo (consultar por whatsapp). Fines de semana entrada sin cargo, se abonan solamente el uso de parrillas.",
+          "Al registrarte como socio se necesita de un carnet físico. Este tiene costo (consultar por whatsapp). Para la confección del carnet se necesita una foto 4x4 (carnet).",
+          "Los beneficios serán efectivos solo para los socios que tengan la cuota al día."
+        ],
+        "discounts": [
+          "50% de descuento en la mensualidad (EXCLUSIVO PLAN TOTAL) de Sportclub a partir de los planes CABNA PLUS Y CABNA FAMILIAR.",
+          "TARJETA 365 (adhiriéndose a Sportclub).",
+          "Descuentos en turismo empresa 'Noche y día'."
+        ]
+      }
+    }
+  },
+  "navigation": [
+    {
+      "label": "INICIO",
+      "url": "https://clubbanconacion.org.ar"
+    },
+    {
+      "label": "EL CLUB",
+      "url": "https://clubbanconacion.org.ar/el-club"
+    },
+    {
+      "label": "DEPORTES",
+      "url": "#",
+      "children": [
+        {
+          "label": "TODOS",
+          "url": "https://clubbanconacion.org.ar/deportes"
+        },
+        {
+          "label": "AIKIDO",
+          "url": "https://clubbanconacion.org.ar/deportes/1/aikido"
+        },
+        {
+          "label": "AQUAGYM",
+          "url": "https://clubbanconacion.org.ar/deportes/17/aquagym"
+        },
+        {
+          "label": "BASQUET",
+          "url": "https://clubbanconacion.org.ar/deportes/2/basquet"
+        },
+        {
+          "label": "CLASES DE NATACIÓN",
+          "url": "https://clubbanconacion.org.ar/deportes/8/clases-de-natacion"
+        },
+        {
+          "label": "ESCUELA DE FÚTBOL",
+          "url": "https://clubbanconacion.org.ar/deportes/14/escuela-de-futbol"
+        },
+        {
+          "label": "ESCUELA DE TENIS",
+          "url": "https://clubbanconacion.org.ar/deportes/12/escuela-de-tenis"
+        },
+        {
+          "label": "FÚTBOL 11",
+          "url": "https://clubbanconacion.org.ar/deportes/3/futbol-11"
+        },
+        {
+          "label": "FUTSAL",
+          "url": "https://clubbanconacion.org.ar/deportes/20/futsal"
+        },
+        {
+          "label": "GIMNASIA ARTÍSTICA",
+          "url": "https://clubbanconacion.org.ar/deportes/5/gimnasia-artistica"
+        },
+        {
+          "label": "INICIACIÓN DEPORTIVA",
+          "url": "https://clubbanconacion.org.ar/deportes/4/iniciacion-deportiva"
+        },
+        {
+          "label": "JUDO",
+          "url": "https://clubbanconacion.org.ar/deportes/6/judo"
+        },
+        {
+          "label": "MASTER HOCKEY",
+          "url": "https://clubbanconacion.org.ar/deportes/7/master-hockey"
+        },
+        {
+          "label": "PATÍN ARTÍSTICO",
+          "url": "https://clubbanconacion.org.ar/deportes/9/patin-artistico"
+        },
+        {
+          "label": "PILATES MAT",
+          "url": "https://clubbanconacion.org.ar/deportes/22/pilates-mat"
+        },
+        {
+          "label": "SPORTCLUB",
+          "url": "https://clubbanconacion.org.ar/deportes/16/sportclub"
+        },
+        {
+          "label": "TAEKWONDO",
+          "url": "https://clubbanconacion.org.ar/deportes/11/taekwondo"
+        },
+        {
+          "label": "TENIS DE MESA",
+          "url": "https://clubbanconacion.org.ar/deportes/13/tenis-de-mesa"
+        },
+        {
+          "label": "VOLEY FEMENINO",
+          "url": "https://clubbanconacion.org.ar/deportes/10/voley-femenino"
+        },
+        {
+          "label": "YOGA",
+          "url": "https://clubbanconacion.org.ar/deportes/21/yoga"
+        }
+      ]
+    },
+    {
+      "label": "ACTIVIDADES",
+      "url": "#",
+      "children": [
+        {
+          "label": "FAMILIARES",
+          "url": "https://clubbanconacion.org.ar/actividades/2/familiares"
+        },
+        {
+          "label": "SALUD Y BIENESTAR",
+          "url": "https://clubbanconacion.org.ar/actividades/3/salud-y-bienestar"
+        },
+        {
+          "label": "TALLERES",
+          "url": "https://clubbanconacion.org.ar/actividades/1/talleres"
+        }
+      ]
+    },
+    {
+      "label": "NOVEDADES",
+      "url": "https://clubbanconacion.org.ar/novedades"
+    },
+    {
+      "label": "CONTACTO",
+      "url": "https://clubbanconacion.org.ar/contacto"
+    }
+  ],
+  "footer": {
+    "sponsors": [
+      {
+        "name": "BNA",
+        "logo_url": "https://clubbanconacion.org.ar/assets/img/footer/sponsors/bna.png"
+      },
+      {
+        "name": "BNA+",
+        "logo_url": "https://clubbanconacion.org.ar/assets/img/footer/sponsors/bna-plus.png"
+      }
+    ],
+    "contact": {
+      "whatsapp": "11 2785 1234",
+      "whatsapp_url": "https://wa.me/+5491127851234",
+      "email": "cabna@argentina.com",
+      "email_url": "mailto:cabna@argentina.com",
+      "address": "Zufriategui 1251, Vicente López",
+      "maps_url": "https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7"
+    },
+    "navigation": {
+      "SOBRE NOSOTROS": [
+        {
+          "label": "EL CLUB",
+          "url": "https://clubbanconacion.org.ar/el-club"
+        },
+        {
+          "label": "PORTAL DE SOCIOS",
+          "url": "#"
+        },
+        {
+          "label": "DEPORTES",
+          "url": "https://clubbanconacion.org.ar/deportes"
+        }
+      ],
+      "¡SUMATE AL CLUB!": [
+        {
+          "label": "HACETE SOCIO",
+          "url": "https://clubbanconacion.org.ar/hacete-socio"
+        },
+        {
+          "label": "NOVEDADES",
+          "url": "https://clubbanconacion.org.ar/novedades"
+        },
+        {
+          "label": "ACTIVIDADES",
+          "url": "https://clubbanconacion.org.ar/actividades"
+        }
+      ]
+    }
+  }
+}

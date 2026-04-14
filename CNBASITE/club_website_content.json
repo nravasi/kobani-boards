@@ -1,15 +1,5 @@
 {
   "home": {
-    "section": "home",
-    "title": "CABNA - Club Atlético Banco de la Nación Argentina",
-    "meta": {
-      "viewport": "width=device-width, initial-scale=1.0",
-      "description": " Sitio Web Oficial del Club Atlético Banco de la Nación Argentina (C.A.B.N.A.) ",
-      "og:title": "CABNA - Club Atlético Banco de la Nación Argentina",
-      "og:description": "Página oficial del Club Atlético Banco de la Nación Argentina",
-      "og:url": "https://cabna.web-app.ar",
-      "og:image": "https://clubbanconacion.org.ar/assets/img/cabna.jpg"
-    },
     "hero": {
       "banners": [
         {
@@ -38,156 +28,137 @@
         }
       ]
     },
-    "stats": {
-      "descriptions": [
-        "Seguidoresen redes sociales",
-        "Actividades y deportes"
-      ],
-      "counters": [
-        "counter-seguidores",
-        "counter-deportes"
-      ]
-    },
     "about": {
       "heading": "CLUB BANCO NACIÓN",
-      "text": "El Club Atlético Banco de La Nación Argentina es un espacio de esparcimiento, integración, formación y sobre todas las cosas, un lugar para sentirse parte de una gran familia. En el Club nos proponemos a promover los valores de la práctica del deporte en todas sus manifestaciones nobles y útiles, además de fomentar el cumplimiento de los deberes y la solidaridad.",
-      "cta": {
-        "label": "SABER MÁS",
-        "url": "https://clubbanconacion.org.ar/el-club"
-      },
-      "video_url": "https://clubbanconacion.org.ar/assets/videos/cabna.mp4"
+      "text": "El Club Atlético Banco de La Nación Argentina es un espacio de esparcimiento, integración, formación y sobre todas las cosas, un lugar para sentirse parte de una gran familia. En el Club nos proponemos a promover los valores de la práctica del deporte en todas sus manifestaciones nobles y útiles, además de fomentar el cumplimiento de los deberes y la solidaridad."
     },
     "benefits": [
       {
-        "icon_url": "https://clubbanconacion.org.ar/assets/img/home/ico-descuentos.svg",
         "title": "Descuentos",
         "description": "Hacete socio y disfrutá grandes promociones y beneficios en nuestra y otras instituciones."
       },
       {
-        "icon_url": "https://clubbanconacion.org.ar/assets/img/home/ico-eventos.svg",
         "title": "Eventos",
         "description": "Disfrutá de actividades en un lugar donde la comunidad deportiva se reúne para celebrar."
       },
       {
-        "icon_url": "https://clubbanconacion.org.ar/assets/img/home/ico-disciplinas.svg",
         "title": "Disciplinas",
         "description": "Un mundo de posibilidades deportivas y actividades para todas las edades y niveles."
       },
       {
-        "icon_url": "https://clubbanconacion.org.ar/assets/img/home/ico-cultura.svg",
         "title": "Cultura",
         "description": "Te proponemos un estilo de vida, estamos comprometidos con el crecimiento integral."
       },
       {
-        "icon_url": "https://clubbanconacion.org.ar/assets/img/home/ico-colonia.svg",
         "title": "Colonia",
         "description": "Donde los más pequeños desarrollan habilidades, hacen amigos y crean recuerdos inolvidables."
       }
     ],
     "testimonials": [
-      {
-        "image_url": "https://clubbanconacion.org.ar/assets/img/home/socios/silvia.jpg",
-        "text": "Soy socia hace 3 años y disfruto de hacer vida sana en estas instalaciones cerca de nuestros hijos."
-      },
-      {
-        "image_url": "https://clubbanconacion.org.ar/assets/img/home/socios/maximiliano.jpg",
-        "text": "Soy socio hace 4 años y acá me siento en casa, rodeados de gente hermosa, junto con mi familia todos la pasamos muy bien."
-      },
-      {
-        "image_url": "https://clubbanconacion.org.ar/assets/img/home/socios/mara.jpg",
-        "text": "Soy socia hace 3 años, y para mí y mis hijos, CABNA es mi segunda casa."
-      },
-      {
-        "image_url": "https://clubbanconacion.org.ar/assets/img/home/socios/facundo.jpg",
-        "text": "Soy socio hace 10 años y CABNA es para mí y mis hijos el lugar de encuentro con amigos y hacer deportes."
-      }
+      "Soy socia hace 3 años y disfruto de hacer vida sana en estas instalaciones cerca de nuestros hijos.",
+      "Soy socio hace 4 años y acá me siento en casa, rodeados de gente hermosa, junto con mi familia todos la pasamos muy bien.",
+      "Soy socia hace 3 años, y para mí y mis hijos, CABNA es mi segunda casa.",
+      "Soy socio hace 10 años y CABNA es para mí y mis hijos el lugar de encuentro con amigos y hacer deportes."
     ],
     "newsletter": {
       "heading": "¡SUSCRIBITE!",
       "text": "Enterate de todas nuestras comunicaciones."
     },
-    "instagram_section": {
-      "heading": "SEGUINOS EN INSTAGRAM @CABNAOFICIAL",
+    "instagram": {
+      "heading": "SEGUINOS EN INSTAGRAM",
+      "handle": "@CABNAOFICIAL",
       "text": "¡Mantente conectado y no te pierdas ninguna de todas nuestras actividades, promociones y eventos especiales!",
       "hashtag": "#YOTEBANCONACION"
     },
+    "footer": {
+      "contact": {
+        "whatsapp": "11 2785 1234",
+        "whatsapp_url": "https://wa.me/+5491127851234",
+        "email": "cabna@argentina.com",
+        "email_url": "mailto:cabna@argentina.com",
+        "address": "Zufriategui 1251, Vicente López",
+        "maps_url": "https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7"
+      },
+      "sponsors": [
+        {
+          "name": "BNA",
+          "logo_url": "https://clubbanconacion.org.ar/assets/img/footer/sponsors/bna.png"
+        },
+        {
+          "name": "BNA+",
+          "logo_url": "https://clubbanconacion.org.ar/assets/img/footer/sponsors/bna-plus.png"
+        }
+      ],
+      "navigation": {
+        "SOBRE NOSOTROS": [
+          {
+            "label": "EL CLUB",
+            "url": "https://clubbanconacion.org.ar/el-club"
+          },
+          {
+            "label": "PORTAL DE SOCIOS",
+            "url": "#"
+          },
+          {
+            "label": "DEPORTES",
+            "url": "https://clubbanconacion.org.ar/deportes"
+          }
+        ],
+        "¡SUMATE AL CLUB!": [
+          {
+            "label": "HACETE SOCIO",
+            "url": "https://clubbanconacion.org.ar/hacete-socio"
+          },
+          {
+            "label": "NOVEDADES",
+            "url": "https://clubbanconacion.org.ar/novedades"
+          },
+          {
+            "label": "ACTIVIDADES",
+            "url": "https://clubbanconacion.org.ar/actividades"
+          }
+        ]
+      }
+    },
     "social_links": [
       {
-        "platform": "facebook",
-        "url": "https://www.facebook.com/clubbanconacionoficial"
+        "platform": "instagram",
+        "url": "https://www.instagram.com/cabnaoficial",
+        "handle": "@cabnaoficial"
       },
       {
-        "platform": "instagram",
-        "url": "https://www.instagram.com/cabnaoficial"
+        "platform": "facebook",
+        "url": "https://www.facebook.com/clubbanconacionoficial/"
       },
       {
         "platform": "whatsapp",
-        "url": "https://wa.me/+5491127851234"
+        "url": "https://wa.me/+5491127851234",
+        "phone": "11 2785 1234"
       }
-    ],
-    "footer": {
-      "sponsors": [
-        {
-          "url": "https://clubbanconacion.org.ar/assets/img/footer/sponsors/bna.png",
-          "alt": "BNA"
-        },
-        {
-          "url": "https://clubbanconacion.org.ar/assets/img/footer/sponsors/bna-plus.png",
-          "alt": "BNA+"
-        }
-      ],
-      "contact": {
-        "phone_whatsapp": "11 2785 1234",
-        "email": "cabna@argentina.com",
-        "address": "Zufriategui 1251, Vicente López",
-        "map_url": "https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7"
-      },
-      "about_links": [
-        {
-          "label": "EL CLUB",
-          "url": "https://clubbanconacion.org.ar/el-club"
-        },
-        {
-          "label": "PORTAL DE SOCIOS",
-          "url": "https://clubbanconacion.org.ar/"
-        },
-        {
-          "label": "DEPORTES",
-          "url": "https://clubbanconacion.org.ar/deportes"
-        }
-      ],
-      "join_links": [
-        {
-          "label": "HACETE SOCIO",
-          "url": "https://clubbanconacion.org.ar/hacete-socio"
-        },
-        {
-          "label": "NOVEDADES",
-          "url": "https://clubbanconacion.org.ar/novedades"
-        },
-        {
-          "label": "ACTIVIDADES",
-          "url": "https://clubbanconacion.org.ar/actividades"
-        }
-      ]
-    }
+    ]
   },
   "el-club": {
-    "section": "el-club",
+    "sub_nav": [
+      "HISTORIA",
+      "INSTALACIONES",
+      "INSTITUCIONAL",
+      "GALERÍA",
+      "RESERVA DE QUINCHO",
+      "TRABAJÁ CON NOSOTROS"
+    ],
     "history": {
-      "heading": "HISTORIA / CARTA DE VALORES",
-      "text": "A comienzos de 1909, en el seno de un grupo de jóvenes entusiastas, empleados del Banco de la Nación que se reunían habitualmente en un desaparecido café de Reconquista y Bartolomé Mitre, estaba latente la necesidad de afianzar el vínculo de la camaradería y el esparcimiento entre los empleados del banco. Fue como entre charlas y café, surgió la idea de crear un Club y al pequeño grupo se sumaron otros empleados y así llegaron a ser 45 personas. Pero para concretar su sueño necesitan apoyo y en busca de esa ayuda acudieron al presidente del Banco, Don Ramon Santamaria. Este hombre, de mente clara espíritu amplio, no sólo les brindó su ayuda, sino que comprometió la colaboración de todo el directorio, disponiéndose la asignación de una partida de quince mil pesos, suma verdaderamente importante para la época. Continuaron las conversaciones, las ideas, los sueños y los proyectos y finalmente, el 12 de octubre de 1909, se fundó el Club Atlético Banco de la Nación Argentina, con un total de 100 socios. Con el dinero aportado por el banco, alquilaron un predio de una manzana frente a la estación Colegiales, en el cual se construyó una cancha de fútbol con pequeñas tribunas Tras algunos cambios de dirección, finalmente llegado el mes de septiembre de 1928 y luego de muchos sacrificios, se procede a la firma de la escritura de parte del solar que actualmente ocupa el club, en la calle Zufriategui 1251 de la Ciudad de Vicente López",
+      "heading": "CLUB BANCO NACIÓN",
       "founded": "12 de octubre de 1909",
-      "founders": "100 socios fundadores, empleados del Banco de la Nación Argentina",
-      "first_president_supporter": "Don Ramón Santamaría",
-      "current_address": "Zufriategui 1251, Vicente López"
+      "current_address": "Zufriategui 1251, Vicente López",
+      "text": "El Club Atlético Banco de La Nación Argentina es un espacio de esparcimiento, integración, formación y sobre todas las cosas, un lugar para sentirse parte de una gran familia. En el Club nos proponemos a fomentar y promover los valores de la práctica del deporte en todas sus manifestaciones nobles y útiles, además de fomentar el cumplimiento de los deberes y la solidaridad."
+    },
+    "installations": {
+      "heading": "INSTALACIONES",
+      "text": "Luego de grandes desafíos institucionales, el actual presidente Rodrigro Graña y su comisión, sumado al esfuerzo en conjunto de socios, familias, empleados, dirigentes del club y representantes de otras instituciones, generamos el impulso necesario para que Club Atlético Banco Nación saliera adelante. Hoy podemos disfrutar de cada actividad y espacio gracias a esta hermosa comunidad y su apoyo. Actualmente el club cuenta con distintas instalaciones y espacios para el desarrollo de más de 25 actividades entre ellas deportivas, físicas y recreativas. Tras dos años de pandemia el club sigue con la propuesta de cubrir las necesidades en las actividades que se realizan y tratamos de asegurar de esta manera un servicio más completo y adecuado."
     },
     "facilities": {
       "heading": "INSTALACIONES",
-      "subheading": "El Club sigue creciendo y mejorando sus instalaciones.",
-      "text": "Luego de grandes desafíos institucionales, el actual presidente Rodrigro Graña y su comisión, sumado al esfuerzo en conjunto de socios, familias, empleados, dirigentes del club y representantes de otras instituciones, generamos el impulso necesario para que Club Atlético Banco Nación saliera adelante. Hoy podemos disfrutar de cada actividad y espacio gracias a esta hermosa comunidad y su apoyo.",
-      "details": "Actualmente el club cuenta con distintas instalaciones y espacios para el desarrollo de más de 25 actividades entre ellas deportivas, físicas y recreativas.",
-      "post_pandemic_note": "Tras dos años de pandemia el club sigue con la propuesta de cubrir las necesidades en las actividades que se realizan y tratamos de asegurar de esta manera un servicio más completo y adecuado."
+      "details": "Luego de grandes desafíos institucionales, el actual presidente Rodrigro Graña y su comisión, sumado al esfuerzo en conjunto de socios, familias, empleados, dirigentes del club y representantes de otras instituciones, generamos el impulso necesario para que Club Atlético Banco Nación saliera adelante. Hoy podemos disfrutar de cada actividad y espacio gracias a esta hermosa comunidad y su apoyo. Actualmente el club cuenta con distintas instalaciones y espacios para el desarrollo de más de 25 actividades entre ellas deportivas, físicas y recreativas. Tras dos años de pandemia el club sigue con la propuesta de cubrir las necesidades en las actividades que se realizan y tratamos de asegurar de esta manera un servicio más completo y adecuado."
     },
     "institution": {
       "heading": "INSTITUCIÓN",
@@ -236,483 +207,229 @@
       "members": [
         {
           "role": "PRESIDENTE",
-          "name": "Rodrigo Adrián Graña"
+          "name": "Adrián Rodrigo Graña"
         },
         {
-          "role": "VICEPRESIDENTE 1°",
-          "name": "Tirante Marcelo"
+          "role": "VICEPRESIDENTE",
+          "name": "(Ver sitio web)"
         },
         {
-          "role": "VICEPRESIDENTE 2°",
-          "name": "Nape Rafael"
-        },
-        {
-          "role": "SECRETARIO GENERAL",
-          "name": "Merayo Laura"
+          "role": "SECRETARIO",
+          "name": "(Ver sitio web)"
         },
         {
           "role": "PROSECRETARIO",
-          "name": "Paoli Fernando"
+          "name": "(Ver sitio web)"
         },
         {
           "role": "TESORERO",
-          "name": "Ricci Karen"
-        },
-        {
-          "role": "SECRETARIO DE ACTAS",
-          "name": "Secco Jorge"
+          "name": "(Ver sitio web)"
         },
         {
           "role": "PROTESORERO",
-          "name": "Fondati Gabriel"
-        },
-        {
-          "role": "INTENDENTE",
-          "name": "Pesoa Hugo"
+          "name": "(Ver sitio web)"
         },
         {
           "role": "VOCAL TITULAR 1",
-          "name": "Marchesini Antonella"
+          "name": "(Ver sitio web)"
         },
         {
           "role": "VOCAL TITULAR 2",
-          "name": "Farfaro Betania"
+          "name": "(Ver sitio web)"
         },
         {
           "role": "VOCAL TITULAR 3",
-          "name": "Puebla Mariana"
+          "name": "(Ver sitio web)"
         },
         {
           "role": "VOCAL TITULAR 4",
-          "name": "Mariani Carolina"
-        },
-        {
-          "role": "VOCAL TITULAR 5",
-          "name": "Díaz Noemi"
-        },
-        {
-          "role": "VOCAL TITULAR 6",
-          "name": "Graña Luis Raúl"
+          "name": "(Ver sitio web)"
         },
         {
           "role": "VOCAL SUPLENTE 1",
-          "name": "Guerendiain Mara"
-        },
-        {
-          "role": "VOCAL SUPLENTE 2",
-          "name": "Díaz Mariana"
-        },
-        {
-          "role": "VOCAL SUPLENTE 3",
-          "name": "Carbone Jorge"
+          "name": "(Ver sitio web)"
         }
       ]
-    },
-    "supervisory_committee": {},
-    "coaching_staff": [
-      {
-        "sport": "AIKIDO",
-        "roles": [
-          "SENSEI DIRECTOR",
-          "Fernando Martínez",
-          "INSTRUCTORES (niños y jóvenes)",
-          "Santiago Martínez",
-          "Chiara Rocca",
-          "Gastón Rojas",
-          "INSTRUCTOR",
-          "Joaquín Sánchez Cruces"
-        ]
-      },
-      {
-        "sport": "AQUAGYM",
-        "roles": [
-          "PROFESORA",
-          "Adriana Capellini"
-        ]
-      },
-      {
-        "sport": "BASQUET",
-        "roles": [
-          "COORDINADORES",
-          "Juan Ignacio Falzone (Cuerpo Técnico)",
-          "Florencia Yrazusta (DRV)",
-          "Pilar García (Oficial de Mesa)",
-          "CUERPO TÉCNICO",
-          "Joaquín Russo (Monitor Minibásquet)",
-          "Valentín Schofrin (Monitor Minibásquet)",
-          "Alexis Richelet (Entrenador U10 y U13)",
-          "Martin Facello (Entrenador U12, U15, U15FLEX y U19FLEX)",
-          "Alejandro Gorostiaga (Asistente U17 y U19)",
-          "Gonzalo Gorostiaga (Entrenador U17 y U19)",
-          "Juan Ignacio Falzone (Entrenador U23 y Asistente de Primera División)",
-          "Alexis Soto (Prep. Físico U15 a Primera División)",
-          "Elias Jiménez López (Planillero Primera División)",
-          "OFICIALES DE MESA",
-          "Pilar García (U13, U15, U17, U19 y Primera División)",
-          "Lautaro Pereyra Murray (U23 y FLEX)",
-          "Luca Leandi (Veteranos y FLEX)",
-          "Dante Ramírez (U10 y U12)"
-        ]
-      },
-      {
-        "sport": "ESCUELA DE FÚTBOL",
-        "roles": [
-          "Escuela de FÚtbol Femenino Y Masculino.",
-          "COORDINADOR",
-          "Tomas Vázquez",
-          "PROFESORES DE LA ESCUELA (MASCULINO)",
-          "Federico Barrionuevo",
-          "Fernando del Papa",
-          "Valentino Lamas",
-          "PROFESOR DE LA ESCUELA (FEMENINO)",
-          "Lucas Martínez"
-        ]
-      },
-      {
-        "sport": "ESCUELA DE TENIS",
-        "roles": [
-          "DIRECTOR",
-          "Esteban Palombo",
-          "COORDINADORA",
-          "Marcela Bellovino",
-          "PROFESORES",
-          "Fernando Asta",
-          "Agustin Nadal",
-          "Martín Reboredo"
-        ]
-      },
-      {
-        "sport": "FÚTBOL 11",
-        "roles": [
-          "COORDINADOR",
-          "Luciano Passolini",
-          "DTs",
-          "Nicolas Malich",
-          "Martin Torrada",
-          "PREPARADOR FÍSICO",
-          "Bruno Engel"
-        ]
-      },
-      {
-        "sport": "FUTSAL",
-        "roles": [
-          "DT de femenino",
-          "Federico Barrinuevo",
-          "Coord. Y DT de primera",
-          "Leandro E. Pirlone",
-          "DT de reserva y ayudante técnico en primera",
-          "Guillermo López",
-          "Preparador Físico",
-          "Martin Domínguez",
-          "Entrenador de Arqueros",
-          "Federico Barrionuevo",
-          "DT C20",
-          "Ariel Fernández",
-          "DT C17 Y C15",
-          "Alexis Boroski",
-          "Kevin Lezcano",
-          "DT C11 Y C13",
-          "Tomas Vázquez",
-          "Fernando Del Papa"
-        ]
-      },
-      {
-        "sport": "GIMNASIA ARTÍSTICA",
-        "roles": [
-          "COORDINADORA",
-          "Paula Pendola",
-          "PROFESORES EQUIPO FEMENINO",
-          "Natalia Dominguez",
-          "Barbara Taddeo",
-          "PROFESORES NIVEL PROYECCIÓN",
-          "Ayelen Albamonte",
-          "Rocio Bidegain",
-          "PROFESORES NIVEL INICIAL",
-          "Candela Minio",
-          "Dolores Gomez",
-          "PROFESORES MASCULINA",
-          "Ivo Chiapponi",
-          "Mauricio Toledo",
-          "Lautaro Scorza"
-        ]
-      },
-      {
-        "sport": "INICIACIÓN DEPORTIVA",
-        "roles": [
-          "PROFESORES",
-          "Constanza Bartolomé"
-        ]
-      },
-      {
-        "sport": "JUDO",
-        "roles": [
-          "PRESIDENTE DE SUBCOMISIÓN MTRO.",
-          "Eduardo Fernandez",
-          "COLABORADOR",
-          "Néstor Vállenos",
-          "COORDINADORES Y PROFESORES",
-          "MTRO. Carlos Enrique Denegri",
-          "MTRO. Gustavo Picate",
-          "PROF. Santiago Gualco"
-        ]
-      },
-      {
-        "sport": "MASTER HOCKEY",
-        "roles": [
-          "COORDINADORA",
-          "Eleonora Tambussi",
-          "ENTRENADOR",
-          "Daniel Daich",
-          "PREP. FÍSICO",
-          "Leandro Pirlone"
-        ]
-      },
-      {
-        "sport": "PILATES MAT",
-        "roles": [
-          "COORDINADORAS DE LA ACTIVIDAD",
-          "Karen Herrera",
-          "*Actividad realizada en colchoneta, no máquinas"
-        ]
-      },
-      {
-        "sport": "SPORTCLUB",
-        "roles": [
-          "A cargo Sportclub (Gustavo)",
-          "ACTIVIDADES:",
-          "Funcional",
-          "Pink Soccer",
-          "FutbolFit"
-        ]
-      },
-      {
-        "sport": "TAEKWONDO",
-        "roles": [
-          "INSTRUCTOR MAYOR",
-          "Silvina González",
-          "INSTRUCTOR TÉCNICO",
-          "Carina González",
-          "ASESOR TÉCNICO E INTRUCTOR MAYOR",
-          "Marina Serrano"
-        ]
-      },
-      {
-        "sport": "TENIS DE MESA",
-        "roles": [
-          "COORDINADORES",
-          "Alejandro Vazquez",
-          "Nicolas Scarfone",
-          "PROFESORES",
-          "Lautaro Sato",
-          "Facundo Bronstein",
-          "Ariel Aizemberg",
-          "Gonzalo Tiercin",
-          "Nahuel Carlisi"
-        ]
-      },
-      {
-        "sport": "VOLEY FEMENINO",
-        "roles": [
-          "Coord. Y Director Técnico (DT)",
-          "Rubén Garnica",
-          "Entrenadoras",
-          "Mariana Farengo",
-          "Micaela Bravo",
-          "Micaela Rodríguez"
-        ]
-      },
-      {
-        "sport": "YOGA",
-        "roles": [
-          "COORDINADORAS DE LA ACTIVIDAD",
-          "Jazmin Amarilla",
-          "Karen Herrera"
-        ]
-      }
-    ],
-    "about": {
-      "heading": "CLUB BANCO NACIÓN",
-      "text": "El Club Atlético Banco de La Nación Argentina es un espacio de esparcimiento, integración, formación y sobre todas las cosas, un lugar para sentirse parte de una gran familia. En el Club nos proponemos a fomentar y promover los valores de la práctica del deporte en todas sus manifestaciones nobles y útiles, además de fomentar el cumplimiento de los deberes y la solidaridad."
     }
   },
   "deportes": {
-    "section": "deportes",
+    "heading": "NUESTROS DEPORTES",
     "sports": [
       {
-        "id": "1",
-        "name": "Aikido",
-        "url": "https://clubbanconacion.org.ar/deportes/1/aikido",
-        "image_url": "",
-        "image_alt": ""
+        "name": "AIKIDO",
+        "url": "https://clubbanconacion.org.ar/deportes/1/aikido"
       },
       {
-        "id": "17",
-        "name": "Aquagym",
-        "url": "https://clubbanconacion.org.ar/deportes/17/aquagym",
-        "image_url": "",
-        "image_alt": ""
+        "name": "AQUAGYM",
+        "url": "https://clubbanconacion.org.ar/deportes/17/aquagym"
       },
       {
-        "id": "2",
-        "name": "Basquet",
-        "url": "https://clubbanconacion.org.ar/deportes/2/basquet",
-        "image_url": "",
-        "image_alt": ""
+        "name": "BASQUET",
+        "url": "https://clubbanconacion.org.ar/deportes/2/basquet"
       },
       {
-        "id": "8",
-        "name": "Clases De Natacion",
-        "url": "https://clubbanconacion.org.ar/deportes/8/clases-de-natacion",
-        "image_url": "",
-        "image_alt": ""
+        "name": "CLASES DE NATACIÓN",
+        "url": "https://clubbanconacion.org.ar/deportes/8/clases-de-natacion"
       },
       {
-        "id": "14",
-        "name": "Escuela De Futbol",
-        "url": "https://clubbanconacion.org.ar/deportes/14/escuela-de-futbol",
-        "image_url": "",
-        "image_alt": ""
+        "name": "ESCUELA DE FÚTBOL",
+        "url": "https://clubbanconacion.org.ar/deportes/14/escuela-de-futbol"
       },
       {
-        "id": "12",
-        "name": "Escuela De Tenis",
-        "url": "https://clubbanconacion.org.ar/deportes/12/escuela-de-tenis",
-        "image_url": "",
-        "image_alt": ""
+        "name": "ESCUELA DE TENIS",
+        "url": "https://clubbanconacion.org.ar/deportes/12/escuela-de-tenis"
       },
       {
-        "id": "3",
-        "name": "Futbol 11",
-        "url": "https://clubbanconacion.org.ar/deportes/3/futbol-11",
-        "image_url": "",
-        "image_alt": ""
+        "name": "FÚTBOL 11",
+        "url": "https://clubbanconacion.org.ar/deportes/3/futbol-11"
       },
       {
-        "id": "20",
-        "name": "Futsal",
-        "url": "https://clubbanconacion.org.ar/deportes/20/futsal",
-        "image_url": "",
-        "image_alt": ""
+        "name": "FUTSAL",
+        "url": "https://clubbanconacion.org.ar/deportes/20/futsal"
       },
       {
-        "id": "5",
-        "name": "Gimnasia Artistica",
-        "url": "https://clubbanconacion.org.ar/deportes/5/gimnasia-artistica",
-        "image_url": "",
-        "image_alt": ""
+        "name": "GIMNASIA ARTÍSTICA",
+        "url": "https://clubbanconacion.org.ar/deportes/5/gimnasia-artistica"
       },
       {
-        "id": "4",
-        "name": "Iniciacion Deportiva",
-        "url": "https://clubbanconacion.org.ar/deportes/4/iniciacion-deportiva",
-        "image_url": "",
-        "image_alt": ""
+        "name": "INICIACIÓN DEPORTIVA",
+        "url": "https://clubbanconacion.org.ar/deportes/4/iniciacion-deportiva"
       },
       {
-        "id": "6",
-        "name": "Judo",
-        "url": "https://clubbanconacion.org.ar/deportes/6/judo",
-        "image_url": "",
-        "image_alt": ""
+        "name": "JUDO",
+        "url": "https://clubbanconacion.org.ar/deportes/6/judo"
       },
       {
-        "id": "7",
-        "name": "Master Hockey",
-        "url": "https://clubbanconacion.org.ar/deportes/7/master-hockey",
-        "image_url": "",
-        "image_alt": ""
+        "name": "MASTER HOCKEY",
+        "url": "https://clubbanconacion.org.ar/deportes/7/master-hockey"
       },
       {
-        "id": "9",
-        "name": "Patin Artistico",
-        "url": "https://clubbanconacion.org.ar/deportes/9/patin-artistico",
-        "image_url": "",
-        "image_alt": ""
+        "name": "PATÍN ARTÍSTICO",
+        "url": "https://clubbanconacion.org.ar/deportes/9/patin-artistico"
       },
       {
-        "id": "22",
-        "name": "Pilates Mat",
-        "url": "https://clubbanconacion.org.ar/deportes/22/pilates-mat",
-        "image_url": "",
-        "image_alt": ""
+        "name": "PILATES MAT",
+        "url": "https://clubbanconacion.org.ar/deportes/22/pilates-mat"
       },
       {
-        "id": "16",
-        "name": "Sportclub",
-        "url": "https://clubbanconacion.org.ar/deportes/16/sportclub",
-        "image_url": "",
-        "image_alt": ""
+        "name": "SPORTCLUB",
+        "url": "https://clubbanconacion.org.ar/deportes/16/sportclub"
       },
       {
-        "id": "11",
-        "name": "Taekwondo",
-        "url": "https://clubbanconacion.org.ar/deportes/11/taekwondo",
-        "image_url": "",
-        "image_alt": ""
+        "name": "TAEKWONDO",
+        "url": "https://clubbanconacion.org.ar/deportes/11/taekwondo"
       },
       {
-        "id": "13",
-        "name": "Tenis De Mesa",
-        "url": "https://clubbanconacion.org.ar/deportes/13/tenis-de-mesa",
-        "image_url": "",
-        "image_alt": ""
+        "name": "TENIS DE MESA",
+        "url": "https://clubbanconacion.org.ar/deportes/13/tenis-de-mesa"
       },
       {
-        "id": "10",
-        "name": "Voley Femenino",
-        "url": "https://clubbanconacion.org.ar/deportes/10/voley-femenino",
-        "image_url": "",
-        "image_alt": ""
+        "name": "VOLEY FEMENINO",
+        "url": "https://clubbanconacion.org.ar/deportes/10/voley-femenino"
       },
       {
-        "id": "21",
-        "name": "Yoga",
-        "url": "https://clubbanconacion.org.ar/deportes/21/yoga",
-        "image_url": "",
-        "image_alt": ""
+        "name": "YOGA",
+        "url": "https://clubbanconacion.org.ar/deportes/21/yoga"
+      },
+      {
+        "name": "AIKIDOAIKIDO",
+        "url": "https://clubbanconacion.org.ar/deportes/1/aikido"
+      },
+      {
+        "name": "AQUAGYMAQUAGYM",
+        "url": "https://clubbanconacion.org.ar/deportes/17/aquagym"
+      },
+      {
+        "name": "BASQUETBASQUET",
+        "url": "https://clubbanconacion.org.ar/deportes/2/basquet"
+      },
+      {
+        "name": "CLASES DE NATACIÓNCLASES DE NATACIÓN",
+        "url": "https://clubbanconacion.org.ar/deportes/8/clases-de-natacion"
+      },
+      {
+        "name": "ESCUELA DE FÚTBOLESCUELA DE FÚTBOL",
+        "url": "https://clubbanconacion.org.ar/deportes/14/escuela-de-futbol"
+      },
+      {
+        "name": "ESCUELA DE TENISESCUELA DE TENIS",
+        "url": "https://clubbanconacion.org.ar/deportes/12/escuela-de-tenis"
+      },
+      {
+        "name": "FÚTBOL 11FÚTBOL 11",
+        "url": "https://clubbanconacion.org.ar/deportes/3/futbol-11"
+      },
+      {
+        "name": "FUTSALFUTSAL",
+        "url": "https://clubbanconacion.org.ar/deportes/20/futsal"
+      },
+      {
+        "name": "GIMNASIA ARTÍSTICAGIMNASIA ARTÍSTICA",
+        "url": "https://clubbanconacion.org.ar/deportes/5/gimnasia-artistica"
+      },
+      {
+        "name": "INICIACIÓN DEPORTIVAINICIACIÓN DEPORTIVA",
+        "url": "https://clubbanconacion.org.ar/deportes/4/iniciacion-deportiva"
+      },
+      {
+        "name": "JUDOJUDO",
+        "url": "https://clubbanconacion.org.ar/deportes/6/judo"
+      },
+      {
+        "name": "MASTER HOCKEYMASTER HOCKEY",
+        "url": "https://clubbanconacion.org.ar/deportes/7/master-hockey"
+      },
+      {
+        "name": "PATÍN ARTÍSTICOPATÍN ARTÍSTICO",
+        "url": "https://clubbanconacion.org.ar/deportes/9/patin-artistico"
+      },
+      {
+        "name": "PILATES MATPILATES MAT",
+        "url": "https://clubbanconacion.org.ar/deportes/22/pilates-mat"
+      },
+      {
+        "name": "SPORTCLUBSPORTCLUB",
+        "url": "https://clubbanconacion.org.ar/deportes/16/sportclub"
+      },
+      {
+        "name": "TAEKWONDOTAEKWONDO",
+        "url": "https://clubbanconacion.org.ar/deportes/11/taekwondo"
+      },
+      {
+        "name": "TENIS DE MESATENIS DE MESA",
+        "url": "https://clubbanconacion.org.ar/deportes/13/tenis-de-mesa"
+      },
+      {
+        "name": "VOLEY FEMENINOVOLEY FEMENINO",
+        "url": "https://clubbanconacion.org.ar/deportes/10/voley-femenino"
+      },
+      {
+        "name": "YOGAYOGA",
+        "url": "https://clubbanconacion.org.ar/deportes/21/yoga"
       }
     ]
   },
   "actividades": {
-    "section": "actividades",
+    "heading": "NUESTRAS ACTIVIDADES",
     "categories": [
-      {
-        "label": "FAMILIARES",
-        "url": "https://clubbanconacion.org.ar/actividades/2/familiares"
-      },
-      {
-        "label": "SALUD Y BIENESTAR",
-        "url": "https://clubbanconacion.org.ar/actividades/3/salud-y-bienestar"
-      },
-      {
-        "label": "TALLERES",
-        "url": "https://clubbanconacion.org.ar/actividades/1/talleres"
-      },
-      {
-        "label": "AGILITYAGILITY",
-        "url": "https://clubbanconacion.org.ar/actividades/2/familiares/19/agility"
-      }
-    ],
-    "activities": []
+      "FAMILIARES",
+      "SALUD Y BIENESTAR",
+      "TALLERES"
+    ]
   },
   "novedades": {
-    "section": "novedades",
-    "articles": []
+    "heading": "NOVEDADES",
+    "note": "Content is dynamically loaded via Livewire."
   },
   "contacto": {
-    "section": "contacto",
+    "heading": "CONTACTO",
     "contact_info": {
       "address": "Zufriategui 1251, Vicente López",
-      "whatsapp": "+54 9 11 2785 1234",
-      "phone": "11 4791 7440",
       "email": "cabna@argentina.com",
-      "map_url": "https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7",
-      "additional_phones": {
-        "whatsapp_cabna": "11 2785 1234",
-        "telefono_cabna": "11 4791 7440",
-        "coordinador_deportes": "11 4025 4827",
-        "reserva_quinchos": "11 2785 1234"
-      }
+      "phone": "11 4791 7440",
+      "whatsapp": "11 2785 1234",
+      "coordinador_deportes": "11 4025 4827",
+      "maps_url": "https://maps.app.goo.gl/TbCGqs6Nj7Nf9HjB7"
     },
     "form_fields": [
       "Nombre y apellido",
@@ -724,9 +441,9 @@
       "heading": "ALQUILER DE QUINCHOS",
       "text": "Celebrá momentos inolvidables, contamos con quinchos en nuestras instalaciones. Un espacio para que tanto los socios como no socios del club celebren su cumpleaños o disfruten de reuniones con amigos y familia."
     },
-    "job_application": {
+    "work_with_us": {
       "heading": "TRABAJÁ CON NOSOTROS",
-      "fields": [
+      "form_fields": [
         "Nombre",
         "Apellido",
         "Teléfono",
@@ -736,31 +453,49 @@
     }
   },
   "hacete-socio": {
-    "section": "hacete-socio",
+    "heading": "HACETE SOCIO",
+    "sub_nav": [
+      "PLANES",
+      "BENEFICIOS EXTRA SOCIOS",
+      "FORMAS DE PAGO",
+      "QUIERO ASOCIARME",
+      "¿QUÉ NECESITO?",
+      "CONTACTO"
+    ],
     "plans": [
       {
         "name": "CUOTA ÚNICA INDIVIDUAL",
-        "includes": "Ajedrez; Agility; Charly Dance; Pilates MAT; Ritmos Latinos (Adultos); Taller musical; Yoga.",
-        "note": "Aquagym adicional $12.000. *Actividad con costo adicional",
-        "price": "$20.000 x MES"
+        "price": "$20.000 x MES",
+        "includes": "Ajedrez; Agility; Charly Dance; Pilates MAT; Ritmos Latinos (Adultos); Taller musical; Yoga. Aquagym adicional $12.000."
       },
       {
         "name": "CABNA INDIVIDUAL",
-        "includes": "Actividades de la CUOTA ÚNICA; Aikido, Aquagym, Futsal Fem y Masc, Gym."
+        "price": "$52.000 x MES",
+        "includes": "Actividades de la CUOTA ÚNICA; Aikido, Aquagym, Futsal Fem y Masc, Gym. Artística, Iniciación Deportiva, Judo, Mami Futbol, Patín Artístico, Tenis de Mesa, Esc. de Fútbol, Esc. de Hockey Fem, Master Hockey, Pileta Entrenamiento, Futbol 11, Act. Outdoor SportClub y Taekwondo. Natación (Clases): $12.000. 50% OFF en SportClub."
+      },
+      {
+        "name": "CABNA PLUS INDIVIDUAL",
+        "price": "$70.000 x MES",
+        "includes": "Actividades de la CUOTA ÚNICA Y CABNA; Básquet o Vóley + Natación (Clases). 50% OFF en SportClub."
+      },
+      {
+        "name": "CABNA FAMILIAR",
+        "price": "$91.000 x MES",
+        "includes": "MATRIMONIO Y HASTA 3 HIJOS MENORES DE 18 AÑOS. Incluye actividades de la CUOTA ÚNICA y CABNA para toda la familia. Abonando vóley o básquet incluye natación (clases). Básquet, Natación (clases) o Vóley: $12.000 por persona del grupo. 50% OFF en SportClub."
       }
     ],
-    "benefits_extra": "50% de descuento en la mensualidad (EXCLUSIVO PLAN TOTAL) de Sportclub a partir de los planes CABNA PLUS Y CABNA FAMILIAR. Uso de parrillas y espacios comunes desde la CUOTA ÚNICA. $4.000 de descuento en todos los planes para alumnos del Saint Edwards (incluido CABNA FAMILIAR).",
+    "extra_benefits": [
+      "50% de descuento en la mensualidad (EXCLUSIVO PLAN TOTAL) de Sportclub a partir de los planes CABNA PLUS Y CABNA FAMILIAR.",
+      "Uso de parrillas y espacios comunes desde la CUOTA ÚNICA.",
+      "$4.000 de descuento en todos los planes para alumnos del Saint Edwards (incluido CABNA FAMILIAR Y CUOTA ÚNICA).",
+      "Valores especiales para empleados bancarios BNA.",
+      "Recreación y actividades los fines de semana sin costo adicional."
+    ],
     "payment_methods": [
       "EFECTIVO",
       "TRANSFERENCIA BANCARIA",
       "MERCADO PAGO",
       "DÉBITO AUTOMÁTICO"
-    ],
-    "requirements": [
-      "Llenar la/s solicitud/es de socio correspondiente.",
-      "Una foto 4x4 de la/s persona/s inscripta/s.",
-      "Para realizar actividad física solicitamos un apto médico.",
-      "Si realizas actividades en pileta, debés realizar una revisación médica (hay médicos en el club con días y horarios)."
     ],
     "steps": [
       "ELEGÍ TU PLAN",
@@ -768,6 +503,22 @@
       "ABONÁ LA PRIMERA CUOTA",
       "OBTENÉ TU CARNET DIGITAL",
       "¡Empezá a disfrutar!"
+    ],
+    "requirements": [
+      "Llenar la/s solicitud/es de socio correspondiente.",
+      "Una foto 4x4 de la/s persona/s inscripta/s.",
+      "Para realizar actividad física solicitamos un apto médico.",
+      "Si realizas actividades en pileta, debés realizar una revisación médica (hay médicos en el club con días y horarios específicos para ofrecer esta atención)."
+    ],
+    "other_info": [
+      "Entrada al club NO SOCIOS de lunes a viernes con costo (consultar por whatsapp). Fines de semana entrada sin cargo, se abonan solamente el uso de parrillas.",
+      "Al registrarte como socio se necesita de un carnet físico. Este tiene costo (consultar por whatsapp). Para la confección del carnet se necesita una foto 4x4 (carnet).",
+      "Los beneficios serán efectivos solo para los socios que tengan la cuota al día."
+    ],
+    "discounts": [
+      "50% de descuento en la mensualidad (EXCLUSIVO PLAN TOTAL) de Sportclub a partir de los planes CABNA PLUS Y CABNA FAMILIAR.",
+      "TARJETA 365 (adhiriéndose a Sportclub).",
+      "Descuentos en turismo empresa 'Noche y día'."
     ]
   }
 }
