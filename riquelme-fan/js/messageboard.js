@@ -12,7 +12,12 @@ var MessageBoard = (function () {
     { username: 'CamisetaAzulYOro', message: 'Vi todos los partidos de Roman en la Bombonera. Cada vez que tocaba la pelota la gente gritaba OLEEEE. Gracias por esta pagina, esta buenisima!', date: '2004-03-05T11:03:00' },
     { username: 'Pipe_Boca_Jr', message: 'Desde Colombia les mando un saludo! Riquelme es el mejor jugador que vi en la Libertadores. Un fenomeno. Dale Boca dale!', date: '2004-03-02T09:30:00' },
     { username: 'MitadMasUno', message: 'ROMAN NO SE VA! ROMAN NO SE VA! Lo mejor que le paso a Boca despues de Maradona. Gracias por el sitio, lo agrego a mis favoritos.', date: '2004-02-28T16:44:00' },
-    { username: 'LaBomboneraPalpita', message: 'Impresionante la galeria de fotos! Me emocione viendo las imagenes de la Intercontinental. Roman, sos eterno!', date: '2004-02-25T21:58:00' }
+    { username: 'LaBomboneraPalpita', message: 'Impresionante la galeria de fotos! Me emocione viendo las imagenes de la Intercontinental. Roman, sos eterno!', date: '2004-02-25T21:58:00' },
+    { username: 'RomanFan_NYC', message: 'I watch every Boca game I can find on satellite TV here in New York. Riquelme has the best vision in world football right now. That no-look pass against Gremio in the Libertadores 2003 was out of this world!! Best #10 on the planet.', date: '2004-02-20T03:15:00' },
+    { username: 'La_Pausa_10', message: 'Lo que mas me gusta de Roman es LA PAUSA. Todos corren como locos y el frena, levanta la cabeza, y encuentra el pase que nadie ve. Es un ajedrecista en una cancha de futbol. Eso no se enseña, se nace con eso.', date: '2004-02-15T19:40:00' },
+    { username: 'BocaFan_London', message: 'Watched Riquelme at Barca and it broke my heart how they wasted him. Van Gaal never understood what a classic enganche does. So glad he is back at La Bombonera where he belongs. Pure magic every time he gets the ball.', date: '2004-02-05T12:22:00' },
+    { username: 'GolazoDeRoman', message: 'Ese cano a Yepes en el superclasico!!! Se lo hizo en camara lenta y despues metio el pase gol. River no sabia que hacer con el. La Bombonera se vino abajo. IDOLO ABSOLUTO.', date: '2004-01-22T23:05:00' },
+    { username: 'soccer_king_2003', message: 'Just found this site through a webring! I downloaded highlights of the 2001 Libertadores final on Kazaa and that free kick from Riquelme was INSANE. The way the ball curved around the wall... nobody in Europe can do that. Bookmarked this page!!', date: '2004-01-10T16:33:00' }
   ];
 
   function loadPosts() {
