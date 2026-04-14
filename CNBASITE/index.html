@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CABNA - Club Atlético Banco de la Nación Argentina</title>
+  <meta name="description" content="Sitio Web Oficial del Club Atlético Banco de la Nación Argentina (C.A.B.N.A.)">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Skip navigation for accessibility -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="CABNA - Inicio">
+        <strong>CABNA</strong>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#events-section">Eventos</a></li>
+          <li><a href="#gallery-section">Galería</a></li>
+          <li><a href="#contact-section">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============================================================
+         EVENTS SECTION
+         Renders from JSON, supports filtering by category and date
+         ============================================================ -->
+    <section id="events-section" class="section" aria-labelledby="events-heading">
+      <div class="container">
+        <h2 id="events-heading" class="section-title">EVENTOS Y NOVEDADES</h2>
+
+        <!-- Filter controls -->
+        <div class="events-filters" role="search" aria-label="Filtrar eventos">
+          <div class="filter-group">
+            <label for="filter-category">Categoría:</label>
+            <select id="filter-category" aria-controls="events-grid">
+              <option value="all">Todas</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="filter-date">Mes:</label>
+            <select id="filter-date" aria-controls="events-grid">
+              <option value="all">Todos</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <button type="button" id="filter-reset" class="btn btn-secondary">Limpiar filtros</button>
+          </div>
+          <p id="events-count" class="events-count" aria-live="polite" role="status"></p>
+        </div>
+
+        <!-- Events grid - populated by JS, noscript fallback below -->
+        <div id="events-grid" class="events-grid" role="list" aria-label="Lista de eventos">
+        </div>
+
+        <!-- Noscript static fallback -->
+        <noscript>
+          <div class="events-grid" role="list">
+            <article class="event-card" role="listitem">
+              <div class="event-card-body">
+                <span class="event-category">Deportes</span>
+                <h3 class="event-title">Torneo de Voley Femenino</h3>
+                <time class="event-date" datetime="2025-03-15">15 de marzo de 2025 - 10:00</time>
+                <p class="event-location">📍 Cancha principal</p>
+                <p class="event-desc">Torneo interclub de voley femenino. Todas las categorías.</p>
+              </div>
+            </article>
+            <article class="event-card" role="listitem">
+              <div class="event-card-body">
+                <span class="event-category">Deportes</span>
+                <h3 class="event-title">Clase abierta de Aikido</h3>
+                <time class="event-date" datetime="2025-03-20">20 de marzo de 2025 - 18:00</time>
+                <p class="event-location">📍 Salón de artes marciales</p>
+                <p class="event-desc">Clase abierta para socios y no socios. Todos los niveles.</p>
+              </div>
+            </article>
+            <article class="event-card" role="listitem">
+              <div class="event-card-body">
+                <span class="event-category">Familiares</span>
+                <h3 class="event-title">Colonia de Vacaciones de Invierno</h3>
+                <time class="event-date" datetime="2025-07-10">10 de julio de 2025 - 09:00</time>
+                <p class="event-location">📍 Instalaciones del club</p>
+                <p class="event-desc">Actividades recreativas y deportivas para los más pequeños.</p>
+              </div>
+            </article>
+            <article class="event-card" role="listitem">
+              <div class="event-card-body">
+                <span class="event-category">Salud y Bienestar</span>
+                <h3 class="event-title">Taller de Yoga al aire libre</h3>
+                <time class="event-date" datetime="2025-04-05">5 de abril de 2025 - 08:30</time>
+                <p class="event-location">📍 Parque del club</p>
+                <p class="event-desc">Sesión especial de yoga al aire libre para toda la familia.</p>
+              </div>
+            </article>
+            <article class="event-card" role="listitem">
+              <div class="event-card-body">
+                <span class="event-category">Deportes</span>
+                <h3 class="event-title">Torneo de Fútbol 11 - ABAD</h3>
+                <time class="event-date" datetime="2025-04-12">12 de abril de 2025 - 15:00</time>
+                <p class="event-location">📍 Cancha de fútbol</p>
+                <p class="event-desc">Fecha del torneo ABAD. Primera división.</p>
+              </div>
+            </article>
+            <article class="event-card" role="listitem">
+              <div class="event-card-body">
+                <span class="event-category">Deportes</span>
+                <h3 class="event-title">Exhibición de Gimnasia Artística</h3>
+                <time class="event-date" datetime="2025-05-18">18 de mayo de 2025 - 16:00</time>
+                <p class="event-location">📍 Gimnasio principal</p>
+                <p class="event-desc">Exhibición anual de las categorías formativas.</p>
+              </div>
+            </article>
+          </div>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         GALLERY SECTION
+         Grid layout with lightbox modal and keyboard navigation
+         ============================================================ -->
+    <section id="gallery-section" class="section section-alt" aria-labelledby="gallery-heading">
+      <div class="container">
+        <h2 id="gallery-heading" class="section-title">GALERÍA</h2>
+
+        <div id="gallery-grid" class="gallery-grid" role="list" aria-label="Galería de imágenes">
+        </div>
+
+        <!-- Noscript static fallback for gallery -->
+        <noscript>
+          <div class="gallery-grid" role="list">
+            <figure class="gallery-item" role="listitem">
+              <img src="https://clubbanconacion.org.ar/assets/img/club/portada.jpg" alt="Fachada CABNA" loading="lazy" width="400" height="300">
+              <figcaption>Fachada CABNA</figcaption>
+            </figure>
+            <figure class="gallery-item" role="listitem">
+              <img src="https://clubbanconacion.org.ar/assets/img/home/deportes.jpg" alt="Deportes CABNA" loading="lazy" width="400" height="300">
+              <figcaption>Deportes CABNA</figcaption>
+            </figure>
+            <figure class="gallery-item" role="listitem">
+              <img src="https://clubbanconacion.org.ar/assets/img/home/actividades.jpg" alt="Actividades CABNA" loading="lazy" width="400" height="300">
+              <figcaption>Actividades CABNA</figcaption>
+            </figure>
+            <figure class="gallery-item" role="listitem">
+              <img src="https://clubbanconacion.org.ar/storage/banners/o57DsBjcuttzgg7490OG0vrVYXaMDFAQHAp04DYa.jpg" alt="voley pelota en mano" loading="lazy" width="400" height="300">
+              <figcaption>voley pelota en mano</figcaption>
+            </figure>
+          </div>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- Lightbox modal -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-label="Visor de imagen" aria-modal="true" hidden>
+      <div class="lightbox-overlay" data-lightbox-close></div>
+      <div class="lightbox-content">
+        <button class="lightbox-close" data-lightbox-close aria-label="Cerrar visor">&times;</button>
+        <button class="lightbox-prev" id="lightbox-prev" aria-label="Imagen anterior">&#8249;</button>
+        <figure class="lightbox-figure">
+          <img id="lightbox-img" class="lightbox-img" src="" alt="">
+          <figcaption id="lightbox-caption" class="lightbox-caption"></figcaption>
+        </figure>
+        <button class="lightbox-next" id="lightbox-next" aria-label="Imagen siguiente">&#8250;</button>
+      </div>
+      <p class="lightbox-counter" aria-live="polite"><span id="lightbox-current">1</span> / <span id="lightbox-total">1</span></p>
+    </div>
+
+    <!-- ============================================================
+         CONTACT SECTION
+         Client-side validated form with success/error feedback
+         ============================================================ -->
+    <section id="contact-section" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading" class="section-title">CONTACTO</h2>
+
+        <div class="contact-layout">
+          <div class="contact-info">
+            <h3>Información de contacto</h3>
+            <address>
+              <p>📍 <span id="contact-address">Zufriategui 1251, Vicente López</span></p>
+              <p>📱 WhatsApp: <a href="https://wa.me/+5491127851234" id="contact-whatsapp">11 2785 1234</a></p>
+              <p>📞 Teléfono: <a href="tel:+5491147917440" id="contact-phone">11 4791 7440</a></p>
+              <p>✉️ <a href="mailto:cabna@argentina.com" id="contact-email">cabna@argentina.com</a></p>
+            </address>
+          </div>
+
+          <form id="contact-form" class="contact-form" novalidate aria-label="Formulario de contacto">
+            <div id="form-feedback" class="form-feedback" role="alert" aria-live="assertive" hidden></div>
+
+            <div class="form-field">
+              <label for="field-name">Nombre y apellido <span class="required" aria-hidden="true">*</span></label>
+              <input type="text" id="field-name" name="nombre" required autocomplete="name"
+                     aria-required="true" aria-describedby="error-name">
+              <span id="error-name" class="field-error" role="alert"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="field-email">Correo electrónico <span class="required" aria-hidden="true">*</span></label>
+              <input type="email" id="field-email" name="email" required autocomplete="email"
+                     aria-required="true" aria-describedby="error-email">
+              <span id="error-email" class="field-error" role="alert"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="field-subject">Asunto <span class="required" aria-hidden="true">*</span></label>
+              <input type="text" id="field-subject" name="asunto" required
+                     aria-required="true" aria-describedby="error-subject">
+              <span id="error-subject" class="field-error" role="alert"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="field-message">Mensaje <span class="required" aria-hidden="true">*</span></label>
+              <textarea id="field-message" name="mensaje" rows="5" required
+                        aria-required="true" aria-describedby="error-message"></textarea>
+              <span id="error-message" class="field-error" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="form-submit">ENVIAR MENSAJE</button>
+          </form>
+        </div>
+
+        <!-- Noscript fallback for contact -->
+        <noscript>
+          <div class="noscript-notice">
+            <p>Para enviar el formulario de contacto, escribinos a <a href="mailto:cabna@argentina.com">cabna@argentina.com</a> o llamanos al <a href="tel:+5491147917440">11 4791 7440</a>.</p>
+          </div>
+        </noscript>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Club Atlético Banco de la Nación Argentina. Todos los derechos reservados.</p>
+      <p>Zufriategui 1251, Vicente López | <a href="mailto:cabna@argentina.com">cabna@argentina.com</a></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

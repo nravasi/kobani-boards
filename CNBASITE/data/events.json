@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Torneo de Voley Femenino",
+    "category": "Deportes",
+    "date": "2025-03-15",
+    "time": "10:00",
+    "location": "Cancha principal",
+    "description": "Torneo interclub de voley femenino. Todas las categorías.",
+    "image": "https://clubbanconacion.org.ar/storage/banners/o57DsBjcuttzgg7490OG0vrVYXaMDFAQHAp04DYa.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Clase abierta de Aikido",
+    "category": "Deportes",
+    "date": "2025-03-20",
+    "time": "18:00",
+    "location": "Salón de artes marciales",
+    "description": "Clase abierta para socios y no socios. Todos los niveles.",
+    "image": "https://clubbanconacion.org.ar/assets/img/deportes/portada.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Colonia de Vacaciones de Invierno",
+    "category": "Familiares",
+    "date": "2025-07-10",
+    "time": "09:00",
+    "location": "Instalaciones del club",
+    "description": "Actividades recreativas y deportivas para los más pequeños durante las vacaciones de invierno.",
+    "image": "https://clubbanconacion.org.ar/assets/img/home/actividades.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Taller de Yoga al aire libre",
+    "category": "Salud y Bienestar",
+    "date": "2025-04-05",
+    "time": "08:30",
+    "location": "Parque del club",
+    "description": "Sesión especial de yoga al aire libre para toda la familia.",
+    "image": "https://clubbanconacion.org.ar/assets/img/home/deportes.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Torneo de Fútbol 11 - ABAD",
+    "category": "Deportes",
+    "date": "2025-04-12",
+    "time": "15:00",
+    "location": "Cancha de fútbol",
+    "description": "Fecha del torneo ABAD. Primera división.",
+    "image": "https://clubbanconacion.org.ar/storage/banners/qPWqGjvvpszaapDlVD7d7zncwCoU0zqVCUgRXqNr.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Exhibición de Gimnasia Artística",
+    "category": "Deportes",
+    "date": "2025-05-18",
+    "time": "16:00",
+    "location": "Gimnasio principal",
+    "description": "Exhibición anual de las categorías formativas de gimnasia artística.",
+    "image": "https://clubbanconacion.org.ar/assets/img/club/portada.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Día del Niño en CABNA",
+    "category": "Familiares",
+    "date": "2025-08-17",
+    "time": "14:00",
+    "location": "Instalaciones del club",
+    "description": "Festejo del Día del Niño con juegos, espectáculos y actividades para toda la familia.",
+    "image": "https://clubbanconacion.org.ar/assets/img/home/video.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Clase de Pilates Mat abierta",
+    "category": "Salud y Bienestar",
+    "date": "2025-04-22",
+    "time": "10:00",
+    "location": "Salón de usos múltiples",
+    "description": "Clase introductoria de Pilates Mat. Abierta a socios y no socios.",
+    "image": "https://clubbanconacion.org.ar/assets/img/actividades/portada.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Torneo de Tenis de Mesa",
+    "category": "Deportes",
+    "date": "2025-05-03",
+    "time": "11:00",
+    "location": "Salón de tenis de mesa",
+    "description": "Torneo abierto de tenis de mesa. Categorías juvenil y adulto.",
+    "image": "https://clubbanconacion.org.ar/assets/img/deportes/portada.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Alquiler de Quinchos - Evento especial",
+    "category": "Familiares",
+    "date": "2025-06-01",
+    "time": "12:00",
+    "location": "Quinchos del club",
+    "description": "Jornada especial de puertas abiertas para conocer los quinchos del club.",
+    "image": "https://clubbanconacion.org.ar/assets/img/club/portada.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Jornada de Aquagym",
+    "category": "Salud y Bienestar",
+    "date": "2025-06-15",
+    "time": "09:00",
+    "location": "Pileta climatizada",
+    "description": "Jornada especial de aquagym abierta a toda la comunidad.",
+    "image": "https://clubbanconacion.org.ar/assets/img/home/deportes.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Campeonato de Basquet",
+    "category": "Deportes",
+    "date": "2025-09-20",
+    "time": "17:00",
+    "location": "Cancha de basquet",
+    "description": "Campeonato interclub de basquet. Todas las categorías.",
+    "image": "https://clubbanconacion.org.ar/storage/banners/OhQmF3Vc1q1ymT2H8zz1Eqvco0RTPsMX25VkTYc5.jpg"
+  }
+]

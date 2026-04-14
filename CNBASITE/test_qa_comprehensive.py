@@ -84,19 +84,11 @@ class TestFileInventory(unittest.TestCase):
                     f"File is empty: {filepath}",
                 )
 
-    def test_no_frontend_files_exist(self):
-        """Document that no HTML/CSS/JS files exist (blocker for browser testing)."""
-        frontend_extensions = (".html", ".css", ".js", ".jsx", ".tsx", ".ts", ".vue", ".svelte")
-        frontend_files = []
-        for root, dirs, files in os.walk("."):
-            for f in files:
-                if any(f.endswith(ext) for ext in frontend_extensions):
-                    frontend_files.append(os.path.join(root, f))
-        self.assertEqual(
-            frontend_files,
-            [],
-            f"Unexpected frontend files found (if present, browser tests would apply): {frontend_files}",
-        )
+    def test_frontend_files_exist(self):
+        """Verify that required frontend files exist for interactive features."""
+        required = ["index.html", "styles.css", "app.js"]
+        for f in required:
+            self.assertTrue(os.path.isfile(f), f"Required frontend file missing: {f}")
 
     def test_directories_exist(self):
         self.assertTrue(os.path.isdir("data"))
