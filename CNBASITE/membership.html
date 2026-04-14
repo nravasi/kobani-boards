@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="estilo-puro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership — CABNA</title>
+  <meta name="description" content="Join CABNA. Explore our membership plans, benefits, and how to become a member.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Roboto:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/theme-estilo-puro.css">
+  <link rel="stylesheet" href="css/theme-cancha-viva.css">
+  <link rel="stylesheet" href="css/theme-tribuna-dorada.css">
+  <link rel="stylesheet" href="css/base.css">
+  <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('cabna-theme') || 'estilo-puro');</script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="mobile-overlay"></div>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="CABNA Home">CABNA</a>
+      <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="membership.html" class="btn-cta">Become a Member</a>
+      </nav>
+      <div class="theme-switcher" role="group" aria-label="Choose visual style">
+        <button data-theme-choice="estilo-puro" aria-pressed="true" title="Estilo Puro — Modern Minimal"><span class="theme-dot" style="background:#E94560"></span><span class="sr-only">Estilo Puro</span></button>
+        <button data-theme-choice="cancha-viva" aria-pressed="false" title="Cancha Viva — Bold Athletic"><span class="theme-dot" style="background:#FF2D55"></span><span class="sr-only">Cancha Viva</span></button>
+        <button data-theme-choice="tribuna-dorada" aria-pressed="false" title="Tribuna Dorada — Classic Prestigious"><span class="theme-dot" style="background:#C8A951"></span><span class="sr-only">Tribuna Dorada</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-banner" aria-label="Membership page banner">
+      <div class="hero-bg" style="background-image:url('https://clubbanconacion.org.ar/assets/img/socios/portada-hacete-socio.jpg')" role="img" aria-label="CABNA membership welcome"></div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <h1>Membership Built for Every Lifestyle</h1>
+        <p>Choose the plan that fits your life and start enjoying the club today.</p>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section" aria-labelledby="benefits-heading">
+      <div class="container">
+        <h2 class="section-heading" id="benefits-heading">Member Benefits</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card"><span class="benefit-icon" aria-hidden="true">🏅</span><h3>25+ Sports &amp; Activities</h3><p>Access disciplines from basketball and futsal to aikido, artistic gymnastics, yoga, and swimming. Every age and level welcome.</p></div>
+          <div class="benefit-card"><span class="benefit-icon" aria-hidden="true">🏟️</span><h3>Full Facility Access</h3><p>Use our pitches, courts, pool, gym, and common areas any day of the week.</p></div>
+          <div class="benefit-card"><span class="benefit-icon" aria-hidden="true">💰</span><h3>Exclusive Discounts</h3><p>Save on partner businesses, club events, and services at CABNA and affiliated institutions.</p></div>
+          <div class="benefit-card"><span class="benefit-icon" aria-hidden="true">🏖️</span><h3>Summer Camp</h3><p>Enrol children in a supervised programme where they build skills, make friends, and create lasting memories.</p></div>
+          <div class="benefit-card"><span class="benefit-icon" aria-hidden="true">🎉</span><h3>Events &amp; Social Gatherings</h3><p>Join community celebrations, tournaments, cultural evenings, and family activities throughout the year.</p></div>
+          <div class="benefit-card"><span class="benefit-icon" aria-hidden="true">🔥</span><h3>Quincho &amp; BBQ Area</h3><p>Reserve our on-site quinchos for birthdays, family get-togethers, or a weekend asado.</p></div>
+          <div class="benefit-card"><span class="benefit-icon" aria-hidden="true">📱</span><h3>Digital Member Card</h3><p>Receive your carnet digital, manage your membership, and stay informed through the members' portal.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plans -->
+    <section class="section section-alt" aria-labelledby="plans-heading">
+      <div class="container">
+        <h2 class="section-heading" id="plans-heading">Membership Plans</h2>
+        <div style="overflow-x:auto">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Plan</th>
+                <th>Includes</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Cuota Única Individual</strong></td>
+                <td>Chess, Agility, Charly Dance, Pilates MAT, Ritmos Latinos, Music Workshop, Yoga</td>
+                <td class="price">$20,000/month</td>
+              </tr>
+              <tr>
+                <td><strong>CABNA Individual</strong></td>
+                <td>Everything in Cuota Única + Aikido, Aquagym, Futsal (M &amp; F), Gym, Artistic Gymnastics, Sports Initiation, Judo, Artistic Skating, Table Tennis, Football School, Hockey, Taekwondo, Football 11, Sportclub Outdoor</td>
+                <td class="price">$52,000/month</td>
+              </tr>
+              <tr>
+                <td><strong>CABNA Plus Individual</strong></td>
+                <td>Everything in CABNA + Basketball or Volleyball + Swimming classes. 50% off Sportclub monthly fee</td>
+                <td class="price">$70,000/month</td>
+              </tr>
+              <tr>
+                <td><strong>CABNA Familiar</strong></td>
+                <td>Couple and up to three children under 18. All Cuota Única and CABNA activities for the whole family. 50% off Sportclub monthly fee</td>
+                <td class="price">$91,000/month</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="color:var(--color-text-muted);font-size:0.875rem;margin-top:0.5rem"><em>Swimming classes available as an add-on for $12,000/month on the CABNA Individual plan. Basketball, swimming, or volleyball add-on for CABNA Familiar is $12,000 per person.</em></p>
+      </div>
+    </section>
+
+    <!-- Extra Benefits -->
+    <section class="section" aria-labelledby="extra-heading">
+      <div class="container">
+        <h2 class="section-heading" id="extra-heading">Extra Member Benefits</h2>
+        <div style="max-width:700px;margin:0 auto">
+          <ul class="detail-list">
+            <li>50% off the Sportclub monthly fee from CABNA Plus and CABNA Familiar plans.</li>
+            <li>Use of BBQ areas and common spaces included from Cuota Única upward.</li>
+            <li>$4,000 discount on all plans for Saint Edwards students (including CABNA Familiar).</li>
+            <li>Special rates for Banco de la Nación Argentina employees.</li>
+            <li>Weekend recreation and activities at no extra cost.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Join -->
+    <section class="section section-alt" aria-labelledby="join-heading">
+      <div class="container">
+        <h2 class="section-heading" id="join-heading">How to Join</h2>
+        <div class="steps">
+          <div class="step"><span class="step-number">1</span><h4>Choose your plan</h4></div>
+          <div class="step"><span class="step-number">2</span><h4>Complete the application</h4></div>
+          <div class="step"><span class="step-number">3</span><h4>Pay your first fee</h4></div>
+          <div class="step"><span class="step-number">4</span><h4>Get your digital card</h4></div>
+          <div class="step"><span class="step-number">5</span><h4>Start enjoying the club</h4></div>
+        </div>
+
+        <div class="two-col" style="margin-top:3rem">
+          <div class="info-box">
+            <h3>Payment Methods</h3>
+            <p>Cash · Bank transfer · Mercado Pago · Automatic debit</p>
+          </div>
+          <div class="info-box">
+            <h3>Requirements</h3>
+            <ul class="detail-list">
+              <li>Completed membership application form.</li>
+              <li>One 4×4 photo of each person enrolling.</li>
+              <li>Medical fitness certificate for physical activities.</li>
+              <li>Medical check-up for pool activities (on-site doctors available).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:3rem">
+          <a href="contact.html" class="btn btn-gold">Contact Us to Join</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Info -->
+    <section class="section" aria-labelledby="addl-heading">
+      <div class="container" style="max-width:800px">
+        <h2 class="section-heading" id="addl-heading">Additional Information</h2>
+        <ul class="detail-list">
+          <li>Non-members may enter the club on weekdays for a fee (contact us via WhatsApp for details). Weekend entry is free; only BBQ area usage is charged.</li>
+          <li>A physical member card is available for a fee. Contact us via WhatsApp for pricing and bring a 4×4 photo for production.</li>
+          <li>Benefits apply only to members with an up-to-date membership fee.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <h4>CABNA</h4>
+          <p>Club Atlético Banco de la Nación Argentina</p>
+          <p>Sport. Community. Tradition. Since 1909.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/clubbanconacionoficial" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+            <a href="https://www.instagram.com/cabnaoficial" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+            <a href="https://wa.me/+5491127851234" aria-label="WhatsApp" target="_blank" rel="noopener">WA</a>
+          </div>
+          <div class="footer-sponsors">
+            <img src="https://clubbanconacion.org.ar/assets/img/footer/sponsors/bna.png" alt="Banco de la Nación Argentina sponsor logo">
+            <img src="https://clubbanconacion.org.ar/assets/img/footer/sponsors/bna-plus.png" alt="BNA Plus sponsor logo">
+          </div>
+        </div>
+        <div class="footer-col"><h4>About</h4><ul><li><a href="about.html">The Club</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="about.html#sports">Sports</a></li></ul></div>
+        <div class="footer-col"><h4>Join Us</h4><ul><li><a href="membership.html">Become a Member</a></li><li><a href="news.html">News</a></li><li><a href="events.html">Events</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul><li>Zufriategui 1251, Vicente López</li><li><a href="mailto:cabna@argentina.com">cabna@argentina.com</a></li><li><a href="https://wa.me/+5491127851234">11 2785-1234 (WhatsApp)</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Club Atlético Banco de la Nación Argentina. All rights reserved.</p>
+        <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
