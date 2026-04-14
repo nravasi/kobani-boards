@@ -278,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex; align-items: center; justify-content: center;
   font-weight: 700; font-size: 1.25rem; margin-bottom: 0.75rem;
 }
-.step h4 { font-size: 0.9375rem; margin-bottom: 0.25rem; }
+.step h3 { font-size: 0.9375rem; margin-bottom: 0.25rem; }
 
 /* ==========================================================
    EVENTS
@@ -452,7 +452,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 2.5rem; border-bottom: 1px solid var(--footer-border);
   margin-bottom: 2rem;
 }
-.footer-col h4 { color: var(--footer-heading); margin-bottom: 1rem; font-size: 1rem; }
+.footer-col h3 { color: var(--footer-heading); margin-bottom: 1rem; font-size: 1rem; }
 .footer-brand p { margin-top: 0.75rem; font-size: 0.875rem; line-height: 1.6; }
 .footer-col ul li { margin-bottom: 0.5rem; }
 .footer-col a { color: var(--footer-link); font-size: 0.875rem; transition: color var(--transition); }

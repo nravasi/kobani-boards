@@ -1,11 +1,11 @@
 {
-  "name": "san-lorenzo-posta-posta",
-  "version": "1.0.0",
-  "description": "San Lorenzo de Almagro — Official Website Redesign",
-  "scripts": {
-    "test": "node test/validation.test.js"
-  },
   "devDependencies": {
-    "jsdom": "^29.0.2"
+    "html-validate": "^10.12.2",
+    "jest": "^29.0.0",
+    "jsdom": "^24.0.0"
+  },
+  "scripts": {
+    "test": "jest --verbose",
+    "validate": "html-validate '**/*.html'"
   }
 }
