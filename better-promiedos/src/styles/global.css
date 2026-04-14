@@ -1,0 +1,929 @@
+/* =============================================================
+   Better Promiedos — Global Stylesheet
+   =====================================================================
+   Production design system matching the promiedos.com.ar visual theme.
+   Consumed by all feature components (fixtures, scores, standings,
+   goalscorers).
+
+   Sections:
+     1. Design Tokens (CSS Custom Properties)
+     2. Reset & Base Typography
+     3. Links & Buttons
+     4. Panel / Card
+     5. Table Styles (standings, data tables)
+     6. Fixture Row Styles
+     7. Score Badge
+     8. Team Name
+     9. Goalscorer Row
+    10. Live Indicator
+    11. Section Headers & Tabs
+    12. Buttons
+    13. Layout Utilities
+    14. Accessibility
+    15. Responsive Breakpoints
+    16. Print Styles
+   ============================================================= */
+
+
+/* =================================================================
+   1. DESIGN TOKENS
+   -----------------------------------------------------------------
+   Color values sourced from the promiedos.com.ar visual theme.
+   See PRODUCT_SPEC.md §2.1 and mockups/DESIGN_SPEC.md §2.1.
+   ================================================================= */
+:root {
+  /* --- Primary colors --- */
+  --color-bg-page:          #1a1a2e;  /* Dark navy/charcoal — full-page background */
+  --color-bg-card:          #16213e;  /* Dark blue-grey — content cards, panels */
+  --color-bg-sidebar:       #0f3460;  /* Deep navy — sidebar navigation */
+  --color-bg-header:        #0a0a23;  /* Near-black — sticky top header bar */
+
+  /* --- Secondary / Accent colors --- */
+  --color-accent-primary:   #e94560;  /* Vibrant red-pink — live indicators, active states */
+  --color-accent-secondary: #53d8fb;  /* Cyan/light blue — links, hover states, highlights */
+
+  /* --- Text colors --- */
+  --color-text-primary:     #ffffff;  /* White — headings, team names, scores */
+  --color-text-secondary:   #a0a0b0;  /* Muted grey-lavender — dates, metadata, labels */
+  --color-text-on-accent:   #ffffff;  /* White — text placed over accent backgrounds */
+
+  /* --- Surface / Divider --- */
+  --color-row-alt:          rgba(255, 255, 255, 0.03);  /* Zebra striping */
+  --color-row-hover:        rgba(255, 255, 255, 0.05);  /* Table/list row hover */
+  --color-divider:          rgba(255, 255, 255, 0.08);  /* Borders, separators */
+  --color-surface-hover:    rgba(255, 255, 255, 0.06);  /* Generic surface hover */
+
+  /* --- Zone / Status indicators --- */
+  --color-zone-libertadores: #4caf50; /* Green — Libertadores qualification */
+  --color-zone-sudamericana: #53d8fb; /* Cyan — Sudamericana qualification */
+  --color-zone-relegation:   #f44336; /* Red — relegation zone */
+
+  /* --- Result indicators --- */
+  --color-win:              #4caf50;  /* Green — wins, positive goal diff */
+  --color-draw:             #ffeb3b;  /* Yellow — draws */
+  --color-loss:             #f44336;  /* Red — losses, negative goal diff */
+
+  /* --- Live match --- */
+  --color-live-bg:          rgba(233, 69, 96, 0.06);  /* Subtle red tint on live rows */
+  --color-live-bg-hover:    rgba(233, 69, 96, 0.10);  /* Hover state for live rows */
+
+  /* --- Typography --- */
+  --font-stack:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-size-base:    14px;   /* Body / default */
+  --font-size-h1:      22px;   /* Page title */
+  --font-size-section: 13px;   /* Section headers */
+  --font-size-team:    14px;   /* Team names in fixtures */
+  --font-size-score:   18px;   /* Score digits (desktop) */
+  --font-size-score-sm: 16px;  /* Score digits (mobile) */
+  --font-size-th:      11px;   /* Table header cells */
+  --font-size-td:      13px;   /* Table body cells */
+  --font-size-meta:    12px;   /* Metadata (dates, times) */
+  --font-size-nav:     13px;   /* Navigation links */
+  --font-size-tab:     12px;   /* Tab labels */
+  --font-size-label:   11px;   /* Small labels, legends */
+
+  /* --- Spacing scale --- */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  12px;
+  --space-lg:  16px;
+  --space-xl:  24px;
+  --space-2xl: 32px;
+
+  /* --- Sizing --- */
+  --sidebar-width:     220px;
+  --header-height:     48px;
+  --max-content-width: 900px;
+  --crest-size:        24px;  /* Standard team crest */
+  --crest-size-sm:     18px;  /* Small crest (tables, scorers) */
+  --crest-size-xs:     20px;  /* Extra-small mobile crest */
+
+  /* --- Borders / Radius --- */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+
+  /* --- Transitions --- */
+  --transition-fast: 0.12s ease;
+  --transition-base: 0.15s ease;
+}
+
+
+/* =================================================================
+   2. RESET & BASE TYPOGRAPHY
+   ================================================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--font-size-base);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-stack);
+  font-weight: 400;
+  color: var(--color-text-primary);
+  background: var(--color-bg-page);
+  line-height: 1.45;
+}
+
+/* --- Heading hierarchy --- */
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2, h3 {
+  font-size: var(--font-size-section);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-secondary);
+}
+
+/* --- Metadata / label text --- */
+.text-meta {
+  font-size: var(--font-size-meta);
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+
+.text-label {
+  font-size: var(--font-size-label);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-secondary);
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+/* =================================================================
+   3. LINKS & BUTTONS
+   ================================================================= */
+a {
+  color: var(--color-accent-secondary);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+button {
+  font-family: var(--font-stack);
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: var(--color-text-primary);
+}
+
+
+/* =================================================================
+   4. PANEL / CARD
+   -----------------------------------------------------------------
+   Generic container for content sections (fixtures, table, scorers).
+   ================================================================= */
+.panel {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+
+/* =================================================================
+   5. TABLE STYLES
+   -----------------------------------------------------------------
+   Reusable standings/data table with:
+   - Alternating row colors (zebra striping)
+   - Hover states
+   - Sticky header
+   - Zone indicators (left-border color coding)
+   - Points column highlight
+   - Goal difference coloring (positive/negative)
+   ================================================================= */
+
+/* Scrollable wrapper for horizontal overflow on mobile */
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.standings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-td);
+}
+
+/* --- Table header --- */
+.standings-table thead {
+  position: sticky;
+  top: 0;
+}
+
+.standings-table th {
+  font-size: var(--font-size-th);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  padding: var(--space-sm) var(--space-xs);
+  text-align: center;
+  border-bottom: 2px solid var(--color-divider);
+  white-space: nowrap;
+  background: var(--color-bg-card);
+}
+
+/* --- Table cells --- */
+.standings-table td {
+  padding: 7px var(--space-xs);
+  text-align: center;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+/* --- Alternating row colors --- */
+.standings-table tbody tr:nth-child(even) {
+  background: var(--color-row-alt);
+}
+
+/* --- Row hover --- */
+.standings-table tbody tr:hover {
+  background: var(--color-row-hover);
+}
+
+/* --- Column classes --- */
+.col-pos {
+  width: 32px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.col-team {
+  text-align: left !important;
+  padding-left: var(--space-sm) !important;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.col-stat {
+  width: 38px;
+  font-variant-numeric: tabular-nums;
+}
+
+.col-pts {
+  width: 42px;
+  font-weight: 700;
+  color: var(--color-accent-secondary);
+}
+
+/* Goal difference: positive (green), negative (red) */
+.col-diff-pos { color: var(--color-win); }
+.col-diff-neg { color: var(--color-loss); }
+
+/* Small crest inside table/scorer rows */
+.team-crest-sm {
+  border-radius: var(--radius-sm);
+  margin-right: var(--space-xs);
+  vertical-align: middle;
+}
+
+/* --- Zone indicators — colored inset left-border ---
+   Apply these classes to <tr> elements to mark qualification /
+   relegation zones.
+   - .zone-libertadores → green left border (rows 1–4)
+   - .zone-sudamericana → cyan left border (rows 5–6)
+   - .zone-relegation   → red left border (bottom rows)
+*/
+.zone-libertadores td:first-child {
+  box-shadow: inset 3px 0 0 var(--color-zone-libertadores);
+}
+.zone-sudamericana td:first-child {
+  box-shadow: inset 3px 0 0 var(--color-zone-sudamericana);
+}
+.zone-relegation td:first-child {
+  box-shadow: inset 3px 0 0 var(--color-zone-relegation);
+}
+
+/* --- Table legend (below standings table) --- */
+.table-legend {
+  display: flex;
+  gap: var(--space-lg);
+  padding-top: var(--space-md);
+  font-size: var(--font-size-label);
+  color: var(--color-text-secondary);
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.legend-swatch {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: var(--radius-sm);
+}
+.legend-swatch--lib { background: var(--color-zone-libertadores); }
+.legend-swatch--sud { background: var(--color-zone-sudamericana); }
+.legend-swatch--rel { background: var(--color-zone-relegation); }
+
+
+/* =================================================================
+   6. FIXTURE ROW STYLES
+   -----------------------------------------------------------------
+   Three-column layout for match rows:
+     [Home team (right-aligned)]  [Center: score/time]  [Away team (left-aligned)]
+
+   States:
+     - Default (upcoming): shows date/time in center
+     - .fixture-row--live: red-tinted background, pulsing dot
+     - .fixture-row--finished: final score displayed
+   ================================================================= */
+.fixture-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.fixture-row {
+  display: flex;
+  align-items: center;
+  padding: var(--space-md) var(--space-sm);
+  border-bottom: 1px solid var(--color-divider);
+  text-decoration: none;
+  color: var(--color-text-primary);
+  transition: background var(--transition-fast);
+}
+
+.fixture-row:hover,
+.fixture-row:focus-visible {
+  background: rgba(255, 255, 255, 0.04);
+  text-decoration: none;
+}
+
+/* Alternating rows (for fixture lists) */
+.fixture-row:nth-child(odd of .fixture-row) {
+  background: var(--color-row-alt);
+}
+.fixture-row:nth-child(odd of .fixture-row):hover {
+  background: var(--color-surface-hover);
+}
+
+/* Live match row — subtle red tint */
+.fixture-row--live {
+  background: var(--color-live-bg);
+}
+.fixture-row--live:hover {
+  background: var(--color-live-bg-hover);
+}
+
+/* Home / Away team containers */
+.fixture-home,
+.fixture-away {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex: 1;
+  min-width: 0;
+}
+
+.fixture-home {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.fixture-away {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+/* Center column (score or date/time) */
+.fixture-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+  padding: 0 var(--space-sm);
+}
+
+.fixture-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fixture-date-label {
+  font-size: var(--font-size-label);
+  color: var(--color-text-secondary);
+}
+
+.fixture-clock {
+  font-size: var(--font-size-team);
+  font-weight: 600;
+}
+
+.fixture-tv {
+  margin-top: 2px;
+}
+
+.tv-logo {
+  opacity: 0.7;
+  border-radius: var(--radius-sm);
+}
+
+/* Goal scorers below match row */
+.fixture-scorers {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px var(--space-sm) var(--space-sm);
+  font-size: var(--font-size-label);
+  color: var(--color-text-secondary);
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.fixture-scorers--live {
+  color: var(--color-accent-primary);
+  opacity: 0.8;
+}
+
+.scorer-home {
+  text-align: right;
+  flex: 1;
+  padding-right: 54px;
+}
+
+.scorer-away {
+  text-align: left;
+  flex: 1;
+  padding-left: 54px;
+}
+
+
+/* =================================================================
+   7. SCORE BADGE
+   -----------------------------------------------------------------
+   Displays the match score (e.g. "2 - 1") in the center of a
+   fixture row.
+
+   Usage:
+     <div class="fixture-score">
+       <span class="score">2 - 1</span>
+     </div>
+
+   The .score class renders large, bold, monospace-numeric digits.
+   Pair with .live-indicator for live matches.
+
+   Variants:
+     .score              — default finished/live score (18px, bold)
+     .score--compact     — smaller score for dense lists (16px)
+   ================================================================= */
+.fixture-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score {
+  font-size: var(--font-size-score);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text-primary);
+}
+
+.score--compact {
+  font-size: var(--font-size-score-sm);
+}
+
+
+/* =================================================================
+   8. TEAM NAME
+   -----------------------------------------------------------------
+   Renders a team name with truncation for overflow.
+
+   Usage:
+     <span class="team-name">River Plate</span>
+
+   Pair with .team-crest for the team crest image:
+     <img src="..." alt="" class="team-crest" width="24" height="24">
+
+   In tables, use .team-crest-sm (18×18) for a compact crest.
+   ================================================================= */
+.team-name {
+  font-weight: 600;
+  font-size: var(--font-size-team);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.team-crest {
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+}
+
+
+/* =================================================================
+   9. GOALSCORER ROW
+   -----------------------------------------------------------------
+   Ranked list item for top goalscorers.
+
+   Usage:
+     <div class="scorer-row">
+       <span class="scorer-rank">1</span>
+       <img class="team-crest-sm" ...>
+       <span class="scorer-name">Driussi</span>
+       <span class="scorer-team-label">River Plate</span>
+       <span class="scorer-goals">6</span>
+     </div>
+   ================================================================= */
+.scorers-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.scorer-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-xs);
+  border-bottom: 1px solid var(--color-divider);
+  font-size: var(--font-size-td);
+  transition: background var(--transition-fast);
+}
+
+.scorer-row:nth-child(even) {
+  background: var(--color-row-alt);
+}
+
+.scorer-row:hover {
+  background: var(--color-row-hover);
+}
+
+.scorer-rank {
+  width: 24px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-meta);
+}
+
+.scorer-name {
+  font-weight: 600;
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.scorer-team-label {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-meta);
+  white-space: nowrap;
+}
+
+.scorer-goals {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-accent-secondary);
+  min-width: 32px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+
+/* =================================================================
+   10. LIVE INDICATOR
+   -----------------------------------------------------------------
+   Pulsing red dot + minute counter for live matches.
+
+   Usage:
+     <span class="live-indicator">
+       <span class="live-dot"></span> 67'
+     </span>
+   ================================================================= */
+.live-indicator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--font-size-label);
+  font-weight: 600;
+  color: var(--color-accent-primary);
+}
+
+.live-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-accent-primary);
+  animation: promiedos-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes promiedos-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.5; transform: scale(0.8); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .live-dot {
+    animation: none;
+  }
+}
+
+
+/* =================================================================
+   11. SECTION HEADERS & TABS
+   ================================================================= */
+.section-title {
+  font-size: var(--font-size-section);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.league-tabs {
+  display: flex;
+  gap: 2px;
+  border-bottom: 2px solid var(--color-divider);
+}
+
+.league-tab {
+  padding: var(--space-sm) var(--space-lg);
+  font-size: var(--font-size-tab);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-secondary);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: color var(--transition-base), border-color var(--transition-base);
+}
+
+.league-tab:hover,
+.league-tab:focus-visible {
+  color: var(--color-text-primary);
+}
+
+.league-tab.active {
+  color: var(--color-text-primary);
+  border-bottom-color: var(--color-accent-primary);
+}
+
+/* Round navigation (e.g. ◄ Fecha 8 — Apertura ►) */
+.round-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.round-label {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: none;
+  color: var(--color-text-primary);
+}
+
+.round-arrow {
+  font-size: 16px;
+  padding: 4px 10px;
+  border-radius: var(--radius-md);
+  background: var(--color-surface-hover);
+  color: var(--color-text-primary);
+  transition: background var(--transition-base);
+}
+
+.round-arrow:hover,
+.round-arrow:focus-visible {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+
+/* =================================================================
+   12. BUTTONS
+   ================================================================= */
+
+/* "VER MÁS" / "Show more" button */
+.btn-more {
+  display: block;
+  width: 100%;
+  margin-top: var(--space-md);
+  padding: var(--space-sm) var(--space-lg);
+  font-size: var(--font-size-meta);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent-secondary);
+  background: rgba(83, 216, 251, 0.08);
+  border: 1px solid rgba(83, 216, 251, 0.2);
+  border-radius: var(--radius-md);
+  transition: background var(--transition-base);
+}
+
+.btn-more:hover,
+.btn-more:focus-visible {
+  background: rgba(83, 216, 251, 0.15);
+}
+
+
+/* =================================================================
+   13. LAYOUT UTILITIES
+   ================================================================= */
+
+/* Visually hidden but accessible to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Flex utilities */
+.flex       { display: flex; }
+.flex-col   { flex-direction: column; }
+.flex-wrap  { flex-wrap: wrap; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-xs     { gap: var(--space-xs); }
+.gap-sm     { gap: var(--space-sm); }
+.gap-md     { gap: var(--space-md); }
+.gap-lg     { gap: var(--space-lg); }
+
+/* Text utilities */
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+.text-left   { text-align: left; }
+.text-nowrap { white-space: nowrap; }
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.font-bold   { font-weight: 700; }
+.font-medium { font-weight: 600; }
+.tabular-nums { font-variant-numeric: tabular-nums; }
+
+
+/* =================================================================
+   14. ACCESSIBILITY
+   -----------------------------------------------------------------
+   - All interactive elements receive a visible focus ring (2px cyan)
+   - Contrast ratios verified per DESIGN_SPEC.md §6:
+       #fff on #1a1a2e ≈ 14.5:1 (AAA)
+       #a0a0b0 on #16213e ≈ 5.8:1 (AA)
+       #53d8fb on #16213e ≈ 8.2:1 (AAA)
+   ================================================================= */
+:focus-visible {
+  outline: 2px solid var(--color-accent-secondary);
+  outline-offset: 2px;
+}
+
+
+/* =================================================================
+   15. RESPONSIVE BREAKPOINTS
+   -----------------------------------------------------------------
+   Breakpoints:
+     ≥1024px  Desktop: sidebar visible, full content width
+     <1024px  Tablet/mobile: sidebar off-canvas, reduced padding
+     <480px   Small mobile: tighter cells, smaller type
+   ================================================================= */
+@media (max-width: 1023px) {
+  .fixture-row {
+    padding: var(--space-sm) var(--space-xs);
+  }
+
+  .team-name {
+    font-size: 13px;
+  }
+
+  .fixture-center {
+    min-width: 80px;
+  }
+
+  .standings-table td,
+  .standings-table th {
+    padding: 6px 3px;
+    font-size: 12px;
+  }
+
+  .standings-table th {
+    font-size: 10px;
+  }
+
+  .col-stat {
+    width: 30px;
+  }
+
+  .col-team {
+    max-width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .scorer-team-label {
+    display: none;
+  }
+
+  .scorer-home,
+  .scorer-away {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .league-tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .league-tab {
+    font-size: 11px;
+    padding: var(--space-sm) var(--space-md);
+    white-space: nowrap;
+  }
+
+  .fixture-center {
+    min-width: 64px;
+  }
+
+  .score {
+    font-size: var(--font-size-score-sm);
+  }
+
+  .team-name {
+    font-size: 12px;
+  }
+
+  .team-crest {
+    width: var(--crest-size-xs);
+    height: var(--crest-size-xs);
+  }
+
+  .standings-table {
+    font-size: 11px;
+  }
+
+  .standings-table td,
+  .standings-table th {
+    padding: 5px 2px;
+  }
+
+  .col-stat {
+    width: 24px;
+  }
+}
+
+
+/* =================================================================
+   16. PRINT STYLES
+   ================================================================= */
+@media print {
+  body {
+    background: #fff;
+    color: #111;
+  }
+
+  .panel {
+    background: #fff;
+    border: 1px solid #ccc;
+    break-inside: avoid;
+  }
+
+  .standings-table th {
+    background: #f5f5f5;
+    color: #333;
+  }
+
+  .live-dot {
+    animation: none;
+  }
+}

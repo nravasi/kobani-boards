@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="estilo-puro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — CABNA</title>
+  <meta name="description" content="Browse photos of life at CABNA: matchday moments, community celebrations, and everyday life at the club.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Roboto:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/theme-estilo-puro.css">
+  <link rel="stylesheet" href="css/theme-cancha-viva.css">
+  <link rel="stylesheet" href="css/theme-tribuna-dorada.css">
+  <link rel="stylesheet" href="css/base.css">
+  <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('cabna-theme') || 'estilo-puro');</script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="mobile-overlay"></div>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="CABNA Home">CABNA</a>
+      <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="membership.html" class="btn-cta">Become a Member</a>
+      </nav>
+      <div class="theme-switcher" role="group" aria-label="Choose visual style">
+        <button data-theme-choice="estilo-puro" aria-pressed="true" title="Estilo Puro — Modern Minimal"><span class="theme-dot" style="background:#E94560"></span><span class="sr-only">Estilo Puro</span></button>
+        <button data-theme-choice="cancha-viva" aria-pressed="false" title="Cancha Viva — Bold Athletic"><span class="theme-dot" style="background:#FF2D55"></span><span class="sr-only">Cancha Viva</span></button>
+        <button data-theme-choice="tribuna-dorada" aria-pressed="false" title="Tribuna Dorada — Classic Prestigious"><span class="theme-dot" style="background:#C8A951"></span><span class="sr-only">Tribuna Dorada</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-banner" aria-label="Gallery page banner">
+      <div class="hero-bg" style="background-image:url('https://clubbanconacion.org.ar/assets/img/home/actividades.jpg')" role="img" aria-label="Activities at CABNA club"></div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <h1>Life at the Club</h1>
+        <p>Matchday moments, community celebrations, and everyday life at CABNA.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="gallery-heading">
+      <div class="container">
+        <h2 class="section-heading" id="gallery-heading">Photo Gallery</h2>
+        <p class="section-intro">Browse our latest photos from across the campus.</p>
+        <div id="gallery-grid" class="gallery-grid" role="list" aria-label="Photo gallery"></div>
+
+        <noscript>
+          <div class="gallery-grid" role="list">
+            <figure class="gallery-item" role="listitem">
+              <img src="https://clubbanconacion.org.ar/assets/img/club/portada.jpg" alt="CABNA club entrance facade" loading="lazy" width="400" height="300">
+              <figcaption>CABNA club entrance facade</figcaption>
+            </figure>
+            <figure class="gallery-item" role="listitem">
+              <img src="https://clubbanconacion.org.ar/assets/img/home/deportes.jpg" alt="Sports facilities and fields at CABNA" loading="lazy" width="400" height="300">
+              <figcaption>Sports facilities</figcaption>
+            </figure>
+            <figure class="gallery-item" role="listitem">
+              <img src="https://clubbanconacion.org.ar/assets/img/home/actividades.jpg" alt="Community activities for all ages" loading="lazy" width="400" height="300">
+              <figcaption>Community activities</figcaption>
+            </figure>
+            <figure class="gallery-item" role="listitem">
+              <img src="https://clubbanconacion.org.ar/assets/img/club/quinchos.jpg" alt="Quincho and BBQ area for gatherings" loading="lazy" width="400" height="300">
+              <figcaption>Quincho and BBQ area</figcaption>
+            </figure>
+          </div>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-label="Image viewer" aria-modal="true" hidden>
+      <div class="lightbox-overlay" data-lightbox-close></div>
+      <div class="lightbox-content">
+        <button class="lightbox-close" data-lightbox-close aria-label="Close viewer">&times;</button>
+        <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">&#8249;</button>
+        <figure class="lightbox-figure">
+          <img id="lightbox-img" class="lightbox-img" src="" alt="">
+          <figcaption id="lightbox-caption" class="lightbox-caption"></figcaption>
+        </figure>
+        <button class="lightbox-next" id="lightbox-next" aria-label="Next image">&#8250;</button>
+      </div>
+      <p class="lightbox-counter" aria-live="polite"><span id="lightbox-current">1</span> / <span id="lightbox-total">1</span></p>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <h4>CABNA</h4>
+          <p>Club Atlético Banco de la Nación Argentina</p>
+          <p>Sport. Community. Tradition. Since 1909.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/clubbanconacionoficial" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+            <a href="https://www.instagram.com/cabnaoficial" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+            <a href="https://wa.me/+5491127851234" aria-label="WhatsApp" target="_blank" rel="noopener">WA</a>
+          </div>
+          <div class="footer-sponsors">
+            <img src="https://clubbanconacion.org.ar/assets/img/footer/sponsors/bna.png" alt="Banco de la Nación Argentina sponsor logo">
+            <img src="https://clubbanconacion.org.ar/assets/img/footer/sponsors/bna-plus.png" alt="BNA Plus sponsor logo">
+          </div>
+        </div>
+        <div class="footer-col"><h4>About</h4><ul><li><a href="about.html">The Club</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="about.html#sports">Sports</a></li></ul></div>
+        <div class="footer-col"><h4>Join Us</h4><ul><li><a href="membership.html">Become a Member</a></li><li><a href="news.html">News</a></li><li><a href="events.html">Events</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul><li>Zufriategui 1251, Vicente López</li><li><a href="mailto:cabna@argentina.com">cabna@argentina.com</a></li><li><a href="https://wa.me/+5491127851234">11 2785-1234 (WhatsApp)</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Club Atlético Banco de la Nación Argentina. All rights reserved.</p>
+        <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

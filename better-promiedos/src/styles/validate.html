@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Stylesheet Validation — Better Promiedos</title>
+  <link rel="stylesheet" href="global.css">
+  <style>
+    /* Validation-only styles (not part of the global stylesheet) */
+    .validation-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+    .validation-heading {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--color-accent-secondary);
+      margin: 32px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--color-divider);
+    }
+    .token-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .token-swatch {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid var(--color-divider);
+    }
+    .swatch-box {
+      width: 48px;
+      height: 48px;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .token-label {
+      font-size: 11px;
+      color: var(--color-text-secondary);
+      text-align: center;
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+
+<div class="validation-section">
+  <h1>Global Stylesheet Validation</h1>
+  <p class="text-meta">This page validates that <code>global.css</code> imports cleanly and all design tokens, typography, table styles, score badges, and team name styles render correctly.</p>
+
+  <!-- ========== COLOR TOKENS ========== -->
+  <div class="validation-heading">1. Color Tokens</div>
+  <div class="token-grid">
+    <div class="token-swatch">
+      <div class="swatch-box" style="background: var(--color-bg-page);"></div>
+      <span class="token-label">--color-bg-page<br>#1a1a2e</span>
+    </div>
+    <div class="token-swatch">
+      <div class="swatch-box" style="background: var(--color-bg-card);"></div>
+      <span class="token-label">--color-bg-card<br>#16213e</span>
+    </div>
+    <div class="token-swatch">
+      <div class="swatch-box" style="background: var(--color-bg-sidebar);"></div>
+      <span class="token-label">--color-bg-sidebar<br>#0f3460</span>
+    </div>
+    <div class="token-swatch">
+      <div class="swatch-box" style="background: var(--color-bg-header);"></div>
+      <span class="token-label">--color-bg-header<br>#0a0a23</span>
+    </div>
+    <div class="token-swatch">
+      <div class="swatch-box" style="background: var(--color-accent-primary);"></div>
+      <span class="token-label">--color-accent-primary<br>#e94560</span>
+    </div>
+    <div class="token-swatch">
+      <div class="swatch-box" style="background: var(--color-accent-secondary);"></div>
+      <span class="token-label">--color-accent-secondary<br>#53d8fb</span>
+    </div>
+    <div class="token-swatch">
+      <div class="swatch-box" style="background: var(--color-text-primary); border-color: rgba(255,255,255,0.3);"></div>
+      <span class="token-label">--color-text-primary<br>#ffffff</span>
+    </div>
+    <div class="token-swatch">
+      <div class="swatch-box" style="background: var(--color-text-secondary);"></div>
+      <span class="token-label">--color-text-secondary<br>#a0a0b0</span>
+    </div>
+    <div class="token-swatch">
+      <div class="swatch-box" style="background: var(--color-zone-libertadores);"></div>
+      <span class="token-label">--color-zone-libertadores<br>#4caf50</span>
+    </div>
+    <div class="token-swatch">
+      <div class="swatch-box" style="background: var(--color-zone-sudamericana);"></div>
+      <span class="token-label">--color-zone-sudamericana<br>#53d8fb</span>
+    </div>
+    <div class="token-swatch">
+      <div class="swatch-box" style="background: var(--color-zone-relegation);"></div>
+      <span class="token-label">--color-zone-relegation<br>#f44336</span>
+    </div>
+    <div class="token-swatch">
+      <div class="swatch-box" style="background: var(--color-win);"></div>
+      <span class="token-label">--color-win<br>#4caf50</span>
+    </div>
+    <div class="token-swatch">
+      <div class="swatch-box" style="background: var(--color-draw);"></div>
+      <span class="token-label">--color-draw<br>#ffeb3b</span>
+    </div>
+    <div class="token-swatch">
+      <div class="swatch-box" style="background: var(--color-loss);"></div>
+      <span class="token-label">--color-loss<br>#f44336</span>
+    </div>
+  </div>
+
+  <!-- ========== TYPOGRAPHY ========== -->
+  <div class="validation-heading">2. Typography</div>
+  <div class="panel">
+    <h1>Liga Profesional Argentina (H1 — 22px/700)</h1>
+    <h2 style="margin-top: 12px;">POSICIONES (H2 — Section header 13px/700/uppercase)</h2>
+    <p style="margin-top: 12px;">Body text at 14px/400 weight. This is the default paragraph style used throughout the site.</p>
+    <p class="text-meta" style="margin-top: 8px;">Metadata text at 12px — dates, times, secondary info.</p>
+    <p class="text-label" style="margin-top: 8px;">LABEL TEXT — 11px/600/uppercase for small labels and legends.</p>
+  </div>
+
+  <!-- ========== SCORE BADGE ========== -->
+  <div class="validation-heading">3. Score Badge</div>
+  <div class="panel">
+    <p class="text-meta" style="margin-bottom: 12px;">The <code>.score</code> class renders bold, monospace-numeric score text. Use <code>.score--compact</code> for smaller displays.</p>
+    <div class="flex items-center gap-lg" style="margin-bottom: 12px;">
+      <div class="fixture-score">
+        <span class="score">2 - 1</span>
+      </div>
+      <span class="text-meta">Standard score (18px/700)</span>
+    </div>
+    <div class="flex items-center gap-lg" style="margin-bottom: 12px;">
+      <div class="fixture-score">
+        <span class="score score--compact">3 - 0</span>
+      </div>
+      <span class="text-meta">Compact score (16px/700)</span>
+    </div>
+    <div class="flex items-center gap-lg">
+      <div class="fixture-score">
+        <span class="live-indicator"><span class="live-dot"></span> 67'</span>
+        <span class="score">2 - 0</span>
+      </div>
+      <span class="text-meta">Live score with pulsing indicator</span>
+    </div>
+  </div>
+
+  <!-- ========== TEAM NAME ========== -->
+  <div class="validation-heading">4. Team Name</div>
+  <div class="panel">
+    <p class="text-meta" style="margin-bottom: 12px;">The <code>.team-name</code> class renders 14px/600 text with ellipsis truncation. Pair with <code>.team-crest</code> for the team badge.</p>
+    <div class="flex items-center gap-sm" style="margin-bottom: 8px;">
+      <img src="https://api.promiedos.com.ar/images/team/igi/1" alt="" class="team-crest" width="24" height="24">
+      <span class="team-name">River Plate</span>
+    </div>
+    <div class="flex items-center gap-sm" style="margin-bottom: 8px;">
+      <img src="https://api.promiedos.com.ar/images/team/igg/1" alt="" class="team-crest" width="24" height="24">
+      <span class="team-name">Boca Juniors</span>
+    </div>
+    <div class="flex items-center gap-sm">
+      <img src="https://api.promiedos.com.ar/images/team/ihg/1" alt="" class="team-crest-sm" width="18" height="18">
+      <span class="team-name" style="font-size: 13px;">Racing (small crest variant)</span>
+    </div>
+  </div>
+
+  <!-- ========== FIXTURE ROW ========== -->
+  <div class="validation-heading">5. Fixture Row (with alternating colors &amp; hover)</div>
+  <div class="panel">
+    <div class="fixture-list">
+      <a href="#" class="fixture-row" aria-label="Sarmiento vs Lanús">
+        <div class="fixture-home">
+          <span class="team-name">Sarmiento</span>
+          <img src="https://api.promiedos.com.ar/images/team/hbbh/1" alt="" class="team-crest" width="24" height="24">
+        </div>
+        <div class="fixture-center">
+          <div class="fixture-time">
+            <span class="fixture-date-label">Sáb 19/04</span>
+            <span class="fixture-clock">16:00</span>
+          </div>
+        </div>
+        <div class="fixture-away">
+          <img src="https://api.promiedos.com.ar/images/team/igj/1" alt="" class="team-crest" width="24" height="24">
+          <span class="team-name">Lanús</span>
+        </div>
+      </a>
+      <a href="#" class="fixture-row" aria-label="San Lorenzo vs Vélez">
+        <div class="fixture-home">
+          <span class="team-name">San Lorenzo</span>
+          <img src="https://api.promiedos.com.ar/images/team/igf/1" alt="" class="team-crest" width="24" height="24">
+        </div>
+        <div class="fixture-center">
+          <div class="fixture-time">
+            <span class="fixture-date-label">Dom 20/04</span>
+            <span class="fixture-clock">16:00</span>
+          </div>
+        </div>
+        <div class="fixture-away">
+          <img src="https://api.promiedos.com.ar/images/team/ihc/1" alt="" class="team-crest" width="24" height="24">
+          <span class="team-name">Vélez</span>
+        </div>
+      </a>
+      <a href="#" class="fixture-row fixture-row--live" aria-label="River Plate 2 vs 0 Belgrano, en vivo">
+        <div class="fixture-home">
+          <span class="team-name">River Plate</span>
+          <img src="https://api.promiedos.com.ar/images/team/igi/1" alt="" class="team-crest" width="24" height="24">
+        </div>
+        <div class="fixture-center">
+          <div class="fixture-score">
+            <span class="live-indicator"><span class="live-dot"></span> 67'</span>
+            <span class="score">2 - 0</span>
+          </div>
+        </div>
+        <div class="fixture-away">
+          <img src="https://api.promiedos.com.ar/images/team/fhid/1" alt="" class="team-crest" width="24" height="24">
+          <span class="team-name">Belgrano</span>
+        </div>
+      </a>
+      <div class="fixture-scorers fixture-scorers--live">
+        <span class="scorer-home">Driussi 12', Colidio 55'</span>
+        <span class="scorer-away"></span>
+      </div>
+      <a href="#" class="fixture-row" aria-label="Boca 2, Racing 1, finalizado">
+        <div class="fixture-home">
+          <span class="team-name">Boca Juniors</span>
+          <img src="https://api.promiedos.com.ar/images/team/igg/1" alt="" class="team-crest" width="24" height="24">
+        </div>
+        <div class="fixture-center">
+          <div class="fixture-score">
+            <span class="score">2 - 1</span>
+          </div>
+        </div>
+        <div class="fixture-away">
+          <img src="https://api.promiedos.com.ar/images/team/ihg/1" alt="" class="team-crest" width="24" height="24">
+          <span class="team-name">Racing</span>
+        </div>
+      </a>
+      <div class="fixture-scorers">
+        <span class="scorer-home">Cavani 23', 67'</span>
+        <span class="scorer-away">Almendra 55'</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== STANDINGS TABLE ========== -->
+  <div class="validation-heading">6. Standings Table (alternating rows, hover, zones)</div>
+  <div class="panel">
+    <h2 class="section-title">POSICIONES</h2>
+    <div class="table-wrapper" role="region" aria-label="Tabla de posiciones" tabindex="0">
+      <table class="standings-table">
+        <thead>
+          <tr>
+            <th class="col-pos">#</th>
+            <th class="col-team">Equipo</th>
+            <th class="col-stat">PJ</th>
+            <th class="col-stat">PG</th>
+            <th class="col-stat">PE</th>
+            <th class="col-stat">PP</th>
+            <th class="col-stat">GF</th>
+            <th class="col-stat">GC</th>
+            <th class="col-stat">Dif</th>
+            <th class="col-pts">Pts</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="zone-libertadores">
+            <td class="col-pos">1</td>
+            <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/igg/1" alt="" class="team-crest-sm" width="18" height="18"> Boca Juniors</td>
+            <td class="col-stat">7</td><td class="col-stat">6</td><td class="col-stat">1</td><td class="col-stat">0</td>
+            <td class="col-stat">14</td><td class="col-stat">5</td>
+            <td class="col-stat col-diff-pos">+9</td>
+            <td class="col-pts">19</td>
+          </tr>
+          <tr class="zone-libertadores">
+            <td class="col-pos">2</td>
+            <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/igi/1" alt="" class="team-crest-sm" width="18" height="18"> River Plate</td>
+            <td class="col-stat">7</td><td class="col-stat">5</td><td class="col-stat">2</td><td class="col-stat">0</td>
+            <td class="col-stat">13</td><td class="col-stat">4</td>
+            <td class="col-stat col-diff-pos">+9</td>
+            <td class="col-pts">17</td>
+          </tr>
+          <tr class="zone-sudamericana">
+            <td class="col-pos">5</td>
+            <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/iie/1" alt="" class="team-crest-sm" width="18" height="18"> Huracán</td>
+            <td class="col-stat">7</td><td class="col-stat">4</td><td class="col-stat">1</td><td class="col-stat">2</td>
+            <td class="col-stat">9</td><td class="col-stat">7</td>
+            <td class="col-stat col-diff-pos">+2</td>
+            <td class="col-pts">13</td>
+          </tr>
+          <tr>
+            <td class="col-pos">10</td>
+            <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/ihe/1" alt="" class="team-crest-sm" width="18" height="18"> Independiente</td>
+            <td class="col-stat">7</td><td class="col-stat">3</td><td class="col-stat">2</td><td class="col-stat">2</td>
+            <td class="col-stat">7</td><td class="col-stat">6</td>
+            <td class="col-stat col-diff-pos">+1</td>
+            <td class="col-pts">11</td>
+          </tr>
+          <tr class="zone-relegation">
+            <td class="col-pos">28</td>
+            <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/jafb/1" alt="" class="team-crest-sm" width="18" height="18"> Barracas Central</td>
+            <td class="col-stat">7</td><td class="col-stat">0</td><td class="col-stat">2</td><td class="col-stat">5</td>
+            <td class="col-stat">3</td><td class="col-stat">12</td>
+            <td class="col-stat col-diff-neg">-9</td>
+            <td class="col-pts">2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-legend">
+      <span class="legend-item"><span class="legend-swatch legend-swatch--lib"></span> Copa Libertadores</span>
+      <span class="legend-item"><span class="legend-swatch legend-swatch--sud"></span> Copa Sudamericana</span>
+      <span class="legend-item"><span class="legend-swatch legend-swatch--rel"></span> Descenso</span>
+    </div>
+  </div>
+
+  <!-- ========== GOALSCORER LIST ========== -->
+  <div class="validation-heading">7. Goalscorer List (alternating rows, hover)</div>
+  <div class="panel">
+    <h2 class="section-title">GOLEADORES — Apertura</h2>
+    <div class="scorers-list">
+      <div class="scorer-row">
+        <span class="scorer-rank">1</span>
+        <img src="https://api.promiedos.com.ar/images/team/igi/1" alt="" class="team-crest-sm" width="18" height="18">
+        <span class="scorer-name">Driussi</span>
+        <span class="scorer-team-label">River Plate</span>
+        <span class="scorer-goals">6</span>
+      </div>
+      <div class="scorer-row">
+        <span class="scorer-rank">2</span>
+        <img src="https://api.promiedos.com.ar/images/team/igg/1" alt="" class="team-crest-sm" width="18" height="18">
+        <span class="scorer-name">Cavani</span>
+        <span class="scorer-team-label">Boca Juniors</span>
+        <span class="scorer-goals">5</span>
+      </div>
+      <div class="scorer-row">
+        <span class="scorer-rank">3</span>
+        <img src="https://api.promiedos.com.ar/images/team/ihc/1" alt="" class="team-crest-sm" width="18" height="18">
+        <span class="scorer-name">Janson</span>
+        <span class="scorer-team-label">Vélez</span>
+        <span class="scorer-goals">4</span>
+      </div>
+    </div>
+    <button class="btn-more">VER MÁS</button>
+  </div>
+
+  <!-- ========== TABS ========== -->
+  <div class="validation-heading">8. League Tabs</div>
+  <div class="panel">
+    <div class="league-tabs" role="tablist">
+      <button class="league-tab active" role="tab" aria-selected="true">FIXTURE Y TABLAS</button>
+      <button class="league-tab" role="tab" aria-selected="false">EQUIPOS Y ESTADISTICAS</button>
+      <button class="league-tab" role="tab" aria-selected="false">CAMPEONES</button>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

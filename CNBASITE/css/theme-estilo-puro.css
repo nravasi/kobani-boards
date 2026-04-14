@@ -1,0 +1,107 @@
+/* ==========================================================
+   Theme: Estilo Puro — Modern Minimal
+   Token source: tokens-style1.json
+   ========================================================== */
+[data-theme="estilo-puro"] {
+  /* Colors */
+  --color-primary: #1A1A2E;
+  --color-primary-light: #2D2D4A;
+  --color-primary-dark: #0F0F1B;
+  --color-secondary: #E94560;
+  --color-secondary-light: #FF6B81;
+  --color-secondary-dark: #C7293F;
+  --color-accent: #0F3460;
+  --color-accent-light: #1B4F8A;
+  --color-bg: #FAFAFA;
+  --color-bg-alt: #F0F0F5;
+  --color-surface: #FFFFFF;
+  --color-surface-elevated: #FFFFFF;
+  --color-text: #1A1A2E;
+  --color-text-secondary: #6B6B80;
+  --color-text-muted: #9E9EB0;
+  --color-text-on-primary: #FFFFFF;
+  --color-text-on-secondary: #FFFFFF;
+  --color-border: #E0E0E8;
+  --color-border-focus: #E94560;
+  --color-success: #2ECC71;
+  --color-error: #E74C3C;
+
+  /* Typography */
+  --font-heading: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --heading-weight: 700;
+  --heading-transform: none;
+  --heading-letter-spacing: -0.025em;
+  --body-line-height: 1.6;
+
+  /* Sizing */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --shadow-sm: 0 1px 2px rgba(26, 26, 46, 0.05);
+  --shadow-md: 0 4px 12px rgba(26, 26, 46, 0.08);
+  --shadow-lg: 0 8px 24px rgba(26, 26, 46, 0.12);
+  --transition: 250ms ease;
+
+  /* Buttons */
+  --btn-bg: #E94560;
+  --btn-text: #FFFFFF;
+  --btn-hover-bg: #C7293F;
+  --btn-secondary-bg: transparent;
+  --btn-secondary-text: #1A1A2E;
+  --btn-secondary-border: #E0E0E8;
+  --btn-secondary-hover-bg: #F0F0F5;
+  --btn-radius: 0.5rem;
+  --btn-weight: 600;
+  --btn-transform: none;
+  --btn-spacing: 0.025em;
+  --btn-gold-bg: #E94560;
+  --btn-gold-text: #FFFFFF;
+  --btn-gold-hover-bg: #C7293F;
+
+  /* Cards */
+  --card-bg: #FFFFFF;
+  --card-border: 1px solid #E0E0E8;
+  --card-radius: 0.75rem;
+  --card-shadow: 0 1px 2px rgba(26, 26, 46, 0.05);
+  --card-hover-shadow: 0 8px 24px rgba(26, 26, 46, 0.12);
+  --card-padding: 1.5rem;
+  --card-accent-color: transparent;
+  --card-accent-width: 0px;
+
+  /* Navigation */
+  --nav-bg: #FFFFFF;
+  --nav-border-bottom: 1px solid #E0E0E8;
+  --nav-height: 4rem;
+  --nav-link-color: #6B6B80;
+  --nav-link-hover: #1A1A2E;
+  --nav-link-active: #E94560;
+  --nav-font-weight: 500;
+  --nav-transform: none;
+  --nav-letter-spacing: 0;
+  --nav-logo-color: #1A1A2E;
+
+  /* Hero */
+  --hero-bg: #1A1A2E;
+  --hero-text: #FFFFFF;
+  --hero-subtitle: #9E9EB0;
+  --hero-min-height: 70vh;
+  --hero-heading-size: 4.5rem;
+  --hero-heading-weight: 700;
+  --hero-heading-lh: 1.1;
+  --hero-heading-transform: none;
+  --hero-heading-spacing: -0.025em;
+  --hero-overlay: linear-gradient(135deg, rgba(26, 26, 46, 0.92) 0%, rgba(15, 52, 96, 0.85) 100%);
+
+  /* Footer */
+  --footer-bg: #0F0F1B;
+  --footer-text: #9E9EB0;
+  --footer-heading: #FFFFFF;
+  --footer-link: #E0E0E8;
+  --footer-link-hover: #E94560;
+  --footer-border: #2D2D4A;
+
+  /* Section headings */
+  --section-heading-size: 3rem;
+  --section-heading-weight: 700;
+}
