@@ -9,13 +9,23 @@
 
 ## Summary
 
-| Script | File | Status | Output Correct | Exit Code | Runs Without Errors |
-|--------|------|--------|----------------|-----------|---------------------|
-| Bash   | `hello_world.sh` | ✅ EXISTS | ✅ PASS | ✅ 0 | ✅ PASS |
-| Python | `hello_world.py` | ❌ MISSING | ❌ N/A | ❌ N/A | ❌ N/A |
-| Ruby   | `hello_world.rb` | ❌ MISSING | ❌ N/A | ❌ N/A | ❌ N/A |
+| Script | File | Exists | Output Correct | Exit Code 0 | No Errors |
+|--------|------|--------|----------------|-------------|-----------|
+| Bash   | `hello_world.sh` | ✅ | ✅ PASS | ✅ PASS | ✅ PASS |
+| Python | `hello_world.py` | ✅ | ✅ PASS | ✅ PASS | ✅ PASS |
+| Ruby   | `hello_world.rb` | ✅ | ✅ PASS | ✅ PASS | ✅ PASS |
 
-**Overall Result: ❌ FAIL — 2 of 3 scripts do not exist**
+**Overall Result: ✅ PASS — All 12 tests pass across 3 scripts**
+
+---
+
+## Test Plan
+
+For each script, the following tests are executed:
+1. **Output Exactness** — String comparison of stdout against `Hello, World!`
+2. **Exit Code** — Verify the process exits with return code 0
+3. **Byte-Level Verification** — Hex dump comparison to ensure no hidden whitespace, BOM, or extra characters (expected: `48656c6c6f2c20576f726c64210a`)
+4. **No Stderr** — Confirm no error output is emitted to stderr
 
 ---
 
@@ -23,55 +33,51 @@
 
 ### 1. Bash — `hello_world.sh`
 
-#### Test 1.1: Output Exactness (string comparison)
-- **Input:** `bash hello_world.sh`
-- **Expected:** `Hello, World!`
-- **Actual:** `Hello, World!`
-- **Result:** ✅ PASS
+**File contents:**
+```bash
+#!/bin/bash
+echo "Hello, World!"
+```
 
-#### Test 1.2: Byte-Level Output Verification
-- **Input:** `bash hello_world.sh | od -An -tx1`
-- **Expected hex:** `48 65 6c 6c 6f 2c 20 57 6f 72 6c 64 21 0a`
-- **Actual hex:** `48 65 6c 6c 6f 2c 20 57 6f 72 6c 64 21 0a`
-- **Result:** ✅ PASS — No extra whitespace, trailing characters, or encoding issues
+| Test | Input | Expected | Actual | Result |
+|------|-------|----------|--------|--------|
+| 1.1 Output Exactness | `bash hello_world.sh` | `Hello, World!` | `Hello, World!` | ✅ PASS |
+| 1.2 Exit Code | `bash hello_world.sh; echo $?` | `0` | `0` | ✅ PASS |
+| 1.3 Byte-Level | `bash hello_world.sh \| od -An -tx1` | `48656c6c6f2c20576f726c64210a` | `48656c6c6f2c20576f726c64210a` | ✅ PASS |
+| 1.4 No Stderr | `bash hello_world.sh 2>&1 >/dev/null` | (empty) | (empty) | ✅ PASS |
 
-#### Test 1.3: Exit Code
-- **Input:** `bash hello_world.sh; echo $?`
-- **Expected:** `0`
-- **Actual:** `0`
-- **Result:** ✅ PASS
-
-#### Test 1.4: Interpreter Execution (no errors on stderr)
-- **Input:** `bash hello_world.sh 2>&1`
-- **Expected:** Only `Hello, World!` on stdout, nothing on stderr
-- **Actual:** `Hello, World!` only
-- **Result:** ✅ PASS
-
-#### Test 1.5: Shebang Line
-- **Expected:** `#!/bin/bash`
-- **Actual:** `#!/bin/bash`
-- **Result:** ✅ PASS
-
-#### Test 1.6: Execute Permission
-- **Expected:** File has `+x` permission
-- **Actual:** `-rwxr-xr-x`
-- **Result:** ✅ PASS
-
-#### Test 1.7: Direct Execution (via shebang)
-- **Input:** `./hello_world.sh`
-- **Expected:** `Hello, World!` with exit code 0
-- **Actual:** `Hello, World!` with exit code 0
-- **Result:** ✅ PASS
+**Additional checks:**
+- Shebang: `#!/bin/bash` ✅
+- Execute permission: `-rwxr-xr-x` ✅
+- Direct execution (`./hello_world.sh`): Works ✅
 
 ### 2. Python — `hello_world.py`
 
-- **Result:** ❌ FILE DOES NOT EXIST
-- **Notes:** No `.py` file found in `boards/test-rodri/` or any subdirectory. Cannot run any tests.
+**File contents:**
+```python
+print("Hello, World!")
+```
+
+| Test | Input | Expected | Actual | Result |
+|------|-------|----------|--------|--------|
+| 2.1 Output Exactness | `python3 hello_world.py` | `Hello, World!` | `Hello, World!` | ✅ PASS |
+| 2.2 Exit Code | `python3 hello_world.py; echo $?` | `0` | `0` | ✅ PASS |
+| 2.3 Byte-Level | `python3 hello_world.py \| od -An -tx1` | `48656c6c6f2c20576f726c64210a` | `48656c6c6f2c20576f726c64210a` | ✅ PASS |
+| 2.4 No Stderr | `python3 hello_world.py 2>&1 >/dev/null` | (empty) | (empty) | ✅ PASS |
 
 ### 3. Ruby — `hello_world.rb`
 
-- **Result:** ❌ FILE DOES NOT EXIST
-- **Notes:** No `.rb` file found in `boards/test-rodri/` or any subdirectory. Cannot run any tests.
+**File contents:**
+```ruby
+puts 'Hello, World!'
+```
+
+| Test | Input | Expected | Actual | Result |
+|------|-------|----------|--------|--------|
+| 3.1 Output Exactness | `ruby hello_world.rb` | `Hello, World!` | `Hello, World!` | ✅ PASS |
+| 3.2 Exit Code | `ruby hello_world.rb; echo $?` | `0` | `0` | ✅ PASS |
+| 3.3 Byte-Level | `ruby hello_world.rb \| od -An -tx1` | `48656c6c6f2c20576f726c64210a` | `48656c6c6f2c20576f726c64210a` | ✅ PASS |
+| 3.4 No Stderr | `ruby hello_world.rb 2>&1 >/dev/null` | (empty) | (empty) | ✅ PASS |
 
 ---
 
@@ -79,38 +85,20 @@
 
 | # | Criterion | Result | Evidence |
 |---|-----------|--------|----------|
-| 1 | All three scripts print exactly 'Hello, World!' | ❌ FAIL | Only Bash script exists and prints correctly. Python and Ruby scripts are missing. |
-| 2 | All scripts exit with return code 0 | ❌ FAIL | Only Bash exits with 0. Python and Ruby scripts are missing. |
-| 3 | Each script runs successfully using its respective interpreter | ❌ FAIL | Bash runs correctly via `bash` interpreter. Python and Ruby scripts are missing. |
-| 4 | A test report documenting results for all three scripts | ✅ PASS | This report documents findings for all three (including missing status). |
+| 1 | All three scripts print exactly 'Hello, World!' with no extra whitespace or characters | ✅ PASS | All three scripts output exact string match AND byte-level hex match (`48656c6c6f2c20576f726c64210a`) |
+| 2 | All scripts exit with return code 0 | ✅ PASS | bash=0, python3=0, ruby=0 |
+| 3 | Each script runs successfully using its respective interpreter without errors | ✅ PASS | `bash hello_world.sh`, `python3 hello_world.py`, `ruby hello_world.rb` — all produce correct output with no stderr |
+| 4 | A test report documenting results for all three scripts is produced | ✅ PASS | This report (`TEST_REPORT.md`) |
 
 ---
 
 ## Defects Found
 
-### DEF-001: Missing Python Hello World Script (Blocker)
-- **Severity:** Blocker
-- **Description:** `hello_world.py` does not exist in `boards/test-rodri/`
-- **Expected:** A file `hello_world.py` containing a Python script that prints "Hello, World!"
-- **Steps to reproduce:** `ls boards/test-rodri/` — no `.py` file present
-- **Suggested fix:** Create `boards/test-rodri/hello_world.py` with content:
-  ```python
-  print("Hello, World!")
-  ```
-
-### DEF-002: Missing Ruby Hello World Script (Blocker)
-- **Severity:** Blocker
-- **Description:** `hello_world.rb` does not exist in `boards/test-rodri/`
-- **Expected:** A file `hello_world.rb` containing a Ruby script that prints "Hello, World!"
-- **Steps to reproduce:** `ls boards/test-rodri/` — no `.rb` file present
-- **Suggested fix:** Create `boards/test-rodri/hello_world.rb` with content:
-  ```ruby
-  puts "Hello, World!"
-  ```
+None.
 
 ---
 
 ## Notes
-- All three interpreters (bash, python3, ruby) are confirmed available in the test environment.
-- The existing Bash script passes all tests with flying colors.
-- The board name "Polyglot hello world" confirms all three languages were intended.
+- All three interpreters confirmed available: `bash` at `/usr/bin/bash`, `python3` at `/usr/local/bin/python3`, `ruby` at `/opt/ruby-3.3.6/bin/ruby`
+- Byte-level verification confirms no BOM, trailing spaces, or extra newlines in any script output
+- Bash script has proper shebang and execute permissions for direct execution
