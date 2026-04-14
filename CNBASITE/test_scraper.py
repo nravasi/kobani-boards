@@ -115,6 +115,13 @@ class TestInstagramData(unittest.TestCase):
     def test_profile_url(self):
         self.assertIn("instagram.com/cabnaoficial", self.data["profile"]["profile_url"])
 
+    def test_known_posts(self):
+        self.assertGreater(len(self.data["known_posts"]), 0)
+        for post in self.data["known_posts"]:
+            self.assertIn("url", post)
+            self.assertIn("instagram.com", post["url"])
+            self.assertIn("caption_preview", post)
+
     def test_known_reels(self):
         self.assertGreater(len(self.data["known_reels"]), 0)
         for reel in self.data["known_reels"]:
@@ -123,6 +130,9 @@ class TestInstagramData(unittest.TestCase):
 
     def test_hashtags(self):
         self.assertIn("#yotebanconacion", self.data["hashtags"])
+
+    def test_content_themes(self):
+        self.assertGreater(len(self.data["content_themes"]), 0)
 
     def test_related_accounts(self):
         self.assertGreater(len(self.data["related_accounts"]), 0)
