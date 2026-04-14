@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Better Promiedos — UI Mockups</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ======================= HEADER ======================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="Better Promiedos home">
+        <img src="https://www.promiedos.com.ar/assets/header/logo_white.webp" alt="Promiedos" height="28">
+      </a>
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="header-nav" aria-label="Ligas destacadas">
+        <a href="#" class="header-link active">Liga Profesional</a>
+        <a href="#" class="header-link">Primera Nacional</a>
+        <a href="#" class="header-link">Libertadores</a>
+        <a href="#" class="header-link">Sudamericana</a>
+        <a href="#" class="header-link">Copa Argentina</a>
+        <a href="#" class="header-link">Champions</a>
+        <a href="#" class="header-link">Eliminatorias</a>
+        <a href="#" class="header-link">Mundial</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- ======================= SIDEBAR ======================= -->
+    <aside class="sidebar" id="sidebar" aria-label="Navegación de ligas">
+      <nav>
+        <div class="sidebar-group">
+          <div class="sidebar-country">
+            <img src="https://api.promiedos.com.ar/images/country/ba/1" alt="" class="country-flag" width="16" height="12"> Argentina
+          </div>
+          <a href="#" class="sidebar-link active">Liga Profesional</a>
+          <a href="#" class="sidebar-link">Primera Nacional</a>
+          <a href="#" class="sidebar-link">Copa Argentina</a>
+          <a href="#" class="sidebar-link">Copa de la Liga</a>
+          <a href="#" class="sidebar-link">Primera B Metro</a>
+          <a href="#" class="sidebar-link">Federal A</a>
+          <a href="#" class="sidebar-link">Primera C</a>
+        </div>
+        <div class="sidebar-group">
+          <div class="sidebar-country">
+            <img src="https://api.promiedos.com.ar/images/country/fe/1" alt="" class="country-flag" width="16" height="12"> Internacional
+          </div>
+          <a href="#" class="sidebar-link">Copa Libertadores</a>
+          <a href="#" class="sidebar-link">Copa Sudamericana</a>
+          <a href="#" class="sidebar-link">Champions League</a>
+        </div>
+        <div class="sidebar-group">
+          <div class="sidebar-country">
+            <img src="https://api.promiedos.com.ar/images/country/b/1" alt="" class="country-flag" width="16" height="12"> Inglaterra
+          </div>
+          <a href="#" class="sidebar-link">Premier League</a>
+          <a href="#" class="sidebar-link">Carabao Cup</a>
+          <a href="#" class="sidebar-link">FA Cup</a>
+        </div>
+        <div class="sidebar-group">
+          <div class="sidebar-country">
+            <img src="https://api.promiedos.com.ar/images/country/c/1" alt="" class="country-flag" width="16" height="12"> España
+          </div>
+          <a href="#" class="sidebar-link">La Liga</a>
+          <a href="#" class="sidebar-link">Copa del Rey</a>
+        </div>
+        <div class="sidebar-group">
+          <div class="sidebar-country">
+            <img src="https://api.promiedos.com.ar/images/country/d/1" alt="" class="country-flag" width="16" height="12"> Italia
+          </div>
+          <a href="#" class="sidebar-link">Serie A</a>
+        </div>
+        <div class="sidebar-group">
+          <div class="sidebar-country">
+            <img src="https://api.promiedos.com.ar/images/country/cb/1" alt="" class="country-flag" width="16" height="12"> Brasil
+          </div>
+          <a href="#" class="sidebar-link">Brasileirão</a>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- ======================= MAIN CONTENT ======================= -->
+    <main class="main-content">
+
+      <!-- League Title & Tabs -->
+      <div class="league-header">
+        <h1 class="league-title">Liga Profesional Argentina</h1>
+        <div class="league-tabs" role="tablist">
+          <button class="league-tab active" role="tab" aria-selected="true">FIXTURE Y TABLAS</button>
+          <button class="league-tab" role="tab" aria-selected="false">EQUIPOS Y ESTADISTICAS</button>
+          <button class="league-tab" role="tab" aria-selected="false">CAMPEONES</button>
+        </div>
+      </div>
+
+      <!-- ====== SECTION 1: FIXTURES (Upcoming) ====== -->
+      <section class="panel" aria-labelledby="fixtures-heading">
+        <div class="round-nav">
+          <button class="round-arrow" aria-label="Fecha anterior">◄</button>
+          <h2 id="fixtures-heading" class="round-label">Fecha 8 — Apertura</h2>
+          <button class="round-arrow" aria-label="Fecha siguiente">►</button>
+        </div>
+
+        <div class="fixture-list">
+          <!-- Upcoming match -->
+          <a href="#" class="fixture-row" aria-label="Sarmiento vs Lanús, Sábado 19/04 16:00">
+            <div class="fixture-home">
+              <span class="team-name">Sarmiento</span>
+              <img src="https://api.promiedos.com.ar/images/team/hbbh/1" alt="" class="team-crest" width="24" height="24">
+            </div>
+            <div class="fixture-center">
+              <div class="fixture-time">
+                <span class="fixture-date-label">Sáb 19/04</span>
+                <span class="fixture-clock">16:00</span>
+              </div>
+              <div class="fixture-tv">
+                <img src="https://api.promiedos.com.ar/images/tvnetworks/gchc" alt="ESPN" class="tv-logo" height="14">
+              </div>
+            </div>
+            <div class="fixture-away">
+              <img src="https://api.promiedos.com.ar/images/team/igj/1" alt="" class="team-crest" width="24" height="24">
+              <span class="team-name">Lanús</span>
+            </div>
+          </a>
+
+          <!-- Upcoming match -->
+          <a href="#" class="fixture-row" aria-label="Independiente vs Talleres, Sábado 19/04 18:30">
+            <div class="fixture-home">
+              <span class="team-name">Independiente</span>
+              <img src="https://api.promiedos.com.ar/images/team/ihe/1" alt="" class="team-crest" width="24" height="24">
+            </div>
+            <div class="fixture-center">
+              <div class="fixture-time">
+                <span class="fixture-date-label">Sáb 19/04</span>
+                <span class="fixture-clock">18:30</span>
+              </div>
+              <div class="fixture-tv">
+                <img src="https://api.promiedos.com.ar/images/tvnetworks/idef" alt="TNT Sports" class="tv-logo" height="14">
+              </div>
+            </div>
+            <div class="fixture-away">
+              <img src="https://api.promiedos.com.ar/images/team/jche/1" alt="" class="team-crest" width="24" height="24">
+              <span class="team-name">Talleres</span>
+            </div>
+          </a>
+
+          <!-- Upcoming match -->
+          <a href="#" class="fixture-row" aria-label="San Lorenzo vs Vélez, Domingo 20/04 16:00">
+            <div class="fixture-home">
+              <span class="team-name">San Lorenzo</span>
+              <img src="https://api.promiedos.com.ar/images/team/igf/1" alt="" class="team-crest" width="24" height="24">
+            </div>
+            <div class="fixture-center">
+              <div class="fixture-time">
+                <span class="fixture-date-label">Dom 20/04</span>
+                <span class="fixture-clock">16:00</span>
+              </div>
+              <div class="fixture-tv">
+                <img src="https://api.promiedos.com.ar/images/tvnetworks/cbcj" alt="TyC Sports" class="tv-logo" height="14">
+              </div>
+            </div>
+            <div class="fixture-away">
+              <img src="https://api.promiedos.com.ar/images/team/ihc/1" alt="" class="team-crest" width="24" height="24">
+              <span class="team-name">Vélez</span>
+            </div>
+          </a>
+
+          <!-- Upcoming match -->
+          <a href="#" class="fixture-row" aria-label="Racing vs Godoy Cruz, Domingo 20/04 18:30">
+            <div class="fixture-home">
+              <span class="team-name">Racing</span>
+              <img src="https://api.promiedos.com.ar/images/team/ihg/1" alt="" class="team-crest" width="24" height="24">
+            </div>
+            <div class="fixture-center">
+              <div class="fixture-time">
+                <span class="fixture-date-label">Dom 20/04</span>
+                <span class="fixture-clock">18:30</span>
+              </div>
+              <div class="fixture-tv">
+                <img src="https://api.promiedos.com.ar/images/tvnetworks/gchc" alt="ESPN" class="tv-logo" height="14">
+              </div>
+            </div>
+            <div class="fixture-away">
+              <img src="https://api.promiedos.com.ar/images/team/ihd/1" alt="" class="team-crest" width="24" height="24">
+              <span class="team-name">Godoy Cruz</span>
+            </div>
+          </a>
+
+          <!-- Upcoming match -->
+          <a href="#" class="fixture-row" aria-label="Tigre vs Huracán, Domingo 20/04 20:30">
+            <div class="fixture-home">
+              <span class="team-name">Tigre</span>
+              <img src="https://api.promiedos.com.ar/images/team/iid/1" alt="" class="team-crest" width="24" height="24">
+            </div>
+            <div class="fixture-center">
+              <div class="fixture-time">
+                <span class="fixture-date-label">Dom 20/04</span>
+                <span class="fixture-clock">20:30</span>
+              </div>
+              <div class="fixture-tv">
+                <img src="https://api.promiedos.com.ar/images/tvnetworks/hbdg" alt="LPF Play" class="tv-logo" height="14">
+              </div>
+            </div>
+            <div class="fixture-away">
+              <img src="https://api.promiedos.com.ar/images/team/iie/1" alt="" class="team-crest" width="24" height="24">
+              <span class="team-name">Huracán</span>
+            </div>
+          </a>
+
+          <!-- Live match -->
+          <a href="#" class="fixture-row fixture-row--live" aria-label="River Plate vs Belgrano, en vivo 67 minutos, 2 a 0">
+            <div class="fixture-home">
+              <span class="team-name">River Plate</span>
+              <img src="https://api.promiedos.com.ar/images/team/igi/1" alt="" class="team-crest" width="24" height="24">
+            </div>
+            <div class="fixture-center">
+              <div class="fixture-score">
+                <span class="live-indicator" aria-label="En vivo"><span class="live-dot"></span> 67'</span>
+                <span class="score">2 - 0</span>
+              </div>
+            </div>
+            <div class="fixture-away">
+              <img src="https://api.promiedos.com.ar/images/team/fhid/1" alt="" class="team-crest" width="24" height="24">
+              <span class="team-name">Belgrano</span>
+            </div>
+          </a>
+          <div class="fixture-scorers fixture-scorers--live">
+            <span class="scorer-home">Driussi 12', Colidio 55'</span>
+            <span class="scorer-away"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== SECTION 2: PAST SCORES (Resultados) ====== -->
+      <section class="panel" aria-labelledby="scores-heading">
+        <div class="round-nav">
+          <button class="round-arrow" aria-label="Fecha anterior">◄</button>
+          <h2 id="scores-heading" class="round-label">Fecha 7 — Apertura</h2>
+          <button class="round-arrow" aria-label="Fecha siguiente">►</button>
+        </div>
+
+        <div class="fixture-list">
+          <!-- Finished match 1 -->
+          <a href="#" class="fixture-row fixture-row--finished" aria-label="Boca 2, Racing 1, finalizado">
+            <div class="fixture-home">
+              <span class="team-name">Boca Juniors</span>
+              <img src="https://api.promiedos.com.ar/images/team/igg/1" alt="" class="team-crest" width="24" height="24">
+            </div>
+            <div class="fixture-center">
+              <div class="fixture-score">
+                <span class="score">2 - 1</span>
+              </div>
+            </div>
+            <div class="fixture-away">
+              <img src="https://api.promiedos.com.ar/images/team/ihg/1" alt="" class="team-crest" width="24" height="24">
+              <span class="team-name">Racing</span>
+            </div>
+          </a>
+          <div class="fixture-scorers">
+            <span class="scorer-home">Cavani 23', 67'</span>
+            <span class="scorer-away">Almendra 55'</span>
+          </div>
+
+          <!-- Finished match 2 -->
+          <a href="#" class="fixture-row fixture-row--finished" aria-label="River Plate 3, Estudiantes 0, finalizado">
+            <div class="fixture-home">
+              <span class="team-name">River Plate</span>
+              <img src="https://api.promiedos.com.ar/images/team/igi/1" alt="" class="team-crest" width="24" height="24">
+            </div>
+            <div class="fixture-center">
+              <div class="fixture-score">
+                <span class="score">3 - 0</span>
+              </div>
+            </div>
+            <div class="fixture-away">
+              <img src="https://api.promiedos.com.ar/images/team/igh/1" alt="" class="team-crest" width="24" height="24">
+              <span class="team-name">Estudiantes</span>
+            </div>
+          </a>
+          <div class="fixture-scorers">
+            <span class="scorer-home">Driussi 12', Quintero 34', Colidio 78'</span>
+            <span class="scorer-away"></span>
+          </div>
+
+          <!-- Finished match 3 -->
+          <a href="#" class="fixture-row fixture-row--finished" aria-label="San Lorenzo 1, Independiente 1, finalizado">
+            <div class="fixture-home">
+              <span class="team-name">San Lorenzo</span>
+              <img src="https://api.promiedos.com.ar/images/team/igf/1" alt="" class="team-crest" width="24" height="24">
+            </div>
+            <div class="fixture-center">
+              <div class="fixture-score">
+                <span class="score">1 - 1</span>
+              </div>
+            </div>
+            <div class="fixture-away">
+              <img src="https://api.promiedos.com.ar/images/team/ihe/1" alt="" class="team-crest" width="24" height="24">
+              <span class="team-name">Independiente</span>
+            </div>
+          </a>
+          <div class="fixture-scorers">
+            <span class="scorer-home">Bareiro 29'</span>
+            <span class="scorer-away">Velasco 61'</span>
+          </div>
+
+          <!-- Finished match 4 -->
+          <a href="#" class="fixture-row fixture-row--finished" aria-label="Vélez 2, Godoy Cruz 0, finalizado">
+            <div class="fixture-home">
+              <span class="team-name">Vélez</span>
+              <img src="https://api.promiedos.com.ar/images/team/ihc/1" alt="" class="team-crest" width="24" height="24">
+            </div>
+            <div class="fixture-center">
+              <div class="fixture-score">
+                <span class="score">2 - 0</span>
+              </div>
+            </div>
+            <div class="fixture-away">
+              <img src="https://api.promiedos.com.ar/images/team/ihd/1" alt="" class="team-crest" width="24" height="24">
+              <span class="team-name">Godoy Cruz</span>
+            </div>
+          </a>
+          <div class="fixture-scorers">
+            <span class="scorer-home">Osorio 15', Janson 52'</span>
+            <span class="scorer-away"></span>
+          </div>
+
+          <!-- Finished match 5 -->
+          <a href="#" class="fixture-row fixture-row--finished" aria-label="Talleres 0, Belgrano 0, finalizado">
+            <div class="fixture-home">
+              <span class="team-name">Talleres</span>
+              <img src="https://api.promiedos.com.ar/images/team/jche/1" alt="" class="team-crest" width="24" height="24">
+            </div>
+            <div class="fixture-center">
+              <div class="fixture-score">
+                <span class="score">0 - 0</span>
+              </div>
+            </div>
+            <div class="fixture-away">
+              <img src="https://api.promiedos.com.ar/images/team/fhid/1" alt="" class="team-crest" width="24" height="24">
+              <span class="team-name">Belgrano</span>
+            </div>
+          </a>
+          <div class="fixture-scorers">
+            <span class="scorer-home"></span>
+            <span class="scorer-away"></span>
+          </div>
+
+          <!-- Finished match 6 -->
+          <a href="#" class="fixture-row fixture-row--finished" aria-label="Huracán 2, Barracas Central 0, finalizado">
+            <div class="fixture-home">
+              <span class="team-name">Huracán</span>
+              <img src="https://api.promiedos.com.ar/images/team/iie/1" alt="" class="team-crest" width="24" height="24">
+            </div>
+            <div class="fixture-center">
+              <div class="fixture-score">
+                <span class="score">2 - 0</span>
+              </div>
+            </div>
+            <div class="fixture-away">
+              <img src="https://api.promiedos.com.ar/images/team/jafb/1" alt="" class="team-crest" width="24" height="24">
+              <span class="team-name">Barracas Central</span>
+            </div>
+          </a>
+          <div class="fixture-scorers">
+            <span class="scorer-home">Mauro Zárate 33', Mazzantti 80'</span>
+            <span class="scorer-away"></span>
+          </div>
+
+          <!-- Finished match 7 -->
+          <a href="#" class="fixture-row fixture-row--finished" aria-label="Lanús 1, Platense 2, finalizado">
+            <div class="fixture-home">
+              <span class="team-name">Lanús</span>
+              <img src="https://api.promiedos.com.ar/images/team/igj/1" alt="" class="team-crest" width="24" height="24">
+            </div>
+            <div class="fixture-center">
+              <div class="fixture-score">
+                <span class="score">1 - 2</span>
+              </div>
+            </div>
+            <div class="fixture-away">
+              <img src="https://api.promiedos.com.ar/images/team/hcah/1" alt="" class="team-crest" width="24" height="24">
+              <span class="team-name">Platense</span>
+            </div>
+          </a>
+          <div class="fixture-scorers">
+            <span class="scorer-home">Acosta 42'</span>
+            <span class="scorer-away">Benavídez 19', Ramírez 88'</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== SECTION 3: LEAGUE TABLE (Posiciones) ====== -->
+      <section class="panel" aria-labelledby="table-heading">
+        <h2 id="table-heading" class="section-title">POSICIONES</h2>
+        <div class="table-wrapper" role="region" aria-label="Tabla de posiciones" tabindex="0">
+          <table class="standings-table">
+            <thead>
+              <tr>
+                <th class="col-pos">#</th>
+                <th class="col-team">Equipo</th>
+                <th class="col-stat">PJ</th>
+                <th class="col-stat">PG</th>
+                <th class="col-stat">PE</th>
+                <th class="col-stat">PP</th>
+                <th class="col-stat">GF</th>
+                <th class="col-stat">GC</th>
+                <th class="col-stat">Dif</th>
+                <th class="col-pts">Pts</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="zone-libertadores">
+                <td class="col-pos">1</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/igg/1" alt="" class="team-crest-sm" width="18" height="18"> Boca Juniors</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">6</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">0</td>
+                <td class="col-stat">14</td>
+                <td class="col-stat">5</td>
+                <td class="col-stat col-diff-pos">+9</td>
+                <td class="col-pts">19</td>
+              </tr>
+              <tr class="zone-libertadores">
+                <td class="col-pos">2</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/igi/1" alt="" class="team-crest-sm" width="18" height="18"> River Plate</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">5</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">0</td>
+                <td class="col-stat">13</td>
+                <td class="col-stat">4</td>
+                <td class="col-stat col-diff-pos">+9</td>
+                <td class="col-pts">17</td>
+              </tr>
+              <tr class="zone-libertadores">
+                <td class="col-pos">3</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/ihc/1" alt="" class="team-crest-sm" width="18" height="18"> Vélez</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">5</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">11</td>
+                <td class="col-stat">6</td>
+                <td class="col-stat col-diff-pos">+5</td>
+                <td class="col-pts">16</td>
+              </tr>
+              <tr class="zone-libertadores">
+                <td class="col-pos">4</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/ihg/1" alt="" class="team-crest-sm" width="18" height="18"> Racing</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">4</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">10</td>
+                <td class="col-stat">5</td>
+                <td class="col-stat col-diff-pos">+5</td>
+                <td class="col-pts">14</td>
+              </tr>
+              <tr class="zone-sudamericana">
+                <td class="col-pos">5</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/iie/1" alt="" class="team-crest-sm" width="18" height="18"> Huracán</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">4</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">9</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat col-diff-pos">+2</td>
+                <td class="col-pts">13</td>
+              </tr>
+              <tr class="zone-sudamericana">
+                <td class="col-pos">6</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/jche/1" alt="" class="team-crest-sm" width="18" height="18"> Talleres</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">4</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">8</td>
+                <td class="col-stat">6</td>
+                <td class="col-stat col-diff-pos">+2</td>
+                <td class="col-pts">13</td>
+              </tr>
+              <tr>
+                <td class="col-pos">7</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/igh/1" alt="" class="team-crest-sm" width="18" height="18"> Estudiantes</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">10</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat col-diff-pos">+3</td>
+                <td class="col-pts">12</td>
+              </tr>
+              <tr>
+                <td class="col-pos">8</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/hcah/1" alt="" class="team-crest-sm" width="18" height="18"> Platense</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">8</td>
+                <td class="col-stat">5</td>
+                <td class="col-stat col-diff-pos">+3</td>
+                <td class="col-pts">12</td>
+              </tr>
+              <tr>
+                <td class="col-pos">9</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/igf/1" alt="" class="team-crest-sm" width="18" height="18"> San Lorenzo</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">8</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat col-diff-pos">+1</td>
+                <td class="col-pts">11</td>
+              </tr>
+              <tr>
+                <td class="col-pos">10</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/ihe/1" alt="" class="team-crest-sm" width="18" height="18"> Independiente</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">6</td>
+                <td class="col-stat col-diff-pos">+1</td>
+                <td class="col-pts">11</td>
+              </tr>
+              <tr>
+                <td class="col-pos">11</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/hcbh/1" alt="" class="team-crest-sm" width="18" height="18"> Defensa y Justicia</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">8</td>
+                <td class="col-stat col-diff-neg">-1</td>
+                <td class="col-pts">10</td>
+              </tr>
+              <tr>
+                <td class="col-pos">12</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/ihb/1" alt="" class="team-crest-sm" width="18" height="18"> Argentinos Jrs</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">6</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat col-diff-neg">-1</td>
+                <td class="col-pts">10</td>
+              </tr>
+              <tr>
+                <td class="col-pos">13</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/ihd/1" alt="" class="team-crest-sm" width="18" height="18"> Godoy Cruz</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">9</td>
+                <td class="col-stat col-diff-neg">-2</td>
+                <td class="col-pts">10</td>
+              </tr>
+              <tr>
+                <td class="col-pos">14</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/iia/1" alt="" class="team-crest-sm" width="18" height="18"> Gimnasia LP</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">6</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat col-diff-neg">-1</td>
+                <td class="col-pts">9</td>
+              </tr>
+              <tr>
+                <td class="col-pos">15</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/fhid/1" alt="" class="team-crest-sm" width="18" height="18"> Belgrano</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">5</td>
+                <td class="col-stat">6</td>
+                <td class="col-stat col-diff-neg">-1</td>
+                <td class="col-pts">9</td>
+              </tr>
+              <tr>
+                <td class="col-pos">16</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/gbfc/1" alt="" class="team-crest-sm" width="18" height="18"> Atl. Tucumán</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">6</td>
+                <td class="col-stat">8</td>
+                <td class="col-stat col-diff-neg">-2</td>
+                <td class="col-pts">8</td>
+              </tr>
+              <tr>
+                <td class="col-pos">17</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/ihh/1" alt="" class="team-crest-sm" width="18" height="18"> Newell's</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">5</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat col-diff-neg">-2</td>
+                <td class="col-pts">8</td>
+              </tr>
+              <tr>
+                <td class="col-pos">18</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/ihf/1" alt="" class="team-crest-sm" width="18" height="18"> Rosario Central</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">5</td>
+                <td class="col-stat">8</td>
+                <td class="col-stat col-diff-neg">-3</td>
+                <td class="col-pts">8</td>
+              </tr>
+              <tr>
+                <td class="col-pos">19</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/igj/1" alt="" class="team-crest-sm" width="18" height="18"> Lanús</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">4</td>
+                <td class="col-stat">6</td>
+                <td class="col-stat">9</td>
+                <td class="col-stat col-diff-neg">-3</td>
+                <td class="col-pts">7</td>
+              </tr>
+              <tr>
+                <td class="col-pos">20</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/ihi/1" alt="" class="team-crest-sm" width="18" height="18"> Banfield</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">4</td>
+                <td class="col-stat">5</td>
+                <td class="col-stat">9</td>
+                <td class="col-stat col-diff-neg">-4</td>
+                <td class="col-pts">7</td>
+              </tr>
+              <tr>
+                <td class="col-pos">21</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/hcag/1" alt="" class="team-crest-sm" width="18" height="18"> Unión</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">4</td>
+                <td class="col-stat">4</td>
+                <td class="col-stat">8</td>
+                <td class="col-stat col-diff-neg">-4</td>
+                <td class="col-pts">7</td>
+              </tr>
+              <tr>
+                <td class="col-pos">22</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/hchc/1" alt="" class="team-crest-sm" width="18" height="18"> Instituto</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">5</td>
+                <td class="col-stat">8</td>
+                <td class="col-stat col-diff-neg">-3</td>
+                <td class="col-pts">6</td>
+              </tr>
+              <tr>
+                <td class="col-pos">23</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/hbbh/1" alt="" class="team-crest-sm" width="18" height="18"> Sarmiento</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">4</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat col-diff-neg">-3</td>
+                <td class="col-pts">6</td>
+              </tr>
+              <tr>
+                <td class="col-pos">24</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/beafh/1" alt="" class="team-crest-sm" width="18" height="18"> C. Córdoba SdE</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">4</td>
+                <td class="col-stat">4</td>
+                <td class="col-stat">9</td>
+                <td class="col-stat col-diff-neg">-5</td>
+                <td class="col-pts">5</td>
+              </tr>
+              <tr>
+                <td class="col-pos">25</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/iid/1" alt="" class="team-crest-sm" width="18" height="18"> Tigre</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">4</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">8</td>
+                <td class="col-stat col-diff-neg">-5</td>
+                <td class="col-pts">5</td>
+              </tr>
+              <tr class="zone-relegation">
+                <td class="col-pos">26</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/hcch/1" alt="" class="team-crest-sm" width="18" height="18"> Ind. Rivadavia</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">1</td>
+                <td class="col-stat">5</td>
+                <td class="col-stat">4</td>
+                <td class="col-stat">10</td>
+                <td class="col-stat col-diff-neg">-6</td>
+                <td class="col-pts">4</td>
+              </tr>
+              <tr class="zone-relegation">
+                <td class="col-pos">27</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/bbjea/1" alt="" class="team-crest-sm" width="18" height="18"> Dep. Riestra</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">0</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">4</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">10</td>
+                <td class="col-stat col-diff-neg">-7</td>
+                <td class="col-pts">3</td>
+              </tr>
+              <tr class="zone-relegation">
+                <td class="col-pos">28</td>
+                <td class="col-team"><img src="https://api.promiedos.com.ar/images/team/jafb/1" alt="" class="team-crest-sm" width="18" height="18"> Barracas Central</td>
+                <td class="col-stat">7</td>
+                <td class="col-stat">0</td>
+                <td class="col-stat">2</td>
+                <td class="col-stat">5</td>
+                <td class="col-stat">3</td>
+                <td class="col-stat">12</td>
+                <td class="col-stat col-diff-neg">-9</td>
+                <td class="col-pts">2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-legend">
+          <span class="legend-item"><span class="legend-swatch legend-swatch--lib"></span> Copa Libertadores</span>
+          <span class="legend-item"><span class="legend-swatch legend-swatch--sud"></span> Copa Sudamericana</span>
+          <span class="legend-item"><span class="legend-swatch legend-swatch--rel"></span> Descenso</span>
+        </div>
+      </section>
+
+      <!-- ====== SECTION 4: TOP GOALSCORERS (Goleadores) ====== -->
+      <section class="panel" aria-labelledby="scorers-heading">
+        <h2 id="scorers-heading" class="section-title">GOLEADORES — Apertura</h2>
+        <div class="scorers-list">
+          <div class="scorer-row">
+            <span class="scorer-rank">1</span>
+            <img src="https://api.promiedos.com.ar/images/team/igi/1" alt="" class="team-crest-sm" width="18" height="18">
+            <span class="scorer-name">Driussi</span>
+            <span class="scorer-team">River Plate</span>
+            <span class="scorer-goals">6</span>
+          </div>
+          <div class="scorer-row">
+            <span class="scorer-rank">2</span>
+            <img src="https://api.promiedos.com.ar/images/team/igg/1" alt="" class="team-crest-sm" width="18" height="18">
+            <span class="scorer-name">Cavani</span>
+            <span class="scorer-team">Boca Juniors</span>
+            <span class="scorer-goals">5</span>
+          </div>
+          <div class="scorer-row">
+            <span class="scorer-rank">3</span>
+            <img src="https://api.promiedos.com.ar/images/team/ihc/1" alt="" class="team-crest-sm" width="18" height="18">
+            <span class="scorer-name">Janson</span>
+            <span class="scorer-team">Vélez</span>
+            <span class="scorer-goals">4</span>
+          </div>
+          <div class="scorer-row">
+            <span class="scorer-rank">4</span>
+            <img src="https://api.promiedos.com.ar/images/team/igi/1" alt="" class="team-crest-sm" width="18" height="18">
+            <span class="scorer-name">Colidio</span>
+            <span class="scorer-team">River Plate</span>
+            <span class="scorer-goals">4</span>
+          </div>
+          <div class="scorer-row">
+            <span class="scorer-rank">5</span>
+            <img src="https://api.promiedos.com.ar/images/team/iie/1" alt="" class="team-crest-sm" width="18" height="18">
+            <span class="scorer-name">Mauro Zárate</span>
+            <span class="scorer-team">Huracán</span>
+            <span class="scorer-goals">4</span>
+          </div>
+          <div class="scorer-row">
+            <span class="scorer-rank">6</span>
+            <img src="https://api.promiedos.com.ar/images/team/igi/1" alt="" class="team-crest-sm" width="18" height="18">
+            <span class="scorer-name">Quintero</span>
+            <span class="scorer-team">River Plate</span>
+            <span class="scorer-goals">3</span>
+          </div>
+          <div class="scorer-row">
+            <span class="scorer-rank">7</span>
+            <img src="https://api.promiedos.com.ar/images/team/ihg/1" alt="" class="team-crest-sm" width="18" height="18">
+            <span class="scorer-name">Almendra</span>
+            <span class="scorer-team">Racing</span>
+            <span class="scorer-goals">3</span>
+          </div>
+          <div class="scorer-row">
+            <span class="scorer-rank">8</span>
+            <img src="https://api.promiedos.com.ar/images/team/igf/1" alt="" class="team-crest-sm" width="18" height="18">
+            <span class="scorer-name">Bareiro</span>
+            <span class="scorer-team">San Lorenzo</span>
+            <span class="scorer-goals">3</span>
+          </div>
+          <div class="scorer-row">
+            <span class="scorer-rank">9</span>
+            <img src="https://api.promiedos.com.ar/images/team/ihe/1" alt="" class="team-crest-sm" width="18" height="18">
+            <span class="scorer-name">Velasco</span>
+            <span class="scorer-team">Independiente</span>
+            <span class="scorer-goals">3</span>
+          </div>
+          <div class="scorer-row">
+            <span class="scorer-rank">10</span>
+            <img src="https://api.promiedos.com.ar/images/team/jche/1" alt="" class="team-crest-sm" width="18" height="18">
+            <span class="scorer-name">Valoyes</span>
+            <span class="scorer-team">Talleres</span>
+            <span class="scorer-goals">3</span>
+          </div>
+        </div>
+        <button class="btn-more">VER MÁS</button>
+      </section>
+
+      <!-- ======================= FOOTER ======================= -->
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <span class="footer-attr">ESTADÍSTICAS DE <img src="https://www.promiedos.com.ar/assets/opta-wht.png" alt="Opta" height="14" class="opta-logo"></span>
+          <span class="footer-copy">Better Promiedos — Datos deportivos sin apuestas</span>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- Minimal JS for hamburger menu -->
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      var sidebar = document.getElementById('sidebar');
+      var expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      sidebar.classList.toggle('sidebar--open');
+    });
+  </script>
+
+</body>
+</html>
