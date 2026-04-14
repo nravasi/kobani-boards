@@ -1,25 +1,25 @@
 # Welcome to the Team!
 
-Welcome aboard — we're thrilled to have you here.
+We're thrilled to have you here. Starting a new role is a big step, and we want you to know — you belong here.
 
-Joining a new company is a big step, and we want you to know that you already belong. You were chosen because of the talent, perspective, and energy you bring, and we can't wait to see the impact you'll make.
+You were chosen because you bring something unique to this team. Your skills, your perspective, and your energy matter. From day one, you are a valued part of what we're building together.
 
 ## Who We Are
 
-Everything we build is guided by three core values:
+Everything we do is guided by three core values:
 
-- **Trust** — We communicate openly, follow through on commitments, and support each other without hesitation.
-- **Approachability** — No question is too small, no idea too early to share. Every voice matters here, including yours.
-- **Momentum** — We move forward with purpose. We learn fast, adapt quickly, and celebrate progress at every stage.
+- **Trust** — We build honest relationships with each other and with our users. We say what we mean, follow through on commitments, and assume good intent.
+- **Approachability** — No question is too small. No idea is too bold. We keep doors open, communication clear, and egos aside.
+- **Momentum** — We move forward with purpose. We learn fast, adapt often, and celebrate progress at every stage.
 
-These aren't just words on a wall. You'll see them in how we run meetings, give feedback, and collaborate across teams every day.
+These values aren't just words on a wall. They shape how we collaborate, make decisions, and support one another every day.
 
 ## What to Expect
 
-Your first few weeks are about getting comfortable, not about proving yourself. Take time to meet your teammates, explore our tools, and ask all the questions you need. Your onboarding buddy and manager are here to help you settle in.
+Your first few weeks are about settling in and connecting with the people around you. Take the time to listen, explore, and ask questions. Everyone here remembers what it feels like to be new — and everyone is ready to help.
 
-## Your Next Step
+## Your First Step
 
-Check your inbox for your personalized onboarding checklist. It covers everything from setting up your accounts to scheduling your first one-on-ones. Start there, go at your own pace, and reach out if anything is unclear.
+Check your inbox for your personalized onboarding checklist. It covers everything from setting up your tools to meeting your team. Complete the checklist within your first week to hit the ground running.
 
-We're building something meaningful, and now you're part of it. Welcome home.
+We're glad you're here. Let's build something great together.
