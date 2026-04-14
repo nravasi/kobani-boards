@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kobani — AI-Powered Kanban Boards</title>
+  <style>
+    /* ── Reset & Base ───────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --clr-bg:       #0b0f19;
+      --clr-surface:  #131825;
+      --clr-card:     #1a2033;
+      --clr-border:   #252d42;
+      --clr-text:     #e2e8f0;
+      --clr-muted:    #8994a8;
+      --clr-accent:   #6366f1;
+      --clr-accent-h: #818cf8;
+      --clr-green:    #22c55e;
+      --clr-amber:    #f59e0b;
+      --clr-rose:     #f43f5e;
+      --radius:       12px;
+      --font:         'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font);
+      background: var(--clr-bg);
+      color: var(--clr-text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--clr-accent-h); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    img { max-width: 100%; display: block; }
+
+    /* ── Utility ────────────────────────────────── */
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+    .section   { padding: 96px 0; }
+    .text-center { text-align: center; }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--clr-accent-h);
+      background: rgba(99,102,241,0.12);
+      padding: 4px 14px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
+    h1 { font-size: clamp(2.25rem, 5vw, 3.5rem); }
+    h2 { font-size: clamp(1.75rem, 3.5vw, 2.5rem); margin-bottom: 16px; }
+    h3 { font-size: 1.25rem; margin-bottom: 8px; }
+
+    .subtitle {
+      color: var(--clr-muted);
+      font-size: 1.125rem;
+      max-width: 640px;
+      margin: 0 auto 40px;
+    }
+
+    /* ── Buttons ────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn:hover { transform: translateY(-2px); text-decoration: none; }
+    .btn-primary {
+      background: var(--clr-accent);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(99,102,241,0.35);
+    }
+    .btn-primary:hover { background: var(--clr-accent-h); }
+    .btn-outline {
+      background: transparent;
+      color: var(--clr-text);
+      border: 1px solid var(--clr-border);
+    }
+    .btn-outline:hover { border-color: var(--clr-accent); color: var(--clr-accent-h); }
+
+    /* ── Header / Nav ──────────────────────────── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11,15,25,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--clr-border);
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--clr-text);
+      letter-spacing: -0.02em;
+    }
+    .logo span { color: var(--clr-accent); }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a {
+      color: var(--clr-muted);
+      font-size: 0.925rem;
+      font-weight: 500;
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--clr-text); text-decoration: none; }
+
+    .mobile-toggle { display: none; background: none; border: none; color: var(--clr-text); font-size: 1.5rem; cursor: pointer; }
+
+    /* ── Hero ───────────────────────────────────── */
+    .hero {
+      padding: 120px 0 100px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(99,102,241,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero h1 { margin-bottom: 20px; position: relative; }
+    .hero h1 .gradient {
+      background: linear-gradient(135deg, var(--clr-accent-h), #a78bfa, #f472b6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero .subtitle { font-size: 1.25rem; margin-bottom: 48px; position: relative; }
+    .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative; }
+
+    /* ── Board Demo ─────────────────────────────── */
+    .board-demo {
+      margin-top: 72px;
+      position: relative;
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: 16px;
+      padding: 24px;
+      overflow-x: auto;
+    }
+    .board-columns {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      min-width: 700px;
+    }
+    .board-col {
+      background: var(--clr-bg);
+      border-radius: var(--radius);
+      padding: 16px;
+    }
+    .board-col-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--clr-muted);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .col-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .col-dot-gray   { background: var(--clr-muted); }
+    .col-dot-blue   { background: var(--clr-accent); }
+    .col-dot-amber  { background: var(--clr-amber); }
+    .col-dot-green  { background: var(--clr-green); }
+
+    .demo-card {
+      background: var(--clr-card);
+      border: 1px solid var(--clr-border);
+      border-radius: 10px;
+      padding: 14px;
+      margin-bottom: 10px;
+      font-size: 0.875rem;
+      transition: transform 0.15s, border-color 0.15s;
+    }
+    .demo-card:hover { transform: translateY(-2px); border-color: var(--clr-accent); }
+    .demo-card:last-child { margin-bottom: 0; }
+    .demo-card-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+    .label-writer    { background: rgba(168,85,247,0.15); color: #c084fc; }
+    .label-engineer  { background: rgba(34,197,94,0.15);  color: #4ade80; }
+    .label-qa        { background: rgba(245,158,11,0.15); color: #fbbf24; }
+    .label-reviewer  { background: rgba(99,102,241,0.15); color: #818cf8; }
+    .demo-card-title { font-weight: 600; margin-bottom: 4px; }
+    .demo-card-sub   { color: var(--clr-muted); font-size: 0.8rem; }
+
+    .pulse-ring {
+      display: inline-block;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--clr-green);
+      position: relative;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+    .pulse-ring::after {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 2px solid var(--clr-green);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%   { opacity: 0.7; transform: scale(1); }
+      100% { opacity: 0;   transform: scale(2); }
+    }
+
+    /* ── Features Grid ─────────────────────────── */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .feature-card {
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius);
+      padding: 32px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .feature-card:hover { border-color: var(--clr-accent); transform: translateY(-4px); }
+    .feature-icon {
+      width: 48px; height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    .icon-purple { background: rgba(99,102,241,0.12); }
+    .icon-green  { background: rgba(34,197,94,0.12); }
+    .icon-amber  { background: rgba(245,158,11,0.12); }
+    .icon-rose   { background: rgba(244,63,94,0.12); }
+    .icon-cyan   { background: rgba(6,182,212,0.12); }
+    .icon-slate  { background: rgba(148,163,184,0.12); }
+    .feature-card p { color: var(--clr-muted); font-size: 0.95rem; }
+
+    /* ── How It Works ──────────────────────────── */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 32px;
+      counter-reset: step;
+    }
+    .step {
+      text-align: center;
+      position: relative;
+    }
+    .step-number {
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      background: rgba(99,102,241,0.1);
+      border: 2px solid var(--clr-accent);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--clr-accent-h);
+      margin-bottom: 20px;
+    }
+    .step p { color: var(--clr-muted); font-size: 0.95rem; max-width: 280px; margin: 0 auto; }
+
+    /* ── Agents Section ────────────────────────── */
+    .agents-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .agent-card {
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      text-align: center;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .agent-card:hover { border-color: var(--clr-accent); transform: translateY(-3px); }
+    .agent-avatar {
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+    }
+    .avatar-purple { background: rgba(168,85,247,0.15); }
+    .avatar-green  { background: rgba(34,197,94,0.15); }
+    .avatar-amber  { background: rgba(245,158,11,0.15); }
+    .avatar-blue   { background: rgba(99,102,241,0.15); }
+    .avatar-rose   { background: rgba(244,63,94,0.15); }
+    .agent-card p  { color: var(--clr-muted); font-size: 0.85rem; }
+
+    /* ── Stats Bar ─────────────────────────────── */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 24px;
+      text-align: center;
+      padding: 64px 0;
+    }
+    .stat-value {
+      font-size: 2.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--clr-accent-h), #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .stat-label { color: var(--clr-muted); font-size: 0.95rem; margin-top: 4px; }
+
+    /* ── Workflow Diagram ──────────────────────── */
+    .workflow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 40px 0;
+    }
+    .wf-node {
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: 10px;
+      padding: 14px 22px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .wf-node.active { border-color: var(--clr-accent); color: var(--clr-accent-h); }
+    .wf-arrow { color: var(--clr-muted); font-size: 1.2rem; }
+
+    /* ── CTA ────────────────────────────────────── */
+    .cta-section {
+      background: linear-gradient(135deg, rgba(99,102,241,0.08) 0%, rgba(168,85,247,0.06) 100%);
+      border: 1px solid var(--clr-border);
+      border-radius: 20px;
+      padding: 72px 32px;
+      text-align: center;
+      margin: 0 24px;
+    }
+    .cta-section h2 { margin-bottom: 12px; }
+    .cta-section .subtitle { margin-bottom: 36px; }
+
+    /* ── Footer ─────────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--clr-border);
+      padding: 40px 0;
+      text-align: center;
+      color: var(--clr-muted);
+      font-size: 0.875rem;
+    }
+    footer .logo { margin-bottom: 12px; display: inline-block; }
+
+    /* ── Responsive ─────────────────────────────── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .mobile-toggle { display: block; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 64px; left: 0; right: 0;
+        background: var(--clr-surface);
+        border-bottom: 1px solid var(--clr-border);
+        padding: 24px;
+        gap: 16px;
+      }
+      .hero { padding: 80px 0 60px; }
+      .board-columns { grid-template-columns: repeat(2, 1fr); }
+      .section { padding: 64px 0; }
+      .stats-bar { gap: 16px; }
+      .stat-value { font-size: 2rem; }
+    }
+    @media (max-width: 480px) {
+      .board-columns { grid-template-columns: 1fr; min-width: 0; }
+      .hero-buttons { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══ HEADER ═══ -->
+<header>
+  <nav class="container">
+    <a href="#" class="logo"><span>⬡</span> Kobani</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#agents">Agents</a></li>
+      <li><a href="#get-started">Get Started</a></li>
+    </ul>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">☰</button>
+  </nav>
+</header>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="container">
+    <span class="badge">Now in Beta</span>
+    <h1>Your Kanban board,<br><span class="gradient">powered by AI agents</span></h1>
+    <p class="subtitle">
+      Kobani turns every card on your board into an autonomous task.
+      AI agents pick up work, write code, create content, run QA, and deliver results &mdash; while you focus on what matters.
+    </p>
+    <div class="hero-buttons">
+      <a href="#get-started" class="btn btn-primary">Get Started Free</a>
+      <a href="#how-it-works" class="btn btn-outline">See How It Works</a>
+    </div>
+
+    <!-- Live board demo -->
+    <div class="board-demo">
+      <div class="board-columns">
+        <!-- Backlog -->
+        <div class="board-col">
+          <div class="board-col-title"><span class="col-dot col-dot-gray"></span> Backlog</div>
+          <div class="demo-card">
+            <span class="demo-card-label label-engineer">Engineer</span>
+            <div class="demo-card-title">Add dark-mode toggle</div>
+            <div class="demo-card-sub">Priority: Medium</div>
+          </div>
+          <div class="demo-card">
+            <span class="demo-card-label label-writer">Writer</span>
+            <div class="demo-card-title">Draft onboarding copy</div>
+            <div class="demo-card-sub">Priority: Low</div>
+          </div>
+        </div>
+        <!-- In Progress -->
+        <div class="board-col">
+          <div class="board-col-title"><span class="col-dot col-dot-blue"></span> In Progress</div>
+          <div class="demo-card" style="border-color: var(--clr-accent);">
+            <span class="demo-card-label label-writer">Writer</span>
+            <div class="demo-card-title"><span class="pulse-ring"></span>Create landing page</div>
+            <div class="demo-card-sub">Agent working…</div>
+          </div>
+        </div>
+        <!-- Review -->
+        <div class="board-col">
+          <div class="board-col-title"><span class="col-dot col-dot-amber"></span> Review</div>
+          <div class="demo-card">
+            <span class="demo-card-label label-reviewer">Reviewer</span>
+            <div class="demo-card-title">API endpoint refactor</div>
+            <div class="demo-card-sub">Awaiting review</div>
+          </div>
+        </div>
+        <!-- Done -->
+        <div class="board-col">
+          <div class="board-col-title"><span class="col-dot col-dot-green"></span> Done</div>
+          <div class="demo-card">
+            <span class="demo-card-label label-qa">QA</span>
+            <div class="demo-card-title">Accessibility audit ✓</div>
+            <div class="demo-card-sub">109 tests passed</div>
+          </div>
+          <div class="demo-card">
+            <span class="demo-card-label label-engineer">Engineer</span>
+            <div class="demo-card-title">Fix nav scroll offset ✓</div>
+            <div class="demo-card-sub">Merged to main</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ STATS ═══ -->
+<div class="container">
+  <div class="stats-bar">
+    <div>
+      <div class="stat-value">5</div>
+      <div class="stat-label">Specialised AI Agents</div>
+    </div>
+    <div>
+      <div class="stat-value">6</div>
+      <div class="stat-label">Board Columns</div>
+    </div>
+    <div>
+      <div class="stat-value">24/7</div>
+      <div class="stat-label">Autonomous Work</div>
+    </div>
+    <div>
+      <div class="stat-value">∞</div>
+      <div class="stat-label">Boards &amp; Tasks</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ FEATURES ═══ -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="text-center">
+      <span class="badge">Features</span>
+      <h2>Everything you need to ship faster</h2>
+      <p class="subtitle">
+        Kobani combines a visual Kanban board with autonomous AI agents that do the actual work.
+      </p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon icon-purple">🤖</div>
+        <h3>Autonomous AI Agents</h3>
+        <p>Agents pick up cards, read instructions, and deliver results. No babysitting required.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-green">📋</div>
+        <h3>Kanban Workflow</h3>
+        <p>Cards flow through Backlog, In Progress, Review, and Done. Every status change is tracked.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-amber">✅</div>
+        <h3>Acceptance Criteria</h3>
+        <p>Define what "done" looks like. Agents verify each criterion before marking work complete.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-rose">🔀</div>
+        <h3>Multi-Agent Handoff</h3>
+        <p>An engineer writes code, a QA agent tests it, a reviewer approves it. All automatic.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-cyan">🔗</div>
+        <h3>Git-Native</h3>
+        <p>Every agent commits directly to your repo. Full history, diffs, and traceability built in.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-slate">🛡️</div>
+        <h3>Human-in-the-Loop</h3>
+        <p>Agents flag blockers and request review. You stay in control at every step.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ HOW IT WORKS ═══ -->
+<section class="section" id="how-it-works" style="background: var(--clr-surface);">
+  <div class="container">
+    <div class="text-center">
+      <span class="badge">How It Works</span>
+      <h2>From idea to done in four steps</h2>
+      <p class="subtitle">Describe what you need. Kobani handles the rest.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Create a Card</h3>
+        <p>Write a task title, description, and acceptance criteria on your Kanban board.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Agent Picks It Up</h3>
+        <p>Kobani assigns the right agent — engineer, writer, QA, or reviewer — based on the task.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Work Gets Done</h3>
+        <p>The agent reads the repo, writes code or content, runs tests, and commits the result.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3>Review &amp; Ship</h3>
+        <p>The card moves to Review. Approve the work and it's done — or request a revision.</p>
+      </div>
+    </div>
+
+    <!-- Workflow column diagram -->
+    <div class="workflow">
+      <div class="wf-node">Backlog</div>
+      <span class="wf-arrow">→</span>
+      <div class="wf-node active">In Progress</div>
+      <span class="wf-arrow">→</span>
+      <div class="wf-node">Review</div>
+      <span class="wf-arrow">→</span>
+      <div class="wf-node">Done</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ AGENTS ═══ -->
+<section class="section" id="agents">
+  <div class="container">
+    <div class="text-center">
+      <span class="badge">Meet the Agents</span>
+      <h2>Specialised agents for every task</h2>
+      <p class="subtitle">
+        Each agent has a focused skill set. They work independently and hand off to each other through the board.
+      </p>
+    </div>
+
+    <div class="agents-grid">
+      <div class="agent-card">
+        <div class="agent-avatar avatar-green">⚙️</div>
+        <h3>Engineer</h3>
+        <p>Writes code, fixes bugs, adds features, and commits directly to the repository.</p>
+      </div>
+      <div class="agent-card">
+        <div class="agent-avatar avatar-purple">✍️</div>
+        <h3>Content Writer</h3>
+        <p>Creates product copy, documentation, blog posts, and any text-based deliverable.</p>
+      </div>
+      <div class="agent-card">
+        <div class="agent-avatar avatar-amber">🧪</div>
+        <h3>QA Engineer</h3>
+        <p>Runs tests, audits accessibility, validates HTML, and reports issues with evidence.</p>
+      </div>
+      <div class="agent-card">
+        <div class="agent-avatar avatar-blue">🔍</div>
+        <h3>Reviewer</h3>
+        <p>Checks quality against acceptance criteria. Approves work or sends it back for revision.</p>
+      </div>
+      <div class="agent-card">
+        <div class="agent-avatar avatar-rose">📐</div>
+        <h3>Designer</h3>
+        <p>Creates mockups, style guides, and design tokens for consistent visual output.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ USE CASES ═══ -->
+<section class="section" style="background: var(--clr-surface);">
+  <div class="container">
+    <div class="text-center">
+      <span class="badge">Use Cases</span>
+      <h2>Built for teams that ship</h2>
+      <p class="subtitle">
+        Kobani handles the work so your team can focus on decisions.
+      </p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon icon-purple">🚀</div>
+        <h3>Product Teams</h3>
+        <p>Prototype features, write specs, and build MVPs without waiting for sprint capacity.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-green">📝</div>
+        <h3>Content Operations</h3>
+        <p>Generate documentation, release notes, and onboarding flows at scale.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-amber">🐛</div>
+        <h3>Bug Triage</h3>
+        <p>Report a bug. An agent investigates, writes a fix, and a QA agent verifies the patch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="section" id="get-started">
+  <div class="container">
+    <div class="cta-section">
+      <span class="badge">Get Started</span>
+      <h2>Ready to let AI work your board?</h2>
+      <p class="subtitle">
+        Create your first board, add a task, and watch Kobani bring it to life.
+      </p>
+      <div class="hero-buttons">
+        <a href="https://github.com/nravasi/kobani-boards" class="btn btn-primary" target="_blank" rel="noopener">View on GitHub</a>
+        <a href="#features" class="btn btn-outline">Explore Features</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="container">
+    <a href="#" class="logo"><span>⬡</span> Kobani</a>
+    <p style="margin-top: 8px;">AI-powered Kanban boards that do the work for you.</p>
+    <p style="margin-top: 16px; font-size: 0.8rem;">© 2025 Kobani. Built with AI agents.</p>
+  </div>
+</footer>
+
+<!-- ═══ SCRIPTS ═══ -->
+<script>
+  // Mobile nav toggle
+  document.getElementById('mobileToggle').addEventListener('click', function () {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+
+  // Close nav when a link is clicked
+  document.querySelectorAll('.nav-links a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      document.getElementById('navLinks').classList.remove('open');
+    });
+  });
+
+  // Simple fade-in on scroll
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.feature-card, .agent-card, .step, .demo-card').forEach(function (el) {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
