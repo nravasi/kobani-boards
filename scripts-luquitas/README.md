@@ -1,14 +1,10 @@
 # scripts-luquitas
 
-A collection of scripts in multiple programming languages. This workspace is part of the [kobani-boards](https://github.com/nravasi/kobani-boards) repository. It contains coding standards, repository structure guidelines, and runnable scripts.
+A collection of Hello World scripts in Python, Ruby, and Bash. This workspace is part of the [kobani-boards](https://github.com/nravasi/kobani-boards) repository.
 
-## Standards and Documentation
+## Purpose
 
-| Document | Description |
-|---|---|
-| [REPO_STRUCTURE.md](REPO_STRUCTURE.md) | Directory layout, naming conventions, and file extension standards |
-| [CODING_STANDARDS.md](CODING_STANDARDS.md) | Shebang lines, comment styles, script headers, and execution instructions |
-| [README_TEMPLATE.md](README_TEMPLATE.md) | Template for the repository root README |
+This repository provides a consistent starting point for writing scripts in multiple languages. Each script follows shared coding standards and naming conventions so that contributors can add new scripts without guessing at structure or style.
 
 ## Directory Structure
 
@@ -20,36 +16,38 @@ scripts-luquitas/
 ├── hello.py             # Hello World in Python
 ├── hello.rb             # Hello World in Ruby
 ├── hello.sh             # Hello World in Bash
-├── REPO_STRUCTURE.md    # Structure and naming conventions
-├── CODING_STANDARDS.md  # Coding standards for all languages
-├── README_TEMPLATE.md   # README template for repo root
+├── CODING_STANDARDS.md  # Shebang lines, headers, and style rules
+├── REPO_STRUCTURE.md    # Directory layout and naming conventions
+├── README_TEMPLATE.md   # Template for creating new READMEs
 └── README.md            # This file
 ```
 
-## Quick Reference
-
-| Language | Folder | Extension | Shebang |
-|---|---|---|---|
-| Python | `python/` | `.py` | `#!/usr/bin/env python3` |
-| Ruby | `ruby/` | `.rb` | `#!/usr/bin/env ruby` |
-| Bash | `bash/` | `.sh` | `#!/usr/bin/env bash` |
-
-See [CODING_STANDARDS.md](CODING_STANDARDS.md) for full details.
-
 ## Prerequisites
 
-| Language | Tool       | Minimum Version | Check Command      |
-|----------|------------|-----------------|---------------------|
-| Python   | `python3`  | 3.6+            | `python3 --version` |
-| Ruby     | `ruby`     | 2.5+            | `ruby --version`    |
-| Bash     | `bash`     | 4.0+            | `bash --version`    |
+Install the following tools before running any scripts.
 
-## Running the Scripts
+| Language | Tool      | Minimum Version | Check Command       |
+|----------|-----------|-----------------|---------------------|
+| Python   | `python3` | 3.6+            | `python3 --version` |
+| Ruby     | `ruby`    | 2.5+            | `ruby --version`    |
+| Bash     | `bash`    | 4.0+            | `bash --version`    |
+
+No external libraries or packages are required. Each script uses only the standard library of its language.
+
+## Running the Hello World Scripts
+
+All commands below assume you are inside the `scripts-luquitas/` directory.
 
 ### Python
 
 ```bash
 python3 hello.py
+```
+
+Expected output:
+
+```
+Hello, World!
 ```
 
 ### Ruby
@@ -58,16 +56,109 @@ python3 hello.py
 ruby hello.rb
 ```
 
+Expected output:
+
+```
+Hello, World!
+```
+
 ### Bash
 
 ```bash
 bash hello.sh
 ```
 
+Expected output:
+
+```
+Hello, World!
+```
+
+You can also make any script executable and run it directly:
+
+```bash
+chmod +x hello.sh
+./hello.sh
+```
+
 ## Contributing
 
-1. Place new scripts in the correct language folder (`python/`, `ruby/`, or `bash/`).
-2. Follow the naming conventions in [REPO_STRUCTURE.md](REPO_STRUCTURE.md).
-3. Include the required script header as defined in [CODING_STANDARDS.md](CODING_STANDARDS.md).
-4. Test your script before committing.
-5. Write a clear commit message describing what the script does.
+Follow these steps to add a new script to the repository.
+
+### 1. Choose the right folder
+
+Place your script in the folder that matches its language:
+
+| Language | Folder     | Extension |
+|----------|------------|-----------|
+| Python   | `python/`  | `.py`     |
+| Ruby     | `ruby/`    | `.rb`     |
+| Bash     | `bash/`    | `.sh`     |
+
+### 2. Name your file
+
+Use `snake_case`, lowercase letters, and the correct file extension. See [REPO_STRUCTURE.md](REPO_STRUCTURE.md) for full naming rules.
+
+Good: `fetch_api_data.py`
+Avoid: `FetchApiData.py`, `fetch-api-data.py`, `script1.py`
+
+### 3. Add the required header
+
+Every script must start with a shebang line followed by a header block. The header includes the script name, a description, the author, the creation date, and usage instructions.
+
+**Python example:**
+
+```python
+#!/usr/bin/env python3
+# Script: fetch_api_data.py
+# Description: Fetches data from the public API and saves it as JSON.
+# Author: your-name
+# Date: 2025-01-15
+# Usage: python3 fetch_api_data.py <endpoint>
+```
+
+**Ruby example:**
+
+```ruby
+#!/usr/bin/env ruby
+# Script: parse_logs.rb
+# Description: Parses application logs and extracts error entries.
+# Author: your-name
+# Date: 2025-01-15
+# Usage: ruby parse_logs.rb <log_file>
+```
+
+**Bash example:**
+
+```bash
+#!/usr/bin/env bash
+# Script: deploy.sh
+# Description: Deploys the application to the staging environment.
+# Author: your-name
+# Date: 2025-01-15
+# Usage: bash deploy.sh <environment>
+```
+
+See [CODING_STANDARDS.md](CODING_STANDARDS.md) for the full set of style rules per language.
+
+### 4. Test before committing
+
+Run your script and confirm it produces the expected output. Fix any errors before pushing.
+
+### 5. Commit with a clear message
+
+Write a commit message that describes what the script does.
+
+```bash
+git add python/fetch_api_data.py
+git commit -m "Add script to fetch API data and save as JSON"
+git push origin main
+```
+
+## Reference Documents
+
+| Document | Description |
+|----------|-------------|
+| [REPO_STRUCTURE.md](REPO_STRUCTURE.md) | Directory layout, naming conventions, and file extension standards |
+| [CODING_STANDARDS.md](CODING_STANDARDS.md) | Shebang lines, comment styles, script headers, and language-specific rules |
+| [README_TEMPLATE.md](README_TEMPLATE.md) | Template for creating new README files |
