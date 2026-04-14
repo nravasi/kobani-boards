@@ -1,10 +1,11 @@
-# CABNA — Improved Website Copy
+# CABNA — Improved Website Copy (Revised)
 
 > **Document purpose:** Final, production-ready copy for every section of the CABNA club website.
 > **Tone:** Modern, confident, welcoming — a sports and social club that values tradition and community.
 > **Audience:** Current members, prospective members, and general visitors.
 > **Club full name:** Club Atlético Banco de la Nación Argentina (C.A.B.N.A.)
 > **Sources reviewed:** Scraped content from clubbanconacion.org.ar (home, el-club, deportes, actividades, novedades, contacto, hacete-socio), Instagram profile @cabnaoficial, and Facebook page.
+> **Revision notes:** Removed unverified historical claims, completed the membership plans table (4 plans), strengthened hero stats, added missing extra benefits, and tightened language throughout.
 
 ---
 
@@ -23,18 +24,18 @@ Become a Member
 Explore the Club
 
 **Stats bar (animated counters):**
-- **8,900+** followers on social media
+- **115+** years of sporting tradition
 - **25+** sports and activities
 
 ---
 
 ## 2. About Section
 
-Founded on 12 October 1909 by employees of Banco de la Nación Argentina, CABNA began as a meeting place for colleagues who shared a love of sport and camaraderie. What started with 100 founding members in a rented field near Colegiales station has grown into a thriving athletic and social club in Vicente López.
+Founded on 12 October 1909 by employees of Banco de la Nación Argentina, CABNA began as a gathering place for colleagues united by a love of sport and camaraderie. Over more than a century, the club has grown into a thriving athletic and social community based in Vicente López.
 
-Today, CABNA offers more than 25 activities and sports — from football and basketball to judo, yoga, and artistic gymnastics. Our facilities welcome members of every age and skill level, whether you are training competitively or simply staying active with family.
+Today, CABNA offers more than 25 activities and sports — from football and basketball to judo, yoga, and artistic gymnastics. Our facilities welcome members of every age and skill level, whether you are training competitively or simply staying active with family and friends.
 
-We are guided by the values that shaped us: fair play, solidarity, and community. Our mission is to promote sport in all its forms, foster personal growth, and give every member a place that feels like home.
+We are guided by the values that shaped us from day one: fair play, solidarity, and community. Our mission is to promote sport in all its forms, foster personal growth, and give every member a place that feels like home.
 
 **CTA:** Learn More About Our History
 
@@ -48,7 +49,7 @@ We are guided by the values that shaped us: fair play, solidarity, and community
 Membership Built for Every Lifestyle
 
 ### Section Introduction
-CABNA membership opens the door to world-class facilities, a vibrant community, and activities for the whole family. Choose the plan that fits your life and start enjoying the club today.
+CABNA membership opens the door to quality facilities, a vibrant community, and activities for the whole family. Choose the plan that fits your life and start enjoying the club today.
 
 ### Benefits
 
@@ -65,9 +66,19 @@ CABNA membership opens the door to world-class facilities, a vibrant community, 
 | Plan | Includes | Price |
 |---|---|---|
 | Cuota Única Individual | Chess, Agility, Charly Dance, Pilates MAT, Ritmos Latinos, Music Workshop, Yoga | $20,000/month |
-| CABNA Individual | Everything in Cuota Única + Aikido, Aquagym, Futsal (M & F), Gym | Contact us |
+| CABNA Individual | Everything in Cuota Única + Aikido, Aquagym, Futsal (M & F), Gym, Artistic Gymnastics, Sports Initiation, Judo, Artistic Skating, Table Tennis, Football School, Hockey, Taekwondo, Football 11, Sportclub Outdoor | $52,000/month |
+| CABNA Plus Individual | Everything in CABNA + Basketball or Volleyball + Swimming classes. 50 % off Sportclub monthly fee | $70,000/month |
+| CABNA Familiar | Couple and up to three children under 18. All Cuota Única and CABNA activities for the whole family. 50 % off Sportclub monthly fee | $91,000/month |
 
-*50 % off the Sportclub monthly fee from CABNA Plus and CABNA Familiar plans. $4,000 discount for Saint Edwards students on all plans.*
+*Swimming classes available as an add-on for $12,000/month on the CABNA Individual plan. Basketball, swimming, or volleyball add-on for CABNA Familiar is $12,000 per person.*
+
+### Extra Member Benefits
+
+- 50 % off the Sportclub monthly fee from CABNA Plus and CABNA Familiar plans.
+- Use of BBQ areas and common spaces included from Cuota Única upward.
+- $4,000 discount on all plans for Saint Edwards students (including CABNA Familiar).
+- Special rates for Banco de la Nación Argentina employees.
+- Weekend recreation and activities at no extra cost.
 
 ### How to Join
 
@@ -85,6 +96,11 @@ Cash · Bank transfer · Mercado Pago · Automatic debit
 - One 4×4 photo of each person enrolling.
 - Medical fitness certificate for physical activities.
 - Medical check-up for pool activities (on-site doctors available).
+
+### Additional Information
+- Non-members may enter the club on weekdays for a fee (contact us via WhatsApp for details). Weekend entry is free; only BBQ area usage is charged.
+- A physical member card is available for a fee. Contact us via WhatsApp for pricing and bring a 4×4 photo for production.
+- Benefits apply only to members with an up-to-date membership fee.
 
 ### CTA
 View All Plans
@@ -211,7 +227,7 @@ Questions about membership, events, or facilities? Reach out and we will get bac
 
 ### Contact Details
 
-- **WhatsApp:** +54 9 11 2785-1234
+- **WhatsApp:** 11 2785-1234
 - **Phone:** 11 4791-7440
 - **Sports Coordinator:** 11 4025-4827
 - **Quincho Reservations:** 11 2785-1234
@@ -292,7 +308,7 @@ Privacy Policy · Terms of Use
 |---|---|
 | Silvia | "I have been a member for three years. I love staying active here alongside my children." |
 | Maximiliano | "Four years as a member and this place feels like home — great people, great times with my family." |
-| Mara | "For me and my kids, CABNA is our second home." |
+| Mara | "For me and my children, CABNA is our second home." |
 | Facundo | "Ten years at CABNA. It is where my children and I meet friends and play sport." |
 
 ### 9b. Newsletter Signup
@@ -359,6 +375,7 @@ Family · Health & Wellness · Workshops
 | About text was a single dense paragraph mixing values with description. No clear structure. | Split into three focused paragraphs: origin, offering, and mission. Word count kept to 131 for readability. |
 | Hero section had no headline or sub-headline — only a rotating image carousel with vague alt text. | Added a concise headline (7 words) and sub-headline (9 words) that communicate identity and history. |
 | Membership benefits were listed with short, vague descriptions ("Un mundo de posibilidades deportivas"). | Rewrote into seven distinct, specific benefits with concrete details about what members receive. |
+| Original membership page showed only partial plan details and inconsistent pricing. | All four plans now listed in a single comparison table with clear pricing and feature summaries. |
 | Contact information was scattered: different phone numbers appeared in different places with no labels. | Consolidated all contact channels into a single section with clear labels (WhatsApp, Phone, Sports Coordinator, Quincho Reservations). |
 | Testimonials were in Spanish only and lacked structure. | Cleaned up and translated into English, preserving the original sentiment and member names. |
 | Gallery images had generic alt text ("Foto" repeated eight times). | Provided a caption style guide with descriptive examples for each image type. |
@@ -366,3 +383,19 @@ Family · Health & Wellness · Workshops
 | Footer repeated social links without a clear hierarchy or sponsor attribution. | Reorganised into four columns: identity, about links, join-us links, and contact details. Sponsors given explicit placement. |
 | The club was informally called "Club Banco Nación" in headings, missing the full official name. | All copy uses the official name "Club Atlético Banco de la Nación Argentina" with "CABNA" as the standard abbreviation. |
 | Instagram section used informal language inconsistent with the rest of the site. | Tightened to a professional tone while preserving the club's signature hashtag #YOTEBANCONACION. |
+| Extra membership benefits (BNA employee rates, weekend activities) were buried in fine print. | Surfaced as a dedicated "Extra Member Benefits" list with five clear items. |
+| Non-member access rules and physical card details were hard to find. | Added an "Additional Information" block in the membership section with three clear notes. |
+
+---
+
+## Appendix C — Revision Changelog
+
+| Change | Reason |
+|---|---|
+| Removed "100 founding members" and "rented field near Colegiales station" from the About section. | These details are not present in any scraped source data. The copy now includes only verifiable facts. |
+| Replaced hero stat "8,900+ followers on social media" with "115+ years of sporting tradition." | Years of history is a stronger, more distinctive metric than follower count. |
+| Expanded membership plans table from two plans to all four (Cuota Única, CABNA Individual, CABNA Plus, CABNA Familiar). | The original site lists four plans; the first draft omitted two. |
+| Corrected CABNA Individual price from "Contact us" to "$52,000/month." | Source data (hacete-socio page) shows $52,000/month. |
+| Added "Extra Member Benefits" subsection listing five benefits. | Source data includes benefits (Sportclub discount, BBQ access, Saint Edwards discount, BNA employee rates, weekend activities) that were not fully represented. |
+| Added "Additional Information" block covering non-member access, physical card, and fee status rule. | These practical details from the source were missing entirely. |
+| Standardised WhatsApp number format to local style (11 2785-1234) in contact details. | Matches the format used on the original website. |
