@@ -32,10 +32,28 @@
   gap: var(--space-lg);
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.logo:hover {
+  text-decoration: none;
+}
+
 .logo img {
   display: block;
   height: 28px;
   width: auto;
+}
+
+.site-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  white-space: nowrap;
 }
 
 .header-nav {

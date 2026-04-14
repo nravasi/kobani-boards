@@ -79,6 +79,14 @@ function renderFixtureRow(match) {
     centerHtml += '<span class="fixture-date-label">' + escapeHtml(formatMatchDate(match.scheduledDate)) + '</span>';
     centerHtml += '<span class="fixture-clock">' + escapeHtml(match.scheduledTime) + '</span>';
     centerHtml += '</div>';
+    if (match.tvNetworks && match.tvNetworks.length > 0) {
+      centerHtml += '<div class="fixture-tv">';
+      centerHtml += '<img src="https://api.promiedos.com.ar/images/tvnetworks/' +
+        escapeHtml(match.tvNetworks[0].id) +
+        '" alt="' + escapeHtml(match.tvNetworks[0].name) +
+        '" class="tv-logo" height="14">';
+      centerHtml += '</div>';
+    }
   }
 
   var html = '<a href="#" class="' + rowClass + '"' +
