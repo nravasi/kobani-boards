@@ -1,0 +1,15 @@
+{
+  "name": "riquelme-fan",
+  "version": "1.0.0",
+  "description": "Workspace for board: Riquelme fan site",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/counter.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jsdom": "^29.0.2"
+  }
+}
