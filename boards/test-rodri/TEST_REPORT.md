@@ -19,12 +19,40 @@
 
 ---
 
+## Automated Test Suite
+
+A `unittest`-based test suite (`test_hello_world.py`) covers all three scripts with 4 tests each (12 total):
+
+```
+$ python3 -m unittest test_hello_world -v
+
+test_byte_level (test_hello_world.TestBashHelloWorld.test_byte_level) ... ok
+test_exit_code (test_hello_world.TestBashHelloWorld.test_exit_code) ... ok
+test_no_stderr (test_hello_world.TestBashHelloWorld.test_no_stderr) ... ok
+test_output_exact (test_hello_world.TestBashHelloWorld.test_output_exact) ... ok
+test_byte_level (test_hello_world.TestPythonHelloWorld.test_byte_level) ... ok
+test_exit_code (test_hello_world.TestPythonHelloWorld.test_exit_code) ... ok
+test_no_stderr (test_hello_world.TestPythonHelloWorld.test_no_stderr) ... ok
+test_output_exact (test_hello_world.TestPythonHelloWorld.test_output_exact) ... ok
+test_byte_level (test_hello_world.TestRubyHelloWorld.test_byte_level) ... ok
+test_exit_code (test_hello_world.TestRubyHelloWorld.test_exit_code) ... ok
+test_no_stderr (test_hello_world.TestRubyHelloWorld.test_no_stderr) ... ok
+test_output_exact (test_hello_world.TestRubyHelloWorld.test_output_exact) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.043s
+
+OK
+```
+
+---
+
 ## Test Plan
 
 For each script, the following tests are executed:
-1. **Output Exactness** — String comparison of stdout against `Hello, World!`
+1. **Output Exactness** — String comparison of stdout against `Hello, World!\n`
 2. **Exit Code** — Verify the process exits with return code 0
-3. **Byte-Level Verification** — Hex dump comparison to ensure no hidden whitespace, BOM, or extra characters (expected: `48656c6c6f2c20576f726c64210a`)
+3. **Byte-Level Verification** — Hex comparison to ensure no hidden whitespace, BOM, or extra characters (expected: `48656c6c6f2c20576f726c64210a`)
 4. **No Stderr** — Confirm no error output is emitted to stderr
 
 ---
@@ -102,3 +130,4 @@ None.
 - All three interpreters confirmed available: `bash` at `/usr/bin/bash`, `python3` at `/usr/local/bin/python3`, `ruby` at `/opt/ruby-3.3.6/bin/ruby`
 - Byte-level verification confirms no BOM, trailing spaces, or extra newlines in any script output
 - Bash script has proper shebang and execute permissions for direct execution
+- Automated test suite (`test_hello_world.py`) provides repeatable unittest-based verification
