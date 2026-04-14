@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Club Atlético San Lorenzo de Almagro</title>
+  <meta name="description" content="Contactá a San Lorenzo.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="header-brand" aria-label="San Lorenzo — Inicio">
+        <span class="crest" aria-hidden="true">CASLA</span>
+        <span>San Lorenzo</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="club/historia.html">Club</a></li>
+          <li><a href="futbol/profesional/noticias.html">Fútbol</a></li>
+          <li><a href="basquet/noticias.html">Básquet</a></li>
+          <li><a href="mas-deportes/index.html">Más Deportes</a></li>
+          <li><a href="socios/asociate.html">Socios</a></li>
+          <li><a href="entradas/index.html">Entradas</a></li>
+          <li><a href="multimedia/galerias.html">Multimedia</a></li>
+          <li><a href="enciclonpedia/diccionario.html">Enciclonpedia</a></li>
+          <li><a href="prensa/acreditaciones.html">Prensa</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="busqueda.html" class="btn-search" aria-label="Buscar">&#128269;</a>
+        <a href="socios/asociate.html" class="btn-asociate">Asociate</a>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav">&#9776;</button>
+      </div>
+    </div>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menú móvil">
+    <a href="index.html">Inicio</a>
+    <div class="nav-section-title">Club</div>
+    <a href="club/historia.html">Historia</a>
+    <a href="club/autoridades.html">Autoridades</a>
+    <a href="club/sedes.html">Sedes</a>
+    <div class="nav-section-title">Fútbol</div>
+    <a href="futbol/profesional/noticias.html">Profesional</a>
+    <a href="futbol/femenino/noticias.html">Femenino</a>
+    <div class="nav-section-title">Más</div>
+    <a href="mas-deportes/index.html">Más Deportes</a>
+    <a href="socios/asociate.html">Socios</a>
+    <a href="entradas/index.html">Entradas</a>
+    <a href="multimedia/galerias.html">Multimedia</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="socios/asociate.html" class="btn-asociate-mobile">Asociate</a>
+  </nav>
+  <main id="main-content">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Ubicación actual">
+        <ol>
+          <li><a href="index.html">Inicio</a></li>
+          <li><span aria-current="page">Contacto</span></li>
+        </ol>
+      </nav>
+      <article class="page-content">
+          <h1>Contacto</h1>
+          <p>¿Tenés alguna consulta? Completá el formulario.</p>
+          <form data-ajax novalidate>
+            <div class="form-message" hidden></div>
+            <div class="form-group"><label for="c-nombre">Nombre <span class="required" title="obligatorio">*</span></label><input type="text" id="c-nombre" name="nombre" required maxlength="100" placeholder="Tu nombre"></div>
+            <div class="form-group"><label for="c-email">Email <span class="required" title="obligatorio">*</span></label><input type="email" id="c-email" name="email" required placeholder="tu@email.com"></div>
+            <div class="form-group"><label for="c-asunto">Asunto <span class="required" title="obligatorio">*</span></label><select id="c-asunto" name="asunto" required><option value="">Seleccioná un asunto</option><option value="general">General</option><option value="socios">Socios</option><option value="prensa">Prensa</option><option value="sponsors">Sponsors</option><option value="otro">Otro</option></select></div>
+            <div class="form-group"><label for="c-msg">Mensaje <span class="required" title="obligatorio">*</span></label><textarea id="c-msg" name="mensaje" required maxlength="2000" placeholder="Tu mensaje..."></textarea></div>
+            <div class="hp-field" aria-hidden="true"><label for="hp-c">No completar</label><input type="text" id="hp-c" name="website" tabindex="-1" autocomplete="off"></div>
+            <button type="submit" class="btn-primary">Enviar</button>
+          </form>
+          <h2>Otros canales</h2>
+          <div class="contact-channels">
+            <div class="contact-channel"><span class="ch-icon" aria-hidden="true">&#128241;</span><span class="ch-text"><a href="https://wa.me/5491153336237" target="_blank" rel="noopener noreferrer">WhatsApp: +54 9 11 5333-6237</a></span></div>
+            <div class="contact-channel"><span class="ch-icon" aria-hidden="true">&#9993;</span><span class="ch-text"><a href="mailto:socios@sanlorenzo.com.ar">socios@sanlorenzo.com.ar</a></span></div>
+            <div class="contact-channel"><span class="ch-icon" aria-hidden="true">&#128222;</span><span class="ch-text">Teléfono: (011) 4XXX-XXXX</span></div>
+          </div>
+          <h2>Sedes</h2>
+          <div class="sede-cards">
+            <div class="sede-card"><h3>Sede Boedo</h3><address>Av. La Plata 1782, CABA — Lun a Vie 9:00 a 18:00</address></div>
+            <div class="sede-card"><h3>Ciudad Deportiva</h3><address>Av. Gral. Paz y Constituyentes — Lun a Sáb 8:00 a 20:00</address></div>
+          </div>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <span class="crest" aria-hidden="true">CASLA</span>
+            <span>San Lorenzo de Almagro</span>
+          </div>
+          <div class="footer-contact">
+            <p>&#128241; <a href="https://wa.me/5491153336237" target="_blank" rel="noopener noreferrer">+54 9 11 5333-6237</a></p>
+            <p>&#9993; <a href="mailto:socios@sanlorenzo.com.ar">socios@sanlorenzo.com.ar</a></p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Club</h3>
+          <a href="club/historia.html">Historia</a>
+          <a href="club/autoridades.html">Autoridades</a>
+          <a href="club/sedes.html">Sedes</a>
+        </div>
+        <div class="footer-col">
+          <h3>Fútbol</h3>
+          <a href="futbol/profesional/noticias.html">Profesional</a>
+          <a href="futbol/femenino/noticias.html">Femenino</a>
+          <a href="basquet/noticias.html">Básquet</a>
+        </div>
+        <div class="footer-col">
+          <h3>Servicios</h3>
+          <a href="socios/asociate.html">Asociate</a>
+          <a href="entradas/index.html">Entradas</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Club Atlético San Lorenzo de Almagro. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
