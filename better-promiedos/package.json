@@ -4,9 +4,13 @@
   "description": "Workspace for board: Better Promiedos",
   "main": "js/team-icons.js",
   "scripts": {
-    "test": "node test/team-icons.test.js"
+    "test": "node test/team-icons.test.js && tsx --test test/mock-data.test.ts"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "tsx": "^4.19.0"
+  }
 }
