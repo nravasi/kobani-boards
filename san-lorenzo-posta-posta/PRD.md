@@ -24,7 +24,7 @@ sanlorenzo.com.ar
 │   ├── Elecciones 2026, Obras e infraestructura
 │   ├── CASLA Social, Colonia, Cultura, Marketing
 │   ├── Ciclón de Beneficios (external), Recursos Humanos
-│   └── Denuncias, Defensoría del Pueblo Sanlorencista
+│   └── Punto de acceso a la Justicia (/denuncias), Defensoría del Pueblo Sanlorencista
 ├── Fútbol
 │   ├── Profesional → Noticias, Plantel, Títulos, Jugadores Históricos, Números Históricos
 │   ├── Amateur → Reserva, Inferiores, Cuarta–Novena, Infantiles, Staff, Escuelita, Fútbol Recreativo, Revista
@@ -71,11 +71,12 @@ sanlorenzo.com.ar
 | D5 | Contact / support | No general contact form exists. The only contact channels are a WhatsApp number and a socios@ email address embedded in the footer. No dedicated "Contact Us" page. |
 | D6 | Ticket purchasing | Ticket sales rely on news articles with inline instructions rather than a dedicated, permanent ticket-purchase flow or page. |
 | D7 | Search | No site-wide search functionality. Users must browse menus or scroll news feeds to find content. |
-| D8 | Inconsistent dates | Copyright shows "© 2024" on some inner pages (Asociate) while the homepage shows "© 2026", suggesting template fragments are not centrally managed. |
+| D8 | Inconsistent templates | Copyright shows "© 2024" on the Asociate page (which also uses the older `membrete.svg` asset) while the homepage and Sedes page show "© 2026" (with `membrete-v2026.svg`). This confirms that inner pages use divergent template fragments rather than a shared layout. |
 | D9 | Sponsor images | Sponsor logos use `px.gif` transparent pixels as `src`, relying on CSS `background-image` or lazy load. This breaks if styles fail and provides no alt text or fallback. |
 | D10 | Accessibility | No visible skip-navigation links, no language toggle, and alt text is missing or generic on many images. |
 | D11 | Ephemeral content mixed with permanent | "Elecciones 2026" sits alongside permanent pages like "Historia" in the Club menu, creating clutter once the event passes. |
 | D12 | External redirects without indication | "Ciclón de Beneficios" and "Tienda Online" link to external domains (ciclondebeneficios.com.ar, soycuervo.com) without any visual indicator. |
+| D13 | Inconsistent navigation across pages | The Club submenu differs between inner pages. For example, the Asociate page omits "Elecciones 2026" and "Defensoría del Pueblo Sanlorencista" while the Sedes page includes them. This means different pages render different navigation menus. |
 
 ---
 
@@ -245,7 +246,7 @@ Each page renders as a content page with a sidebar navigation listing all Club s
 
 - **Historia**: Interactive timeline (year-by-year scrollable view with decade quick-jump). Existing year-by-year data must be preserved.
 - **Autoridades**: Current board members with name, role, and photo.
-- **Sedes**: Cards for each location showing address, phone, hours, and embedded map (Google Maps or OpenStreetMap).
+- **Sedes**: Cards for each of the 4 physical locations (Boedo, Ciudad Deportiva, Administrativa, Centro de Atención Boedo) showing address, phone, hours, and embedded map (Google Maps or OpenStreetMap). A fifth card links to the Mi CASLA virtual sede.
 - **Himno**: Lyrics text with optional audio player (play/pause control).
 - **Estatuto**: PDF viewer or downloadable PDF link.
 - **Balances y Presupuestos**: List of downloadable PDFs by year.
@@ -277,7 +278,7 @@ Landing page listing all 20 disciplines as cards (icon, name, brief description)
 
 #### 5.2.6 Socios Section
 
-- **Asociate**: Membership plan comparison page (Simple, Pleno, Interior, Exterior) with pricing, benefits matrix, and "Asociarme" CTA per plan.
+- **Asociate**: Membership plan comparison page. The current site lists four tiers — Socia/o Simple, Socia/o Plena/o, Socia/o Interior, and Socia/o Exterior — each with monthly pricing and a benefits description. The redesign must present these as a comparison table with tier name, monthly price, included benefits (checkmarks), and a per-tier "Asociarme" CTA button. Pricing is adjusted bimonthly by IPC and will be CMS-managed.
 - **Mi CASLA**: Embed or deep link to the member portal (casla.miclub.info). If embedded, wrap in an iframe with fallback link.
 - **Peñas**: Searchable/filterable directory of fan clubs worldwide.
 - **Ciclón de Beneficios**: External link to ciclondebeneficios.com.ar, displayed with external-link icon.
