@@ -216,9 +216,14 @@
     display: flex;
   }
 
-  /* Hide header nav on small screens */
+  /* Compact section nav on mobile — scrollable row */
   .header-nav {
-    display: none;
+    gap: var(--space-xs);
+  }
+
+  .header-link {
+    font-size: 12px;
+    padding: var(--space-xs) 6px;
   }
 
   /* Sidebar off-canvas */

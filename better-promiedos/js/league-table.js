@@ -43,7 +43,7 @@ function renderLeagueTableRow(row, iconUtil) {
     '<td class="col-stat">' + row.lost + '</td>' +
     '<td class="col-stat">' + row.goalsFor + '</td>' +
     '<td class="col-stat">' + row.goalsAgainst + '</td>' +
-    '<td class="col-stat' + gdClass(row.goalDifference) + '">' + row.goalDifference + '</td>' +
+    '<td class="col-stat' + gdClass(row.goalDifference) + '">' + (row.goalDifference > 0 ? '+' : '') + row.goalDifference + '</td>' +
     '<td class="col-pts">' + row.points + '</td>' +
     '</tr>';
 }
