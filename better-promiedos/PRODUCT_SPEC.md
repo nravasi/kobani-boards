@@ -40,6 +40,8 @@ Promiedos.com.ar is an Argentine football statistics website covering domestic a
 
 ### 2.1 Color Palette
 
+> **Methodology note:** Color values below are observational approximations derived from the site's visual appearance. The site is an SPA that loads styles via JavaScript bundles, so exact hex values cannot be extracted from static HTML. Implementors should use these as design targets and fine-tune in-browser.
+
 | Role | Value | Usage |
 |---|---|---|
 | **Page background** | `#1a1a2e` (very dark navy/charcoal) | Full-page background behind all content |
@@ -326,10 +328,13 @@ Each tie shows two legs with teams stacked vertically. Aggregate scores may appe
 - `Pts` — Puntos (points)
 
 **For the Historical Table** (`/tablahistorica`), additional columns appear:
-- `PtsHis` — Historical points (using period-correct rules: 2pts pre-1995, 3pts after)
-- `Ptsx3V` — Points recalculated with modern 3-per-win rules
-- `PG2` / `PG3` — Wins worth 2 points / 3 points
+- `PtsHis` — Historical points applying points-per-victory according to each era's rules (3 points from 1995/96 onwards, 2 points for prior tournaments, with the 1988/89 exception: 3 for regulation win, 2 for penalty win)
+- `Ptsx3V` — Points recalculated applying the modern rule (3 per win) to all eras
+- `PGT` — Total wins across all eras
+- `PG2` / `PG3` — Wins in the 2-point era / 3-point era
 - `%PG` / `%PE` / `%PP` — Win/draw/loss percentages
+
+The historical table excludes Copas Nacionales and updates after each completed match. Column headers are clickable for client-side sorting ("Pulsar item de la parte superior para ordenar según ese criterio"). The table header shows the update date (e.g., "Actualizado: 06-04-2026").
 
 ### 5.5 Top Goalscorers (Goleadores)
 
@@ -410,24 +415,34 @@ Each card shows:
 │  └──────────────────────────────────────────────────┘    │
 │                                                          │
 │  ┌─ PLANTEL ────────────────────────────────────────┐    │
-│  │ #  │ [flag] Name    │ Position │ Age │ Height    │    │
-│  │ DT │ [🇦🇷] Coudet   │ Entren.  │ 51  │ 1.78     │    │
-│  │ 1  │ [🇦🇷] Armani   │ Arquero  │ 39  │ 1.89     │    │
-│  │ 5  │ [🇦🇷] Portillo │ Def. Cen.│ 25  │ 1.66     │    │
-│  │ ...│                │          │     │           │    │
+│  │ Jugadores                       │EDAD│Nac.│Alt. │    │
+│  │ ── Dir ──────────────────────── │    │    │     │    │
+│  │ DT [🇦🇷] Coudet  Entrenador     │ 51 │12/09│1.78│    │
+│  │ ── Arq ──────────────────────── │    │    │     │    │
+│  │  1 [🇦🇷] Armani  Arquero        │ 39 │16/10│1.89│    │
+│  │ ── Def ──────────────────────── │    │    │     │    │
+│  │  5 [🇦🇷] Portillo Def. Central  │ 25 │18/05│1.66│    │
+│  │ ── Med ──────────────────────── │    │    │     │    │
+│  │ ── Del ──────────────────────── │    │    │     │    │
+│  │ ...                              │    │    │     │    │
 │  └──────────────────────────────────────────────────┘    │
 │                                                          │
-│  ── Sidebar-style stat panels: ──                        │
+│  ── ESTADÍSTICAS PERSONALES ──                           │
+│  ── "Liga Profesional Argentina - Apertura" ──           │
 │  [Goles] [Asistencias] [Barridas] [Rojas] [Amarillas]   │
 │                                                          │
 │  ┌─ Team Info ──────────────────────────────────────┐    │
 │  │ Apodo: Millonarios                                │    │
 │  │ Fundación: 1901                                   │    │
 │  │ Estadio: Estadio Más Monumental                   │    │
-│  │ Club de: Capital Federal, Buenos Aires            │    │
+│  │ Club de: Capital Federal, Ciudad de Buenos Aires  │    │
 │  └──────────────────────────────────────────────────┘    │
 └──────────────────────────────────────────────────────────┘
 ```
+
+**Team page tabs:** Each team has two tabs:
+- **PRINCIPAL** — All content described above (matches, squad, stats, team info)
+- **ESTADIO** — Stadium details page (URL: `/team/{slug}/{id}/stadium`)
 
 ### 5.8 Calendar Page
 
@@ -463,9 +478,12 @@ Each card shows:
 ```
 
 The calendar shows a **full week** with previous/next week navigation. Each day includes:
-- Player birthdays (with team and age)
-- Club anniversaries
+- Player birthdays (format: "**Player Name** (Team) cumple hoy **N** años")
+- Club anniversaries (format: "[large crest size 4] **Team Name** cumple hoy **N** años desde su fundación")
 - Matches grouped by league, each row showing time, optional TV network logo, and team names
+- A **"Hoy"** label replaces the day-of-week name for today's date
+
+> **Note:** The live site's calendar also includes non-football events (e.g., tennis tournaments like "Miami" ATP). Our build will include **football matches only**, consistent with the project scope.
 
 ---
 
@@ -579,6 +597,18 @@ interface TopGoalscorer {
 ### 6.5 Player Stats Entry (Team Detail)
 
 ```typescript
+interface TeamPlayerStats {
+  sectionTitle: string;         // "ESTADÍSTICAS PERSONALES"
+  tournamentContext: string;    // "Liga Profesional Argentina - Apertura"
+  categories: StatCategoryBlock[];
+}
+
+interface StatCategoryBlock {
+  category: StatCategory;
+  entries: PlayerStatEntry[];
+  hasMore: boolean;             // Whether "VER MÁS" button is shown (lists are capped at ~6)
+}
+
 interface PlayerStatEntry {
   playerName: string;
   value: number;                // goals, assists, tackles/game, cards, etc.
@@ -618,6 +648,17 @@ type PlayerPosition =
   | "Centro Delantero"            // Striker
   | "Segundo Delantero"           // Second striker
   | "Entrenador";                 // Coach/Manager
+
+// The squad table groups players under section headers:
+type SquadPositionGroup =
+  | "Dir"   // Dirección Técnica (Coaching staff)
+  | "Arq"   // Arqueros (Goalkeepers)
+  | "Def"   // Defensores (Defenders)
+  | "Med"   // Mediocampistas (Midfielders)
+  | "Del";  // Delanteros (Forwards)
+
+// Table columns as rendered: Jugadores | EDAD | Nacimiento | Altura
+// The "Jugadores" column combines: [jersey#] [flag] [name] [position]
 ```
 
 ### 6.7 League
@@ -633,20 +674,74 @@ interface League {
 }
 ```
 
-### 6.8 Champions History Entry
+### 6.8 Team Info (Metadata)
+
+```typescript
+interface TeamInfo {
+  team: TeamRef;
+  nickname: string;            // "Millonarios" — Apodo
+  foundedYear: number;         // 1901 — Fundación
+  stadiumName: string;         // "Estadio Más Monumental" — Estadio
+  city: string;                // "Capital Federal, Ciudad de Buenos Aires" — Club de
+}
+```
+
+### 6.9 Calendar Entries
+
+```typescript
+interface CalendarDay {
+  date: string;                // ISO date, e.g. "2026-03-23"
+  dayOfWeek: string;           // "lunes", "martes", etc.
+  isToday: boolean;            // Renders "Hoy" instead of day name
+  birthdays: BirthdayEntry[];
+  anniversaries: AnniversaryEntry[];
+  matchesByLeague: CalendarLeagueGroup[];
+}
+
+interface BirthdayEntry {
+  playerName: string;          // "Walter Samuel"
+  team: string;                // "Argentina" (can be national team, club, or "Retirado"/"Libre")
+  age: number;                 // 48
+}
+
+interface AnniversaryEntry {
+  team: TeamRef;
+  yearsSinceFounding: number;  // 123
+}
+
+interface CalendarLeagueGroup {
+  leagueName: string;          // "Liga Profesional"
+  matches: CalendarMatch[];
+}
+
+interface CalendarMatch {
+  id: string;
+  slug: string;
+  scheduledTime: string;       // "18:00"
+  tvNetwork: TvNetwork | null;
+  homeTeamName: string;
+  awayTeamName: string;
+}
+```
+
+### 6.10 Champions History Entry
 
 ```typescript
 interface ChampionEntry {
-  tournament: string;           // "2025 C", "2024", "2023", "1991/92 A", etc.
+  tournament: string;           // "2025 C", "2024", "2023", "1991/92 A", "1934 LADF", "1893 (A)", etc.
   team: TeamRef;
-  hasDetailedTable: boolean;    // Whether "Tabla >" link is available
+  hasDetailedTable: boolean;    // Whether "Tabla >" link is available (true for recent seasons, e.g. 2024 back to ~2010/11)
 }
 
 interface TitlesRanking {
   team: TeamRef;
-  titles: number;
+  titles: number;               // e.g., River Plate: 38, Boca Juniors: 35
 }
 ```
+
+The champions history page shows two sections:
+1. **Historial** — Chronological list of every champion from 1891 to present, with tournament code, team crest + name, and optional "Tabla >" link to archived standings.
+2. **Ranking Ligas** — Teams ranked by total title count.
 
 ---
 
