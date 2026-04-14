@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Better Promiedos — Liga Profesional Argentina</title>
+  <link rel="stylesheet" href="src/styles/global.css">
+  <link rel="stylesheet" href="src/styles/layout.css">
+</head>
+<body>
+
+  <!-- ======================= HEADER ======================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="Better Promiedos home">
+        <img src="https://www.promiedos.com.ar/assets/header/logo_white.webp" alt="Promiedos" height="28">
+      </a>
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="header-nav" aria-label="Secciones">
+        <a href="#fixtures-section" class="header-link active">Fixture</a>
+        <a href="#scores-section" class="header-link">Resultados</a>
+        <a href="#table-section" class="header-link">Posiciones</a>
+        <a href="#scorers-section" class="header-link">Goleadores</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- ======================= SIDEBAR ======================= -->
+    <aside class="sidebar" id="sidebar" aria-label="Navegación de ligas">
+      <nav>
+        <div class="sidebar-group">
+          <div class="sidebar-country">
+            <img src="https://api.promiedos.com.ar/images/country/ba/1" alt="" class="country-flag" width="16" height="12"> Argentina
+          </div>
+          <a href="#" class="sidebar-link active">Liga Profesional</a>
+          <a href="#" class="sidebar-link">Primera Nacional</a>
+          <a href="#" class="sidebar-link">Copa Argentina</a>
+          <a href="#" class="sidebar-link">Copa de la Liga</a>
+          <a href="#" class="sidebar-link">Primera B Metro</a>
+          <a href="#" class="sidebar-link">Federal A</a>
+          <a href="#" class="sidebar-link">Primera C</a>
+        </div>
+        <div class="sidebar-group">
+          <div class="sidebar-country">
+            <img src="https://api.promiedos.com.ar/images/country/fe/1" alt="" class="country-flag" width="16" height="12"> Internacional
+          </div>
+          <a href="#" class="sidebar-link">Copa Libertadores</a>
+          <a href="#" class="sidebar-link">Copa Sudamericana</a>
+          <a href="#" class="sidebar-link">Champions League</a>
+        </div>
+        <div class="sidebar-group">
+          <div class="sidebar-country">
+            <img src="https://api.promiedos.com.ar/images/country/b/1" alt="" class="country-flag" width="16" height="12"> Inglaterra
+          </div>
+          <a href="#" class="sidebar-link">Premier League</a>
+          <a href="#" class="sidebar-link">Carabao Cup</a>
+          <a href="#" class="sidebar-link">FA Cup</a>
+        </div>
+        <div class="sidebar-group">
+          <div class="sidebar-country">
+            <img src="https://api.promiedos.com.ar/images/country/c/1" alt="" class="country-flag" width="16" height="12"> España
+          </div>
+          <a href="#" class="sidebar-link">La Liga</a>
+          <a href="#" class="sidebar-link">Copa del Rey</a>
+        </div>
+        <div class="sidebar-group">
+          <div class="sidebar-country">
+            <img src="https://api.promiedos.com.ar/images/country/d/1" alt="" class="country-flag" width="16" height="12"> Italia
+          </div>
+          <a href="#" class="sidebar-link">Serie A</a>
+        </div>
+        <div class="sidebar-group">
+          <div class="sidebar-country">
+            <img src="https://api.promiedos.com.ar/images/country/cb/1" alt="" class="country-flag" width="16" height="12"> Brasil
+          </div>
+          <a href="#" class="sidebar-link">Brasileirão</a>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- ======================= MAIN CONTENT ======================= -->
+    <main class="main-content">
+
+      <!-- League Title & Tabs -->
+      <div class="league-header">
+        <h1 class="league-title">Liga Profesional Argentina</h1>
+        <div class="league-tabs" role="tablist">
+          <button class="league-tab active" role="tab" aria-selected="true">FIXTURE Y TABLAS</button>
+          <button class="league-tab" role="tab" aria-selected="false">EQUIPOS Y ESTADISTICAS</button>
+          <button class="league-tab" role="tab" aria-selected="false">CAMPEONES</button>
+        </div>
+      </div>
+
+      <!-- Section 1: Upcoming Fixtures (data-driven) -->
+      <div id="fixtures-section"></div>
+
+      <!-- Section 2: Past Scores (data-driven) -->
+      <div id="scores-section"></div>
+
+      <!-- Section 3: League Table (data-driven) -->
+      <div id="table-section"></div>
+
+      <!-- Section 4: Top Goalscorers (data-driven) -->
+      <div id="scorers-section"></div>
+
+      <!-- ======================= FOOTER ======================= -->
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <span class="footer-attr">ESTADÍSTICAS DE <img src="https://www.promiedos.com.ar/assets/opta-wht.png" alt="Opta" height="14" class="opta-logo"></span>
+          <span class="footer-copy">Better Promiedos — Datos deportivos sin apuestas</span>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- Team icon utility -->
+  <script src="js/team-icons.js"></script>
+  <!-- Fixtures/Scores panel renderer -->
+  <script src="js/fixtures-panel.js"></script>
+  <!-- League table renderer -->
+  <script src="js/league-table.js"></script>
+  <!-- Top goalscorers renderer -->
+  <script src="js/top-goalscorers.js"></script>
+
+  <script>
+    // ============================================================
+    // Mock Data (matches the TypeScript mock-data layer exactly)
+    // ============================================================
+    var teams = {
+      argentinos: { id: "ihb", name: "Argentinos Juniors", shortName: "Argentinos", slug: "argentinos-juniors" },
+      atleticoTucuman: { id: "gbfc", name: "Atlético Tucumán", shortName: "Atl. Tucumán", slug: "atletico-tucuman" },
+      banfield: { id: "ihi", name: "Banfield", shortName: "Banfield", slug: "banfield" },
+      barracas: { id: "jafb", name: "Barracas Central", shortName: "Barracas", slug: "barracas-central" },
+      belgrano: { id: "fhid", name: "Belgrano", shortName: "Belgrano", slug: "belgrano" },
+      boca: { id: "igg", name: "Boca Juniors", shortName: "Boca", slug: "boca-juniors" },
+      centralCordoba: { id: "beafh", name: "Central Córdoba SdE", shortName: "C. Córdoba", slug: "central-cordoba-sde" },
+      defensaYJusticia: { id: "hcbh", name: "Defensa y Justicia", shortName: "Def. y Just.", slug: "defensa-y-justicia" },
+      riestra: { id: "bbjea", name: "Deportivo Riestra", shortName: "Riestra", slug: "deportivo-riestra" },
+      estudiantesLP: { id: "igh", name: "Estudiantes de La Plata", shortName: "Estudiantes", slug: "estudiantes-de-la-plata" },
+      gimnasiaLP: { id: "iia", name: "Gimnasia y Esgrima La Plata", shortName: "Gimnasia", slug: "gimnasia-la-plata" },
+      godoyCruz: { id: "ihd", name: "Godoy Cruz", shortName: "Godoy Cruz", slug: "godoy-cruz" },
+      huracan: { id: "iie", name: "Huracán", shortName: "Huracán", slug: "huracan" },
+      independiente: { id: "ihe", name: "Independiente", shortName: "Independiente", slug: "independiente" },
+      independienteRiv: { id: "hcch", name: "Independiente Rivadavia", shortName: "Ind. Rivadavia", slug: "independiente-rivadavia" },
+      instituto: { id: "hchc", name: "Instituto", shortName: "Instituto", slug: "instituto" },
+      lanus: { id: "igj", name: "Lanús", shortName: "Lanús", slug: "lanus" },
+      newells: { id: "ihh", name: "Newell's Old Boys", shortName: "Newell's", slug: "newells-old-boys" },
+      platense: { id: "hcah", name: "Platense", shortName: "Platense", slug: "platense" },
+      racing: { id: "ihg", name: "Racing Club", shortName: "Racing", slug: "racing-club" },
+      river: { id: "igi", name: "River Plate", shortName: "River", slug: "river-plate" },
+      rosarioCentral: { id: "ihf", name: "Rosario Central", shortName: "R. Central", slug: "rosario-central" },
+      sanLorenzo: { id: "igf", name: "San Lorenzo", shortName: "San Lorenzo", slug: "san-lorenzo" },
+      sarmiento: { id: "hbbh", name: "Sarmiento de Junín", shortName: "Sarmiento", slug: "sarmiento-junin" },
+      talleres: { id: "jche", name: "Talleres de Córdoba", shortName: "Talleres", slug: "talleres-de-cordoba" },
+      tigre: { id: "iid", name: "Tigre", shortName: "Tigre", slug: "tigre" },
+      union: { id: "hcag", name: "Unión de Santa Fe", shortName: "Unión", slug: "union-de-santa-fe" },
+      velez: { id: "ihc", name: "Vélez Sarsfield", shortName: "Vélez", slug: "velez-sarsfield" }
+    };
+
+    var upcomingFixtures = [
+      { id: "abcdef1", slug: "boca-juniors-vs-river-plate", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 9", subTournament: "Apertura", homeTeam: teams.boca, awayTeam: teams.river, scheduledDate: "2026-04-18", scheduledTime: "20:00", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [{ id: "gchc", name: "ESPN Premium" }] },
+      { id: "abcdef2", slug: "racing-club-vs-independiente", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 9", subTournament: "Apertura", homeTeam: teams.racing, awayTeam: teams.independiente, scheduledDate: "2026-04-18", scheduledTime: "17:00", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [{ id: "idef", name: "TNT Sports Premium" }] },
+      { id: "abcdef3", slug: "velez-sarsfield-vs-talleres-de-cordoba", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 9", subTournament: "Apertura", homeTeam: teams.velez, awayTeam: teams.talleres, scheduledDate: "2026-04-19", scheduledTime: "16:00", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [{ id: "cbcj", name: "TyC Sports" }] },
+      { id: "abcdef4", slug: "estudiantes-de-la-plata-vs-san-lorenzo", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 9", subTournament: "Apertura", homeTeam: teams.estudiantesLP, awayTeam: teams.sanLorenzo, scheduledDate: "2026-04-19", scheduledTime: "18:30", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [{ id: "cicj", name: "ESPN" }] },
+      { id: "abcdef5", slug: "lanus-vs-belgrano", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 9", subTournament: "Apertura", homeTeam: teams.lanus, awayTeam: teams.belgrano, scheduledDate: "2026-04-19", scheduledTime: "20:30", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [{ id: "hbdg", name: "LPF Play" }] },
+      { id: "abcdef6", slug: "huracan-vs-barracas-central", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 9", subTournament: "Apertura", homeTeam: teams.huracan, awayTeam: teams.barracas, scheduledDate: "2026-04-20", scheduledTime: "15:30", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [{ id: "cbcj", name: "TyC Sports" }] },
+      { id: "abcdef7", slug: "godoy-cruz-vs-gimnasia-la-plata", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 9", subTournament: "Apertura", homeTeam: teams.godoyCruz, awayTeam: teams.gimnasiaLP, scheduledDate: "2026-04-20", scheduledTime: "17:00", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [] },
+      { id: "abcdef8", slug: "argentinos-juniors-vs-newells-old-boys", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 9", subTournament: "Apertura", homeTeam: teams.argentinos, awayTeam: teams.newells, scheduledDate: "2026-04-20", scheduledTime: "19:00", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [{ id: "gchc", name: "ESPN Premium" }] }
+    ];
+
+    var pastScores = [
+      { id: "egdbgff", slug: "estudiantes-de-la-plata-vs-central-cordoba-sde", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 8", subTournament: "Apertura", homeTeam: teams.estudiantesLP, awayTeam: teams.centralCordoba, scheduledDate: "2026-04-12", scheduledTime: "18:00", status: "finished", minute: null, homeScore: 2, awayScore: 0, homeGoalScorers: [{ playerName: "Boselli", minute: 34, isPenalty: false, isOwnGoal: false },{ playerName: "Rodríguez", minute: 71, isPenalty: false, isOwnGoal: false }], awayGoalScorers: [], tvNetworks: [{ id: "cicj", name: "ESPN" }] },
+      { id: "egdbgfg", slug: "boca-juniors-vs-racing-club", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 8", subTournament: "Apertura", homeTeam: teams.boca, awayTeam: teams.racing, scheduledDate: "2026-04-12", scheduledTime: "20:15", status: "finished", minute: null, homeScore: 2, awayScore: 1, homeGoalScorers: [{ playerName: "Cavani", minute: 23, isPenalty: false, isOwnGoal: false },{ playerName: "Cavani", minute: 67, isPenalty: true, isOwnGoal: false }], awayGoalScorers: [{ playerName: "Almendra", minute: 55, isPenalty: false, isOwnGoal: false }], tvNetworks: [{ id: "gchc", name: "ESPN Premium" }] },
+      { id: "egdbgfh", slug: "river-plate-vs-belgrano", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 8", subTournament: "Apertura", homeTeam: teams.river, awayTeam: teams.belgrano, scheduledDate: "2026-04-12", scheduledTime: "16:00", status: "finished", minute: null, homeScore: 3, awayScore: 0, homeGoalScorers: [{ playerName: "Driussi", minute: 12, isPenalty: false, isOwnGoal: false },{ playerName: "Driussi", minute: 56, isPenalty: false, isOwnGoal: false },{ playerName: "Colidio", minute: 78, isPenalty: false, isOwnGoal: false }], awayGoalScorers: [], tvNetworks: [{ id: "idef", name: "TNT Sports Premium" }] },
+      { id: "egdbgfi", slug: "velez-sarsfield-vs-lanus", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 8", subTournament: "Apertura", homeTeam: teams.velez, awayTeam: teams.lanus, scheduledDate: "2026-04-11", scheduledTime: "19:00", status: "finished", minute: null, homeScore: 1, awayScore: 1, homeGoalScorers: [{ playerName: "Janson", minute: 40, isPenalty: false, isOwnGoal: false }], awayGoalScorers: [{ playerName: "Sand", minute: 88, isPenalty: false, isOwnGoal: false }], tvNetworks: [{ id: "cbcj", name: "TyC Sports" }] },
+      { id: "egdbgfj", slug: "san-lorenzo-vs-huracan", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 8", subTournament: "Apertura", homeTeam: teams.sanLorenzo, awayTeam: teams.huracan, scheduledDate: "2026-04-11", scheduledTime: "21:00", status: "finished", minute: null, homeScore: 0, awayScore: 2, homeGoalScorers: [], awayGoalScorers: [{ playerName: "Ramírez", minute: 15, isPenalty: false, isOwnGoal: false },{ playerName: "Cóccaro", minute: 63, isPenalty: false, isOwnGoal: false }], tvNetworks: [{ id: "gchc", name: "ESPN Premium" }] },
+      { id: "egdbgfo", slug: "gimnasia-la-plata-vs-argentinos-juniors", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 8", subTournament: "Apertura", homeTeam: teams.gimnasiaLP, awayTeam: teams.argentinos, scheduledDate: "2026-04-13", scheduledTime: "15:30", status: "finished", minute: null, homeScore: 1, awayScore: 1, homeGoalScorers: [{ playerName: "Carbonero", minute: 28, isPenalty: false, isOwnGoal: false }], awayGoalScorers: [{ playerName: "Ávalos", minute: 61, isPenalty: false, isOwnGoal: false }], tvNetworks: [{ id: "hbdg", name: "LPF Play" }] },
+      { id: "egdbgfp", slug: "platense-vs-independiente-rivadavia", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 8", subTournament: "Apertura", homeTeam: teams.platense, awayTeam: teams.independienteRiv, scheduledDate: "2026-04-13", scheduledTime: "17:00", status: "finished", minute: null, homeScore: 2, awayScore: 0, homeGoalScorers: [{ playerName: "Benavídez", minute: 37, isPenalty: false, isOwnGoal: false },{ playerName: "Gómez", minute: 82, isPenalty: false, isOwnGoal: false }], awayGoalScorers: [], tvNetworks: [{ id: "cbcj", name: "TyC Sports" }] }
+    ];
+
+    var leagueTableData = [
+      { position: 1, team: teams.boca, played: 8, won: 6, drawn: 1, lost: 1, goalsFor: 14, goalsAgainst: 5, goalDifference: 9, points: 19, zone: "libertadores" },
+      { position: 2, team: teams.river, played: 8, won: 5, drawn: 2, lost: 1, goalsFor: 13, goalsAgainst: 4, goalDifference: 9, points: 17, zone: "libertadores" },
+      { position: 3, team: teams.velez, played: 8, won: 5, drawn: 1, lost: 2, goalsFor: 11, goalsAgainst: 6, goalDifference: 5, points: 16, zone: "libertadores" },
+      { position: 4, team: teams.talleres, played: 8, won: 5, drawn: 1, lost: 2, goalsFor: 12, goalsAgainst: 8, goalDifference: 4, points: 16, zone: "libertadores" },
+      { position: 5, team: teams.estudiantesLP, played: 8, won: 4, drawn: 3, lost: 1, goalsFor: 10, goalsAgainst: 5, goalDifference: 5, points: 15, zone: "sudamericana" },
+      { position: 6, team: teams.huracan, played: 8, won: 4, drawn: 2, lost: 2, goalsFor: 9, goalsAgainst: 6, goalDifference: 3, points: 14, zone: "sudamericana" },
+      { position: 7, team: teams.racing, played: 8, won: 4, drawn: 2, lost: 2, goalsFor: 10, goalsAgainst: 8, goalDifference: 2, points: 14, zone: "sudamericana" },
+      { position: 8, team: teams.independiente, played: 8, won: 4, drawn: 1, lost: 3, goalsFor: 8, goalsAgainst: 7, goalDifference: 1, points: 13, zone: "sudamericana" },
+      { position: 9, team: teams.tigre, played: 8, won: 4, drawn: 1, lost: 3, goalsFor: 9, goalsAgainst: 9, goalDifference: 0, points: 13, zone: null },
+      { position: 10, team: teams.platense, played: 8, won: 3, drawn: 3, lost: 2, goalsFor: 8, goalsAgainst: 6, goalDifference: 2, points: 12, zone: null },
+      { position: 11, team: teams.argentinos, played: 8, won: 3, drawn: 3, lost: 2, goalsFor: 7, goalsAgainst: 6, goalDifference: 1, points: 12, zone: null },
+      { position: 12, team: teams.lanus, played: 8, won: 3, drawn: 2, lost: 3, goalsFor: 9, goalsAgainst: 8, goalDifference: 1, points: 11, zone: null },
+      { position: 13, team: teams.godoyCruz, played: 8, won: 3, drawn: 2, lost: 3, goalsFor: 7, goalsAgainst: 7, goalDifference: 0, points: 11, zone: null },
+      { position: 14, team: teams.newells, played: 8, won: 3, drawn: 2, lost: 3, goalsFor: 8, goalsAgainst: 9, goalDifference: -1, points: 11, zone: null },
+      { position: 15, team: teams.belgrano, played: 8, won: 3, drawn: 1, lost: 4, goalsFor: 7, goalsAgainst: 9, goalDifference: -2, points: 10, zone: null },
+      { position: 16, team: teams.sanLorenzo, played: 8, won: 2, drawn: 4, lost: 2, goalsFor: 6, goalsAgainst: 6, goalDifference: 0, points: 10, zone: null },
+      { position: 17, team: teams.instituto, played: 8, won: 2, drawn: 3, lost: 3, goalsFor: 5, goalsAgainst: 7, goalDifference: -2, points: 9, zone: null },
+      { position: 18, team: teams.rosarioCentral, played: 8, won: 2, drawn: 3, lost: 3, goalsFor: 8, goalsAgainst: 10, goalDifference: -2, points: 9, zone: null },
+      { position: 19, team: teams.defensaYJusticia, played: 8, won: 2, drawn: 3, lost: 3, goalsFor: 6, goalsAgainst: 8, goalDifference: -2, points: 9, zone: null },
+      { position: 20, team: teams.union, played: 8, won: 2, drawn: 3, lost: 3, goalsFor: 5, goalsAgainst: 8, goalDifference: -3, points: 9, zone: null },
+      { position: 21, team: teams.gimnasiaLP, played: 8, won: 2, drawn: 2, lost: 4, goalsFor: 6, goalsAgainst: 9, goalDifference: -3, points: 8, zone: null },
+      { position: 22, team: teams.banfield, played: 8, won: 2, drawn: 2, lost: 4, goalsFor: 5, goalsAgainst: 10, goalDifference: -5, points: 8, zone: null },
+      { position: 23, team: teams.atleticoTucuman, played: 8, won: 2, drawn: 1, lost: 5, goalsFor: 4, goalsAgainst: 10, goalDifference: -6, points: 7, zone: null },
+      { position: 24, team: teams.sarmiento, played: 8, won: 1, drawn: 4, lost: 3, goalsFor: 5, goalsAgainst: 8, goalDifference: -3, points: 7, zone: null },
+      { position: 25, team: teams.independienteRiv, played: 8, won: 1, drawn: 3, lost: 4, goalsFor: 4, goalsAgainst: 9, goalDifference: -5, points: 6, zone: "relegation" },
+      { position: 26, team: teams.centralCordoba, played: 8, won: 1, drawn: 3, lost: 4, goalsFor: 3, goalsAgainst: 9, goalDifference: -6, points: 6, zone: "relegation" },
+      { position: 27, team: teams.riestra, played: 8, won: 1, drawn: 2, lost: 5, goalsFor: 4, goalsAgainst: 12, goalDifference: -8, points: 5, zone: "relegation" },
+      { position: 28, team: teams.barracas, played: 8, won: 0, drawn: 2, lost: 6, goalsFor: 3, goalsAgainst: 15, goalDifference: -12, points: 2, zone: "relegation" }
+    ];
+
+    var topGoalscorersData = [
+      { rank: 1, playerName: "Cavani", team: teams.boca, goals: 7 },
+      { rank: 2, playerName: "Driussi", team: teams.river, goals: 6 },
+      { rank: 3, playerName: "Valoyes", team: teams.talleres, goals: 5 },
+      { rank: 4, playerName: "Janson", team: teams.velez, goals: 5 },
+      { rank: 5, playerName: "Ramírez", team: teams.huracan, goals: 4 },
+      { rank: 6, playerName: "Boselli", team: teams.estudiantesLP, goals: 4 },
+      { rank: 7, playerName: "Cauteruccio", team: teams.independiente, goals: 4 },
+      { rank: 8, playerName: "Retegui", team: teams.tigre, goals: 3 },
+      { rank: 9, playerName: "Colidio", team: teams.river, goals: 3 },
+      { rank: 10, playerName: "Sand", team: teams.lanus, goals: 3 },
+      { rank: 11, playerName: "Cóccaro", team: teams.huracan, goals: 3 },
+      { rank: 12, playerName: "Vecchio", team: teams.rosarioCentral, goals: 3 },
+      { rank: 13, playerName: "Carbonero", team: teams.gimnasiaLP, goals: 2 },
+      { rank: 14, playerName: "Ávalos", team: teams.argentinos, goals: 2 },
+      { rank: 15, playerName: "Almendra", team: teams.racing, goals: 2 }
+    ];
+
+    // ============================================================
+    // Render all sections
+    // ============================================================
+    var iconUtil = { getTeamIcon: getTeamIcon, FALLBACK_ICON: FALLBACK_ICON };
+
+    document.getElementById('fixtures-section').innerHTML =
+      renderFixturesPanel(upcomingFixtures, { round: 'Fecha 9 — Apertura' });
+
+    document.getElementById('scores-section').innerHTML =
+      renderScoresPanel(pastScores, { round: 'Fecha 8 — Apertura' });
+
+    document.getElementById('table-section').innerHTML =
+      renderLeagueTable(leagueTableData, iconUtil);
+
+    document.getElementById('scorers-section').innerHTML =
+      renderTopGoalscorers(topGoalscorersData, iconUtil);
+
+    // ============================================================
+    // Navigation: smooth scroll + active state
+    // ============================================================
+    var navLinks = document.querySelectorAll('.header-nav .header-link');
+    navLinks.forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var targetId = this.getAttribute('href').substring(1);
+        var target = document.getElementById(targetId);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        navLinks.forEach(function(l) { l.classList.remove('active'); });
+        this.classList.add('active');
+      });
+    });
+
+    // Hamburger menu toggle
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      var sidebar = document.getElementById('sidebar');
+      var expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      sidebar.classList.toggle('sidebar--open');
+    });
+  </script>
+
+</body>
+</html>

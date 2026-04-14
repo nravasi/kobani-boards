@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect fill="#E8E8E8" width="400" height="300"/>
+  <polygon points="120,200 200,100 280,200" fill="#CCC"/>
+  <circle cx="300" cy="80" r="30" fill="#DDD"/>
+  <text fill="#999" font-family="sans-serif" font-size="16" x="50%" y="260" text-anchor="middle">Foto</text>
+</svg>
