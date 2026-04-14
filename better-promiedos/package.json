@@ -4,7 +4,7 @@
   "description": "Workspace for board: Better Promiedos",
   "main": "js/team-icons.js",
   "scripts": {
-    "test": "node test/team-icons.test.js && tsx --test test/mock-data.test.ts && tsx --test test/top-goalscorers.test.ts"
+    "test": "node test/team-icons.test.js && tsx --test test/mock-data.test.ts && tsx --test test/top-goalscorers.test.ts && tsx --test test/fixtures-panel.test.ts"
   },
   "keywords": [],
   "author": "",

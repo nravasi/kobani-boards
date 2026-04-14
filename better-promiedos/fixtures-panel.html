@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixtures &amp; Scores Panel — Better Promiedos</title>
+  <link rel="stylesheet" href="src/styles/global.css">
+</head>
+<body>
+
+<div style="max-width: 900px; margin: 0 auto; padding: 24px 16px;">
+  <h1>Fixtures &amp; Past Scores Panel</h1>
+  <p class="text-meta" style="margin-bottom: 24px;">Data-driven component rendering upcoming fixtures and completed match results from the mock data layer, using the team icon utility for badges.</p>
+
+  <div id="fixtures-container"></div>
+  <div id="scores-container"></div>
+</div>
+
+<script src="js/team-icons.js"></script>
+<script src="js/fixtures-panel.js"></script>
+<script>
+  // Mock data inlined from src/mock-data (matching the TypeScript mock data layer exactly)
+  var teams = {
+    argentinos: { id: "ihb", name: "Argentinos Juniors", shortName: "Argentinos", slug: "argentinos-juniors" },
+    banfield: { id: "ihi", name: "Banfield", shortName: "Banfield", slug: "banfield" },
+    barracas: { id: "jafb", name: "Barracas Central", shortName: "Barracas", slug: "barracas-central" },
+    belgrano: { id: "fhid", name: "Belgrano", shortName: "Belgrano", slug: "belgrano" },
+    boca: { id: "igg", name: "Boca Juniors", shortName: "Boca", slug: "boca-juniors" },
+    centralCordoba: { id: "beafh", name: "Central Córdoba SdE", shortName: "C. Córdoba", slug: "central-cordoba-sde" },
+    defensaYJusticia: { id: "hcbh", name: "Defensa y Justicia", shortName: "Def. y Just.", slug: "defensa-y-justicia" },
+    estudiantesLP: { id: "igh", name: "Estudiantes de La Plata", shortName: "Estudiantes", slug: "estudiantes-de-la-plata" },
+    gimnasiaLP: { id: "iia", name: "Gimnasia y Esgrima La Plata", shortName: "Gimnasia", slug: "gimnasia-la-plata" },
+    godoyCruz: { id: "ihd", name: "Godoy Cruz", shortName: "Godoy Cruz", slug: "godoy-cruz" },
+    huracan: { id: "iie", name: "Huracán", shortName: "Huracán", slug: "huracan" },
+    independiente: { id: "ihe", name: "Independiente", shortName: "Independiente", slug: "independiente" },
+    independienteRiv: { id: "hcch", name: "Independiente Rivadavia", shortName: "Ind. Rivadavia", slug: "independiente-rivadavia" },
+    instituto: { id: "hchc", name: "Instituto", shortName: "Instituto", slug: "instituto" },
+    lanus: { id: "igj", name: "Lanús", shortName: "Lanús", slug: "lanus" },
+    newells: { id: "ihh", name: "Newell's Old Boys", shortName: "Newell's", slug: "newells-old-boys" },
+    platense: { id: "hcah", name: "Platense", shortName: "Platense", slug: "platense" },
+    racing: { id: "ihg", name: "Racing Club", shortName: "Racing", slug: "racing-club" },
+    river: { id: "igi", name: "River Plate", shortName: "River", slug: "river-plate" },
+    rosarioCentral: { id: "ihf", name: "Rosario Central", shortName: "R. Central", slug: "rosario-central" },
+    sanLorenzo: { id: "igf", name: "San Lorenzo", shortName: "San Lorenzo", slug: "san-lorenzo" },
+    sarmiento: { id: "hbbh", name: "Sarmiento de Junín", shortName: "Sarmiento", slug: "sarmiento-junin" },
+    talleres: { id: "jche", name: "Talleres de Córdoba", shortName: "Talleres", slug: "talleres-de-cordoba" },
+    tigre: { id: "iid", name: "Tigre", shortName: "Tigre", slug: "tigre" },
+    union: { id: "hcag", name: "Unión de Santa Fe", shortName: "Unión", slug: "union-de-santa-fe" },
+    velez: { id: "ihc", name: "Vélez Sarsfield", shortName: "Vélez", slug: "velez-sarsfield" }
+  };
+
+  var upcomingFixtures = [
+    { id: "abcdef1", slug: "boca-juniors-vs-river-plate", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 9", subTournament: "Apertura", homeTeam: teams.boca, awayTeam: teams.river, scheduledDate: "2026-04-18", scheduledTime: "20:00", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [{ id: "gchc", name: "ESPN Premium" }] },
+    { id: "abcdef2", slug: "racing-club-vs-independiente", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 9", subTournament: "Apertura", homeTeam: teams.racing, awayTeam: teams.independiente, scheduledDate: "2026-04-18", scheduledTime: "17:00", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [{ id: "idef", name: "TNT Sports Premium" }] },
+    { id: "abcdef3", slug: "velez-sarsfield-vs-talleres-de-cordoba", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 9", subTournament: "Apertura", homeTeam: teams.velez, awayTeam: teams.talleres, scheduledDate: "2026-04-19", scheduledTime: "16:00", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [{ id: "cbcj", name: "TyC Sports" }] },
+    { id: "abcdef4", slug: "estudiantes-de-la-plata-vs-san-lorenzo", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 9", subTournament: "Apertura", homeTeam: teams.estudiantesLP, awayTeam: teams.sanLorenzo, scheduledDate: "2026-04-19", scheduledTime: "18:30", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [{ id: "cicj", name: "ESPN" }] },
+    { id: "abcdef5", slug: "lanus-vs-belgrano", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 9", subTournament: "Apertura", homeTeam: teams.lanus, awayTeam: teams.belgrano, scheduledDate: "2026-04-19", scheduledTime: "20:30", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [{ id: "hbdg", name: "LPF Play" }] },
+    { id: "abcdef6", slug: "huracan-vs-barracas-central", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 9", subTournament: "Apertura", homeTeam: teams.huracan, awayTeam: teams.barracas, scheduledDate: "2026-04-20", scheduledTime: "15:30", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [{ id: "cbcj", name: "TyC Sports" }] },
+    { id: "abcdef7", slug: "godoy-cruz-vs-gimnasia-la-plata", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 9", subTournament: "Apertura", homeTeam: teams.godoyCruz, awayTeam: teams.gimnasiaLP, scheduledDate: "2026-04-20", scheduledTime: "17:00", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [] },
+    { id: "abcdef8", slug: "argentinos-juniors-vs-newells-old-boys", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 9", subTournament: "Apertura", homeTeam: teams.argentinos, awayTeam: teams.newells, scheduledDate: "2026-04-20", scheduledTime: "19:00", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [{ id: "gchc", name: "ESPN Premium" }] },
+    { id: "abcdef9", slug: "banfield-vs-defensa-y-justicia", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 10", subTournament: "Apertura", homeTeam: teams.banfield, awayTeam: teams.defensaYJusticia, scheduledDate: "2026-04-25", scheduledTime: "16:00", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [{ id: "idef", name: "TNT Sports Premium" }] },
+    { id: "abcdefa", slug: "tigre-vs-sarmiento-junin", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 10", subTournament: "Apertura", homeTeam: teams.tigre, awayTeam: teams.sarmiento, scheduledDate: "2026-04-25", scheduledTime: "18:30", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [{ id: "hbdg", name: "LPF Play" }] },
+    { id: "abcdefb", slug: "rosario-central-vs-union-de-santa-fe", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 10", subTournament: "Apertura", homeTeam: teams.rosarioCentral, awayTeam: teams.union, scheduledDate: "2026-04-26", scheduledTime: "20:00", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [{ id: "cicj", name: "ESPN" }] },
+    { id: "abcdefc", slug: "instituto-vs-platense", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 10", subTournament: "Apertura", homeTeam: teams.instituto, awayTeam: teams.platense, scheduledDate: "2026-04-26", scheduledTime: "15:00", status: "scheduled", minute: null, homeScore: null, awayScore: null, homeGoalScorers: [], awayGoalScorers: [], tvNetworks: [] }
+  ];
+
+  var pastScores = [
+    { id: "egdbgff", slug: "estudiantes-de-la-plata-vs-central-cordoba-sde", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 8", subTournament: "Apertura", homeTeam: teams.estudiantesLP, awayTeam: teams.centralCordoba, scheduledDate: "2026-04-12", scheduledTime: "18:00", status: "finished", minute: null, homeScore: 2, awayScore: 0, homeGoalScorers: [{ playerName: "Boselli", minute: 34, isPenalty: false, isOwnGoal: false },{ playerName: "Rodríguez", minute: 71, isPenalty: false, isOwnGoal: false }], awayGoalScorers: [], tvNetworks: [{ id: "cicj", name: "ESPN" }] },
+    { id: "egdbgfg", slug: "boca-juniors-vs-racing-club", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 8", subTournament: "Apertura", homeTeam: teams.boca, awayTeam: teams.racing, scheduledDate: "2026-04-12", scheduledTime: "20:15", status: "finished", minute: null, homeScore: 2, awayScore: 1, homeGoalScorers: [{ playerName: "Cavani", minute: 23, isPenalty: false, isOwnGoal: false },{ playerName: "Cavani", minute: 67, isPenalty: true, isOwnGoal: false }], awayGoalScorers: [{ playerName: "Almendra", minute: 55, isPenalty: false, isOwnGoal: false }], tvNetworks: [{ id: "gchc", name: "ESPN Premium" }] },
+    { id: "egdbgfh", slug: "river-plate-vs-belgrano", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 8", subTournament: "Apertura", homeTeam: teams.river, awayTeam: teams.belgrano, scheduledDate: "2026-04-12", scheduledTime: "16:00", status: "finished", minute: null, homeScore: 3, awayScore: 0, homeGoalScorers: [{ playerName: "Driussi", minute: 12, isPenalty: false, isOwnGoal: false },{ playerName: "Driussi", minute: 56, isPenalty: false, isOwnGoal: false },{ playerName: "Colidio", minute: 78, isPenalty: false, isOwnGoal: false }], awayGoalScorers: [], tvNetworks: [{ id: "idef", name: "TNT Sports Premium" }] },
+    { id: "egdbgfi", slug: "velez-sarsfield-vs-lanus", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 8", subTournament: "Apertura", homeTeam: teams.velez, awayTeam: teams.lanus, scheduledDate: "2026-04-11", scheduledTime: "19:00", status: "finished", minute: null, homeScore: 1, awayScore: 1, homeGoalScorers: [{ playerName: "Janson", minute: 40, isPenalty: false, isOwnGoal: false }], awayGoalScorers: [{ playerName: "Sand", minute: 88, isPenalty: false, isOwnGoal: false }], tvNetworks: [{ id: "cbcj", name: "TyC Sports" }] },
+    { id: "egdbgfj", slug: "san-lorenzo-vs-huracan", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 8", subTournament: "Apertura", homeTeam: teams.sanLorenzo, awayTeam: teams.huracan, scheduledDate: "2026-04-11", scheduledTime: "21:00", status: "finished", minute: null, homeScore: 0, awayScore: 2, homeGoalScorers: [], awayGoalScorers: [{ playerName: "Ramírez", minute: 15, isPenalty: false, isOwnGoal: false },{ playerName: "Cóccaro", minute: 63, isPenalty: false, isOwnGoal: false }], tvNetworks: [{ id: "gchc", name: "ESPN Premium" }] },
+    { id: "egdbgfk", slug: "talleres-de-cordoba-vs-banfield", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 7", subTournament: "Apertura", homeTeam: teams.talleres, awayTeam: teams.banfield, scheduledDate: "2026-04-05", scheduledTime: "18:00", status: "finished", minute: null, homeScore: 3, awayScore: 1, homeGoalScorers: [{ playerName: "Valoyes", minute: 22, isPenalty: false, isOwnGoal: false },{ playerName: "Valoyes", minute: 51, isPenalty: false, isOwnGoal: false },{ playerName: "Santos", minute: 85, isPenalty: false, isOwnGoal: false }], awayGoalScorers: [{ playerName: "Urzi", minute: 44, isPenalty: false, isOwnGoal: false }], tvNetworks: [{ id: "cicj", name: "ESPN" }] },
+    { id: "egdbgfl", slug: "independiente-vs-godoy-cruz", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 7", subTournament: "Apertura", homeTeam: teams.independiente, awayTeam: teams.godoyCruz, scheduledDate: "2026-04-05", scheduledTime: "20:15", status: "finished", minute: null, homeScore: 1, awayScore: 0, homeGoalScorers: [{ playerName: "Cauteruccio", minute: 73, isPenalty: true, isOwnGoal: false }], awayGoalScorers: [], tvNetworks: [{ id: "idef", name: "TNT Sports Premium" }] },
+    { id: "egdbgfm", slug: "newells-old-boys-vs-rosario-central", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 7", subTournament: "Apertura", homeTeam: teams.newells, awayTeam: teams.rosarioCentral, scheduledDate: "2026-04-06", scheduledTime: "17:00", status: "finished", minute: null, homeScore: 2, awayScore: 2, homeGoalScorers: [{ playerName: "Ramírez", minute: 18, isPenalty: false, isOwnGoal: false },{ playerName: "Fernández", minute: 64, isPenalty: false, isOwnGoal: false }], awayGoalScorers: [{ playerName: "Vecchio", minute: 32, isPenalty: false, isOwnGoal: false },{ playerName: "Martínez", minute: 90, isPenalty: false, isOwnGoal: false }], tvNetworks: [{ id: "gchc", name: "ESPN Premium" }] },
+    { id: "egdbgfn", slug: "defensa-y-justicia-vs-tigre", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 7", subTournament: "Apertura", homeTeam: teams.defensaYJusticia, awayTeam: teams.tigre, scheduledDate: "2026-04-06", scheduledTime: "19:00", status: "finished", minute: null, homeScore: 0, awayScore: 1, homeGoalScorers: [], awayGoalScorers: [{ playerName: "Retegui", minute: 53, isPenalty: false, isOwnGoal: false }], tvNetworks: [{ id: "cbcj", name: "TyC Sports" }] },
+    { id: "egdbgfo", slug: "gimnasia-la-plata-vs-argentinos-juniors", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 8", subTournament: "Apertura", homeTeam: teams.gimnasiaLP, awayTeam: teams.argentinos, scheduledDate: "2026-04-13", scheduledTime: "15:30", status: "finished", minute: null, homeScore: 1, awayScore: 1, homeGoalScorers: [{ playerName: "Carbonero", minute: 28, isPenalty: false, isOwnGoal: false }], awayGoalScorers: [{ playerName: "Ávalos", minute: 61, isPenalty: false, isOwnGoal: false }], tvNetworks: [{ id: "hbdg", name: "LPF Play" }] },
+    { id: "egdbgfp", slug: "platense-vs-independiente-rivadavia", leagueId: "hc", leagueName: "Liga Profesional", round: "Fecha 8", subTournament: "Apertura", homeTeam: teams.platense, awayTeam: teams.independienteRiv, scheduledDate: "2026-04-13", scheduledTime: "17:00", status: "finished", minute: null, homeScore: 2, awayScore: 0, homeGoalScorers: [{ playerName: "Benavídez", minute: 37, isPenalty: false, isOwnGoal: false },{ playerName: "Gómez", minute: 82, isPenalty: false, isOwnGoal: false }], awayGoalScorers: [], tvNetworks: [{ id: "cbcj", name: "TyC Sports" }] }
+  ];
+
+  // Render panels
+  document.getElementById('fixtures-container').innerHTML = renderFixturesPanel(
+    upcomingFixtures,
+    { round: 'Fecha 9 — Apertura' }
+  );
+  document.getElementById('scores-container').innerHTML = renderScoresPanel(
+    pastScores,
+    { round: 'Fecha 8 — Apertura' }
+  );
+</script>
+
+</body>
+</html>
