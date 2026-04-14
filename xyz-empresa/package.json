@@ -4,12 +4,20 @@
   "description": "Pilot expense tracking module for Empresa XYZ",
   "main": "index.js",
   "scripts": {
-    "test": "node test/app.test.js && node test/expense-form.test.js && node test/dashboard.test.js && node test/reports.test.js"
+    "test": "node test/app.test.js && node test/expense-form.test.js && node test/dashboard.test.js && node test/reports.test.js && node test/api.test.js",
+    "test:api": "node test/api.test.js",
+    "start": "node backend/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "jsdom": "^29.0.2"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.9.0",
+    "express": "^5.2.1",
+    "multer": "^2.1.1",
+    "uuid": "^13.0.0"
   }
 }
